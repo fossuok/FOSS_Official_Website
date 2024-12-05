@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 
 export const metadata: Metadata = {
@@ -19,9 +20,7 @@ export default function RootLayout({
       <body className="bg-gray-50 text-gray-800">
         <Navbar />
         <main className="min-h-screen">{children}</main>
-        <footer className="text-center py-4 border-t mt-8">
-          &copy; {new Date().getFullYear()} FOSS UOK
-        </footer>
+        <Footer />
       </body>
     </html>
   );
