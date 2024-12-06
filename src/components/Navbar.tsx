@@ -10,18 +10,18 @@ export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 border-b border-white/10 shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/10 border-b border-white/10 shadow-md z-50">
       <div className="container mx-auto flex items-center justify-between px-8 p-4">
         {/* Logo on the Left */}
-        <div className="flex items-center font-bold text-xl text-gray-700">
+        <div className="flex items-center font-bold text-xl text-gray-100">
           <Image src={Logo} width={40} height={40} alt="Logo" />
-          <Link href="/">FOSS UOK</Link>
+          <Link href="/">FOSSUOK</Link>
         </div>
 
-        {/* Links and GitHub Logo */}
+        {/* GitHub Logo and Hamburger Menu */}
         <div className="flex items-center space-x-6">
           {/* Links for Larger Screens */}
-          <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-900">
+          <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-100">
             <Link href="/" className="hover:text-blue-600 transition">
               Home
             </Link>
@@ -36,14 +36,17 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <Button msg="Subscribe"></Button>
+          {/* Button - Hidden on Mobile */}
+          <div className="hidden md:block">
+            <Button msg="Subscribe" />
+          </div>
 
-          {/* GitHub Logo */}
+          {/* GitHub Logo - Always Visible */}
           <a
             href="https://github.com/fossuok"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:block text-gray-900 hover:text-blue-600 transition"
+            className="text-gray-100 hover:text-blue-600 transition"
             aria-label="GitHub"
           >
             <svg
@@ -59,11 +62,21 @@ export default function Navbar() {
           {/* Hamburger Menu */}
           <button
             onClick={() => setMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-900 hover:text-blue-600 transition"
+            className="md:hidden text-gray-100 hover:text-blue-600 transition"
             aria-label="Toggle Menu"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-              <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
             </svg>
           </button>
         </div>

@@ -21,7 +21,7 @@ const Button = ({
     return (
     <button
         onClick={onClick}
-        className={`relative group overflow-hidden text-white text-sm rounded-full px-6 py-2 flex items-center justify-between transition-all duration-300 ease-in-out ${className}`}
+        className={`relative group overflow-hidden text-gray-100 text-sm rounded-full px-6 py-2 flex items-center justify-between transition-all duration-300 ease-in-out ${className}`}
         {...props}
     >
         {/* Neon Background */}
