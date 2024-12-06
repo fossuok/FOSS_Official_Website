@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Home",
+    "href": "/"
+  },
+  {
+    "label": "About",
+    "href": "/about"
+  },
+  {
+    "label": "Blog",
+    "href": "/blog"
+  },
+  {
+    "label": "Events",
+    "href": "/event"
+  },
+  {
+    "label": "Leaderboard",
+    "href": "/leaderboard"
+  }
+]
