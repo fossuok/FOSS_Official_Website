@@ -1,13 +1,19 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { ContributorInterface, RepositoryInterface } from "@/interfaces/GitHub";
 
+interface ContributionsDict {
+  [repoName: string]: ContributorInterface[];
+}
+
 interface LeaderBoardState {
   contributors: ContributorInterface[];
   repos: RepositoryInterface[];
   selectedRepo: string;
   loadingContributors: boolean;
   loadingRepos: boolean;
+  contributionsDict: ContributionsDict;
 }
+
 
 const initialState: LeaderBoardState = {
   contributors: [],
@@ -15,6 +21,9 @@ const initialState: LeaderBoardState = {
   selectedRepo: "overall",
   loadingContributors: false,
   loadingRepos: false,
+  contributionsDict: {
+    overall: [],
+  },
 };
 
 const leaderboardSlice = createSlice({
@@ -38,10 +47,22 @@ const leaderboardSlice = createSlice({
     setLoadingRepos(state, action: PayloadAction<boolean>) {
       state.loadingRepos = action.payload;
     },
+    setContributionsDict(
+      state,
+      action: PayloadAction<ContributionsDict>
+    ) {
+      state.contributionsDict = action.payload;
+    },
   },
 });
 
-export const { setContributors, setRepos, setSelectedRepo } =
-  leaderboardSlice.actions;
+export const {
+  setContributors,
+  setRepos,
+  setSelectedRepo,
+  setLoadingContributors,
+  setLoadingRepos,
+  setContributionsDict,
+} = leaderboardSlice.actions;
 
 export default leaderboardSlice.reducer;
