@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-overflow: scroll; /* Enable scrolling */
-}
-
 /* Hide scrollbar but allow scrolling */
 ::-webkit-scrollbar {
 display: none; /* Hides the scrollbar */
