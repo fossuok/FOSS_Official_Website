@@ -3,7 +3,7 @@ import {
   setContributors,
   setRepos,
 } from "@/store/features/leaderboard/leaderboard.slice";
-import { Contributor, Repository } from "@/interfaces/GitHub";
+import { ContributorInterface, RepositoryInterface } from "@/interfaces/GitHub";
 
 const GITHUB_API_URL = "https://api.github.com";
 const GITHUB_ORG = "fossuok";
@@ -61,7 +61,7 @@ export const fetchRepoContributors =
         `${GITHUB_API_URL}/repos/${GITHUB_ORG}/${repo}/contributors`
       );
 
-      const contributors: Contributor[] = await response.json();
+      const contributors: ContributorInterface[] = await response.json();
       dispatch(setContributors(contributors));
       return contributors; // Return the fetched data
     } catch (error) {
@@ -84,7 +84,7 @@ export const fetchOrgRepos = () => async (dispatch: AppDispatch, getState: () =>
   try {
     const response = await fetchWithRetry(`${GITHUB_API_URL}/orgs/${GITHUB_ORG}/repos`);
 
-    const repos: Repository[] = await response.json();
+    const repos: RepositoryInterface[] = await response.json();
     dispatch(setRepos(repos));
     return repos; // Return the fetched data
   } catch (error) {
@@ -107,9 +107,9 @@ export const fetchAllContributors =
 
     try {
       const response = await fetchWithRetry(`${GITHUB_API_URL}/orgs/${GITHUB_ORG}/repos`);
-      const repos: Repository[] = await response.json();
+      const repos: RepositoryInterface[] = await response.json();
 
-      const allContributors: Record<string, Contributor> = {};
+      const allContributors: Record<string, ContributorInterface> = {};
 
       for (const repo of repos) {
         await sleep(RATE_LIMIT_DELAY); // Throttle API requests to avoid hitting rate limits
@@ -118,7 +118,7 @@ export const fetchAllContributors =
             `${GITHUB_API_URL}/repos/${GITHUB_ORG}/${repo.name}/contributors`
           );
 
-          const contributors: Contributor[] = await contributorsResponse.json();
+          const contributors: ContributorInterface[] = await contributorsResponse.json();
 
           contributors.forEach(({ login, avatar_url, contributions }) => {
             if (!allContributors[login]) {

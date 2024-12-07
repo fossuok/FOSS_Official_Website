@@ -1,13 +1,3 @@
-export interface Contributor {
-    login: string;
-    avatar_url: string;
-    contributions: number;
-  }
-  
-export interface Repository {
-  id: number;
-  name: string;
-}
 
 export interface ContributorInterface {
     login: string;
@@ -21,8 +11,8 @@ export interface RepositoryInterface {
 }
 
 export interface AppStateInterface {
-  contributors: Contributor[];
-  repos: Repository[];
+  contributors: ContributorInterface[];
+  repos: RepositoryInterface[];
   selectedRepo: string; // "overall" or repo name
 }
   
