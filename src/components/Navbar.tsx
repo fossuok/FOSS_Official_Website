@@ -4,7 +4,9 @@ import Image from 'next/image';
 import Logo from '@/../public/favicon.ico';
 import Link from 'next/link';
 import { useState } from 'react';
+import navItems from '@/data/navItems.json';
 import Button from './Button';
+
 
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -22,18 +24,15 @@ export default function Navbar() {
         <div className="flex items-center space-x-6">
           {/* Links for Larger Screens */}
           <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-100">
-            <Link href="/" className="hover:text-blue-600 transition">
-              Home
-            </Link>
-            <Link href="/about" className="hover:text-blue-600 transition">
-              About
-            </Link>
-            <Link href="/blog" className="hover:text-blue-600 transition">
-              Blog
-            </Link>
-            <Link href="/event" className="hover:text-blue-600 transition">
-              Events
-            </Link>
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="hover:text-gray-600 transition"
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
 
           {/* Button - Hidden on Mobile */}
@@ -46,7 +45,7 @@ export default function Navbar() {
             href="https://github.com/fossuok"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-100 hover:text-blue-600 transition"
+            className="text-gray-100 hover:text-gray-600 transition"
             aria-label="GitHub"
           >
             <svg
@@ -62,7 +61,7 @@ export default function Navbar() {
           {/* Hamburger Menu */}
           <button
             onClick={() => setMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-100 hover:text-blue-600 transition"
+            className="md:hidden text-gray-100 hover:text-gray-600 transition"
             aria-label="Toggle Menu"
           >
             <svg
@@ -86,18 +85,16 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-white/50 backdrop-blur-md border-t border-white/10 px-8 py-4">
           <nav className="flex flex-col space-y-4 text-sm font-medium text-gray-900">
-            <Link href="/" className="hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
-              Home
-            </Link>
-            <Link href="/about" className="hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
-              About
-            </Link>
-            <Link href="/blog" className="hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
-              Blog
-            </Link>
-            <Link href="/event" className="hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
-              Events
-            </Link>
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="hover:text-gray-600 transition"
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
         </div>
       )}
