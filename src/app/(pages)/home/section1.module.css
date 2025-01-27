@@ -22,7 +22,7 @@
 
 .title {
   text-align: center;
-  font-family: Greycliff CF, var(--mantine-font-family);
+  font-family: var(--mantine-font-family);
   font-size: 62px;
   font-weight: 900;
   line-height: 1.1;

@@ -1,7 +1,9 @@
+import { Section1 } from "../events/section1";
+
 export default function Home() {
   return (
     <div>
-      <h1>Events</h1>
+      <Section1 />
     </div>
   );
 }

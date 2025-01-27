@@ -26,7 +26,6 @@ import {
   ThemeIcon,
   UnstyledButton,
   useMantineTheme,
-  useComputedColorScheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Theming, ThemedLogo } from "../ThemePicker/Theming";
@@ -76,7 +75,7 @@ export function HeaderMegaMenu() {
     <UnstyledButton className={classes.subLink} key={item.title}>
       <Group wrap="nowrap" align="flex-start">
         <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon size={22} color={theme.colors.blue[6]} />
+          <item.icon size={22} color={theme.colors.violet[6]} />
         </ThemeIcon>
         <div>
           <Text size="sm" fw={500}>
@@ -146,11 +145,11 @@ export function HeaderMegaMenu() {
                 </div>
               </HoverCard.Dropdown>
             </HoverCard>
-            <Link href="/about" className={classes.link}>
-              About
-            </Link>
             <Link href="/projects" className={classes.link}>
               Projects
+            </Link>
+            <Link href="/about" className={classes.link}>
+              About
             </Link>
             <Link href="/blog" className={classes.link}>
               Blog
@@ -168,10 +167,14 @@ export function HeaderMegaMenu() {
         </Group>
       </header>
 
+      {/* mobile view */}
+
       <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
-        size="80%"
+        className={classes.drawer}
+        overlayProps={{ backgroundOpacity: 0.25, blur: 18 }}
+        size="100%"
         padding="md"
         title="Menu"
         hiddenFrom="sm"
@@ -192,11 +195,11 @@ export function HeaderMegaMenu() {
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened}>{links}</Collapse>
-          <Link href="/about" className={classes.link}>
-            About
-          </Link>
           <Link href="/projects" className={classes.link}>
             Projects
+          </Link>
+          <Link href="/about" className={classes.link}>
+            About
           </Link>
           <Link href="/blog" className={classes.link}>
             Blog

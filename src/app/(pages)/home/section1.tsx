@@ -2,12 +2,14 @@
 
 //openning title
 import classes from "./section1.module.css";
-import { Button, Container, Overlay, Group, Text } from "@mantine/core";
+import { Button, Container, Group, Text } from "@mantine/core";
+import GradientBackg from "../../../components/Gradient/GradientBack"; // Adjust the path as necessary
 
 export default function Section1() {
   return (
     <>
       <div className={classes.wrapper}>
+        <GradientBackg />
         <Container size={700} className={classes.inner}>
           <h1 className={classes.title}>
             Embrace the Power
