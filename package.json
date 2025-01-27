@@ -9,17 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/charts": "^7.16.2",
+    "@mantine/core": "^7.16.2",
+    "@mantine/dates": "^7.16.2",
+    "@mantine/form": "^7.16.2",
+    "@mantine/hooks": "^7.16.2",
+    "@mantine/notifications": "^7.16.2",
+    "@tabler/icons-react": "^3.29.0",
+    "dayjs": "^1.11.13",
+    "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "recharts": "^2.15.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
-    "@eslint/eslintrc": "^3"
+    "postcss": "^8.5.1",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "^5"
   }
 }

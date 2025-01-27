@@ -1,0 +1,28 @@
+.btn{
+  border-radius: 1rem !important;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .dark {
+    @mixin dark {
+      display: none;
+    }
+  
+    @mixin light {
+      display: block;
+    }
+  }
+  
+  .light {
+    @mixin light {
+      display: none;
+    }
+  
+    @mixin dark {
+      display: block;
+    }
+  }

@@ -1,42 +1,22 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* For light mode */
+:root[data-mantine-color-scheme="light"] {
+  --mantine-color-body: var(--mantine-color-gray-1) !important;
+  --mantine-primary-color-filled: #9333ea !important;
+  --mantine-primary-color-filled-hover: #7c25cc !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* For dark mode */
+:root[data-mantine-color-scheme="dark"] {
+  --mantine-color-body: #0f172a !important;
+  --mantine-color-dark-1: #c9c9c9 !important;
+  --mantine-color-dark-2: #c9c9c9 !important;
+  --mantine-color-dark-3: #c9c9c9 !important;
+  --mantine-color-dark-4: #293041 !important;
+  --mantine-color-dark-5: #293041 !important;
+  --mantine-color-dark-6: #050d21 !important;
+  --mantine-color-dark-7: #050d21 !important;
+  --mantine-color-dark-8: #050d21 !important;
+  --mantine-color-dark-9: #050d21 !important;
+  --mantine-primary-color-filled: #9333ea !important;
+  --mantine-primary-color-filled-hover: #7c25cc !important;
 }
