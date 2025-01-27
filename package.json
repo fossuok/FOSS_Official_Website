@@ -17,10 +17,11 @@
     "@mantine/notifications": "^7.16.2",
     "@tabler/icons-react": "^3.29.0",
     "dayjs": "^1.11.13",
-    "next": "15.1.6",
+    "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "recharts": "^2.15.0"
+    "recharts": "^2.15.0",
+    "webpack": "^5.97.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
