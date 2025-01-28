@@ -55,7 +55,7 @@ export function CardsCarousel() {
   return (
     <div className={classes.wrapper}>
       <GradientBack />
-      <Container size={800} pt={100} pb={100}>
+      <Container size={1000} pt={100} pb={100}>
         <h1 className={classes.title}>
           Latest{" "}
           <Text
