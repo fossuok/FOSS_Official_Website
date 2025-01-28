@@ -11,7 +11,7 @@ export default function Section1() {
     <>
       <div className={classes.wrapper}>
         <GradientBack />
-        <Container size={700} className={classes.inner}>
+        <Container size={800} className={classes.inner}>
           <h1 className={classes.title}>
             Embrace the Power
             <br /> of{" "}
@@ -26,7 +26,7 @@ export default function Section1() {
             and Collaboration
           </h1>
 
-          <Text className={classes.description} color="dimmed">
+          <Text className={classes.description}>
             Join us on our journey to explore, collaborate, and innovate in the
             world of FOSS!
           </Text>
