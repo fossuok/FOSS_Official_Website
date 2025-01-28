@@ -1,10 +1,23 @@
-import { Box } from "@mantine/core";
+"use client";
+import { useMouse } from "@mantine/hooks";
+import classes from "./GradientBack.module.css";
 
 export default function GradientBack() {
+  const { ref, x, y } = useMouse();
+
   return (
-    <Box className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20 ">
-      <Box className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></Box>
-      <Box className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></Box>
-    </Box>
+    <>
+      <div>
+        <div
+          style={{
+            background: `radial-gradient(circle at ${x}px ${
+              y - 50
+            }px, rgba(147, 51, 234, 0.2), transparent 40%)`,
+          }}
+          className={classes.focus}
+        ></div>
+      </div>
+      {/* <div className={classes.container1}>Hello</div> */}
+    </>
   );
 }

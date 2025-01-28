@@ -1,4 +1,7 @@
 .wrapper {
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
   padding-top: calc(var(--mantine-spacing-xl) * 2);
   padding-bottom: calc(var(--mantine-spacing-xl) * 2);
 }

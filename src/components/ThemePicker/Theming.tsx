@@ -35,7 +35,7 @@ export function ThemedLogo() {
           src={logo}
           alt="Themed Logo"
           height={40} // Adjust size as needed
-          priority // Optimized loading
+          priority={computedColorScheme === "dark"} // Optimized loading
         />
       </Link>
     </div>
