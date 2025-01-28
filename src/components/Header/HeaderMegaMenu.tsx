@@ -137,6 +137,9 @@ export function HeaderMegaMenu() {
             <Link href="/blog" className={classes.link}>
               Blog
             </Link>
+            <Link href="/leaderboard" className={classes.link}>
+              Leaderboard
+            </Link>
           </Group>
           <Group visibleFrom="sm">
             <Button>Summit</Button>
