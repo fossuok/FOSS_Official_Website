@@ -1,16 +1,7 @@
 "use client";
 
+import { IconChevronDown, IconCode, IconCoin } from "@tabler/icons-react";
 import {
-  IconBook,
-  IconChartPie3,
-  IconChevronDown,
-  IconCode,
-  IconCoin,
-  IconFingerprint,
-  IconNotification,
-} from "@tabler/icons-react";
-import {
-  Anchor,
   Box,
   Burger,
   Button,
@@ -19,9 +10,7 @@ import {
   Divider,
   Drawer,
   Group,
-  HoverCard,
   ScrollArea,
-  SimpleGrid,
   Text,
   ThemeIcon,
   UnstyledButton,
@@ -78,7 +67,10 @@ export function HeaderMegaMenu() {
             <Link href="/" className={classes.link}>
               Home
             </Link>
-            <HoverCard
+            <Link href="/events" className={classes.link}>
+              Events
+            </Link>
+            {/* <HoverCard
               width={600}
               position="bottom"
               radius="md"
@@ -124,7 +116,7 @@ export function HeaderMegaMenu() {
                   </Group>
                 </div>
               </HoverCard.Dropdown>
-            </HoverCard>
+            </HoverCard> */}
             <Link href="/projects" className={classes.link}>
               Projects
             </Link>
@@ -133,6 +125,9 @@ export function HeaderMegaMenu() {
             </Link>
             <Link href="/blog" className={classes.link}>
               Blog
+            </Link>
+            <Link href="/leaderboard" className={classes.link}>
+              Leaderboard
             </Link>
           </Group>
           <Group visibleFrom="sm">

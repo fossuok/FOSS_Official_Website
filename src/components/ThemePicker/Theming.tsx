@@ -30,6 +30,7 @@ export function Theming() {
 
   return (
     <ActionIcon
+      className={classes.btn}
       onClick={() =>
         setColorScheme(computedColorScheme === "light" ? "dark" : "light")
       }

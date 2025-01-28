@@ -1,0 +1,58 @@
+.title {
+  text-align: center;
+  font-family: var(--mantine-font-family);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+}
+
+.description {
+  text-align: justify;
+  margin-top: var(--mantine-spacing-xl);
+  margin-bottom: var(--mantine-spacing-xl);
+  padding: var(--mantine-spacing-lg);
+  font-size: 16px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 14px;
+  }
+}
+
+.word {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+}
+
+.background {
+  opacity: 0.5;
+  filter: grayscale(0.8);
+}
+.background:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.canvas {
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-gray-3)
+  );
+}

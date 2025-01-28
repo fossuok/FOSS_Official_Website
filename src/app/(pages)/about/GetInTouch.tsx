@@ -2,15 +2,13 @@
 import {
   Button,
   Group,
-  Overlay,
   Paper,
   SimpleGrid,
   Text,
   Textarea,
   TextInput,
 } from "@mantine/core";
-import bg from "../../../../public/FOSS.png";
-import { ContactIconsList } from "./ContactIcons";
+import bg from "@/images/FOSS.png";
 import classes from "./GetInTouch.module.css";
 
 export function GetInTouch() {
