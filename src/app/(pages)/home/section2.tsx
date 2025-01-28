@@ -5,18 +5,17 @@ import {
   Container,
   Grid,
   SimpleGrid,
-  Skeleton,
   Text,
+  BackgroundImage,
 } from "@mantine/core";
 import classes from "./section2.module.css";
-import img1 from "../../../../public/uok_logo.png";
+import img1 from "../../../../public/uok.png";
 import img2 from "../../../../public/fosslk_logo.png";
-
-const PRIMARY_COL_HEIGHT = "540px";
+import codeImg from "../../../../public/github.jpg";
+import learn from "../../../../public/learn.png";
+import share from "../../../../public/share.jpg";
 
 export default function Section2() {
-  const SECONDARY_COL_HEIGHT = `calc(${PRIMARY_COL_HEIGHT} / 4 - var(--mantine-spacing-md) *3/4)`;
-
   return (
     <Container my="md" pt={100} pb={100}>
       <h1 className={classes.title}>
@@ -33,7 +32,7 @@ export default function Section2() {
         <Text
           component="span"
           variant="gradient"
-          gradient={{ from: "red", to: "yellow" }}
+          gradient={{ from: "orange.3", to: "yellow" }}
           inherit
         >
           UOK
@@ -45,56 +44,76 @@ export default function Section2() {
         <Card radius="md">
           <Text className={classes.description}>
             Imagine a world where code is shared freely, like a banquet of
-            ideas. That’s the essence of Open Source Software (FOSS) – a
+            ideas. That&apos;s the essence of Open Source Software (FOSS) – a
             collaborative space where developers build, learn, and innovate
             together, openly sharing knowledge and creations. <br />
             <br />
-            And here at the University of Kelaniya, we're building our own FOSS
-            haven – a vibrant community of tech enthusiasts, coding wizards, and
-            curious minds. We're passionate about empowering everyone. Whether
-            you're a coding whiz or a curious beginner, there's a place for you.
+            And here at the University of Kelaniya, we&apos;re building our own
+            FOSS haven – a vibrant community of tech enthusiasts, coding
+            wizards, and curious minds. We&apos;re passionate about empowering
+            everyone. Whether you&apos;re a coding whiz or a curious beginner,
+            there&apos;s a place for you.
           </Text>
         </Card>
 
         <Grid gutter="md">
+          <Grid.Col span={6}>
+            <BackgroundImage
+              className={classes.background}
+              src={codeImg.src}
+              radius="sm"
+            >
+              <Text className={classes.word} mih={120} c="white">
+                Code
+              </Text>
+            </BackgroundImage>
+          </Grid.Col>
+
+          <Grid.Col span={6}>
+            <BackgroundImage
+              className={classes.background}
+              src={learn.src}
+              radius="sm"
+            >
+              <Text className={classes.word} mih={120} c="Black">
+                Learn
+              </Text>
+            </BackgroundImage>
+          </Grid.Col>
+
+          <Grid.Col span={6}>
+            <BackgroundImage
+              className={classes.background}
+              src={share.src}
+              radius="sm"
+            >
+              <Text className={classes.word} mih={120} c="White">
+                Share
+              </Text>
+            </BackgroundImage>
+          </Grid.Col>
+          <Grid.Col span={6}>
+            <BackgroundImage
+              className={classes.background}
+              src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-6.png"
+              radius="sm"
+            >
+              <Text className={classes.word} mih={120} c="white">
+                Lead
+              </Text>
+            </BackgroundImage>
+          </Grid.Col>
+
           <Grid.Col>
-            <Card radius="md">
-              <Image src={img1.src} alt="s" height={50} />
+            <Card radius="md" className={classes.canvas}>
+              <Image src={img1.src} alt="s" />
             </Card>
           </Grid.Col>
+
           <Grid.Col>
-            <Card radius="md">
-              {" "}
-              <Image src={img2.src} alt="s" height={50} />
+            <Card radius="md" className={classes.canvas}>
+              <Image src={img2.src} alt="s" />
             </Card>
-          </Grid.Col>
-          <Grid.Col span={6}>
-            <Skeleton
-              height={SECONDARY_COL_HEIGHT}
-              radius="md"
-              animate={false}
-            />
-          </Grid.Col>
-          <Grid.Col span={6}>
-            <Skeleton
-              height={SECONDARY_COL_HEIGHT}
-              radius="md"
-              animate={false}
-            />
-          </Grid.Col>
-          <Grid.Col span={6}>
-            <Skeleton
-              height={SECONDARY_COL_HEIGHT}
-              radius="md"
-              animate={false}
-            />
-          </Grid.Col>
-          <Grid.Col span={6}>
-            <Skeleton
-              height={SECONDARY_COL_HEIGHT}
-              radius="md"
-              animate={false}
-            />
           </Grid.Col>
         </Grid>
       </SimpleGrid>
