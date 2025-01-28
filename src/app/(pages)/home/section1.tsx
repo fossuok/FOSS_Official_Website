@@ -1,16 +1,17 @@
 "use client";
 
+import GradientBack from "@/components/Gradient/GradientBack";
 //openning title
 import classes from "./section1.module.css";
 import { Button, Container, Group, Text } from "@mantine/core";
-import GradientBackg from "../../../components/Gradient/GradientBack"; // Adjust the path as necessary
+import { IconBrandGithubFilled } from "@tabler/icons-react";
 
 export default function Section1() {
   return (
     <>
       <div className={classes.wrapper}>
-        <GradientBackg />
-        <Container size={700} className={classes.inner}>
+        <GradientBack />
+        <Container size={800} className={classes.inner}>
           <h1 className={classes.title}>
             Embrace the Power
             <br /> of{" "}
@@ -25,7 +26,7 @@ export default function Section1() {
             and Collaboration
           </h1>
 
-          <Text className={classes.description} color="dimmed">
+          <Text className={classes.description}>
             Join us on our journey to explore, collaborate, and innovate in the
             world of FOSS!
           </Text>
@@ -46,7 +47,7 @@ export default function Section1() {
               size="xl"
               variant="default"
               className={classes.control}
-              leftSection={""}
+              leftSection={<IconBrandGithubFilled size={18} stroke={1.5} />}
             >
               GitHub
             </Button>

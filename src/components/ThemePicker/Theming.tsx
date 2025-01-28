@@ -1,64 +1,44 @@
-"use client";
-
 import {
-  useComputedColorScheme,
-  useMantineColorScheme,
+  Text,
+  Group,
   ActionIcon,
+  useMantineColorScheme,
+  useComputedColorScheme,
 } from "@mantine/core";
 import { IconSun, IconMoon } from "@tabler/icons-react";
-import Image from "next/image";
 import cx from "clsx";
 import classes from "./Theming.module.css";
-import logoDark from "../../../public/logo-d.png";
-import logoLight from "../../../public/logo-l.png";
-import Link from "next/link";
+import Image from "next/image"; // or import { Image } from "@mantine/core";
+import logo from "../../../public/FOSS.png";
 
-// ThemedLogo Component
 export function ThemedLogo() {
-  const computedColorScheme = useComputedColorScheme("dark", {
-    getInitialValueInEffect: true,
-  });
-
-  // Choose the logo based on the theme
-  const logo = computedColorScheme === "dark" ? logoDark : logoLight;
-
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Link href="/" className={classes.link}>
-        <Image
-          src={logo}
-          alt="Themed Logo"
-          height={40} // Adjust size as needed
-          priority // Optimized loading
-        />
-      </Link>
-    </div>
+    <>
+      <Group>
+        <Image src={logo} alt="Theme Logo" width={40} height={40} />
+        <Text fw={700}>FOSS UoK</Text>
+      </Group>
+    </>
   );
 }
 
-// Theming Component
 export function Theming() {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { setColorScheme } = useMantineColorScheme();
+  const computedColorScheme = useComputedColorScheme("light", {
+    getInitialValueInEffect: true,
+  });
 
   return (
     <ActionIcon
-      onClick={() => toggleColorScheme()}
+      onClick={() =>
+        setColorScheme(computedColorScheme === "light" ? "dark" : "light")
+      }
       variant="default"
       size="xl"
-      className={classes.btn}
       aria-label="Toggle color scheme"
     >
-      {colorScheme === "dark" ? (
-        <IconSun className={cx(classes.icon, classes.light)} stroke={1.5} />
-      ) : (
-        <IconMoon className={cx(classes.icon, classes.dark)} stroke={1.5} />
-      )}
+      <IconSun className={cx(classes.icon, classes.light)} stroke={1.5} />
+      <IconMoon className={cx(classes.icon, classes.dark)} stroke={1.5} />
     </ActionIcon>
   );
 }

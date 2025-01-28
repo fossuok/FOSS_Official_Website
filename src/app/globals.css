@@ -1,5 +1,8 @@
-:root {
-  scrollbar-width: 0;
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 /* For light mode */
 :root[data-mantine-color-scheme="light"] {
