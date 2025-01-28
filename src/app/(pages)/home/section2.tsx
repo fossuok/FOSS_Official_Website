@@ -9,11 +9,11 @@ import {
   BackgroundImage,
 } from "@mantine/core";
 import classes from "./section2.module.css";
-import img1 from "../../../../public/uok.png";
-import img2 from "../../../../public/fosslk_logo.png";
-import codeImg from "../../../../public/github.jpg";
-import learn from "../../../../public/learn.png";
-import share from "../../../../public/share.jpg";
+import img1 from "@/images/home/uok.png";
+import img2 from "@/images/home/fosslk_logo.png";
+import codeImg from "@/images/home/github.jpg";
+import learn from "@/images/home/learn.jpg";
+import share from "@/images/home/share.jpg";
 
 export default function Section2() {
   return (
@@ -75,7 +75,7 @@ export default function Section2() {
               src={learn.src}
               radius="sm"
             >
-              <Text className={classes.word} mih={120} c="Black">
+              <Text className={classes.word} mih={120} c="White">
                 Learn
               </Text>
             </BackgroundImage>
