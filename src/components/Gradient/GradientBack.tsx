@@ -3,7 +3,7 @@ import { useMouse } from "@mantine/hooks";
 import classes from "./GradientBack.module.css";
 
 export default function GradientBack() {
-  const { ref, x, y } = useMouse();
+  const { x, y } = useMouse();
 
   return (
     <>

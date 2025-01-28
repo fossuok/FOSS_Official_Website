@@ -26,3 +26,33 @@
     font-size: 14px;
   }
 }
+
+.word {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+}
+
+.background {
+  opacity: 0.5;
+  filter: grayscale(0.8);
+}
+.background:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.canvas {
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-gray-3)
+  );
+}
