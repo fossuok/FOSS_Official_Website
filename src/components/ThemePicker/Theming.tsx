@@ -9,13 +9,13 @@ import { IconSun, IconMoon } from "@tabler/icons-react";
 import cx from "clsx";
 import classes from "./Theming.module.css";
 import Image from "next/image"; // or import { Image } from "@mantine/core";
-import logo from "../../../public/FOSS.png";
+const logo = "/FOSS.png";
 
 export function ThemedLogo() {
   return (
     <>
       <Group>
-        <Image src={logo} alt="Theme Logo" width={40} height={40} />
+        <Image src={logo} alt="FOSS Logo" width={40} height={40} />
         <Text fw={700}>FOSS UoK</Text>
       </Group>
     </>

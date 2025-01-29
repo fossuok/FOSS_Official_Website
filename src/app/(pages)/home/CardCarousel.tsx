@@ -55,7 +55,7 @@ export function CardsCarousel() {
   return (
     <div className={classes.wrapper}>
       <GradientBack />
-      <Container size={800} pt={100} pb={100}>
+      <Container size={1000} pt={100} pb={100}>
         <h1 className={classes.title}>
           Latest{" "}
           <Text
@@ -67,6 +67,10 @@ export function CardsCarousel() {
             Events
           </Text>{" "}
         </h1>
+        <Text className={classes.discription}>
+          Whether you are looking to learn something new or network with
+          like-minded individuals, we've got you covered.
+        </Text>
         <Carousel
           slideSize={{ base: "100%", sm: "50%" }}
           slideGap={{ base: 2, sm: "xl" }}
