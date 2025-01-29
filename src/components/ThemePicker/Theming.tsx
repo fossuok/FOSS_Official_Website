@@ -9,7 +9,7 @@ import { IconSun, IconMoon } from "@tabler/icons-react";
 import cx from "clsx";
 import classes from "./Theming.module.css";
 import Image from "next/image"; // or import { Image } from "@mantine/core";
-import logo from "../../../public/FOSS.png";
+const logo = "/FOSS.png";
 
 export function ThemedLogo() {
   return (

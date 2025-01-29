@@ -3,18 +3,22 @@
 import GradientBack from "@/components/Gradient/GradientBack";
 //openning title
 import classes from "./section1.module.css";
-import { Button, Container, Group, Text } from "@mantine/core";
+import { Button, Container, Group, Text, VisuallyHidden } from "@mantine/core";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
-import { Advert } from "../../../components/Advert/advert";
+import { Advert } from "@/components/Advert/Advert";
+import { advertData } from "@/data/AdvertData"; //advert data file in data folder
 
 export default function Section1() {
   return (
     <>
       <div className={classes.wrapper}>
         <GradientBack />
+
+        {/* <VisuallyHidden> */}
         <div className={classes.advert}>
-          <Advert />
+          <Advert data={advertData} />
         </div>
+        {/* </VisuallyHidden> */}
 
         <Container size={800} className={classes.inner}>
           <h1 className={classes.title}>
