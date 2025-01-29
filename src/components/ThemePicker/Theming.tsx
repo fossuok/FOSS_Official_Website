@@ -15,7 +15,7 @@ export function ThemedLogo() {
   return (
     <>
       <Group>
-        <Image src={logo} alt="Theme Logo" width={40} height={40} />
+        <Image src={logo} alt="FOSS Logo" width={40} height={40} />
         <Text fw={700}>FOSS UoK</Text>
       </Group>
     </>

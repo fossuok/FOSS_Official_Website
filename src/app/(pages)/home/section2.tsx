@@ -106,13 +106,13 @@ export default function Section2() {
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img1.src} alt="s" />
+              <Image src={img1.src} alt="University of Kelaniya" />
             </Card>
           </Grid.Col>
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img2.src} alt="s" />
+              <Image src={img2.src} alt="FOSS Sri Lanka" />
             </Card>
           </Grid.Col>
         </Grid>

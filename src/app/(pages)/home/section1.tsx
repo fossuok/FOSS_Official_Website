@@ -5,12 +5,17 @@ import GradientBack from "@/components/Gradient/GradientBack";
 import classes from "./section1.module.css";
 import { Button, Container, Group, Text } from "@mantine/core";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
+import { Advert } from "../../../components/Advert/advert";
 
 export default function Section1() {
   return (
     <>
       <div className={classes.wrapper}>
         <GradientBack />
+        <div className={classes.advert}>
+          <Advert />
+        </div>
+
         <Container size={800} className={classes.inner}>
           <h1 className={classes.title}>
             Embrace the Power
