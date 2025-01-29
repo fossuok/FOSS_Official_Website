@@ -11,13 +11,19 @@
 .inner {
   align-items: center;
   position: relative;
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 120px;
 
   @media (max-width: $mantine-breakpoint-sm) {
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 60px;
   }
+}
+.advert {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .title {

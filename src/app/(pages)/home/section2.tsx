@@ -9,11 +9,11 @@ import {
   BackgroundImage,
 } from "@mantine/core";
 import classes from "./section2.module.css";
-import img1 from "../../../../public/uok.png";
-import img2 from "../../../../public/fosslk_logo.png";
-import codeImg from "../../../../public/github.jpg";
-import learn from "../../../../public/learn.png";
-import share from "../../../../public/share.jpg";
+import img1 from "@/images/home/uok.png";
+import img2 from "@/images/home/fosslk_logo.png";
+import codeImg from "@/images/home/github.jpg";
+import learn from "@/images/home/learn.jpg";
+import share from "@/images/home/share.jpg";
 
 export default function Section2() {
   return (
@@ -43,10 +43,10 @@ export default function Section2() {
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
         <Card radius="md">
           <Text className={classes.description}>
-            Imagine a world where code is shared freely, like a banquet of
-            ideas. That&apos;s the essence of Open Source Software (FOSS) – a
-            collaborative space where developers build, learn, and innovate
-            together, openly sharing knowledge and creations. <br />
+            Imagine a world where code is shared freely, not locked away. That’s
+            the essence of Open Source Software (FOSS) – a community where
+            developers build, learn, and innovate together by sharing knowledge
+            and creations. <br />
             <br />
             And here at the University of Kelaniya, we&apos;re building our own
             FOSS haven – a vibrant community of tech enthusiasts, coding
@@ -75,7 +75,7 @@ export default function Section2() {
               src={learn.src}
               radius="sm"
             >
-              <Text className={classes.word} mih={120} c="Black">
+              <Text className={classes.word} mih={120} c="White">
                 Learn
               </Text>
             </BackgroundImage>
@@ -106,13 +106,13 @@ export default function Section2() {
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img1.src} alt="s" />
+              <Image src={img1.src} alt="University of Kelaniya" />
             </Card>
           </Grid.Col>
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img2.src} alt="s" />
+              <Image src={img2.src} alt="FOSS Sri Lanka" />
             </Card>
           </Grid.Col>
         </Grid>
