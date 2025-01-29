@@ -2,16 +2,31 @@
 
 import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { setRepos, setContributionsDict } from "@/store/features/leaderboard/leaderboard.slice";
+import {
+  setRepos,
+  setContributionsDict,
+} from "@/store/features/leaderboard/leaderboard.slice";
 import { ContributorInterface } from "@/data/GitHub";
-import { Avatar, Group, ScrollArea, Select, Table, Text, Center, Loader } from "@mantine/core";
+import {
+  Avatar,
+  Group,
+  ScrollArea,
+  Select,
+  Table,
+  Text,
+  Center,
+  Loader,
+  Container,
+} from "@mantine/core";
 import classes from "./page.module.css";
 
 const GITHUB_API_URL = "https://api.github.com";
 const GITHUB_ORG = "fossuok";
 const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 const excludedRepos =
-  process.env.NEXT_PUBLIC_EXCLUDED_REPOS?.split(",").map((repo) => repo.trim()) || [];
+  process.env.NEXT_PUBLIC_EXCLUDED_REPOS?.split(",").map((repo) =>
+    repo.trim()
+  ) || [];
 
 const ITEMS_PER_PAGE = 10;
 
@@ -39,15 +54,21 @@ const fetchWithRetry = async (url: string, retries = 3, delay = 1000) => {
 const LeaderBoard: React.FC = () => {
   const [selectedRepo, setSelectedRepo] = useState<string>("overall");
   const dispatch = useAppDispatch();
-  const { repos, contributionsDict, loadingRepos } = useAppSelector((state) => state.leaderboard);
+  const { repos, contributionsDict, loadingRepos } = useAppSelector(
+    (state) => state.leaderboard
+  );
 
   const contributors = contributionsDict[selectedRepo] || [];
-  const sortedContributors = [...contributors].sort((a, b) => b.contributions - a.contributions);
+  const sortedContributors = [...contributors].sort(
+    (a, b) => b.contributions - a.contributions
+  );
 
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetchWithRetry(`${GITHUB_API_URL}/orgs/${GITHUB_ORG}/repos`);
+        const response = await fetchWithRetry(
+          `${GITHUB_API_URL}/orgs/${GITHUB_ORG}/repos`
+        );
         if (!response) return;
 
         const data = await response.json();
@@ -92,7 +113,7 @@ const LeaderBoard: React.FC = () => {
     <Table.Tr key={contributor.login}>
       <Table.Td>
         <Group gap="sm">
-          <Avatar size={26} src={contributor.avatar_url} radius="xl" />
+          <Avatar size={40} src={contributor.avatar_url} radius="xl" />
           <Text size="sm" fw={500}>
             {contributor.login}
           </Text>
@@ -105,9 +126,9 @@ const LeaderBoard: React.FC = () => {
   ));
 
   return (
-    <div className="min-h-screen p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8 mt-3">Leaderboard</h1>
+    <div className={classes.wrapper}>
+      <Container size={1000} pt={75} pb={100}>
+        <h1 className={classes.title}>GitHub Leaderboard</h1>
 
         {/* Repository Selector */}
         <Select
@@ -120,7 +141,6 @@ const LeaderBoard: React.FC = () => {
           value={selectedRepo}
           onChange={(value) => setSelectedRepo(value || "overall")}
           placeholder="Select a repository"
-          label="Repository"
           mb="lg"
           disabled={loadingRepos}
         />
@@ -132,7 +152,7 @@ const LeaderBoard: React.FC = () => {
           </Center>
         ) : (
           <ScrollArea>
-            <Table miw={800} verticalSpacing="sm" striped>
+            <Table className={classes.table} verticalSpacing="sm" striped>
               <Table.Thead>
                 <Table.Tr>
                   <Table.Th>Contributor</Table.Th>
@@ -143,7 +163,7 @@ const LeaderBoard: React.FC = () => {
             </Table>
           </ScrollArea>
         )}
-      </div>
+      </Container>
     </div>
   );
 };
