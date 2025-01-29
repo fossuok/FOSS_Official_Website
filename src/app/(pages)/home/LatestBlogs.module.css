@@ -1,3 +1,6 @@
+.wrapper {
+  display: grid;
+}
 .title {
   text-align: center;
   font-family: var(--mantine-font-family);
@@ -45,4 +48,8 @@
   width: 21px;
   height: 21px;
   border-radius: 21px;
+}
+
+.btn {
+  margin: var(--mantine-spacing-lg);
 }

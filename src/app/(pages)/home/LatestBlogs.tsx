@@ -17,6 +17,7 @@ import {
   UnstyledButton,
   Container,
   Badge,
+  Button,
 } from "@mantine/core";
 import classes from "./LatestBlogs.module.css";
 import { data } from "@/data/LatestArtical";
@@ -117,7 +118,13 @@ export function LatestBlogs() {
   ));
 
   return (
-    <Container size={1000} pt={100} pb={100}>
+    <Container
+      className={classes.wrapper}
+      size={1000}
+      pt={100}
+      pb={100}
+      pos={Center}
+    >
       <h1 className={classes.title}>
         Latest{" "}
         <Text
@@ -183,6 +190,9 @@ export function LatestBlogs() {
           </Table.Tbody>
         </Table>
       </ScrollArea>
+      <Button className={classes.btn} variant="white" color="dark">
+        Read More
+      </Button>
     </Container>
   );
 }

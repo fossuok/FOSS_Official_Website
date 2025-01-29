@@ -43,10 +43,10 @@ export default function Section2() {
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
         <Card radius="md">
           <Text className={classes.description}>
-            Imagine a world where code is shared freely, like a banquet of
-            ideas. That&apos;s the essence of Open Source Software (FOSS) – a
-            collaborative space where developers build, learn, and innovate
-            together, openly sharing knowledge and creations. <br />
+            Imagine a world where code is shared freely, not locked away. That’s
+            the essence of Open Source Software (FOSS) – a community where
+            developers build, learn, and innovate together by sharing knowledge
+            and creations. <br />
             <br />
             And here at the University of Kelaniya, we&apos;re building our own
             FOSS haven – a vibrant community of tech enthusiasts, coding

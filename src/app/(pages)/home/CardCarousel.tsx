@@ -67,6 +67,10 @@ export function CardsCarousel() {
             Events
           </Text>{" "}
         </h1>
+        <Text className={classes.discription}>
+          Whether you are looking to learn something new or network with
+          like-minded individuals, we've got you covered.
+        </Text>
         <Carousel
           slideSize={{ base: "100%", sm: "50%" }}
           slideGap={{ base: 2, sm: "xl" }}
