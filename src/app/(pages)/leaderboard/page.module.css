@@ -58,9 +58,3 @@
     var(--mantine-color-violet-light)
   );
 }
-.table tr:hover {
-  background-color: light-dark(
-    var(--mantine-color-violet-light),
-    var(--mantine-color-violet-light)
-  );
-}
