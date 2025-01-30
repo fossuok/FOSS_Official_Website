@@ -117,9 +117,6 @@ export function HeaderMegaMenu() {
                 </div>
               </HoverCard.Dropdown>
             </HoverCard> */}
-            <Link href="/projects" className={classes.link}>
-              Projects
-            </Link>
             <Link href="/about" className={classes.link}>
               About
             </Link>
@@ -161,23 +158,18 @@ export function HeaderMegaMenu() {
           <Link href="/" className={classes.link}>
             Home
           </Link>
-          <UnstyledButton className={classes.link} onClick={toggleLinks}>
-            <Center inline>
-              <Box component="span" mr={5}>
-                Events
-              </Box>
-              <IconChevronDown size={16} color={theme.colors.blue[6]} />
-            </Center>
-          </UnstyledButton>
-          <Collapse in={linksOpened}>{links}</Collapse>
-          <Link href="/projects" className={classes.link}>
-            Projects
+          <Link href="/events" className={classes.link}>
+            Events
           </Link>
+          <Collapse in={linksOpened}>{links}</Collapse>
           <Link href="/about" className={classes.link}>
             About
           </Link>
           <Link href="/blog" className={classes.link}>
             Blog
+          </Link>
+          <Link href="/leaderboard" className={classes.link}>
+            Leaderboard
           </Link>
 
           <Divider my="sm" />
