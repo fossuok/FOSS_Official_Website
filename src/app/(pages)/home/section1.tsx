@@ -5,7 +5,7 @@ import GradientBack from "@/components/Gradient/GradientBack";
 import classes from "./section1.module.css";
 import { Button, Container, Group, Text, VisuallyHidden } from "@mantine/core";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
-import { Advert } from "@/components/Advert/Advert";
+import { Advert } from "@/components/Advert/advert";
 import { advertData } from "@/data/AdvertData"; //advert data file in data folder
 
 export default function Section1() {
