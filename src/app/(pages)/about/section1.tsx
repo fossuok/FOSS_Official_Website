@@ -22,6 +22,11 @@ export default function Section1() {
           </h1>
 
           <Group className={classes.controls}>
+            <Text className={classes.description}>
+              We are a community of students who are passionate about Free and
+              Open Source Software. We are dedicated to promoting the use of
+              FOSS and contributing to the FOSS community.
+            </Text>
             <Button
               size="xl"
               component="a"
@@ -29,15 +34,10 @@ export default function Section1() {
               className={classes.control}
               variant="gradient"
               gradient={{ from: "violet", to: "grape" }}
+              style={{ marginTop: "3rem" }} 
             >
               Contact Us!
             </Button>
-
-            <Text className={classes.description}>
-              We are a community of students who are passionate about Free and
-              Open Source Software. We are dedicated to promoting the use of
-              FOSS and contributing to the FOSS community.
-            </Text>
           </Group>
         </Container>
       </div>
