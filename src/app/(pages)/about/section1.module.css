@@ -27,10 +27,10 @@
 .subtitle {
   text-align: center;
   font-family: var(--mantine-font-family);
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 900;
   line-height: 1.1;
-  margin: 0;
+  margin: 1.5rem;
   padding: 0;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
