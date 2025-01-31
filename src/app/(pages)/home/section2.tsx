@@ -36,7 +36,7 @@ export default function Section2() {
           inherit
         >
           UOK
-        </Text>{" "}
+        </Text>
         ?
       </h1>
 
