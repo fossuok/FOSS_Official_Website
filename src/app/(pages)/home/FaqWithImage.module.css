@@ -10,7 +10,7 @@
 
 .inner {
   align-items: center;
-  position: relative;
+
   padding-top: 80px;
   padding-bottom: 120px;
 
@@ -32,6 +32,7 @@
 }
 
 .background {
+  height: fit-content;
   background-color: light-dark(var(--mantine-color-dark-8), transparent);
   border-radius: var(--mantine-radius-lg);
 }
