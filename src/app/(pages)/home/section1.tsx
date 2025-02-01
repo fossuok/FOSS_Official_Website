@@ -14,11 +14,10 @@ export default function Section1() {
       <div className={classes.wrapper}>
         <GradientBack />
 
-        {/* <VisuallyHidden> */}
+        <VisuallyHidden> </VisuallyHidden>
         <div className={classes.advert}>
           <Advert data={advertData} />
         </div>
-        {/* </VisuallyHidden> */}
 
         <Container size={800} className={classes.inner}>
           <h1 className={classes.title}>
