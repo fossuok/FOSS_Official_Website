@@ -1,22 +1,66 @@
+.wrapper {
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-dark-8)
+  );
+}
+.inner {
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+}
+.title {
+  text-align: center;
+  font-family: var(--mantine-font-family);
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
 .card {
-    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+  background-color: light-dark(var(--mantine-color-dark-5), rgb(41 48 65));
+  color: light-dark(var(--mantine-color-white));
+  margin-bottom: 1rem;
+}
+
+.section {
+  font-family: ui-monospace, var(--mantine-font-family);
+  /* border-bottom: 1px solid
+    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4)); */
+  padding: calc(var(--mantine-spacing-sm));
+  padding-left: calc(1.5 * var(--mantine-spacing-lg));
+  padding-right: calc(1.5 * var(--mantine-spacing-lg));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: var(--mantine-spacing-xs);
   }
-  
-  .section {
-    border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-    padding-left: var(--mantine-spacing-md);
-    padding-right: var(--mantine-spacing-md);
-    padding-bottom: var(--mantine-spacing-md);
-  }
-  
-  .like {
-    color: var(--mantine-color-red-6);
-    width: 20px;
-    height: 20px;
-  }
-  
-  .label {
-    text-transform: uppercase;
-    font-size: var(--mantine-font-size-xs);
-    font-weight: 700;
-  }
+}
+
+.like {
+  color: var(--mantine-color-red-6);
+  width: 20px;
+  height: 20px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: var(--mantine-font-size-xs);
+  font-weight: 700;
+}
