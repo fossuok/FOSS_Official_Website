@@ -1,4 +1,4 @@
-import { CardsCarousel } from "./(pages)/home/CardCarousel";
+import { CardsCarousel } from "./(pages)/home/CardsCarousel";
 import { FaqWithImage } from "./(pages)/home/FaqWithImage";
 import { LatestBlogs } from "./(pages)/home/LatestBlogs";
 import Section1 from "./(pages)/home/section1";
