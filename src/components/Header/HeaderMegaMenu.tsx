@@ -1,62 +1,23 @@
 "use client";
 
-import { IconChevronDown, IconCode, IconCoin } from "@tabler/icons-react";
+import { IconCode } from "@tabler/icons-react";
 import {
   Box,
   Burger,
   Button,
-  Center,
-  Collapse,
   Divider,
   Drawer,
   Group,
   ScrollArea,
-  Text,
-  ThemeIcon,
-  UnstyledButton,
-  useMantineTheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Theming, ThemedLogo } from "../ThemePicker/Theming";
 import Link from "next/link";
 import classes from "./HeaderMegaMenu.module.css";
 
-const mockdata = [
-  {
-    icon: IconCode,
-    title: "Open source",
-    description: "This Pokémon’s cry is very loud and distracting",
-  },
-  {
-    icon: IconCoin,
-    title: "Free for everyone",
-    description: "The fluid of Smeargle’s tail secretions changes",
-  },
-];
-
 export function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
-  const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
-  const theme = useMantineTheme();
-
-  const links = mockdata.map((item) => (
-    <UnstyledButton className={classes.subLink} key={item.title}>
-      <Group wrap="nowrap" align="flex-start">
-        <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon size={22} color={theme.colors.violet[6]} />
-        </ThemeIcon>
-        <div>
-          <Text size="sm" fw={500}>
-            {item.title}
-          </Text>
-          <Text size="xs" c="dimmed">
-            {item.description}
-          </Text>
-        </div>
-      </Group>
-    </UnstyledButton>
-  ));
 
   return (
     <Box pb={0} w={"100%"}>
@@ -142,26 +103,29 @@ export function HeaderMegaMenu() {
       {/* mobile view */}
 
       <Drawer
+        offset={20}
+        position="top"
         opened={drawerOpened}
         onClose={closeDrawer}
-        className={classes.drawer}
-        overlayProps={{ backgroundOpacity: 0.25, blur: 18 }}
+        overlayProps={{ backgroundOpacity: 0.25, blur: 30 }}
+        transitionProps={{
+          transition: "fade-down",
+          duration: 200,
+          timingFunction: "linear",
+        }}
         size="100%"
-        padding="md"
-        title="Menu"
+        // title="Menu"
         hiddenFrom="sm"
         zIndex={1000000}
       >
-        <ScrollArea h="calc(100vh - 80px" mx="-md">
-          <Divider my="sm" />
-
+        <ScrollArea h="calc(100vh - 80px" mx="-md" className={classes.drawer}>
           <Link href="/" className={classes.link}>
             Home
           </Link>
           <Link href="/events" className={classes.link}>
             Events
           </Link>
-          <Collapse in={linksOpened}>{links}</Collapse>
+          {/* <Collapse in={linksOpened}>{links}</Collapse> for sub menu*/}
           <Link href="/about" className={classes.link}>
             About
           </Link>
@@ -174,7 +138,7 @@ export function HeaderMegaMenu() {
 
           <Divider my="sm" />
 
-          <Group justify="center" grow pb="xl" px="md">
+          <Group justify="center" grow px="md">
             <Button>Summit</Button>
             <Theming />
           </Group>
