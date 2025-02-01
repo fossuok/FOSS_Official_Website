@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import "@mantine/core/styles.css";
 import "@mantine/dates/styles.css";
@@ -20,7 +20,8 @@ import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 
 const theme = createTheme({
-  fontFamily: "Inter, sans-serif",
+  fontFamily:
+    "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
 });
 
 export default function RootLayout({

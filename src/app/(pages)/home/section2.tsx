@@ -36,7 +36,7 @@ export default function Section2() {
           inherit
         >
           UOK
-        </Text>{" "}
+        </Text>
         ?
       </h1>
 
@@ -106,13 +106,23 @@ export default function Section2() {
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img1.src} alt="University of Kelaniya" />
+              <Image
+                fit="contain"
+                mah={80}
+                src={img1.src}
+                alt="University of Kelaniya"
+              />
             </Card>
           </Grid.Col>
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img2.src} alt="FOSS Sri Lanka" />
+              <Image
+                fit="contain"
+                mah={100}
+                src={img2.src}
+                alt="FOSS Sri Lanka"
+              />
             </Card>
           </Grid.Col>
         </Grid>
