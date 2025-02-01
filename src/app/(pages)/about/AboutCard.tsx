@@ -1,4 +1,4 @@
-import { IconHeart } from "@tabler/icons-react";
+"use client";
 import {
   ActionIcon,
   Badge,
@@ -7,10 +7,12 @@ import {
   Group,
   Image,
   Text,
-  List,
+  Container,
+  Table,
 } from "@mantine/core";
 import classes from "./AboutCard.module.css";
 
+//need more improvements to content and styles
 const mockdata = {
   image: "/about-team.jpg",
   title: "Empowering Students Through Open Source Innovation",
@@ -48,88 +50,115 @@ export default function AboutCard() {
   ));
 
   return (
-    <Card withBorder radius="md" p="md" className={classes.card}>
-      <Card.Section>
-        <Image src={image} alt={title} height={300} />
-      </Card.Section>
+    <div className={classes.wrapper}>
+      <Container size={800} className={classes.inner}>
+        <h1 className={classes.title}>About FOSSUOK</h1>
 
-      <Card.Section className={classes.section} mt="md">
-        <Group justify="apart">
-          <Badge size="sm" variant="light">
-            {organization}
-          </Badge>
-          <Text fz="lg" fw={500}></Text>
-        </Group>
-        <Text fz="xl" mt="xs" ml="xs" fw={800}>
-          {title}
-        </Text>
-      </Card.Section>
+        <Card withBorder radius="lg" p="md" className={classes.card}>
+          <Card.Section>
+            <Image fit="fill" src={image} alt={title} mah={300} />
+          </Card.Section>
+        </Card>
 
-      <Card.Section className={classes.section}>
-        <Text fz="md" fw={700} mt="md">
-          Our Mission:
-        </Text>
-        <List size="sm" mt="xs">
-          {mission.map((item, index) => (
-            <List.Item key={index}>
-              <Text span fw={600}>
-                {item.split(":")[0]}:
-              </Text>
-              <Text span>{item.split(":")[1]}</Text>
-            </List.Item>
-          ))}
-        </List>
-      </Card.Section>
+        <Card withBorder radius="lg" p="xl" className={classes.card}>
+          <Card.Section className={classes.section}>
+            <Group justify="center">
+              <Badge size="lg" variant="light">
+                {organization}{" "}
+                {/* <Text fz="xl" mt="xs" ml="xs" fw={800}>
+                  {title}
+                </Text> */}
+              </Badge>
+            </Group>
+          </Card.Section>
 
-      <Card.Section className={classes.section}>
-        <Text fz="md" fw={700} mt="md">
-          What We Do:
-        </Text>
-        <List size="sm" mt="xs">
-          {activities.map((item, index) => (
-            <List.Item key={index}>
-              <Text span fw={600}>
-                {item.split(":")[0]}:
-              </Text>
-              <Text span>{item.split(":")[1]}</Text>
-            </List.Item>
-          ))}
-        </List>
-      </Card.Section>
+          <Card.Section className={classes.section}>
+            <Text fz="md" fw={700} mt="md">
+              Our Mission:
+            </Text>
+            <Table withRowBorders={false} mt="xs">
+              {mission.map((item, index) => {
+                const [missionTitle, missionDescription] = item.split(":");
+                return (
+                  <Table.Tr key={index}>
+                    <Table.Td style={{ verticalAlign: "top" }}>
+                      <Text span c="teal.5" fw={600}>
+                        {missionTitle}:
+                      </Text>
+                    </Table.Td>
+                    <Table.Td style={{ verticalAlign: "top" }}>
+                      <Text span>{missionDescription}</Text>
+                    </Table.Td>
+                  </Table.Tr>
+                );
+              })}
+            </Table>
+          </Card.Section>
 
-      <Card.Section className={classes.section}>
-        <Text fz="md" fw={700} mt="md">
-          Our Goals:
-        </Text>
-        <List size="sm" mt="xs">
-          {goals.map((item, index) => (
-            <List.Item key={index}>
-              <Text span fw={600}>
-                {item.split(":")[0]}:
-              </Text>
-              <Text span>{item.split(":")[1]}</Text>
-            </List.Item>
-          ))}
-        </List>
-      </Card.Section>
+          <Card.Section className={classes.section}>
+            <Text fz="md" fw={700} mt="md">
+              What We Do:
+            </Text>
+            <Table withRowBorders={false} mt="xs">
+              {activities.map((item, index) => {
+                const [serviceTitle, serviceDescription] = item.split(":");
+                return (
+                  <Table.Tr key={index}>
+                    <Table.Td style={{ verticalAlign: "top" }}>
+                      <Text span c="blue.5" fw={600}>
+                        {serviceTitle}:
+                      </Text>
+                    </Table.Td>
+                    <Table.Td style={{ verticalAlign: "top" }}>
+                      <Text span>{serviceDescription}</Text>
+                    </Table.Td>
+                  </Table.Tr>
+                );
+              })}
+            </Table>
+          </Card.Section>
 
-      <Card.Section className={classes.section}>
-        <Text mt="md" className={classes.label} c="dimmed">
-          Perfect for you, if you enjoy
-        </Text>
-        <Group gap={7} mt={5}>
-          {features}
-        </Group>
-      </Card.Section>
+          <Card.Section className={classes.section}>
+            <Text fz="md" fw={700} mt="md">
+              Our Goals:
+            </Text>
+            <Table withRowBorders={false} mt="xs">
+              {goals.map((item, index) => {
+                const [goalTitle, goalDescription] = item.split(":");
+                return (
+                  <Table.Tr key={index}>
+                    <Table.Td style={{ verticalAlign: "top" }}>
+                      <Text span c="teal.5" fw={600}>
+                        {goalTitle}:
+                      </Text>
+                    </Table.Td>
+                    <Table.Td style={{ verticalAlign: "top" }}>
+                      <Text span>{goalDescription}</Text>
+                    </Table.Td>
+                  </Table.Tr>
+                );
+              })}
+            </Table>
+          </Card.Section>
 
-      <Group mt="xs">
-        <Button radius="md" style={{ flex: 1 }}>
-          Join with Us!
-        </Button>
-        <ActionIcon variant="default" radius="md" size={36}>
-          <IconHeart className={classes.like} stroke={1.5} />
-        </ActionIcon>
-      </Group>
-    </Card>
+          {/* <Card.Section className={classes.section}>
+            <Text mt="md" className={classes.label} c="dimmed">
+              Perfect for you, if you enjoy
+            </Text>
+            <Group gap={7} mt={5}>
+              {features}
+            </Group>
+          </Card.Section>
+          <Group pt={20} className={classes.section}>
+            <Button radius="md" style={{ flex: 1 }}>
+              Join with Us!
+            </Button>
+            <ActionIcon variant="default" radius="md" size={36}>
+              <IconHeart className={classes.like} stroke={1.5} />
+            </ActionIcon>
+          </Group> */}
+        </Card>
+      </Container>
+    </div>
   );
 }
