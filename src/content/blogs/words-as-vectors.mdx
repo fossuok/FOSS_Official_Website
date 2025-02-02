@@ -1,0 +1,80 @@
+---
+title: "Words as Vectors: Sparse Vectors vs Dense Vectors"
+author: imesha-dilshani
+description: Each word is a vector and similar words are nearby in space. We'll discuss sparse vectors and dense vectors in the context of word embeddings.
+image:
+    url: https://miro.medium.com/v2/resize:fit:1100/format:webp/1*L5_lFXEZn_L6tiptb8jimw.jpeg
+    alt: Thumbnail of word vectors.
+pubDate: 2023-12-14
+tags:
+    - NLP
+    - Word Embedding
+    - Word Vectors
+    - Sparse Vectors
+    - Dense Vectors
+slug: words-vectors-sparse-vectors-dense-vectors
+---
+
+## Sparse Vectors vs. Dense Vectors
+We’ll build a new model of meaning focusing on similarity.
+
+> Each word is a vector.
+> Similar words are “nearby in space.”
+
+## Dense Vectors
+
+The world of data is vast and complex. To effectively analyze and understand this information, we need efficient and powerful techniques for representing it. Dense vectors offer a compelling solution by encoding data points as high-dimensional vectors, capturing rich semantic meaning in a way that facilitates efficient learning and analysis. This note provides a comprehensive overview of dense vectors, exploring their key characteristics, methods of creation, and why dense vectors are used in natural language processing (NLP) with a focus on neural language models.
+
+## From sparse to dense vectors
+
+> The vectors generated from the word-word occurrence matrix are both lengthy (vocabulary size) and sparse (most are 0s).
+> As an alternative, we would prefer to describe words as dense (real-valued) and short (50– 300 dimensional) vectors. This is the foundation of all current NLP systems.
+
+## Why dense vectors?
+
+**Feature Friendliness:** Dense vectors are easily digestible by machine learning models. They readily fit into existing algorithms and require minimal data manipulation.
+
+**Beyond the Count:** Dense vectors can go beyond simple feature co-occurrence counts. They capture subtle relationships and higher-order interactions between features, leading to potentially better generalization.
+
+**Bridging the Semantic Gap:** Dense vectors can bridge the gap between distinct but semantically related features. For instance, “car” and “automobile” may be separate dimensions, but a dense vector can capture their shared meaning.
+
+**Proven Performance:** In real-world applications, dense vectors often outperform sparse counterparts. They can lead to more accurate predictions and robust models.
+
+## Sparse Vectors vs. Dense Vectors
+
+Sparse vectors and dense vectors are two types of data representations used in various fields, including machine learning, natural language processing, and data analysis. The main difference between them lies in how they store and represent information.
+
+## Dense Vectors
+
+1. Definition: Dense vectors are arrays that store each element in a contiguous block of memory. In the context of machine learning, a dense vector typically contains a value for every dimension, and most of these values are non-zero.
+2. Storage: Requires memory proportional to the number of dimensions, even if many of the values are zero. Consumes more memory compared to sparse vectors, especially when dealing with high-dimensional data.
+3. Use Cases: Dense vectors are often used when the majority of dimensions contain meaningful information, and memory efficiency is not a primary concern.
+
+## Sparse Vectors
+
+1. Definition: Sparse vectors store only non-zero values and their corresponding indices. Most of the elements are assumed to be zero, and only the non-zero values are explicitly represented.
+2. Storage: Requires less memory compared to dense vectors, especially when dealing with high dimensional data where most elements are zero. Well-suited for high-dimensional data with sparsity.
+3. Use Cases: Sparse vectors are commonly used when dealing with high-dimensional data, such as text data represented as bag-of-words or term frequency vectors, where most terms are absent in any given document.
+
+The choice between using sparse or dense vectors often depends on the characteristics of the data, the specific algorithms being used, and the trade-off between memory efficiency and computational efficiency.
+
+### Understanding Simply difference between Sparse Vectors and Dense Vectors
+
+Imagine a treasure map. Dense vectors are like detailed blueprints, marking every inch of the terrain. Sparse vectors are like riddles, hinting at hidden gems with cryptic clues.
+
+#### Dense:
+
+> Full of details: Store all values, even zeroes. Like meticulously noting every rock on the map.
+> Memory hungry: Can be inefficient for sparse data, like empty stretches of ocean.
+> ML-friendly: Easy for algorithms to understand and use. Like having a clear path to follow.
+
+#### Sparse:
+
+> Secret keepers: Store only non-zero values, saving space. Like marking only, the buried treasure.
+> Memory efficient: Ideal for data with lots of “nothingness” (think deserts on a map).
+> Trickier for ML: Requires specialized algorithms to decipher the clues. Like navigating by the stars.
+
+## Choosing the right weapon:
+
+**Dense for detailed data:** Images, numerical analysis, where every bit matters.
+**Sparse for hidden treasures:** Text, natural language, where zeroes dominate.
