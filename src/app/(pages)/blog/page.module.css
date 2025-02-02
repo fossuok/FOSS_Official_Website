@@ -1,0 +1,75 @@
+.main {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @media (min-width: $mantine-breakpoint-md) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @media (min-width: $mantine-breakpoint-xl) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.wrapper {
+    position: relative;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    margin-top: 2rem;
+    font-family: var(--mantine-font-family);
+    color: light-dark(var(--mantine-color-gray-9), var(--mantine-color-white));
+    font-weight: 700;
+    font-size: 2.75rem;
+
+    @media (min-width: $mantine-breakpoint-md) {
+        font-size: 3.75rem;
+    }
+
+    @media (min-width: $mantine-breakpoint-xl) {
+        font-size: 4.5rem;
+    }
+}
+
+.description {
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    font-family: var(--mantine-font-family);
+    color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-3));
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 4rem;
+    color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-3));
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+    @media (min-width: $mantine-breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $mantine-breakpoint-lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
