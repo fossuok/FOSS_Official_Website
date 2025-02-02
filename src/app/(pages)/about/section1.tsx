@@ -41,6 +41,7 @@ export default function Section1() {
               </Table.Tr>
             </Table>
             <Button
+              radius="xl"
               size="xl"
               component="a"
               onClick={scrollToContact}

@@ -15,7 +15,7 @@ import classes from "./GetInTouch.module.css";
 export function GetInTouch() {
   return (
     <>
-      <Container pt={80} size={1000} className={classes.inner}>
+      <Container pt={80} pb={80} size={1000} className={classes.inner}>
         <Paper shadow="md" radius="lg">
           <div className={classes.wrapper}>
             <div
@@ -25,11 +25,8 @@ export function GetInTouch() {
                 backgroundSize: "contain",
                 backgroundPosition: "center",
                 opacity: 0.1,
-                // filter: "blur(20px)",
               }}
-            >
-              {/* <ContactIconsList /> */}
-            </div>
+            ></div>
 
             <form
               className={classes.form}
@@ -65,7 +62,7 @@ export function GetInTouch() {
                 />
 
                 <Group justify="flex-end" mt="md">
-                  <Button type="submit" className={classes.control}>
+                  <Button radius="xl" type="submit" className={classes.control}>
                     Send message
                   </Button>
                 </Group>
