@@ -14,7 +14,7 @@ export function HeaderMegaMenu() {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           {/*243- same size as the rightside */}
-          <Box miw={243}>
+          <Box className={classes.logo}>
             <ThemedLogo />
           </Box>
           <Group h="100%" gap={0} visibleFrom="md">
