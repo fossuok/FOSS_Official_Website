@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 import imesha_dishani from "@/images/blog/profile/imesha-dilshani.avif";
 
 export interface ArticleGroupProps {
+    id:number
     article: String;
     author: String;
     profile: string | StaticImageData;
@@ -11,6 +12,7 @@ export interface ArticleGroupProps {
 
 export const data: ArticleGroupProps[] = [
     {
+        id:1,
         article: "Words as Vectors: Sparse Vectors vs Dense Vectors",
         author: "Imesha Dilshani",
         profile: imesha_dishani,

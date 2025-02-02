@@ -48,7 +48,7 @@ export interface ArticleProps {
     // first update here and set as nullable value for them 
     // to avoid errors on previous articles.
     // ex: email?: string -> '?' denotes property as nullable
-    id: String,
+    id: string,
     header: {
         title: string;
         description: string;
