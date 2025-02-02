@@ -56,7 +56,7 @@ export default function Section2() {
           </Text>
         </Card>
 
-        <Grid gutter="md">
+        <Grid gutter="md" style={{ cursor: "pointer" }}>
           <Grid.Col span={6}>
             <BackgroundImage
               className={classes.background}

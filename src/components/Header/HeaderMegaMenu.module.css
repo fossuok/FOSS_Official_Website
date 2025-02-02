@@ -10,22 +10,25 @@
   border-bottom: 1px solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 }
-.drawer {
-  background-color: rgba(0, 0, 0, 0.1) !important;
+
+.logo {
+  min-width: 243px;
+  @media (max-width: $mantine-breakpoint-md) {
+    min-width: fit-content;
+  }
 }
 .link {
   display: flex;
-
   align-items: center;
   height: 100%;
-  padding-left: var(--mantine-spacing-md);
-  padding-right: var(--mantine-spacing-md);
+  padding-left: var(--mantine-spacing-sm);
+  padding-right: var(--mantine-spacing-sm);
   text-decoration: none;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-dark-1));
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     justify-content: center;
     height: 42px;
   }
