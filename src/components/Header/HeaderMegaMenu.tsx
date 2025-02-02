@@ -1,17 +1,16 @@
 "use client";
 
-import { IconCode } from "@tabler/icons-react";
 import {
+  createTheme,
   Box,
   Burger,
   Button,
   Divider,
   Drawer,
   Group,
-  ScrollArea,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { Theming, ThemedLogo } from "../ThemePicker/Theming";
+import { Theming, ThemedLogo } from "@/components/ThemePicker/Theming";
 import Link from "next/link";
 import classes from "./HeaderMegaMenu.module.css";
 
@@ -31,53 +30,6 @@ export function HeaderMegaMenu() {
             <Link href="/events" className={classes.link}>
               Events
             </Link>
-            {/* <HoverCard
-              width={600}
-              position="bottom"
-              radius="md"
-              shadow="md"
-              withinPortal
-            >
-              <HoverCard.Target>
-                <Link href="/events" className={classes.link}>
-                  <Center inline>
-                    <Box component="span" mr={5}>
-                      Events
-                    </Box>
-                    <IconChevronDown size={16} color={theme.colors.blue[6]} />
-                  </Center>
-                </Link>
-              </HoverCard.Target>
-
-              <HoverCard.Dropdown style={{ overflow: "hidden" }}>
-                <Group justify="space-between" px="md">
-                  <Text fw={500}>Features</Text>
-                  <Anchor href="#" fz="xs">
-                    View all
-                  </Anchor>
-                </Group>
-
-                <Divider my="sm" />
-
-                <SimpleGrid cols={2} spacing={0}>
-                  {links}
-                </SimpleGrid>
-
-                <div className={classes.dropdownFooter}>
-                  <Group justify="space-between">
-                    <div>
-                      <Text fw={500} fz="sm">
-                        Get started
-                      </Text>
-                      <Text size="xs" c="dimmed">
-                        Their food sources have decreased, and their numbers
-                      </Text>
-                    </div>
-                    <Button variant="default">Get started</Button>
-                  </Group>
-                </div>
-              </HoverCard.Dropdown>
-            </HoverCard> */}
             <Link href="/about" className={classes.link}>
               About
             </Link>
@@ -88,10 +40,12 @@ export function HeaderMegaMenu() {
               Leaderboard
             </Link>
           </Group>
+
           <Group visibleFrom="sm">
-            <Button>Summit</Button>
+            <Button radius="xl">Open Dev Summit '25</Button>
             <Theming />
           </Group>
+
           <Burger
             opened={drawerOpened}
             onClick={toggleDrawer}
@@ -100,50 +54,59 @@ export function HeaderMegaMenu() {
         </Group>
       </header>
 
-      {/* mobile view */}
-
-      <Drawer
-        offset={20}
-        position="top"
+      <Drawer.Root
         opened={drawerOpened}
         onClose={closeDrawer}
-        overlayProps={{ backgroundOpacity: 0.25, blur: 30 }}
+        offset={50}
+        position="top"
+        size="100%"
         transitionProps={{
           transition: "fade-down",
           duration: 200,
           timingFunction: "linear",
         }}
-        size="100%"
-        // title="Menu"
         hiddenFrom="sm"
         zIndex={1000000}
       >
-        <ScrollArea h="calc(100vh - 80px" mx="-md" className={classes.drawer}>
-          <Link href="/" className={classes.link}>
-            Home
-          </Link>
-          <Link href="/events" className={classes.link}>
-            Events
-          </Link>
-          {/* <Collapse in={linksOpened}>{links}</Collapse> for sub menu*/}
-          <Link href="/about" className={classes.link}>
-            About
-          </Link>
-          <Link href="/blog" className={classes.link}>
-            Blog
-          </Link>
-          <Link href="/leaderboard" className={classes.link}>
-            Leaderboard
-          </Link>
+        <Drawer.Overlay backgroundOpacity={0.25} blur={30} />
+        <Drawer.Content opacity={0.7} radius="md">
+          <Drawer.Body pt={50}>
+            <Link href="/" className={classes.link} onClick={toggleDrawer}>
+              Home
+            </Link>
+            <Link
+              href="/events"
+              className={classes.link}
+              onClick={toggleDrawer}
+            >
+              Events
+            </Link>
 
-          <Divider my="sm" />
+            <Link href="/about" className={classes.link} onClick={toggleDrawer}>
+              About
+            </Link>
+            <Link href="/blog" className={classes.link} onClick={toggleDrawer}>
+              Blog
+            </Link>
+            <Link
+              href="/leaderboard"
+              className={classes.link}
+              onClick={toggleDrawer}
+            >
+              Leaderboard
+            </Link>
 
-          <Group justify="center" grow px="md">
-            <Button>Summit</Button>
-            <Theming />
-          </Group>
-        </ScrollArea>
-      </Drawer>
+            <Divider my="sm" />
+
+            <Group justify="center" grow px="md">
+              <Button miw={100} radius="xl">
+                Summit
+              </Button>
+              <Theming />
+            </Group>
+          </Drawer.Body>
+        </Drawer.Content>
+      </Drawer.Root>
     </Box>
   );
 }

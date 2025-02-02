@@ -41,6 +41,7 @@ export default function Section1() {
 
           <Group className={classes.controls}>
             <Button
+              radius="xl"
               size="xl"
               className={classes.control}
               variant="gradient"
@@ -50,6 +51,7 @@ export default function Section1() {
             </Button>
 
             <Button
+              radius="xl"
               component="a"
               href="https://github.com/mantinedev/mantine"
               size="xl"
