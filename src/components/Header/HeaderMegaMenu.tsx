@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  createTheme,
-  Box,
-  Burger,
-  Button,
-  Divider,
-  Drawer,
-  Group,
-} from "@mantine/core";
+import { Box, Burger, Button, Divider, Drawer, Group } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Theming, ThemedLogo } from "@/components/ThemePicker/Theming";
 import Link from "next/link";
@@ -17,13 +9,15 @@ import classes from "./HeaderMegaMenu.module.css";
 export function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
-
   return (
     <Box pb={0} w={"100%"}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <ThemedLogo />
-          <Group h="100%" gap={0} visibleFrom="sm">
+          {/*243- same size as the rightside */}
+          <Box miw={243}>
+            <ThemedLogo />
+          </Box>
+          <Group h="100%" gap={0} visibleFrom="md">
             <Link href="/" className={classes.link}>
               Home
             </Link>
@@ -41,7 +35,7 @@ export function HeaderMegaMenu() {
             </Link>
           </Group>
 
-          <Group visibleFrom="sm">
+          <Group visibleFrom="md">
             <Button radius="xl">Open Dev Summit '25</Button>
             <Theming />
           </Group>
@@ -49,7 +43,7 @@ export function HeaderMegaMenu() {
           <Burger
             opened={drawerOpened}
             onClick={toggleDrawer}
-            hiddenFrom="sm"
+            hiddenFrom="md"
           />
         </Group>
       </header>
@@ -65,7 +59,7 @@ export function HeaderMegaMenu() {
           duration: 200,
           timingFunction: "linear",
         }}
-        hiddenFrom="sm"
+        hiddenFrom="md"
         zIndex={1000000}
       >
         <Drawer.Overlay backgroundOpacity={0.25} blur={30} />

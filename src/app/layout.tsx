@@ -20,14 +20,6 @@ import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 
 const theme = createTheme({
-  breakpoints: {
-    xs: "30em",
-    sm: "50em",
-    md: "64em",
-    lg: "74em",
-    xl: "90em",
-  },
-
   fontFamily:
     "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
 });
