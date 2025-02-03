@@ -21,8 +21,8 @@
 .link:hover {
   text-decoration: underline;
   text-decoration-color: light-dark(
-    var(--mantine-color-blue-9),
-    var(--mantine-color-blue-3)
+    var(--mantine-primary-color-filled),
+    var(--mantine-color-violet-3)
   );
 }
 

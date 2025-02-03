@@ -1,4 +1,4 @@
-import { About } from "@/data/ArticleData";
+import { About } from "@/data/ArticleProps";
 import classes from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,17 +19,19 @@ export function AboutAuthor({ author, profile, description, links }: About) {
             <ul className={classes.about_links}>
               {Array.isArray(links) ? (
                 links.map((link, id) => (
-                  <li>
-                    <Link href={link} className={classes.about_link}>
-                      {link.includes("facebook") ? (
-                        <span>facebook</span>
-                      ) : link.includes("twitter") ? (
-                        <span>twitter</span>
-                      ) : link.includes("linkedin") ? (
-                        <span>linkedin</span>
-                      ) : null}
-                    </Link>
-                  </li>
+                  <div key={id}>
+                    <li>
+                      <Link href={link} className={classes.about_link}>
+                        {link.includes("facebook") ? (
+                          <span>facebook</span>
+                        ) : link.includes("twitter") ? (
+                          <span>twitter</span>
+                        ) : link.includes("linkedin") ? (
+                          <span>linkedin</span>
+                        ) : null}
+                      </Link>
+                    </li>
+                  </div>
                 ))
               ) : (
                 <p>Data not found!</p>
