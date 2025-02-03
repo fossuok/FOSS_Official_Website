@@ -55,9 +55,9 @@ export function HeaderMegaMenu() {
         position="top"
         size="100%"
         transitionProps={{
-          transition: "fade-down",
-          duration: 200,
-          timingFunction: "linear",
+          transition: "slide-up",
+          duration: 400,
+          timingFunction: "ease-in-out",
         }}
         hiddenFrom="md"
         zIndex={1000000}

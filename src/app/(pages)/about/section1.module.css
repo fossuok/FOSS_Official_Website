@@ -65,3 +65,16 @@
     flex: 1;
   }
 }
+.equalColumns {
+  width: 100%;
+}
+
+.equalColumns td {
+  width: 33.33%;
+}
+
+@media (max-width: 600px) {
+  .equalColumns td {
+    width: auto;
+  }
+}
