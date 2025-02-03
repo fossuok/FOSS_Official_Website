@@ -42,10 +42,24 @@ const TimeAgoComponent: React.FC<{ dateString: string }> = ({ dateString }) => {
   const date: Date = new Date(dateString);
   return timeAgo(date);
 };
-
+const getColorByType = (type: String) => {
+  switch (type) {
+    case "Articles":
+      return "teal";
+    case "Tutorials":
+      return "blue";
+    case "News":
+      return "red";
+    case "Projects":
+      return "orange";
+    default:
+      return "teal";
+  }
+};
 export function ArticleGroup({
   article,
   author,
+  type,
   profile,
   published,
   url,
@@ -55,8 +69,10 @@ export function ArticleGroup({
       <Card withBorder radius="md" shadow="xl" className={classes.card}>
         <Group justify="space-between">
           <Badge>
-            {" "}
             <TimeAgoComponent dateString={published.toString()} />
+          </Badge>
+          <Badge color={getColorByType(type)} variant="light">
+            {type}
           </Badge>
         </Group>
 
@@ -68,7 +84,7 @@ export function ArticleGroup({
           improvements, new hook and 10+ other changes
         </Text> */}
 
-        <Group justify="space-between" mt="md">
+        <Group justify="left" mt="md">
           <Image
             src={profile}
             alt={titleCase(author.toString())}

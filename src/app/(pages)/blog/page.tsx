@@ -34,6 +34,7 @@ export default function Home() {
                   id={article.id}
                   article={article.article}
                   author={article.author}
+                  type={article.type}
                   profile={article.profile}
                   published={article.published}
                   url={article.url}

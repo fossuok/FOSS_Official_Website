@@ -28,18 +28,24 @@ export default function Section1() {
             <Table
               withRowBorders={false}
               style={{ textAlign: "center", margin: "auto" }}
+              className={classes.equalColumns}
             >
-              <Table.Tr fz={"lg"} fw={600}>
-                <Table.Td>Founded</Table.Td>
-                <Table.Td>Members</Table.Td>
-                <Table.Td>Events</Table.Td>
-              </Table.Tr>
-              <Table.Tr fz={"h2"} fw={900}>
-                <Table.Td>2023</Table.Td>
-                <Table.Td>150+</Table.Td>
-                <Table.Td>6+</Table.Td>
-              </Table.Tr>
+              <Table.Thead>
+                <Table.Tr fz="lg" fw={600}>
+                  <Table.Td>Founded</Table.Td>
+                  <Table.Td maw={190}>Members</Table.Td>
+                  <Table.Td>Events</Table.Td>
+                </Table.Tr>
+              </Table.Thead>
+              <Table.Tbody>
+                <Table.Tr fz="h2" fw={900}>
+                  <Table.Td>2023</Table.Td>
+                  <Table.Td maw={190}>150+</Table.Td>
+                  <Table.Td>6+</Table.Td>
+                </Table.Tr>
+              </Table.Tbody>
             </Table>
+
             <Button
               radius="xl"
               size="xl"
