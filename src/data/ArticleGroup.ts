@@ -16,7 +16,23 @@ export const data: ArticleGroupProps[] = [
         article: "Words as Vectors: Sparse Vectors vs Dense Vectors",
         author: "Imesha Dilshani",
         profile: imesha_dishani,
-        published: "2025-01-01",
+        published: "2024-10-01",
         url: "/blog/words-as-vectors-sparse-vectors-vs-dense-vectors"
+    },
+    {
+        id:2,
+        article: "Second Temp Ariticle",
+        author: "Imesha Dilshani",
+        profile: imesha_dishani,
+        published: "2025-01-01",
+        url: "/blog/Second-Temp-Ariticle"
+    },
+    {
+        id:3,
+        article: "Second Temp Ariticle",
+        author: "Imesha Dilshani",
+        profile: imesha_dishani,
+        published: "2025-02-01",
+        url: "/blog/Second-Temp-Ariticle"
     },
 ];
