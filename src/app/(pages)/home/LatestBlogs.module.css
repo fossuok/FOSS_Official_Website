@@ -1,0 +1,55 @@
+.wrapper {
+  display: grid;
+}
+.title {
+  text-align: center;
+  font-family: var(--mantine-font-family);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+}
+.th {
+  padding: 0;
+}
+.tr {
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+
+  @mixin hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-0),
+      var(--mantine-color-dark-6)
+    );
+  }
+}
+
+.control {
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+
+  @mixin hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-0),
+      var(--mantine-color-dark-6)
+    );
+  }
+}
+
+.icon {
+  width: 21px;
+  height: 21px;
+  border-radius: 21px;
+}
+
+.btn {
+  margin: var(--mantine-spacing-lg);
+}

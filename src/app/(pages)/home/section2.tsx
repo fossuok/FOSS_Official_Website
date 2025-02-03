@@ -36,17 +36,17 @@ export default function Section2() {
           inherit
         >
           UOK
-        </Text>{" "}
+        </Text>
         ?
       </h1>
 
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
         <Card radius="md">
           <Text className={classes.description}>
-            Imagine a world where code is shared freely, like a banquet of
-            ideas. That&apos;s the essence of Open Source Software (FOSS) – a
-            collaborative space where developers build, learn, and innovate
-            together, openly sharing knowledge and creations. <br />
+            Imagine a world where code is shared freely, not locked away. That’s
+            the essence of Open Source Software (FOSS) – a community where
+            developers build, learn, and innovate together by sharing knowledge
+            and creations. <br />
             <br />
             And here at the University of Kelaniya, we&apos;re building our own
             FOSS haven – a vibrant community of tech enthusiasts, coding
@@ -56,7 +56,7 @@ export default function Section2() {
           </Text>
         </Card>
 
-        <Grid gutter="md">
+        <Grid gutter="md" style={{ cursor: "pointer" }}>
           <Grid.Col span={6}>
             <BackgroundImage
               className={classes.background}
@@ -106,13 +106,23 @@ export default function Section2() {
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img1.src} alt="s" />
+              <Image
+                fit="contain"
+                mah={80}
+                src={img1.src}
+                alt="University of Kelaniya"
+              />
             </Card>
           </Grid.Col>
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img2.src} alt="s" />
+              <Image
+                fit="contain"
+                mah={100}
+                src={img2.src}
+                alt="FOSS Sri Lanka"
+              />
             </Card>
           </Grid.Col>
         </Grid>

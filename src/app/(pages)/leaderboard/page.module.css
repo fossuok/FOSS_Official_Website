@@ -1,71 +1,60 @@
-.rowSelected {
-    background-color: var(--mantine-color-blue-light);
+.wrapper {
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-dark-8)
+  );
 }
 
-/* Center align the container */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+.title {
+  text-align: center;
+  font-family: var(--mantine-font-family);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 36px;
+    line-height: 1.5;
   }
-  
-  .title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .selectWrapper {
-    margin-bottom: 2rem;
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  /* Table styling */
-  .table {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .table th,
-  .table td {
-    text-align: left;
-    padding: 12px 16px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .table th {
-    background-color: #555;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .table tr:hover {
-    background-color: #eee;
-  }
-  
-  /* Adjust responsiveness */
-  @media (max-width: 768px) {
-    .table {
-      width: 100%;
-      font-size: 0.9rem;
-    }
-  
-    .selectWrapper {
-      width: 90%;
-    }
-  }
-  
+}
+.rowSelected {
+  background-color: var(--mantine-color-blue-light);
+}
+
+.selectWrapper {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color---mantine-color-dark-6)
+  );
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tableData {
+  text-align: center;
+  padding: 12px 16px;
+}
+.table th {
+  background-color: light-dark(
+    var(--mantine-color-violet-light),
+    var(--mantine-color-violet-light)
+  );
+}

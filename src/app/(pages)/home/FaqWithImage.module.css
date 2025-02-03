@@ -2,10 +2,23 @@
   align-items: center;
   position: relative;
   box-sizing: border-box;
-  padding-top: calc(var(--mantine-spacing-xl) * 2);
-  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+  background-color: light-dark(
+    var(--mantine-color-body),
+    var(--mantine-color-dark-6)
+  );
 }
 
+.inner {
+  align-items: center;
+
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+}
 .title {
   margin-bottom: var(--mantine-spacing-md);
   padding-left: var(--mantine-spacing-md);
@@ -19,10 +32,7 @@
 }
 
 .background {
-  background-color: light-dark(
-    var(--mantine-color-dark-8),
-    var(--mantine-color-body)
-  );
-
+  height: fit-content;
+  background-color: light-dark(var(--mantine-color-dark-8), transparent);
   border-radius: var(--mantine-radius-lg);
 }

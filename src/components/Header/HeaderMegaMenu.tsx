@@ -1,124 +1,28 @@
 "use client";
 
-import { IconChevronDown, IconCode, IconCoin } from "@tabler/icons-react";
-import {
-  Box,
-  Burger,
-  Button,
-  Center,
-  Collapse,
-  Divider,
-  Drawer,
-  Group,
-  ScrollArea,
-  Text,
-  ThemeIcon,
-  UnstyledButton,
-  useMantineTheme,
-} from "@mantine/core";
+import { Box, Burger, Button, Divider, Drawer, Group } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { Theming, ThemedLogo } from "../ThemePicker/Theming";
+import { Theming, ThemedLogo } from "@/components/ThemePicker/Theming";
 import Link from "next/link";
 import classes from "./HeaderMegaMenu.module.css";
-
-const mockdata = [
-  {
-    icon: IconCode,
-    title: "Open source",
-    description: "This Pokémon’s cry is very loud and distracting",
-  },
-  {
-    icon: IconCoin,
-    title: "Free for everyone",
-    description: "The fluid of Smeargle’s tail secretions changes",
-  },
-];
 
 export function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
-  const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
-  const theme = useMantineTheme();
-
-  const links = mockdata.map((item) => (
-    <UnstyledButton className={classes.subLink} key={item.title}>
-      <Group wrap="nowrap" align="flex-start">
-        <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon size={22} color={theme.colors.violet[6]} />
-        </ThemeIcon>
-        <div>
-          <Text size="sm" fw={500}>
-            {item.title}
-          </Text>
-          <Text size="xs" c="dimmed">
-            {item.description}
-          </Text>
-        </div>
-      </Group>
-    </UnstyledButton>
-  ));
-
   return (
     <Box pb={0} w={"100%"}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <ThemedLogo />
-          <Group h="100%" gap={0} visibleFrom="sm">
+          {/*243- same size as the rightside */}
+          <Box className={classes.logo}>
+            <ThemedLogo />
+          </Box>
+          <Group h="100%" gap={0} visibleFrom="md">
             <Link href="/" className={classes.link}>
               Home
             </Link>
             <Link href="/events" className={classes.link}>
               Events
-            </Link>
-            {/* <HoverCard
-              width={600}
-              position="bottom"
-              radius="md"
-              shadow="md"
-              withinPortal
-            >
-              <HoverCard.Target>
-                <Link href="/events" className={classes.link}>
-                  <Center inline>
-                    <Box component="span" mr={5}>
-                      Events
-                    </Box>
-                    <IconChevronDown size={16} color={theme.colors.blue[6]} />
-                  </Center>
-                </Link>
-              </HoverCard.Target>
-
-              <HoverCard.Dropdown style={{ overflow: "hidden" }}>
-                <Group justify="space-between" px="md">
-                  <Text fw={500}>Features</Text>
-                  <Anchor href="#" fz="xs">
-                    View all
-                  </Anchor>
-                </Group>
-
-                <Divider my="sm" />
-
-                <SimpleGrid cols={2} spacing={0}>
-                  {links}
-                </SimpleGrid>
-
-                <div className={classes.dropdownFooter}>
-                  <Group justify="space-between">
-                    <div>
-                      <Text fw={500} fz="sm">
-                        Get started
-                      </Text>
-                      <Text size="xs" c="dimmed">
-                        Their food sources have decreased, and their numbers
-                      </Text>
-                    </div>
-                    <Button variant="default">Get started</Button>
-                  </Group>
-                </div>
-              </HoverCard.Dropdown>
-            </HoverCard> */}
-            <Link href="/projects" className={classes.link}>
-              Projects
             </Link>
             <Link href="/about" className={classes.link}>
               About
@@ -130,64 +34,73 @@ export function HeaderMegaMenu() {
               Leaderboard
             </Link>
           </Group>
-          <Group visibleFrom="sm">
-            <Button>Summit</Button>
+
+          <Group visibleFrom="md">
+            <Button radius="xl">Open Dev Summit '25</Button>
             <Theming />
           </Group>
+
           <Burger
             opened={drawerOpened}
             onClick={toggleDrawer}
-            hiddenFrom="sm"
+            hiddenFrom="md"
           />
         </Group>
       </header>
 
-      {/* mobile view */}
-
-      <Drawer
+      <Drawer.Root
         opened={drawerOpened}
         onClose={closeDrawer}
-        className={classes.drawer}
-        overlayProps={{ backgroundOpacity: 0.25, blur: 18 }}
+        offset={50}
+        position="top"
         size="100%"
-        padding="md"
-        title="Menu"
-        hiddenFrom="sm"
+        transitionProps={{
+          transition: "fade-down",
+          duration: 200,
+          timingFunction: "linear",
+        }}
+        hiddenFrom="md"
         zIndex={1000000}
       >
-        <ScrollArea h="calc(100vh - 80px" mx="-md">
-          <Divider my="sm" />
+        <Drawer.Overlay backgroundOpacity={0.25} blur={30} />
+        <Drawer.Content opacity={0.7} radius="md">
+          <Drawer.Body pt={50}>
+            <Link href="/" className={classes.link} onClick={toggleDrawer}>
+              Home
+            </Link>
+            <Link
+              href="/events"
+              className={classes.link}
+              onClick={toggleDrawer}
+            >
+              Events
+            </Link>
 
-          <Link href="/" className={classes.link}>
-            Home
-          </Link>
-          <UnstyledButton className={classes.link} onClick={toggleLinks}>
-            <Center inline>
-              <Box component="span" mr={5}>
-                Events
-              </Box>
-              <IconChevronDown size={16} color={theme.colors.blue[6]} />
-            </Center>
-          </UnstyledButton>
-          <Collapse in={linksOpened}>{links}</Collapse>
-          <Link href="/projects" className={classes.link}>
-            Projects
-          </Link>
-          <Link href="/about" className={classes.link}>
-            About
-          </Link>
-          <Link href="/blog" className={classes.link}>
-            Blog
-          </Link>
+            <Link href="/about" className={classes.link} onClick={toggleDrawer}>
+              About
+            </Link>
+            <Link href="/blog" className={classes.link} onClick={toggleDrawer}>
+              Blog
+            </Link>
+            <Link
+              href="/leaderboard"
+              className={classes.link}
+              onClick={toggleDrawer}
+            >
+              Leaderboard
+            </Link>
 
-          <Divider my="sm" />
+            <Divider my="sm" />
 
-          <Group justify="center" grow pb="xl" px="md">
-            <Button>Summit</Button>
-            <Theming />
-          </Group>
-        </ScrollArea>
-      </Drawer>
+            <Group justify="center" grow px="md">
+              <Button miw={100} radius="xl">
+                Summit
+              </Button>
+              <Theming />
+            </Group>
+          </Drawer.Body>
+        </Drawer.Content>
+      </Drawer.Root>
     </Box>
   );
 }
