@@ -1,4 +1,3 @@
-import { Container } from "@mantine/core";
 import Section1 from "./section1";
 import AboutCard from "./AboutCard";
 import { GetInTouch } from "./GetInTouch";

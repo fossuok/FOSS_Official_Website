@@ -1,6 +1,9 @@
 //need more improvements to content and styles
+import { StaticImageData } from "next/image";
+import aboutUs from "@/images/about/about-team.jpg";
+
 export const mockdata = {
-    image: "/about-team.jpg",
+    image: aboutUs,
     title: "Empowering Students Through Open Source Innovation",
     organization: "FOSSUOK",
     mission: [

@@ -1,7 +1,7 @@
 import { Content } from "@/data/ArticleProps";
 import classes from "./styles.module.css";
 
-export function OrderList({ data, type }: Content) {
+export function OrderList({ data, type }: Readonly<Content>) {
   return (
     <ol start={1} className={classes.order_list}>
       {Array.isArray(data) ? (

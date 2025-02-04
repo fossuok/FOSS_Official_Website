@@ -2,13 +2,9 @@
 
 import {
   IconBrandFacebook,
-  IconBrandFacebookFilled,
   IconBrandGithub,
-  IconBrandInstagram,
   IconBrandLinkedin,
-  IconBrandTwitter,
   IconBrandX,
-  IconBrandYoutube,
 } from "@tabler/icons-react";
 import { ActionIcon, Container, Group, Text } from "@mantine/core";
 import { ThemedLogo } from "../ThemePicker/Theming";

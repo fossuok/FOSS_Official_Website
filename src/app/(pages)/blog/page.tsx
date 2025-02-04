@@ -27,7 +27,7 @@ export default function Home() {
       <Container size={1200}>
         <section className={classes.inner}>
           <div className={classes.grid}>
-            {data.map((article, index) => (
+            {data.map((article) => (
               <div key={article.id}>
                 <ArticleGroup
                   key={article.id} // Use a unique identifier here
