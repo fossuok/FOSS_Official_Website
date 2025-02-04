@@ -2,19 +2,10 @@
 import { Modal, Button, Indicator, Image, Text, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./Advert.module.css";
+import { AdvertProps } from "@/data/AdvertData";
 
-interface AdvertProps {
-  data: {
-    topic: string;
-    image: string;
-    description: string;
-    weblink: string;
-  };
-}
-
-export function Advert({ data }: AdvertProps) {
+export function Advert({ data }: Readonly<AdvertProps>) {
   const [opened, { open, close }] = useDisclosure(false);
-  const logo = `/advert/${data.image}`;
 
   return (
     <>
@@ -49,7 +40,7 @@ export function Advert({ data }: AdvertProps) {
             </div>
           </div>
           <Image
-            src={logo}
+            src={data.image.src}
             alt={data.topic}
             maw="300px"
             className={classes.image}
@@ -60,7 +51,7 @@ export function Advert({ data }: AdvertProps) {
       <Indicator inline label="New" size={16} processing>
         <Button
           variant="light"
-          color="green"
+          color="teal"
           radius="xl"
           size="md"
           onClick={open}

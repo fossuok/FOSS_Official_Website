@@ -87,7 +87,7 @@
     left: 0;
     width: 6px;
     background-image: linear-gradient(
-      0,
+      0deg,
       var(--mantine-color-violet-5),
       var(--mantine-color-teal-5)
     );

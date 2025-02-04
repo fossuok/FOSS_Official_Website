@@ -69,15 +69,15 @@ export default async function Home({
               </p>
               <div className={classes.details}>
                 <div className={classes.tags}>
-                  {article.header.tags.map((tag, index) => (
-                    <span key={index} className={classes.tag}>
+                  {article.header.tags.map((tag) => (
+                    <span key={tag} className={classes.tag}>
                       {tag}
                     </span>
                   ))}
                 </div>
                 <div className={classes.shares}>
-                  {article.header.links.map((link, index) => (
-                    <Link key={index} href={link} className={classes.share}>
+                  {article.header.links.map((link) => (
+                    <Link key={link} href={link} className={classes.share}>
                       {link.includes("facebook") ? (
                         <FacebookIcon />
                       ) : link.includes("twitter") ? (
@@ -94,32 +94,28 @@ export default async function Home({
         </div>
       </header>
       <main id="main" className={classes.main}>
-        <div>
-          <main>
-            <div className={classes.wrapper}>
-              <div className={classes.container}>
-                <div className={classes.thumbnail_wrapper}>
-                  <Image
-                    src={article.thumbnail.image || default_thumbnail}
-                    alt={String(article.thumbnail.alt) || ""}
-                    className={classes.thumbnail}
-                  />
-                  <div className={classes.content}>
-                    {article.content.map((content, key) => (
-                      <ContentRenderer key={key} content={content} />
-                    ))}
-                  </div>
-                </div>
+        <div className={classes.wrapper}>
+          <div className={classes.container}>
+            <div className={classes.thumbnail_wrapper}>
+              <Image
+                src={article.thumbnail.image || default_thumbnail}
+                alt={String(article.thumbnail.alt) || ""}
+                className={classes.thumbnail}
+              />
+              <div className={classes.content}>
+                {article.content.map((content, key) => (
+                  <ContentRenderer key={key} content={content} />
+                ))}
               </div>
             </div>
-            <AboutAuthor
-              author={article.about.author}
-              profile={article.about.profile || default_profile}
-              description={article.about.description}
-              links={article.about.links}
-            />
-          </main>
+          </div>
         </div>
+        <AboutAuthor
+          author={article.about.author}
+          profile={article.about.profile || default_profile}
+          description={article.about.description}
+          links={article.about.links}
+        />
       </main>
     </Container>
   );
@@ -149,8 +145,8 @@ function ContentRenderer({ content }: { content: any }) {
 function UnorderedList({ data }: { data: string[] }) {
   return (
     <ul>
-      {data.map((item, index) => (
-        <li key={index}>{item}</li>
+      {data.map((item) => (
+        <li key={item}>{item}</li>
       ))}
     </ul>
   );

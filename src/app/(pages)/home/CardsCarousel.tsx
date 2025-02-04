@@ -11,11 +11,9 @@ import {
 import { Carousel } from "@mantine/carousel";
 import { useMediaQuery } from "@mantine/hooks";
 import classes from "./CardsCarousel.module.css";
-import { data } from "@/data/HomeCarousel";
 import { upcomingData } from "@/data/UpcomingEvents";
 import { EventCard } from "@/components/EventCard/EventCard";
 import GradientBack from "@/components/Gradient/GradientBack";
-import { color } from "framer-motion";
 
 export function CardsCarousel() {
   const theme = useMantineTheme();

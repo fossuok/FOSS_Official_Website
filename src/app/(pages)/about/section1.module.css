@@ -45,7 +45,6 @@
 }
 .description {
   text-align: center;
-  /* margin-top: var(--mantine-spacing-md); */
   font-size: 24px;
 
   @media (max-width: $mantine-breakpoint-sm) {
