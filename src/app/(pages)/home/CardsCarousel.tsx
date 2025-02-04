@@ -15,6 +15,7 @@ import { data } from "@/data/HomeCarousel";
 import { upcomingData } from "@/data/UpcomingEvents";
 import { EventCard } from "@/components/EventCard/EventCard";
 import GradientBack from "@/components/Gradient/GradientBack";
+import { color } from "framer-motion";
 
 export function CardsCarousel() {
   const theme = useMantineTheme();
@@ -48,7 +49,8 @@ export function CardsCarousel() {
           slideSize={{ base: "100%", sm: "50%" }}
           slideGap={{ base: 2, sm: "xl" }}
           align="start"
-          slidesToScroll={mobile ? 1 : 1}
+          slidesToScroll={1}
+          // slidesToScroll={mobile ? 1 : 1}
           loop={true}
         >
           {slides}

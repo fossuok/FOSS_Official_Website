@@ -56,8 +56,8 @@ export default function Section2() {
           </Text>
         </Card>
 
-        <Grid gutter="md" style={{ cursor: "pointer" }}>
-          <Grid.Col span={6}>
+        <Grid gutter="md">
+          <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
               className={classes.background}
               src={codeImg.src}
@@ -69,7 +69,7 @@ export default function Section2() {
             </BackgroundImage>
           </Grid.Col>
 
-          <Grid.Col span={6}>
+          <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
               className={classes.background}
               src={learn.src}
@@ -81,7 +81,7 @@ export default function Section2() {
             </BackgroundImage>
           </Grid.Col>
 
-          <Grid.Col span={6}>
+          <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
               className={classes.background}
               src={share.src}
@@ -92,7 +92,8 @@ export default function Section2() {
               </Text>
             </BackgroundImage>
           </Grid.Col>
-          <Grid.Col span={6}>
+
+          <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
               className={classes.background}
               src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-6.png"
