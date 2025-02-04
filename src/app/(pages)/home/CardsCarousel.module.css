@@ -26,14 +26,15 @@
 .discription {
   text-align: center;
   font-family: var(--mantine-font-family);
-  font-size: 24px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.4;
   margin: 0;
-  padding: 0;
+  padding: 0 120px 0 120px;
   padding-bottom: 2rem;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
   @media (max-width: $mantine-breakpoint-sm) {
+    padding: 0;
     font-size: 16px;
     line-height: 1.6;
   }
