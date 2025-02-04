@@ -21,7 +21,7 @@ export default function AboutCard() {
 
         <Card withBorder radius="lg" p="md" className={classes.card}>
           <Card.Section>
-            <Image fit="fill" src={image} alt={title} mah={300} />
+            <Image fit="fill" src={image.src} alt={title} mah={300} />
           </Card.Section>
         </Card>
 
@@ -41,10 +41,10 @@ export default function AboutCard() {
             </Text>
             <Table withRowBorders={false} mt="xs">
               <Table.Tbody>
-                {mission.map((item, index) => {
+                {mission.map((item) => {
                   const [missionTitle, missionDescription] = item.split(":");
                   return (
-                    <Table.Tr key={index}>
+                    <Table.Tr key={missionTitle}>
                       <Table.Td style={{ verticalAlign: "top" }}>
                         <Text span c="teal.5" fw={600}>
                           {missionTitle}:
@@ -67,10 +67,10 @@ export default function AboutCard() {
             </Text>
             <Table withRowBorders={false} mt="xs">
               <Table.Tbody>
-                {activities.map((item, index) => {
+                {activities.map((item) => {
                   const [serviceTitle, serviceDescription] = item.split(":");
                   return (
-                    <Table.Tr key={index}>
+                    <Table.Tr key={serviceTitle}>
                       <Table.Td style={{ verticalAlign: "top" }}>
                         <Text span c="blue.5" fw={600}>
                           {serviceTitle}:
@@ -93,10 +93,10 @@ export default function AboutCard() {
             </Text>
             <Table withRowBorders={false} mt="xs">
               <Table.Tbody>
-                {goals.map((item, index) => {
+                {goals.map((item) => {
                   const [goalTitle, goalDescription] = item.split(":");
                   return (
-                    <Table.Tr key={index}>
+                    <Table.Tr key={goalTitle}>
                       <Table.Td style={{ verticalAlign: "top" }}>
                         <Text span c="teal.5" fw={600}>
                           {goalTitle}:

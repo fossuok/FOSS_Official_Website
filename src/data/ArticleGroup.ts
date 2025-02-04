@@ -3,12 +3,12 @@ import imesha_dishani from "@/images/blog/profile/imesha-dilshani.avif";
 
 export interface ArticleGroupProps {
     id:number
-    article: String;
+    article: string;
     type:string;
-    author: String;
+    author: string;
     profile: string | StaticImageData;
-    published: String;
-    url: String;
+    published: string;
+    url: string;
 }
 // ALWAYS add latest articles on top
 
@@ -25,7 +25,7 @@ export const data: ArticleGroupProps[] = [
         type:"News",
         profile: imesha_dishani,
         published: "2025-02-01",
-        url: "/blog/Second-Temp-Ariticle"
+        url: "/blog/words-as-vectors-sparse-vectors-vs-dense-vectors"
     },
         {
         id:2,
@@ -34,7 +34,7 @@ export const data: ArticleGroupProps[] = [
         type:"Tutorials",
         profile: imesha_dishani,
         published: "2025-01-01",
-        url: "/blog/Second-Temp-Ariticle"
+        url: "/blog/words-as-vectors-sparse-vectors-vs-dense-vectors"
     },
     {
         id:1,

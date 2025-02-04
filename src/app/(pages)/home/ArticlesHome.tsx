@@ -1,4 +1,5 @@
 import { Container, Text, Button, Stack } from "@mantine/core";
+import Link from "next/link";
 import classes from "./ArticlesHome.module.css";
 import { ArticleGroup } from "@/app/(pages)/blog/ArticleGroup";
 import { data } from "@/data/ArticleGroup";
@@ -23,10 +24,9 @@ export default function ArticlesHome() {
           </Text>{" "}
         </h1>
         <Stack>
-          {/* <Text className={classes.discription}>
+          <Text className={classes.discription}>
             Here are some of the latest articles from our blog.
-          </Text> */}
-
+          </Text>
           <section>
             <div className={classes.grid}>
               {data.slice(0, 4).map((article, index) => (
@@ -45,14 +45,13 @@ export default function ArticlesHome() {
               ))}
             </div>
           </section>
-          <Button
-            radius="xl"
-            color="violet"
-            variant="light"
-            className={classes.btn}
-          >
-            Read More
-          </Button>
+          {/* <div className={classes.btn}>
+            <Link href="/blog">
+              <Button radius="xl" component="a" size="lg" variant="default">
+                Read More
+              </Button>
+            </Link>
+          </div> */}
         </Stack>
       </Container>
     </div>

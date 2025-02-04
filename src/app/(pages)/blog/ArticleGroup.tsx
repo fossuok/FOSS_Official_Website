@@ -1,13 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { Box, Group, Card, Badge } from "@mantine/core";
+import { Group, Card, Badge, Text } from "@mantine/core";
 import { ArticleGroupProps } from "@/data/ArticleGroup";
 import classes from "./ArticleGroup.module.css";
-import { IconColorSwatch } from "@tabler/icons-react";
-import { Paper, Text, ThemeIcon } from "@mantine/core";
 
-function titleCase(str: String) {
+function titleCase(str: string) {
   return str
     .toLowerCase()
     .split(" ")
@@ -15,7 +13,7 @@ function titleCase(str: String) {
     .join(" ");
 }
 
-function timeAgo(date: Date): String {
+function timeAgo(date: Date): string {
   const today = new Date();
   const formattedDate = `${today.getFullYear()}, ${String(
     today.getMonth() + 1
@@ -42,7 +40,7 @@ const TimeAgoComponent: React.FC<{ dateString: string }> = ({ dateString }) => {
   const date: Date = new Date(dateString);
   return timeAgo(date);
 };
-const getColorByType = (type: String) => {
+const getColorByType = (type: string) => {
   switch (type) {
     case "Articles":
       return "teal";
@@ -63,7 +61,7 @@ export function ArticleGroup({
   profile,
   published,
   url,
-}: ArticleGroupProps) {
+}: Readonly<ArticleGroupProps>) {
   return (
     <Link href={url.toString()} className={classes.link}>
       <Card withBorder radius="md" shadow="xl" className={classes.card}>
@@ -94,7 +92,7 @@ export function ArticleGroup({
             loading="eager"
             className={classes.image}
           />{" "}
-          <div>By {titleCase(author)}</div>
+          <div>By {titleCase(author.toString())}</div>
         </Group>
       </Card>
     </Link>

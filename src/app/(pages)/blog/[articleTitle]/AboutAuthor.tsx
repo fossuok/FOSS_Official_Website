@@ -3,7 +3,12 @@ import classes from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export function AboutAuthor({ author, profile, description, links }: About) {
+export function AboutAuthor({
+  author,
+  profile,
+  description,
+  links,
+}: Readonly<About>) {
   return (
     <section className={classes.about_section}>
       <div>
@@ -18,20 +23,18 @@ export function AboutAuthor({ author, profile, description, links }: About) {
           <div>
             <ul className={classes.about_links}>
               {Array.isArray(links) ? (
-                links.map((link, id) => (
-                  <div key={id}>
-                    <li>
-                      <Link href={link} className={classes.about_link}>
-                        {link.includes("facebook") ? (
-                          <span>facebook</span>
-                        ) : link.includes("twitter") ? (
-                          <span>twitter</span>
-                        ) : link.includes("linkedin") ? (
-                          <span>linkedin</span>
-                        ) : null}
-                      </Link>
-                    </li>
-                  </div>
+                links.map((link) => (
+                  <li key={link}>
+                    <Link href={link} className={classes.about_link}>
+                      {link.includes("facebook") ? (
+                        <span>facebook</span>
+                      ) : link.includes("twitter") ? (
+                        <span>twitter</span>
+                      ) : link.includes("linkedin") ? (
+                        <span>linkedin</span>
+                      ) : null}
+                    </Link>
+                  </li>
                 ))
               ) : (
                 <p>Data not found!</p>
