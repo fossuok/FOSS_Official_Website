@@ -42,19 +42,19 @@ export default function Section1() {
           <Group className={classes.controls}>
             <Button
               radius="xl"
-              size="xl"
+              component="a"
+              href="#"
               className={classes.control}
               variant="gradient"
               gradient={{ from: "violet", to: "grape" }}
             >
-              Join
+              Join Now
             </Button>
 
             <Button
               radius="xl"
               component="a"
-              href="https://github.com/mantinedev/mantine"
-              size="xl"
+              href="https://github.com/fossuok/"
               variant="default"
               className={classes.control}
               leftSection={<IconBrandGithubFilled size={18} stroke={1.5} />}

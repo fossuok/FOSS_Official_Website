@@ -13,9 +13,9 @@ export const data = [
       title: "Helpful Links",
       links: [
         { label: "University of Kelaniya", link: "#" },
-        { label: "FOSS.LK", link: "#" },
         { label: "Open-Source Summit", link: "#" },
         { label: "Code of Conduct", link: "#" },
+        { label: "FOSS.LK", link: "#" },
       ],
     },
 

@@ -10,7 +10,7 @@ import cx from "clsx";
 import classes from "./Theming.module.css";
 import Image from "next/image"; // or import { Image } from "@mantine/core";
 import Link from "next/link";
-const logo = "/FOSS.png";
+const logo = "/FOSS.webp";
 
 export function ThemedLogo() {
   return (
