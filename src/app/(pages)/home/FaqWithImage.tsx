@@ -1,6 +1,6 @@
 "use client";
 import { Accordion, Container, Grid, Image, Title } from "@mantine/core";
-import image from "@/images/home/FOSStext.png";
+import image from "@/images/home/FOSStext.webp";
 import classes from "./FaqWithImage.module.css";
 import GradientBack from "@/components/Gradient/GradientBack";
 import { data } from "@/data/Q&A";

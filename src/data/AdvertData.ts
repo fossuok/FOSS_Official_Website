@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import addImage from "@/images/advert/FOSS.png";
+import addImage from "@/images/advert/FOSS.webp";
 
 export interface AdvertProps {
   data: {

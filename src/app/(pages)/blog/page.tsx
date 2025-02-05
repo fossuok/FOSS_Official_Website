@@ -35,6 +35,7 @@ export default function Home() {
                   article={article.article}
                   author={article.author}
                   type={article.type}
+                  discription={article.discription}
                   profile={article.profile}
                   published={article.published}
                   url={article.url}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { Group, Card, Badge, Text } from "@mantine/core";
+import { Group, Card, Badge, Text, Spoiler } from "@mantine/core";
 import { ArticleGroupProps } from "@/data/ArticleGroup";
 import classes from "./ArticleGroup.module.css";
 
@@ -58,6 +58,7 @@ export function ArticleGroup({
   article,
   author,
   type,
+  discription,
   profile,
   published,
   url,
@@ -77,10 +78,11 @@ export function ArticleGroup({
         <Text mih={60} fz="lg" fw={500} mt="md">
           {article}
         </Text>
-        {/* <Text fz="sm" c="dimmed" mt={5}>
-          Form context management, Switch, Grid and Indicator components
-          improvements, new hook and 10+ other changes
-        </Text> */}
+        <Spoiler maxHeight={50} hideLabel="less" showLabel="">
+          <Text fz="sm" c="dimmed" mt={5}>
+            {discription}
+          </Text>
+        </Spoiler>
 
         <Group justify="left" mt="md">
           <Image
