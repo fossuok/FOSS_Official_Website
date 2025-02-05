@@ -1,10 +1,9 @@
 "use client";
-
-import GradientBack from "@/components/Gradient/GradientBack";
-//openning title
-import classes from "./section1.module.css";
 import { Button, Container, Group, Text, VisuallyHidden } from "@mantine/core";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
+
+import classes from "./section1.module.css";
+import GradientBack from "@/components/Gradient/GradientBack";
 import { Advert } from "@/components/Advert/Advert";
 import { advertData } from "@/data/AdvertData"; //advert data file in data folder
 
@@ -22,7 +21,7 @@ export default function Section1() {
         <Container size={800} className={classes.inner}>
           <h1 className={classes.title}>
             Embrace the Power
-            <br /> of{" "}
+            <br /> of
             <Text
               component="span"
               variant="gradient"
@@ -30,7 +29,7 @@ export default function Section1() {
               inherit
             >
               Open-Source
-            </Text>{" "}
+            </Text>
             and Collaboration
           </h1>
 
