@@ -1,12 +1,15 @@
-export const pastData = [
+
+import img1 from "@/images/events/header.webp"
+import { EventCardProps } from "./EventCardProp";
+
+export const pastData: EventCardProps[] = [
     {
       id: 1,
       title: "POST SUMMIT MEETUP",
       date: "OCT 9",
       year: "2024",
       description: "Join Us for the Post-Summit Meetup on October 9th at WSO2!",
-      imageUrl:
-        "https://fossuok.org/images/events/post_summit_meetup_24/header.jpg",
+      imageUrl:img1,
       speakers: [
         {
           name: "Joy Rathnayake",

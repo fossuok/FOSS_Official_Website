@@ -49,7 +49,7 @@ export default function ArticlesHome() {
 
           <Link href="/blog" className={classes.link}>
             <Button className={classes.btn} radius="xl" variant="default">
-              Read More
+              View Blogs
             </Button>
           </Link>
         </Stack>

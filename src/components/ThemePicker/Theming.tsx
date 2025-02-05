@@ -17,7 +17,7 @@ export function ThemedLogo() {
     <>
       <Link href={"/"} style={{ all: "unset", cursor: "pointer" }}>
         <Group>
-          <Image src={logo} alt="FOSS Logo" width={35} height={35} />
+          <Image src={logo} alt="FOSS Logo" height={35} />
           <Text fw={700}>FOSS UoK</Text>
         </Group>
       </Link>

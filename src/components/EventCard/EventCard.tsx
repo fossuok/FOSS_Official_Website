@@ -9,18 +9,8 @@ import {
   Badge,
   Container,
 } from "@mantine/core";
+import { EventCardProps } from "@/data/EventCardProp";
 import { SpeakerCard } from "./SpeakerCard";
-
-interface EventCardProps {
-  id: number;
-  title: string;
-  date: string;
-  year: string;
-  description: string;
-  imageUrl: string;
-  speakers: { name: string; alt: string; src: string }[];
-  tags: string[];
-}
 
 export const EventCard = ({
   title,
@@ -30,7 +20,7 @@ export const EventCard = ({
   imageUrl,
   speakers,
   tags,
-}: EventCardProps) => {
+}: Readonly<EventCardProps>) => {
   return (
     <Container size={800} py="30">
       <Paper radius="5" shadow="xl" p="12" withBorder={false}>
@@ -75,7 +65,7 @@ export const EventCard = ({
             visibleFrom="xs"
             w="240"
             fit="cover"
-            src={imageUrl}
+            src={imageUrl.src}
             alt={title}
           />
           {/* content */}
