@@ -15,15 +15,9 @@
   padding-bottom: 120px;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     padding-top: 60px;
   }
-}
-.advert {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .title {
@@ -40,6 +34,12 @@
     font-size: 42px;
     line-height: 1.2;
   }
+}
+.advert {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -62,14 +62,17 @@
 }
 
 .control {
-  height: 54px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  height: 44px;
   padding-left: 38px;
   padding-right: 38px;
+  min-width: calc(97px + 76px);
 
   @media (max-width: $mantine-breakpoint-sm) {
-    height: 54px;
-    padding-left: 18px;
-    padding-right: 18px;
-    flex: 1;
+    height: 44px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }

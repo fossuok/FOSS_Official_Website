@@ -7,6 +7,11 @@
 html,
 body {
   overflow-x: hidden;
+  background-image: url("/bg-blur.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background in place */
 }
 /* For light mode */
 :root[data-mantine-color-scheme="light"] {

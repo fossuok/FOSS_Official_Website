@@ -36,6 +36,7 @@ export default function ArticlesHome() {
                     id={article.id}
                     article={article.article}
                     type={article.type}
+                    discription={article.discription}
                     author={article.author}
                     profile={article.profile}
                     published={article.published}
@@ -45,13 +46,12 @@ export default function ArticlesHome() {
               ))}
             </div>
           </section>
-          {/* <div className={classes.btn}>
-            <Link href="/blog">
-              <Button radius="xl" component="a" size="lg" variant="default">
-                Read More
-              </Button>
-            </Link>
-          </div> */}
+
+          <Link href="/blog" className={classes.link}>
+            <Button className={classes.btn} radius="xl" variant="default">
+              View Blogs
+            </Button>
+          </Link>
         </Stack>
       </Container>
     </div>

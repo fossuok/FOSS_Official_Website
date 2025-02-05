@@ -9,11 +9,12 @@ import {
   BackgroundImage,
 } from "@mantine/core";
 import classes from "./section2.module.css";
-import img1 from "@/images/home/uok.png";
-import img2 from "@/images/home/fosslk_logo.png";
-import codeImg from "@/images/home/github.jpg";
-import learn from "@/images/home/learn.jpg";
-import share from "@/images/home/share.jpg";
+import img1 from "@/images/home/uok.webp";
+import img2 from "@/images/home/fosslk_logo.webp";
+import codeImg from "@/images/home/github.webp";
+import learn from "@/images/home/learn.webp";
+import share from "@/images/home/share.webp";
+import lead from "@/images/home/lead.webp";
 
 export default function Section2() {
   return (
@@ -96,7 +97,7 @@ export default function Section2() {
           <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
               className={classes.background}
-              src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-6.png"
+              src={lead.src}
               radius="sm"
             >
               <Text className={classes.word} mih={120} c="white">

@@ -9,7 +9,7 @@ import {
   Textarea,
   TextInput,
 } from "@mantine/core";
-import bg from "@/images/FOSS.png";
+import bg from "@/images/FOSS.webp";
 import classes from "./GetInTouch.module.css";
 
 export function GetInTouch() {

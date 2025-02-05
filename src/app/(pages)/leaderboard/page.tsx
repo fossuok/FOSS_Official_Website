@@ -152,6 +152,7 @@ const LeaderBoard: React.FC = () => {
             onChange={(value) => setSelectedRepo(value || "overall")}
             placeholder="Select a repository"
             mb="lg"
+            radius="lg"
             disabled={loadingRepos}
           />
 

@@ -51,7 +51,9 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-xs) {
+    justify-content: space-around;
+    text-align: center;
   }
 }
 
@@ -81,6 +83,7 @@
 }
 
 .afterFooter {
+  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
