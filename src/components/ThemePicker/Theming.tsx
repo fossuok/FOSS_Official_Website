@@ -8,7 +8,7 @@ import {
 import { IconSun, IconMoon } from "@tabler/icons-react";
 import cx from "clsx";
 import classes from "./Theming.module.css";
-import Image from "next/image"; // or import { Image } from "@mantine/core";
+import Image from "next/image";
 import Link from "next/link";
 const logo = "/FOSS.webp";
 
@@ -17,7 +17,7 @@ export function ThemedLogo() {
     <>
       <Link href={"/"} style={{ all: "unset", cursor: "pointer" }}>
         <Group>
-          <Image src={logo} alt="FOSS Logo" height={35} />
+          <Image src={logo} alt="FOSS Logo" height={35} width={33} />
           <Text fw={700}>FOSS UoK</Text>
         </Group>
       </Link>
