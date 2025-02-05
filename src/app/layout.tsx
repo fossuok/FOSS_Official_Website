@@ -1,10 +1,8 @@
 "use client";
 
 import "@mantine/core/styles.css";
-import "@mantine/dates/styles.css";
-import "@mantine/charts/styles.css";
-import "@mantine/carousel/styles.css";
 import "./globals.css";
+import "@mantine/carousel/styles.css";
 
 import {
   ColorSchemeScript,
@@ -12,12 +10,14 @@ import {
   mantineHtmlProps,
   createTheme,
 } from "@mantine/core";
-import { HeaderMegaMenu } from "../components/Header/HeaderMegaMenu";
-import { FooterLinks } from "@/components/Footer/FooterLinks";
+
 import { Provider } from "react-redux";
-import { store } from "@/store/store";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
+import { store } from "@/store/store";
+
+import { HeaderMegaMenu } from "@/components/Header/HeaderMegaMenu";
+import { FooterLinks } from "@/components/Footer/FooterLinks";
 
 const theme = createTheme({
   fontFamily:
