@@ -46,13 +46,12 @@ export default function ArticlesHome() {
               ))}
             </div>
           </section>
-          <div className={classes.btn}>
-            <Link href="/blog" className={classes.link}>
-              <Button radius="xl" variant="default">
-                Read More
-              </Button>
-            </Link>
-          </div>
+
+          <Link href="/blog" className={classes.link}>
+            <Button className={classes.btn} radius="xl" variant="default">
+              Read More
+            </Button>
+          </Link>
         </Stack>
       </Container>
     </div>

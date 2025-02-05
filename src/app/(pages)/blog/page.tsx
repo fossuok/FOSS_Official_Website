@@ -4,8 +4,18 @@ import { ArticleGroup } from "./ArticleGroup";
 import { data } from "@/data/ArticleGroup";
 import GradientBack from "@/components/Gradient/GradientBack";
 
-export const metadata = {
-  title: "Blog | FOSSUOK",
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog | FOSS Community UOK ",
+  description: "Latest Blogs from FOSS Comunity at UOK.",
+  openGraph: {
+    title: "FOSS Community - University of Kelaniya",
+    description: "Welcome to the Offical Web Page of FOSS Comunity at UOK.",
+    type: "website",
+    url: "https://dev.fossuok.org/blog", //update
+    images: [{ url: "https://dev.fossuok.org/FOSS.webp" }],
+  },
 };
 
 export default function Home() {

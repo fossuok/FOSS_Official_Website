@@ -15,15 +15,9 @@
   padding-bottom: 120px;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     padding-top: 60px;
   }
-}
-.advert {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .title {
@@ -40,6 +34,12 @@
     font-size: 42px;
     line-height: 1.2;
   }
+}
+.advert {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .description {
