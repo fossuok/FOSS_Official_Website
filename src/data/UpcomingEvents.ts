@@ -1,4 +1,7 @@
-export const upcomingData = [
+import img1 from "@/images/events/header.webp"
+import { EventCardProps } from "./EventCardProp";
+
+export const upcomingData: EventCardProps[] = [
     {
         id: 6,
         title: "POST SUMMIT MEETUP",
@@ -6,7 +9,7 @@ export const upcomingData = [
         year: "2024",
         description: "Join Us for the Post-Summit Meetup on October 9th at WSO2!",
         imageUrl:
-          "https://fossuok.org/images/events/post_summit_meetup_24/header.jpg",
+          img1,
         speakers: [
           {
             name: "Joy Rathnayake",
@@ -27,8 +30,7 @@ export const upcomingData = [
         date: "OCT 13",
         year: "2024",
         description: "Join Us for the Post-Summit Meetup on October 9th at WSO2!",
-        imageUrl:
-          "https://fossuok.org/images/events/post_summit_meetup_24/header.jpg",
+        imageUrl:img1,
         speakers: [
           {
             name: "Joy Rathnayake",
@@ -50,7 +52,7 @@ export const upcomingData = [
         year: "2024",
         description: "Join Us for the Post-Summit Meetup on October 9th at WSO2!",
         imageUrl:
-          "https://fossuok.org/images/events/post_summit_meetup_24/header.jpg",
+          img1,
         speakers: [
           {
             name: "Joy Rathnayake",
@@ -71,8 +73,7 @@ export const upcomingData = [
         date: "OCT 11",
         year: "2024",
         description: "Join Us for the Post-Summit Meetup on October 9th at WSO2!",
-        imageUrl:
-          "https://fossuok.org/images/events/post_summit_meetup_24/header.jpg",
+        imageUrl:img1,
         speakers: [
           {
             name: "Joy Rathnayake",
@@ -93,8 +94,7 @@ export const upcomingData = [
         date: "OCT 10",
         year: "2024",
         description: "Join Us for the Post-Summit Meetup on October 9th at WSO2!",
-        imageUrl:
-          "https://fossuok.org/images/events/post_summit_meetup_24/header.jpg",
+        imageUrl:img1,
         speakers: [
           {
             name: "Joy Rathnayake",
@@ -115,8 +115,7 @@ export const upcomingData = [
       date: "OCT 9",
       year: "2024",
       description: "Join Us for the Post-Summit Meetup on October 9th at WSO2!",
-      imageUrl:
-        "https://fossuok.org/images/events/post_summit_meetup_24/header.jpg",
+      imageUrl:img1,
       speakers: [
         {
           name: "Joy Rathnayake",

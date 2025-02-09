@@ -11,6 +11,12 @@
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 }
 
+.logo {
+  min-width: 243px;
+  @media (max-width: $mantine-breakpoint-md) {
+    min-width: fit-content;
+  }
+}
 .link {
   display: flex;
   align-items: center;

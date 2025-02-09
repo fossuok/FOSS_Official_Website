@@ -10,9 +10,18 @@
 }
 
 .logo {
-  max-width: 200px;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 350px;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
 
   @media (max-width: $mantine-breakpoint-sm) {
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +29,7 @@
 }
 
 .description {
-  margin-top: 5px;
+  margin-top: 3px;
 
   @media (max-width: $mantine-breakpoint-sm) {
     margin-top: var(--mantine-spacing-xs);
@@ -30,7 +39,7 @@
 
 .inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media (max-width: $mantine-breakpoint-sm) {
     flex-direction: column;
@@ -42,24 +51,26 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: $mantine-breakpoint-sm) {
-    display: none;
+  @media (max-width: $mantine-breakpoint-xs) {
+    justify-content: space-around;
+    text-align: center;
   }
 }
 
 .wrapper {
-  width: 160px;
+  width: 180px;
+  padding-top: 20px;
 }
 
 .link {
   display: block;
   color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-1));
   font-size: var(--mantine-font-size-sm);
-  padding-top: 3px;
+  padding-top: 5px;
   padding-bottom: 3px;
 
   &:hover {
-    text-decoration: underline;
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   }
 }
 
@@ -72,6 +83,7 @@
 }
 
 .afterFooter {
+  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import { persistReducer } from 'redux-persist';
+import { persistReducer,persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; // Use localStorage as the default storage
 
 import leaderboardReducer from './features/leaderboard/leaderboard.slice';
@@ -21,6 +21,8 @@ export const store = configureStore({
     serializableCheck: false,
   }),
 });
+
+export const persistor = persistStore(store); //added newly
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

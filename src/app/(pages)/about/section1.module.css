@@ -45,7 +45,6 @@
 }
 .description {
   text-align: center;
-  /* margin-top: var(--mantine-spacing-md); */
   font-size: 24px;
 
   @media (max-width: $mantine-breakpoint-sm) {
@@ -63,5 +62,18 @@
     padding-left: 18px;
     padding-right: 18px;
     flex: 1;
+  }
+}
+.equalColumns {
+  width: 100%;
+}
+
+.equalColumns td {
+  width: 33.33%;
+}
+
+@media (max-width: 600px) {
+  .equalColumns td {
+    width: auto;
   }
 }
