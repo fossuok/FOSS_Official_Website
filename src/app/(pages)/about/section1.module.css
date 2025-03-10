@@ -77,3 +77,15 @@
     width: auto;
   }
 }
+
+.number {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: var(--mantine-font-family);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}

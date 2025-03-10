@@ -35,9 +35,9 @@ export default function Section1() {
               </Table.Tr>
             </Table.Thead>
             <Table.Tbody>
-              <Table.Tr fz="h2" fw={900}>
+              <Table.Tr className={classes.number}>
                 <Table.Td>2023</Table.Td>
-                <Table.Td maw={190}>150+</Table.Td>
+                <Table.Td>150+</Table.Td>
                 <Table.Td>6+</Table.Td>
               </Table.Tr>
             </Table.Tbody>
