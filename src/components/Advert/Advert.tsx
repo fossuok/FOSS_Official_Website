@@ -12,8 +12,10 @@ export function Advert({ data }: Readonly<AdvertProps>) {
       <Modal
         opened={opened}
         onClose={close}
+        withCloseButton={false}
         centered
         size="auto"
+        radius={"50px 50px"}
         overlayProps={{
           backgroundOpacity: 0.55,
           blur: 5,

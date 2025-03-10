@@ -11,6 +11,8 @@
   border: 1px solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-8));
 
+  border-radius: 40px;
+
   @media (max-width: $mantine-breakpoint-sm) {
     flex-direction: column-reverse;
     padding: var(--mantine-spacing-xl);

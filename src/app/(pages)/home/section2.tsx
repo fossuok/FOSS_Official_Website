@@ -60,7 +60,7 @@ export default function Section2() {
         <Grid gutter="md">
           <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
-              className={classes.background}
+              className={classes.background1}
               src={codeImg.src}
               radius="sm"
             >
@@ -72,7 +72,7 @@ export default function Section2() {
 
           <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
-              className={classes.background}
+              className={classes.background2}
               src={learn.src}
               radius="sm"
             >
@@ -84,7 +84,7 @@ export default function Section2() {
 
           <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
-              className={classes.background}
+              className={classes.background4}
               src={share.src}
               radius="sm"
             >
@@ -96,7 +96,7 @@ export default function Section2() {
 
           <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
-              className={classes.background}
+              className={classes.background3}
               src={lead.src}
               radius="sm"
             >

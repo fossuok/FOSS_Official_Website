@@ -25,7 +25,7 @@ export function ProjectCard() {
   const filteredRepos = repos.filter((repo) =>
     [
       "FOSS_Official_Website",
-      "nextra-doc-template",
+      "design-guidelines",
       "fossuok.github.io",
     ].includes(repo.name)
   );

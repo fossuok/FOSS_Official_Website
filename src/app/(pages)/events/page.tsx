@@ -20,10 +20,15 @@ export default function Events() {
       <Container size={1000}>
         <Tabs color="teal" defaultValue="Upcoming">
           <Tabs.List grow justify="space-between">
-            <Tabs.Tab value="Upcoming" fz="lg" fw={700}>
+            <Tabs.Tab value="Upcoming" fz="lg" className={classes.category}>
               Upcoming
             </Tabs.Tab>
-            <Tabs.Tab fz="lg" fw={700} color="violet" value="Previous">
+            <Tabs.Tab
+              fz="lg"
+              className={classes.category}
+              color="violet"
+              value="Previous"
+            >
               Previous
             </Tabs.Tab>
           </Tabs.List>
