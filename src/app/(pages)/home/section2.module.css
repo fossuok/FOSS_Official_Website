@@ -41,14 +41,33 @@
   }
 }
 
-.background {
-  opacity: 0.5;
-  filter: grayscale(0.8);
-  transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    filter: grayscale(0.8);
+  }
+  50% {
+    opacity: 1;
+    filter: grayscale(0);
+  }
 }
-.background:hover {
-  opacity: 1;
-  filter: grayscale(0);
+
+.background1 {
+  animation: pulse 4s infinite ease-in-out;
+  animation-delay: 0s;
+}
+.background2 {
+  animation: pulse 4s infinite ease-in-out;
+  animation-delay: 1s;
+}
+.background3 {
+  animation: pulse 4s infinite ease-in-out;
+  animation-delay: 2s;
+}
+.background4 {
+  animation: pulse 4s infinite ease-in-out;
+  animation-delay: 3s;
 }
 
 .canvas {
