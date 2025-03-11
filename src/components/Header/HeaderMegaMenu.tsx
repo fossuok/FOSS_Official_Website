@@ -1,6 +1,14 @@
 "use client";
 
-import { Box, Burger, Button, Divider, Drawer, Group } from "@mantine/core";
+import {
+  Box,
+  Burger,
+  Button,
+  Divider,
+  Drawer,
+  Group,
+  Indicator,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Theming, ThemedLogo } from "@/components/ThemePicker/Theming";
 import Link from "next/link";
@@ -36,7 +44,9 @@ export function HeaderMegaMenu() {
           </Group>
 
           <Group visibleFrom="md">
+            <Indicator position="top-start" processing size={16}></Indicator>
             <Button radius="xl">Open Dev Summit '25</Button>
+
             <Theming />
           </Group>
 

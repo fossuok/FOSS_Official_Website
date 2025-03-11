@@ -49,8 +49,8 @@ export function Advert({ data }: Readonly<AdvertProps>) {
           />
         </div>
       </Modal>
-
-      <Indicator inline label="New" size={16} processing>
+      {/* processing */}
+      <Indicator inline color="teal" label="New" size={16}>
         <Button
           variant="light"
           color="teal"

@@ -35,11 +35,13 @@
   }
 }
 .card {
-  background-color: light-dark(var(--mantine-color-white), rgb(41 48 65));
+  background-color: light-dark(
+    var(--mantine-color-violet-light),
+    var(--mantine-color-violet-light)
+  );
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   margin-bottom: 1rem;
   border: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .section {
