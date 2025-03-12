@@ -6,7 +6,7 @@
   line-height: 1.2;
   margin: 0;
   padding: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
   @media (max-width: $mantine-breakpoint-sm) {
@@ -29,6 +29,7 @@
 
 .word {
   display: flex;
+  color: var(--mantine-color-white);
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
@@ -39,35 +40,12 @@
     font-size: 36px;
     line-height: 1.5;
   }
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.8;
 }
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.5;
-    filter: grayscale(0.8);
-  }
-  50% {
-    opacity: 1;
-    filter: grayscale(0);
-  }
-}
-
-.background1 {
-  animation: pulse 4s infinite ease-in-out;
-  animation-delay: 0s;
-}
-.background2 {
-  animation: pulse 4s infinite ease-in-out;
-  animation-delay: 1s;
-}
-.background3 {
-  animation: pulse 4s infinite ease-in-out;
-  animation-delay: 2s;
-}
-.background4 {
-  animation: pulse 4s infinite ease-in-out;
-  animation-delay: 3s;
+.word:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .canvas {

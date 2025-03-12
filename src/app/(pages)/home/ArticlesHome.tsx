@@ -48,7 +48,12 @@ export default function ArticlesHome() {
           </section>
 
           <Link href="/blog" className={classes.link}>
-            <Button className={classes.btn} radius="xl" variant="default">
+            <Button
+              className={classes.btn}
+              radius="xl"
+              color="teal"
+              variant="light"
+            >
               View Blogs
             </Button>
           </Link>

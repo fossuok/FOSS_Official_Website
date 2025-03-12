@@ -44,7 +44,7 @@ export function CardsCarousel() {
           like-minded individuals, we've got you covered.
         </Text>
         <Carousel
-          controlsOffset="xs"
+          controlsOffset="-50px"
           slideSize={{ base: "100%", sm: "50%" }}
           slideGap={{ base: 2, sm: "xl" }}
           align="start"

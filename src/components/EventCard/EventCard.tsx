@@ -23,7 +23,7 @@ export const EventCard = ({
 }: Readonly<EventCardProps>) => {
   return (
     <Container size={800} py="30">
-      <Paper radius="5" shadow="xl" p="12" withBorder={false}>
+      <Paper radius="5" shadow="lg" p="12" withBorder={true}>
         <Flex direction="row" gap="20" justify="space-between">
           {/* Date Time */}
           <Flex

@@ -30,14 +30,11 @@ export default function Section1() {
             >
               Open-Source
             </Text>{" "}
-            and Collaboration
           </h1>
-
           <Text className={classes.description}>
-            Join us on our journey to explore, collaborate, and innovate in the
-            world of FOSS!
+            Join us on our journey to explore, collaborate, and innovate <br />{" "}
+            in the world of FOSS!
           </Text>
-
           <Group className={classes.controls}>
             <Button
               radius="xl"
@@ -54,7 +51,8 @@ export default function Section1() {
               radius="xl"
               component="a"
               href="https://github.com/fossuok/"
-              variant="default"
+              color="teal"
+              variant="light"
               className={classes.control}
               leftSection={<IconBrandGithubFilled size={18} stroke={1.5} />}
             >
