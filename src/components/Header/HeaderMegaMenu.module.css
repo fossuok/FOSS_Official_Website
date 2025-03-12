@@ -30,6 +30,9 @@
 
   @media (max-width: $mantine-breakpoint-md) {
     justify-content: center;
+    font-size: var(--mantine-font-size-xl);
+    font-weight: 600;
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
     height: 42px;
   }
   @mixin hover {
