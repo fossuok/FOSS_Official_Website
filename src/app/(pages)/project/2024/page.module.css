@@ -1,4 +1,5 @@
 .wrapper {
+  justify-content: center;
   align-items: center;
   position: relative;
   box-sizing: border-box;
@@ -12,11 +13,11 @@
   align-items: center;
   position: relative;
   padding-top: 80px;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    padding-bottom: 100px;
-    padding-top: 60px;
+    padding-bottom: 80px;
+    padding-top: 40px;
   }
 }
 
@@ -35,16 +36,9 @@
     line-height: 1.2;
   }
 }
-.advert {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
 
 .description {
   text-align: center;
-  margin-top: calc(2 * var(--mantine-spacing-xl));
   font-size: 24px;
 
   @media (max-width: $mantine-breakpoint-sm) {
@@ -52,27 +46,24 @@
   }
 }
 
-.controls {
-  justify-content: center;
-  margin-top: calc(var(--mantine-spacing-xl) * 2);
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    margin-top: var(--mantine-spacing-xl);
-  }
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-3));
 }
 
-.control {
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-  height: 44px;
-  padding-left: 38px;
-  padding-right: 38px;
-  min-width: calc(97px + 76px);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
 
-  @media (max-width: $mantine-breakpoint-sm) {
-    height: 44px;
-    padding-left: 38px;
-    padding-right: 38px;
+  @media (min-width: $mantine-breakpoint-xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

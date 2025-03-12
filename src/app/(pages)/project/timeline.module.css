@@ -1,0 +1,35 @@
+.control {
+  font-weight: 500;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  border-radius: var(--mantine-spacing-xl);
+  color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
+  font-size: var(--mantine-font-size-lg);
+  background-color: light-dark(
+    var(--mantine-color-black),
+    var(--mantine-color-black)
+  );
+}
+
+.link {
+  border-radius: 0 var(--mantine-spacing-xl) var(--mantine-spacing-xl) 0;
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  padding-left: var(--mantine-spacing-md);
+  margin-left: var(--mantine-spacing-xl);
+  font-size: var(--mantine-font-size-sm);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  border-left: 1px solid
+    light-dark(var(--mantine-color-teal-6), var(--mantine-color-teal-6));
+
+  @mixin hover {
+    background-color: transparent;
+
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-dark-0));
+  }
+}
+
+.chevron {
+  transition: transform 200ms ease;
+}
