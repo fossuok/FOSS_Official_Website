@@ -26,6 +26,7 @@ jobs:
         run: |
           echo "NEXT_PUBLIC_GITHUB_TOKEN=${{ secrets.NEXT_PUBLIC_GITHUB_TOKEN }}" >> .env
           echo "NEXT_PUBLIC_EXCLUDED_REPOS=${{ secrets.NEXT_PUBLIC_EXCLUDED_REPOS }}" >> .env
+          echo "NEXT_PUBLIC_EXCLUDED_AUTHORS=${{ secrets.NEXT_PUBLIC_EXCLUDED_AUTHORS }}" >> .env
 
       # Step 5: Build the project artifacts.
       - name: Build Project Artifacts
