@@ -2,7 +2,7 @@
 
 import { Box, Title, Text } from "@mantine/core";
 import styles from "./Cards.module.css";
-import { CardSpe } from "./CardSpe";
+import { CardOc } from "./CardOc";
 
 type CardProps = {
   title: string;
@@ -10,7 +10,7 @@ type CardProps = {
   type: 1 | 2 | 3; // Determines background gradient
 };
 
-const SpeakerCards = ({ cards }: { cards: CardProps[] }) => {
+const OC = ({ cards }: { cards: CardProps[] }) => {
   return (
     <div className={styles.container}>
       {cards.map((card, index) => (
@@ -21,12 +21,23 @@ const SpeakerCards = ({ cards }: { cards: CardProps[] }) => {
             <Text pb={50}>{card.content}</Text>
           </Box>
           <Box className={styles.content}>
-            <CardSpe />
-            <CardSpe />
-            <CardSpe />
-            <CardSpe />
-            <CardSpe />
-            <CardSpe />
+            <CardOc />
+            <CardOc />
+            <CardOc />
+            <CardOc />
+            <CardOc />
+
+            <CardOc />
+            <CardOc />
+            <CardOc />
+            <CardOc />
+            <CardOc />
+
+            <CardOc />
+            <CardOc />
+            <CardOc />
+            <CardOc />
+            <CardOc />
           </Box>
         </Box>
       ))}
@@ -34,4 +45,4 @@ const SpeakerCards = ({ cards }: { cards: CardProps[] }) => {
   );
 };
 
-export default SpeakerCards;
+export default OC;

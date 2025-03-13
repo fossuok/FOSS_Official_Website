@@ -1,8 +1,8 @@
 "use client";
 
-import { Box, Title, Text } from "@mantine/core";
+import { Box, Title, Text, Button } from "@mantine/core";
 import styles from "./Cards.module.css";
-import { Card1 } from "./Card1";
+import { CardSpo } from "./CardSpo";
 
 type CardProps = {
   title: string;
@@ -19,10 +19,13 @@ const SponserCards = ({ cards }: { cards: CardProps[] }) => {
           <Box className={styles.content}>
             <Title fz={32}>{card.title}</Title>
             <Text pb={50}>{card.content}</Text>
-            <Card1 />
-            <Card1 />
-            <Card1 />
-            <Card1 />
+          </Box>
+          <Box className={styles.content}>
+            <CardSpo />
+            <CardSpo />
+            <CardSpo />
+            <CardSpo />
+            <CardSpo />
           </Box>
         </Box>
       ))}
