@@ -37,6 +37,33 @@
     line-height: 1.2;
   }
 }
+.title1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: light-dark(
+    var(--mantine-color-black),
+    var(--mantine-color-white)
+  );
+  color: transparent;
+  text-align: left;
+  font-family: var(--mantine-font-family);
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    text-align: left;
+    font-family: var(--mantine-font-family);
+    -webkit-text-stroke-width: 0px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+    font-size: 42px;
+    line-height: 1.5;
+  }
+}
 
 .description {
   text-align: center;
