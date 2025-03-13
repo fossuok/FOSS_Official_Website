@@ -9,11 +9,12 @@ import {
   BackgroundImage,
 } from "@mantine/core";
 import classes from "./section2.module.css";
-import img1 from "@/images/home/uok.png";
-import img2 from "@/images/home/fosslk_logo.png";
-import codeImg from "@/images/home/github.jpg";
-import learn from "@/images/home/learn.jpg";
-import share from "@/images/home/share.jpg";
+import img1 from "@/images/home/uok.webp";
+import img2 from "@/images/home/fosslk_logo.webp";
+import codeImg from "@/images/home/github.webp";
+import learn from "@/images/home/learn.webp";
+import share from "@/images/home/share.webp";
+import lead from "@/images/home/lead.webp";
 
 export default function Section2() {
   return (
@@ -36,7 +37,7 @@ export default function Section2() {
           inherit
         >
           UOK
-        </Text>{" "}
+        </Text>
         ?
       </h1>
 
@@ -57,48 +58,47 @@ export default function Section2() {
         </Card>
 
         <Grid gutter="md">
-          <Grid.Col span={6}>
+          <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
               className={classes.background}
               src={codeImg.src}
               radius="sm"
             >
-              <Text className={classes.word} mih={120} c="white">
+              <Text className={classes.word} mih={120}>
                 Code
               </Text>
             </BackgroundImage>
           </Grid.Col>
 
-          <Grid.Col span={6}>
-            <BackgroundImage
-              className={classes.background}
-              src={learn.src}
-              radius="sm"
-            >
-              <Text className={classes.word} mih={120} c="White">
-                Learn
-              </Text>
-            </BackgroundImage>
+          <Grid.Col span={6} style={{ cursor: "pointer" }}>
+            <div className={classes.holographic_card}>
+              <BackgroundImage src={learn.src} radius="sm">
+                <Text className={classes.word} mih={120}>
+                  Learn
+                </Text>
+              </BackgroundImage>
+            </div>
           </Grid.Col>
 
-          <Grid.Col span={6}>
+          <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
               className={classes.background}
               src={share.src}
               radius="sm"
             >
-              <Text className={classes.word} mih={120} c="White">
+              <Text className={classes.word} mih={120}>
                 Share
               </Text>
             </BackgroundImage>
           </Grid.Col>
-          <Grid.Col span={6}>
+
+          <Grid.Col span={6} style={{ cursor: "pointer" }}>
             <BackgroundImage
               className={classes.background}
-              src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-6.png"
+              src={lead.src}
               radius="sm"
             >
-              <Text className={classes.word} mih={120} c="white">
+              <Text className={classes.word} mih={120}>
                 Lead
               </Text>
             </BackgroundImage>
@@ -106,13 +106,23 @@ export default function Section2() {
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img1.src} alt="University of Kelaniya" />
+              <Image
+                fit="contain"
+                mah={80}
+                src={img1.src}
+                alt="University of Kelaniya"
+              />
             </Card>
           </Grid.Col>
 
           <Grid.Col>
             <Card radius="md" className={classes.canvas}>
-              <Image src={img2.src} alt="FOSS Sri Lanka" />
+              <Image
+                fit="contain"
+                mah={100}
+                src={img2.src}
+                alt="FOSS Sri Lanka"
+              />
             </Card>
           </Grid.Col>
         </Grid>

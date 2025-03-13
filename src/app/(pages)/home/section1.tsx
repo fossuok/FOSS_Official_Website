@@ -1,11 +1,10 @@
 "use client";
-
-import GradientBack from "@/components/Gradient/GradientBack";
-//openning title
-import classes from "./section1.module.css";
 import { Button, Container, Group, Text, VisuallyHidden } from "@mantine/core";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
-import { Advert } from "@/components/Advert/advert";
+
+import classes from "./section1.module.css";
+import GradientBack from "@/components/Gradient/GradientBack";
+import { Advert } from "@/components/Advert/Advert";
 import { advertData } from "@/data/AdvertData"; //advert data file in data folder
 
 export default function Section1() {
@@ -14,11 +13,10 @@ export default function Section1() {
       <div className={classes.wrapper}>
         <GradientBack />
 
-        {/* <VisuallyHidden> */}
+        <VisuallyHidden> </VisuallyHidden>
         <div className={classes.advert}>
           <Advert data={advertData} />
         </div>
-        {/* </VisuallyHidden> */}
 
         <Container size={800} className={classes.inner}>
           <h1 className={classes.title}>
@@ -32,29 +30,29 @@ export default function Section1() {
             >
               Open-Source
             </Text>{" "}
-            and Collaboration
           </h1>
-
           <Text className={classes.description}>
-            Join us on our journey to explore, collaborate, and innovate in the
-            world of FOSS!
+            Join us on our journey to explore, collaborate, and innovate <br />{" "}
+            in the world of FOSS!
           </Text>
-
           <Group className={classes.controls}>
             <Button
-              size="xl"
+              radius="xl"
+              component="a"
+              href="#"
               className={classes.control}
               variant="gradient"
               gradient={{ from: "violet", to: "grape" }}
             >
-              Join
+              Join Now
             </Button>
 
             <Button
+              radius="xl"
               component="a"
-              href="https://github.com/mantinedev/mantine"
-              size="xl"
-              variant="default"
+              href="https://github.com/fossuok/"
+              color="teal"
+              variant="light"
               className={classes.control}
               leftSection={<IconBrandGithubFilled size={18} stroke={1.5} />}
             >

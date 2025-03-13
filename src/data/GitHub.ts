@@ -8,6 +8,9 @@ export interface ContributorInterface {
 export interface RepositoryInterface {
   id: number;
   name: string;
+  html_url: string;
+  description: string;
+  
 }
 
 export interface AppStateInterface {

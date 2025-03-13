@@ -1,0 +1,61 @@
+.wrapper {
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+}
+.inner {
+  padding: calc(var(--mantine-spacing-xl) * 1.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.value {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.diff {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: light-dark(var(--mantine-color-gray-4), var(--mantine-color-dark-3));
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card {
+  box-shadow: rgba(183, 0, 255, 0.1) 0px 7px 29px 0px;
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-dark-6)
+  );
+}
+
+.discription {
+  text-align: center;
+  font-family: var(--mantine-font-family);
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}

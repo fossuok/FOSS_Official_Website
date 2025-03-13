@@ -8,16 +8,25 @@ import {
 import { IconSun, IconMoon } from "@tabler/icons-react";
 import cx from "clsx";
 import classes from "./Theming.module.css";
-import Image from "next/image"; // or import { Image } from "@mantine/core";
-const logo = "/FOSS.png";
+import Image from "next/image";
+import Link from "next/link";
+const logo = "/FOSS.webp";
 
 export function ThemedLogo() {
   return (
     <>
-      <Group>
-        <Image src={logo} alt="FOSS Logo" width={40} height={40} />
-        <Text fw={700}>FOSS UoK</Text>
-      </Group>
+      <Link href={"/"} style={{ all: "unset", cursor: "pointer" }}>
+        <Group>
+          <Image src={logo} alt="FOSS Logo" height={35} width={33} />
+          <Text
+            size="25px"
+            fw={800}
+            c="light-dark(var(--mantine-color-black), var(--mantine-color-white))"
+          >
+            FOSS UOK
+          </Text>
+        </Group>
+      </Link>
     </>
   );
 }
@@ -34,7 +43,8 @@ export function Theming() {
       onClick={() =>
         setColorScheme(computedColorScheme === "light" ? "dark" : "light")
       }
-      variant="default"
+      color="teal"
+      variant="light"
       size="xl"
       aria-label="Toggle color scheme"
     >

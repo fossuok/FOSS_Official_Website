@@ -6,12 +6,12 @@
   line-height: 1.2;
   margin: 0;
   padding: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
   @media (max-width: $mantine-breakpoint-sm) {
     font-size: 36px;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 }
 
@@ -23,12 +23,13 @@
   font-size: 16px;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 .word {
   display: flex;
+  color: var(--mantine-color-white);
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
@@ -39,15 +40,12 @@
     font-size: 36px;
     line-height: 1.5;
   }
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.8;
 }
-
-.background {
-  opacity: 0.5;
-  filter: grayscale(0.8);
-}
-.background:hover {
+.word:hover {
   opacity: 1;
-  filter: grayscale(0);
+  transform: scale(1.05);
 }
 
 .canvas {

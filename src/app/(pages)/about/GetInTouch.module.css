@@ -5,7 +5,7 @@
     var(--mantine-color-dark-8)
   );
   border-radius: var(--mantine-radius-lg);
-  padding: 4px;
+  padding: var(--mantine-spacing-md);
   border: 1px solid
     light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-8));
 
@@ -13,7 +13,21 @@
     flex-direction: column;
   }
 }
+.title {
+  text-align: center;
+  font-family: var(--mantine-font-family);
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
 .form {
   flex: 1;
   padding: var(--mantine-spacing-xl);

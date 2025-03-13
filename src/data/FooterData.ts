@@ -1,29 +1,30 @@
 export const data = [
-    {
-      title: "About",
+  {
+    title: "Pages",
+    links: [
+      { label: "Home", link: "#" },
+      { label: "Events", link: "#" },
+      { label: "About", link: "#" },
+      { label: "Blog", link: "#" },
+      { label: "Leaderboard", link: "#" },
+    ],
+  }, 
+  {
+      title: "Helpful Links",
       links: [
-        { label: "Features", link: "#" },
-        { label: "Pricing", link: "#" },
-        { label: "Support", link: "#" },
-        { label: "Forums", link: "#" },
+        { label: "University of Kelaniya", link: "#" },
+        { label: "Open-Source Summit", link: "#" },
+        { label: "Code of Conduct", link: "#" },
+        { label: "FOSS.LK", link: "#" },
       ],
     },
+
     {
-      title: "Project",
+      title: "Reach Us",
       links: [
-        { label: "Contribute", link: "#" },
-        { label: "Media assets", link: "#" },
-        { label: "Changelog", link: "#" },
-        { label: "Releases", link: "#" },
-      ],
-    },
-    {
-      title: "Community",
-      links: [
-        { label: "Join Discord", link: "#" },
-        { label: "Follow on Twitter", link: "#" },
-        { label: "Email newsletter", link: "#" },
-        { label: "GitHub discussions", link: "#" },
+        { label: "hello@fossuok.org", link: "#" },
+        { label: "Free and Open-Source Software Community - University of Kelaniya, Dalugama, Kelaniya, Sri Lanka. 11600", link: "#" },
+        
       ],
     },
   ];

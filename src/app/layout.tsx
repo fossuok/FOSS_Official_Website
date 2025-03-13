@@ -1,50 +1,35 @@
-"use client"
-
 import "@mantine/core/styles.css";
-import "@mantine/dates/styles.css";
-import "@mantine/charts/styles.css";
-import "@mantine/carousel/styles.css";
 import "./globals.css";
+import "@mantine/carousel/styles.css";
 
-import {
-  ColorSchemeScript,
-  MantineProvider,
-  mantineHtmlProps,
-  createTheme,
-} from "@mantine/core";
-import { HeaderMegaMenu } from "../components/Header/HeaderMegaMenu";
-import { FooterLinks } from "@/components/Footer/FooterLinks";
-import { Provider } from "react-redux";
-import { store } from "@/store/store";
-import { persistStore } from "redux-persist";
-import { PersistGate } from "redux-persist/integration/react";
+import React from "react";
+import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
+import Providers from "@/components/Providers/Providers";
 
-const theme = createTheme({
-  fontFamily: "Inter, sans-serif",
-});
+export const metadata = {
+  title: "FOSS Community - University of Kelaniya",
+  description: "Welcome to the Official Web Page of FOSS Community at UOK.",
+};
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  let persistor = persistStore(store);
-
   return (
-    <html lang="en" {...mantineHtmlProps}>
+    <html lang="en" {...mantineHtmlProps} >
       <head>
-        <ColorSchemeScript />
+        <ColorSchemeScript
+          nonce="8IBTHwOdqNKAWeKl7plt8g=="
+          defaultColorScheme="dark"
+        />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
       </head>
       <body>
-        <Provider store={store}>
-          <MantineProvider theme={theme}>
-            <PersistGate loading={null} persistor={persistor}>
-              <HeaderMegaMenu />
-              {children}
-              <FooterLinks />
-            </PersistGate>
-          </MantineProvider>
-        </Provider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

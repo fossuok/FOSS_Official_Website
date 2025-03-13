@@ -1,9 +1,10 @@
 "use client";
 
 import {
-  IconBrandInstagram,
-  IconBrandTwitter,
-  IconBrandYoutube,
+  IconBrandFacebook,
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandX,
 } from "@tabler/icons-react";
 import { ActionIcon, Container, Group, Text } from "@mantine/core";
 import { ThemedLogo } from "../ThemePicker/Theming";
@@ -34,18 +35,22 @@ export function FooterLinks() {
 
   return (
     <footer className={classes.footer}>
-      <Container className={classes.inner}>
+      <Container size={1000} className={classes.inner}>
         <div className={classes.logo}>
           <ThemedLogo />
-          <Text size="xs" c="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
+          <Text pt={10} size="xs" c="dimmed" className={classes.description}>
+            Free and Open-Source Software Community - University of Kelaniya is
+            a community of students who are passionate about open-source
+            software and technology.
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
+
       <Container className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2020 mantine.dev. All rights reserved.
+          © 2024. Free and Open-Source Software Community - University of
+          Kelaniya. All rights reserved.
         </Text>
 
         <Group
@@ -55,13 +60,16 @@ export function FooterLinks() {
           wrap="nowrap"
         >
           <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter size={18} stroke={1.5} />
+            <IconBrandFacebook size={18} stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube size={18} stroke={1.5} />
+            <IconBrandX size={18} stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram size={18} stroke={1.5} />
+            <IconBrandGithub size={18} stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon size="lg" color="gray" variant="subtle">
+            <IconBrandLinkedin size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>
