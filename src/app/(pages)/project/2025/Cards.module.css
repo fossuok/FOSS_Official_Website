@@ -2,19 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  top: 0;
   padding: 40px 0;
 }
 
 .container .box {
   position: relative;
-  height: 400px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 40px 30px;
   transition: 0.5s;
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin: 20px 5px;
+  }
 }
 
 .container .box::before {
@@ -22,16 +25,15 @@
   position: absolute;
   top: 0;
   left: 50px;
-  width: 20%;
+  width: 0%;
   height: 100%;
   text-decoration: none;
-  background: var(--mantine-color-body);
+  background: var(--mantine---mantine-color-grape-light);
   border-radius: 50px;
-  transform: skewX(15deg);
+  transform: skewX(0deg);
   transition: 0.5s;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    width: 50px;
     border-radius: 10px;
     width: calc(100% - 30px);
     transform: skewX(0deg);
@@ -58,7 +60,7 @@
 
 .container .box[data-type="3"]::before,
 .container .box[data-type="3"]::after {
-  background: linear-gradient(315deg, #050d21, #00ff88);
+  background: linear-gradient(315deg, #050d21, #050d21);
 }
 
 .container .box span {
@@ -133,26 +135,25 @@
 }
 
 .container .box .content {
-  align-items: center;
-  flex-direction: column;
-
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   left: 0;
-  padding: 20px 40px;
-  /* background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+  padding: 30px 40px;
   border-radius: 8px;
   z-index: 1;
   transform: 0.5s;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  padding: 60px 40px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
+  }
 }
 
 .container .box:hover .content {
   color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
-  padding: 60px 40px;
+  padding: 30px 40px;
 }
 
 .container .box .content h2 {
@@ -171,7 +172,6 @@
   display: inline-block;
   font-size: 1.1em;
 
-  background: var(--mantine-color-body);
   padding: 10px;
   border-radius: 4px;
   text-decoration: none;
@@ -179,8 +179,15 @@
   margin-top: 5px;
 }
 
-.container .box .content a:hover {
-  background: #ffcf4d;
-  border: 1px solid rgba(255, 0, 88, 0.4);
-  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+.container .box::before,
+.container .box::after,
+.container .box .content {
+  transition: all 0.5s ease-in-out;
+  transition-delay: 5s; /* Delays reset after hover ends */
+}
+
+.container .box:hover::before,
+.container .box:hover::after,
+.container .box:hover .content {
+  transition-delay: 0s; /* Instant effect on hover */
 }
