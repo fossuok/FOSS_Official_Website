@@ -31,6 +31,11 @@ const excludedRepos =
     repo.trim()
   ) || [];
 
+const excludedAuthors =
+  process.env.NEXT_PUBLIC_EXCLUDED_AUTHORS?.split(",").map((author) =>
+    author.trim()
+  ) || [];
+
 const ITEMS_PER_PAGE = 10;
 
 const fetchWithRetry = async (url: string, retries = 3, delay = 1000) => {
@@ -92,6 +97,7 @@ const LeaderBoard: React.FC = () => {
           contributionsDict[repo.name] = repoContributors;
 
           repoContributors.forEach((contributor: any) => {
+            if (excludedAuthors.includes(contributor.login)) return;
             const existing = contributionsDict["overall"].find(
               (c) => c.login === contributor.login
             );
