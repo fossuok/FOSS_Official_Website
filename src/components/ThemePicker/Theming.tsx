@@ -18,7 +18,13 @@ export function ThemedLogo() {
       <Link href={"/"} style={{ all: "unset", cursor: "pointer" }}>
         <Group>
           <Image src={logo} alt="FOSS Logo" height={35} width={33} />
-          <Text fw={700}>FOSS UoK</Text>
+          <Text
+            size="25px"
+            fw={800}
+            c="light-dark(var(--mantine-color-black), var(--mantine-color-white))"
+          >
+            FOSS UOK
+          </Text>
         </Group>
       </Link>
     </>
@@ -37,7 +43,8 @@ export function Theming() {
       onClick={() =>
         setColorScheme(computedColorScheme === "light" ? "dark" : "light")
       }
-      variant="default"
+      color="teal"
+      variant="light"
       size="xl"
       aria-label="Toggle color scheme"
     >

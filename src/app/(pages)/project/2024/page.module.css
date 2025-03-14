@@ -1,4 +1,5 @@
 .wrapper {
+  justify-content: center;
   align-items: center;
   position: relative;
   box-sizing: border-box;
@@ -12,18 +13,18 @@
   align-items: center;
   position: relative;
   padding-top: 80px;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
 
   @media (max-width: $mantine-breakpoint-sm) {
     padding-bottom: 80px;
-    padding-top: 60px;
+    padding-top: 40px;
   }
 }
 
 .title {
   text-align: center;
   font-family: var(--mantine-font-family);
-  font-size: 56px;
+  font-size: 72px;
   font-weight: 900;
   line-height: 1.1;
   margin: 0;
@@ -31,42 +32,38 @@
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 32px;
-    line-height: 1.2;
-  }
-}
-.category {
-  font-size: 48px;
-  font-weight: 900;
-  font-family: var(--mantine-font-family);
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 32px;
+    font-size: 42px;
     line-height: 1.2;
   }
 }
 
 .description {
   text-align: center;
-  margin-top: calc(3 * var(--mantine-spacing-md));
   font-size: 24px;
 
   @media (max-width: $mantine-breakpoint-sm) {
     font-size: 18px;
-    margin-top: var(--mantine-spacing-xl);
   }
 }
 
-.btn {
-  height: 54px;
-  padding-left: 38px;
-  padding-right: 38px;
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-3));
+}
 
-  @media (max-width: $mantine-breakpoint-sm) {
-    height: 54px;
-    padding-left: 18px;
-    padding-right: 18px;
-    flex: 1;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+
+  @media (min-width: $mantine-breakpoint-xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

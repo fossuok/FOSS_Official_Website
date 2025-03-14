@@ -12,8 +12,10 @@ export function Advert({ data }: Readonly<AdvertProps>) {
       <Modal
         opened={opened}
         onClose={close}
+        withCloseButton={false}
         centered
         size="auto"
+        radius={"50px 50px"}
         overlayProps={{
           backgroundOpacity: 0.55,
           blur: 5,
@@ -47,8 +49,8 @@ export function Advert({ data }: Readonly<AdvertProps>) {
           />
         </div>
       </Modal>
-
-      <Indicator inline label="New" size={16} processing>
+      {/* processing */}
+      <Indicator inline color="teal" label="New" size={16}>
         <Button
           variant="light"
           color="teal"

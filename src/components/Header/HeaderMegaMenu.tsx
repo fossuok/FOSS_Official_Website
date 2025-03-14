@@ -1,6 +1,15 @@
 "use client";
 
-import { Box, Burger, Button, Divider, Drawer, Group } from "@mantine/core";
+import {
+  Box,
+  Burger,
+  Button,
+  Divider,
+  Drawer,
+  Flex,
+  Group,
+  Indicator,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Theming, ThemedLogo } from "@/components/ThemePicker/Theming";
 import Link from "next/link";
@@ -36,7 +45,17 @@ export function HeaderMegaMenu() {
           </Group>
 
           <Group visibleFrom="md">
-            <Button radius="xl">Open Dev Summit '25</Button>
+            <Link href="/project/2025" passHref>
+              <Indicator
+                color="red"
+                position="bottom-start"
+                processing
+                size={10}
+              >
+                <Button radius="xl">Open Dev Summit '25</Button>
+              </Indicator>
+            </Link>
+
             <Theming />
           </Group>
 
@@ -92,10 +111,18 @@ export function HeaderMegaMenu() {
 
             <Divider my="sm" />
 
-            <Group justify="center" grow px="md">
-              <Button miw={100} radius="xl">
-                Summit
-              </Button>
+            <Group
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              <Link href="/project/2025" onClick={toggleDrawer}>
+                <Button miw={180} radius="xl">
+                  Summit '25
+                </Button>
+              </Link>
               <Theming />
             </Group>
           </Drawer.Body>

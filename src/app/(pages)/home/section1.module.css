@@ -44,7 +44,7 @@
 
 .description {
   text-align: center;
-  margin-top: var(--mantine-spacing-xl);
+  margin-top: calc(2 * var(--mantine-spacing-xl));
   font-size: 24px;
 
   @media (max-width: $mantine-breakpoint-sm) {

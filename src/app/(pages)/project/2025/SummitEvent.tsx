@@ -10,12 +10,12 @@ import {
 } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 import { useMediaQuery } from "@mantine/hooks";
-import classes from "./CardsCarousel.module.css";
+import classes from "@/app/(pages)/home/CardsCarousel.module.css";
 import { upcomingData } from "@/data/UpcomingEvents";
 import { EventCard } from "@/components/EventCard/EventCard";
 import GradientBack from "@/components/Gradient/GradientBack";
 
-export function CardsCarousel() {
+export function SummitEvent() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = upcomingData.map((event) => (
@@ -29,19 +29,18 @@ export function CardsCarousel() {
       <GradientBack />
       <Container size={1200} pt={100} pb={100}>
         <h1 className={classes.title}>
-          Latest{" "}
+          Event{" "}
           <Text
             component="span"
             variant="gradient"
             gradient={{ from: "violet", to: "grape" }}
             inherit
           >
-            Events
+            Schedule
           </Text>{" "}
         </h1>
         <Text className={classes.discription}>
-          Whether you are looking to learn something new or network with
-          like-minded individuals, we've got you covered.
+          Fillout the form and reserve your seat.
         </Text>
         <Carousel
           controlsOffset="-50px"

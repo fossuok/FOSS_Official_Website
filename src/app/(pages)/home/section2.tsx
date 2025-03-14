@@ -64,22 +64,20 @@ export default function Section2() {
               src={codeImg.src}
               radius="sm"
             >
-              <Text className={classes.word} mih={120} c="white">
+              <Text className={classes.word} mih={120}>
                 Code
               </Text>
             </BackgroundImage>
           </Grid.Col>
 
           <Grid.Col span={6} style={{ cursor: "pointer" }}>
-            <BackgroundImage
-              className={classes.background}
-              src={learn.src}
-              radius="sm"
-            >
-              <Text className={classes.word} mih={120} c="White">
-                Learn
-              </Text>
-            </BackgroundImage>
+            <div className={classes.holographic_card}>
+              <BackgroundImage src={learn.src} radius="sm">
+                <Text className={classes.word} mih={120}>
+                  Learn
+                </Text>
+              </BackgroundImage>
+            </div>
           </Grid.Col>
 
           <Grid.Col span={6} style={{ cursor: "pointer" }}>
@@ -88,7 +86,7 @@ export default function Section2() {
               src={share.src}
               radius="sm"
             >
-              <Text className={classes.word} mih={120} c="White">
+              <Text className={classes.word} mih={120}>
                 Share
               </Text>
             </BackgroundImage>
@@ -100,7 +98,7 @@ export default function Section2() {
               src={lead.src}
               radius="sm"
             >
-              <Text className={classes.word} mih={120} c="white">
+              <Text className={classes.word} mih={120}>
                 Lead
               </Text>
             </BackgroundImage>
