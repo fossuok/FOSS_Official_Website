@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { Container, Pagination } from "@mantine/core";
 import { EventCard } from "@/components/EventCard/EventCard";
-import { upcomingData } from "@/data/UpcomingEvents";
+import { EventCardProps } from "@/data/EventCardProp";
+import { useState } from "react";
 
 // Utility function to chunk data into pages of a given size
 function chunk<T>(array: T[], size: number): T[][] {
@@ -10,10 +10,10 @@ function chunk<T>(array: T[], size: number): T[][] {
 }
 
 const ITEMS_PER_PAGE = 3;
-const paginatedData = chunk(upcomingData, ITEMS_PER_PAGE);
 
-export function Section1() {
+export function Section1({ events }: { events: EventCardProps[] }) {
   const [activePage, setPage] = useState(1);
+  const paginatedData = chunk(events, ITEMS_PER_PAGE);
   const currentItems = paginatedData[activePage - 1] || [];
 
   return (
