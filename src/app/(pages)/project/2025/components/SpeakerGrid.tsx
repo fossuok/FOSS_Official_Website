@@ -1,8 +1,11 @@
 "use client";
 
+import styles from "../css/Cards.module.css";
+
 import { Box, Title, Text } from "@mantine/core";
-import styles from "./css/Cards.module.css";
-import { CardSpe } from "./CardSpe";
+import SpeakerCard from "./SpeakerCard";
+
+import speakerList from "../lib/speakerList";
 
 type CardProps = {
 	title: string;
@@ -10,7 +13,7 @@ type CardProps = {
 	type: 1 | 2 | 3; // Determines background gradient
 };
 
-const SpeakerCards = ({ cards }: { cards: CardProps[] }) => {
+const SpeakerGrid = ({ cards }: { cards: CardProps[] }) => {
 	return (
 		<div className={styles.container}>
 			{cards.map((card, index) => (
@@ -21,12 +24,19 @@ const SpeakerCards = ({ cards }: { cards: CardProps[] }) => {
 						<Text pb={50}>{card.content}</Text>
 					</Box>
 					<Box className={styles.content}>
-						<CardSpe />
-						<CardSpe />
-						<CardSpe />
-						<CardSpe />
-						<CardSpe />
-						<CardSpe />
+						{speakerList.map((speaker, index) => {
+							return (
+								<SpeakerCard
+									key={index}
+									fname={speaker.fname}
+									lname={speaker.lname}
+									email={speaker.email}
+									position={speaker.position}
+									linkedin={speaker.linkedin}
+									picture={speaker.picture}
+								/>
+							);
+						})}
 					</Box>
 				</Box>
 			))}
@@ -34,4 +44,4 @@ const SpeakerCards = ({ cards }: { cards: CardProps[] }) => {
 	);
 };
 
-export default SpeakerCards;
+export default SpeakerGrid;
