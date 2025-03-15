@@ -8,12 +8,16 @@ import {
   Title,
   Badge,
   Container,
+  Button,
 } from "@mantine/core";
 import { EventCardProps } from "@/data/EventCardProp";
 import { SpeakerCard } from "./SpeakerCard";
 
 export const EventCard = ({
   title,
+  register,
+  open,
+  record,
   date,
   year,
   description,
@@ -89,6 +93,21 @@ export const EventCard = ({
                 ))}
               </Flex>
             </Box>
+            <Button
+              radius={50}
+              component="a"
+              href={register}
+              target="_blank"
+              {...(!open && {
+                onClick: (
+                  event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+                ) => event.preventDefault(),
+                "data-disabled": true,
+              })}
+              {...(record && { color: "teal" })}
+            >
+              {open && record ? "Recording Available" : "Register"}
+            </Button>
           </Flex>
         </Flex>
       </Paper>
