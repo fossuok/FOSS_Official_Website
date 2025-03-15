@@ -1,6 +1,7 @@
 //separated to keep the layout as server render
 "use client";
-
+import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import React from "react";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
@@ -17,7 +18,7 @@ interface ProvidersProps {
 export default function Providers({ children }: ProvidersProps) {
   return (
     <Provider store={store}>
-      <MantineProvider theme={theme}>
+      <MantineProvider defaultColorScheme="dark" theme={theme}>
         <PersistGate loading={null} persistor={persistor}>
           <HeaderMegaMenu />
           {children}

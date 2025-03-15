@@ -1,7 +1,4 @@
-import "@mantine/core/styles.css";
 import "./globals.css";
-import "@mantine/carousel/styles.css";
-
 import React from "react";
 import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
 import Providers from "@/components/Providers/Providers";
@@ -17,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" {...mantineHtmlProps} >
+    <html lang="en" {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript
           nonce="8IBTHwOdqNKAWeKl7plt8g=="
