@@ -28,7 +28,7 @@ export const upcomingData: EventCardProps[] = [
       },
     {
       id: 1,
-      title: "POST SUMMIT MEETUP",
+      title: "POST SUMMIT MEETUP1",
       register:"https://fossuok.org/",
       open: true,
       record:false,
