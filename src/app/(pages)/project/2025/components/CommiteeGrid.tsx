@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../Cards.module.css";
+import styles from "../css/Cards.module.css";
 
 import { Box, Title, Text } from "@mantine/core";
 import CommiteeCard from "./CommiteeCard";
