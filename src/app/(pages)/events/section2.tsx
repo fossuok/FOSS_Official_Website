@@ -1,9 +1,7 @@
-// we can merge this to section 1 if redundent
-"use client";
-import { useState } from "react";
-import { Pagination, Container } from "@mantine/core";
+import { Container, Pagination } from "@mantine/core";
 import { EventCard } from "@/components/EventCard/EventCard";
-import { pastData } from "@/data/PastEvents";
+import { EventCardProps } from "@/data/EventCardProp";
+import { useState } from "react";
 
 // Utility function to chunk data into pages of a given size
 function chunk<T>(array: T[], size: number): T[][] {
@@ -12,10 +10,10 @@ function chunk<T>(array: T[], size: number): T[][] {
 }
 
 const ITEMS_PER_PAGE = 3;
-const paginatedData = chunk(pastData, ITEMS_PER_PAGE);
 
-export function Section2() {
+export function Section2({ events }: { events: EventCardProps[] }) {
   const [activePage, setPage] = useState(1);
+  const paginatedData = chunk(events, ITEMS_PER_PAGE);
   const currentItems = paginatedData[activePage - 1] || [];
 
   return (
