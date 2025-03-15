@@ -1,7 +1,7 @@
-import { Avatar, Button, em, Paper, Text } from "@mantine/core";
+import { Avatar, Paper, Text } from "@mantine/core";
 import { IconBrandLinkedin } from "@tabler/icons-react";
 
-interface CommiteeMemberCardProps {
+interface SpeakerCardProps {
 	fname: string;
 	lname: string;
 	email: string;
@@ -10,7 +10,7 @@ interface CommiteeMemberCardProps {
 	picture: string;
 }
 
-const CommiteeMemberCard: React.FC<CommiteeMemberCardProps> = ({
+const SpeakerCard: React.FC<SpeakerCardProps> = ({
 	fname,
 	lname,
 	email,
@@ -20,7 +20,8 @@ const CommiteeMemberCard: React.FC<CommiteeMemberCardProps> = ({
 }) => {
 	return (
 		<Paper radius="xl" p="lg" bg="transparent">
-			<Avatar src={picture} size={120} radius={30} mx="auto" />
+			<Avatar src={picture} size={240} radius={60} mx="auto" />
+
 			<a
 				href={linkedin}
 				style={{
@@ -46,6 +47,7 @@ const CommiteeMemberCard: React.FC<CommiteeMemberCardProps> = ({
 			>
 				<IconBrandLinkedin size={36} />
 			</a>
+
 			<Text ta="center" fz="lg" fw={500}>
 				{fname + " " + lname}
 			</Text>
@@ -56,4 +58,4 @@ const CommiteeMemberCard: React.FC<CommiteeMemberCardProps> = ({
 	);
 };
 
-export default CommiteeMemberCard;
+export default SpeakerCard;

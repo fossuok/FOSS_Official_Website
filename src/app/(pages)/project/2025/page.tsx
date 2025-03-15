@@ -1,14 +1,16 @@
-import { Container, Group, Button, Text, Grid, Skeleton } from "@mantine/core";
-import SponserCards from "./SponserCards";
-import CommiteeGrid from "./components/CommiteeGrid";
-import classes from "./page.module.css";
-import GradientBack from "@/components/Gradient/GradientBack";
-import { NavbarTimeline } from "../timeline";
-import ImgGrid from "./ImgGrid";
-
 import { Metadata } from "next";
-import SummitSpeakerCard from "./SummitSpeakerCards";
+
+import classes from "./page.module.css";
+
+import { Container, Group, Button } from "@mantine/core";
+import ImgGrid from "./ImgGrid";
+import GradientBack from "@/components/Gradient/GradientBack";
+
+import { NavbarTimeline } from "../timeline";
+import SponserCards from "./SponserCards";
+import SpeakerGrid from "./components/SpeakerGrid";
 import { SummitEvent } from "./SummitEvent";
+import CommiteeGrid from "./components/CommiteeGrid";
 
 export const metadata: Metadata = {
 	title: "Open Dev Summit 25",
@@ -120,7 +122,7 @@ export default function Home() {
 				</Container>
 			</div>
 			<div>
-				<SummitSpeakerCard
+				<SpeakerGrid
 					cards={[
 						{ title: "Meet the Speakers", content: "", type: 2 },
 					]}

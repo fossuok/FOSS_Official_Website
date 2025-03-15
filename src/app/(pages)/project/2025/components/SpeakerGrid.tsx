@@ -3,9 +3,9 @@
 import styles from "../Cards.module.css";
 
 import { Box, Title, Text } from "@mantine/core";
-import CommiteeCard from "./CommiteeCard";
+import SpeakerCard from "./SpeakerCard";
 
-import commiteeList from "../lib/commiteeList";
+import speakerList from "../lib/speakerList";
 
 type CardProps = {
 	title: string;
@@ -13,7 +13,7 @@ type CardProps = {
 	type: 1 | 2 | 3; // Determines background gradient
 };
 
-const CommiteeGrid = ({ cards }: { cards: CardProps[] }) => {
+const SpeakerGrid = ({ cards }: { cards: CardProps[] }) => {
 	return (
 		<div className={styles.container}>
 			{cards.map((card, index) => (
@@ -24,16 +24,16 @@ const CommiteeGrid = ({ cards }: { cards: CardProps[] }) => {
 						<Text pb={50}>{card.content}</Text>
 					</Box>
 					<Box className={styles.content}>
-						{commiteeList.map((member, index) => {
+						{speakerList.map((speaker, index) => {
 							return (
-								<CommiteeCard
+								<SpeakerCard
 									key={index}
-									fname={member.fname}
-									lname={member.lname}
-									email={member.email}
-									position={member.position}
-									linkedin={member.linkedin}
-									picture={member.picture}
+									fname={speaker.fname}
+									lname={speaker.lname}
+									email={speaker.email}
+									position={speaker.position}
+									linkedin={speaker.linkedin}
+									picture={speaker.picture}
 								/>
 							);
 						})}
@@ -44,4 +44,4 @@ const CommiteeGrid = ({ cards }: { cards: CardProps[] }) => {
 	);
 };
 
-export default CommiteeGrid;
+export default SpeakerGrid;

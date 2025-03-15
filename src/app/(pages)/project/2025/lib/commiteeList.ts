@@ -1,4 +1,4 @@
-const commiteeMemberList = [
+const commiteeList = [
 	// Use 'https://...' when filling linkedin links
 
 	{
@@ -39,4 +39,4 @@ const commiteeMemberList = [
 	},
 ];
 
-export default commiteeMemberList;
+export default commiteeList;
