@@ -1,7 +1,7 @@
 import { Avatar, Paper, Text } from "@mantine/core";
 import { IconBrandLinkedin } from "@tabler/icons-react";
 
-interface CommiteeCardProps {
+interface CommitteeCardProps {
 	fname: string;
 	lname: string;
 	email: string;
@@ -10,7 +10,7 @@ interface CommiteeCardProps {
 	picture: string;
 }
 
-const CommiteeCard: React.FC<CommiteeCardProps> = ({
+const CommitteeCard: React.FC<CommitteeCardProps> = ({
 	fname,
 	lname,
 	email,
@@ -56,4 +56,4 @@ const CommiteeCard: React.FC<CommiteeCardProps> = ({
 	);
 };
 
-export default CommiteeCard;
+export default CommitteeCard;

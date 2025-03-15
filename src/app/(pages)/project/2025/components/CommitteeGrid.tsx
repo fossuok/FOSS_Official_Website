@@ -3,9 +3,9 @@
 import styles from "../css/Cards.module.css";
 
 import { Box, Title, Text } from "@mantine/core";
-import CommiteeCard from "./CommiteeCard";
+import CommitteeCard from "./CommitteeCard";
 
-import commiteeList from "../lib/commiteeList";
+import committeeList from "../lib/committeeList";
 
 type CardProps = {
 	title: string;
@@ -13,7 +13,7 @@ type CardProps = {
 	type: 1 | 2 | 3; // Determines background gradient
 };
 
-const CommiteeGrid = ({ cards }: { cards: CardProps[] }) => {
+const CommitteeGrid = ({ cards }: { cards: CardProps[] }) => {
 	return (
 		<div className={styles.container}>
 			{cards.map((card, index) => (
@@ -24,9 +24,9 @@ const CommiteeGrid = ({ cards }: { cards: CardProps[] }) => {
 						<Text pb={50}>{card.content}</Text>
 					</Box>
 					<Box className={styles.content}>
-						{commiteeList.map((member, index) => {
+						{committeeList.map((member, index) => {
 							return (
-								<CommiteeCard
+								<CommitteeCard
 									key={index}
 									fname={member.fname}
 									lname={member.lname}
@@ -44,4 +44,4 @@ const CommiteeGrid = ({ cards }: { cards: CardProps[] }) => {
 	);
 };
 
-export default CommiteeGrid;
+export default CommitteeGrid;

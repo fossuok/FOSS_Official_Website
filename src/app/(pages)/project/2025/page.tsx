@@ -10,7 +10,7 @@ import { NavbarTimeline } from "../timeline";
 import SponserCards from "./SponserCards";
 import SpeakerGrid from "./components/SpeakerGrid";
 import { SummitEvent } from "./SummitEvent";
-import CommiteeGrid from "./components/CommiteeGrid";
+import CommitteeGrid from "./components/CommitteeGrid";
 
 export const metadata: Metadata = {
 	title: "Open Dev Summit 25",
@@ -132,9 +132,9 @@ export default function Home() {
 			<SummitEvent />
 
 			<div>
-				<CommiteeGrid
+				<CommitteeGrid
 					cards={[
-						{ title: "Organizing Commitee", content: "", type: 3 },
+						{ title: "Organizing Committee", content: "", type: 3 },
 					]}
 				/>
 			</div>
