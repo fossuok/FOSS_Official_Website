@@ -1,4 +1,4 @@
-// EventCard.tsx
+import { useRouter } from "next/navigation";
 import {
   Paper,
   Flex,
@@ -14,6 +14,7 @@ import { EventCardProps } from "@/data/EventCardProp";
 import { SpeakerCard } from "./SpeakerCard";
 
 export const EventCard = ({
+  id,
   title,
   register,
   open,
@@ -25,9 +26,23 @@ export const EventCard = ({
   speakers,
   tags,
 }: Readonly<EventCardProps>) => {
+  const router = useRouter(); // Initialize the router
+
+  // Handle click event to navigate to the event details page
+  const handleCardClick = () => {
+    router.push(`/events/${id}`);
+  };
+
   return (
     <Container size={800} py="30">
-      <Paper radius="5" shadow="lg" p="12" withBorder={true}>
+      <Paper
+        radius="5"
+        shadow="lg"
+        p="12"
+        withBorder={true}
+        style={{ cursor: "pointer" }}
+        onClick={handleCardClick}
+      >
         <Flex direction="row" gap="20" justify="space-between">
           {/* Date Time */}
           <Flex
@@ -64,7 +79,7 @@ export const EventCard = ({
               {year}
             </Text>
           </Flex>
-          {/* poster */}
+          {/* Poster */}
           <Image
             visibleFrom="xs"
             w="240"
@@ -72,7 +87,7 @@ export const EventCard = ({
             src={imageUrl.src}
             alt={title}
           />
-          {/* content */}
+          {/* Content */}
           <Flex direction="column" gap="10" mt="10">
             <Title order={2}>{title}</Title>
             <Text mb="20">{description}</Text>
@@ -105,6 +120,7 @@ export const EventCard = ({
                 "data-disabled": true,
               })}
               {...(record && { color: "teal" })}
+              onClick={(e) => e.stopPropagation()} // Prevent card click when button is clicked
             >
               {open && record ? "Recording Available" : "Register"}
             </Button>
