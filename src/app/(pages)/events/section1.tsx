@@ -9,7 +9,7 @@ function chunk<T>(array: T[], size: number): T[][] {
   return [array.slice(0, size), ...chunk(array.slice(size), size)];
 }
 
-const ITEMS_PER_PAGE = 3;
+const ITEMS_PER_PAGE = 4;
 
 export function Section1({ events }: { events: EventCardProps[] }) {
   const [activePage, setPage] = useState(1);
