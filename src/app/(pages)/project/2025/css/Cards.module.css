@@ -149,33 +149,43 @@
   padding: 30px 40px;
   border-radius: 8px;
   z-index: 1;
+  transform: 0.5s;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
-  .container .box .content h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+  @media (max-width: $mantine-breakpoint-sm) {
+    color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
   }
-  .container .box .content p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    line-height: 1.4em;
-  }
-  .container .box .content a {
-    display: inline-block;
-    font-size: 1.1em;
-    padding: 10px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 700;
-    margin-top: 5px;
-  }
+}
 
-  .container .box .content {
-    transition: all 0.5s ease-in-out;
-    transition-delay: 5s; /* Delays reset after hover ends */
-  }
-  .container .box:hover::before,
-  .container .box:hover::after,
-  .container .box:hover .content {
-    transition-delay: 0s; /* Instant effect on hover */
-  }
+.container .box:hover .content {
+  color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
+  padding: 30px 40px;
+}
+.container .box .content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.container .box .content p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+.container .box .content a {
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.container .box .content {
+  transition: all 0.5s ease-in-out;
+  transition-delay: 5s; /* Delays reset after hover ends */
+}
+.container .box:hover::before,
+.container .box:hover::after,
+.container .box:hover .content {
+  transition-delay: 0s; /* Instant effect on hover */
 }
