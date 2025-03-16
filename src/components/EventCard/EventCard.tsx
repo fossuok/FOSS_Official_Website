@@ -88,7 +88,7 @@ export const EventCard = ({
             alt={title}
           />
           {/* Content */}
-          <Flex direction="column" gap="10" mt="10">
+          <Flex h={400} direction="column" gap="10" mt="10">
             <Title order={2}>{title}</Title>
             <Text mb="20">{description}</Text>
             {speakers.map((speaker) => (
@@ -113,14 +113,13 @@ export const EventCard = ({
               component="a"
               href={register}
               target="_blank"
-              {...(!open && {
-                onClick: (
-                  event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-                ) => event.preventDefault(),
-                "data-disabled": true,
-              })}
-              {...(record && { color: "teal" })}
-              onClick={(e) => e.stopPropagation()} // Prevent card click when button is clicked
+              data-disabled={!open ? true : undefined}
+              onClick={(e) => {
+                if (!open) {
+                  e.preventDefault();
+                }
+              }}
+              color={record ? "teal" : undefined}
             >
               {open && record ? "Recording Available" : "Register"}
             </Button>

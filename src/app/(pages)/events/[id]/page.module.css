@@ -1,0 +1,228 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.title {
+  font-family: var(--mantine-font-family);
+  font-size: 3.75rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: light-dark(var(--mantine-color-gray-9), var(--mantine-color-white));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-top: 1rem;
+    font-size: 3rem;
+    word-wrap: break-word;
+  }
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 2rem;
+    word-wrap: break-word;
+  }
+  @media (min-width: $mantine-breakpoint-lg) {
+    font: 4.5rem;
+  }
+}
+
+.link {
+  text-decoration: none;
+  font-family: var(--mantine-font-family);
+  font-size: medium;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.link:hover {
+  font-weight: 600;
+  text-decoration: none;
+  text-decoration-color: light-dark(
+    var(--mantine-primary-color-filled),
+    var(--mantine-color-violet-3)
+  );
+}
+
+.description {
+  margin: 0;
+  margin-top: 2rem;
+  font-family: var(--mantine-font-family);
+  font-size: 1.125rem;
+  color: ligh-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-3));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    word-wrap: break-word;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  padding-top: 20px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    display: block;
+    padding: 0;
+    margin-top: 1rem;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+  padding: 5px var(--mantine-spacing-md);
+  align-items: center;
+  color: light-dark(
+    var(--mantine-color-violet-light-color),
+    var(--mantine-color-violet-light-color)
+  );
+  background-color: light-dark(var(--mantine-color-violet-light));
+  border-radius: var(--mantine-spacing-lg);
+}
+
+.shares {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-top: 1rem;
+  }
+}
+
+.share {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  margin-right: 0.25rem;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  color: var(--mantine-color-white);
+  background-color: var(--mantine-primary-color-filled);
+  transition: all 200ms ease-in;
+}
+
+.share:hover {
+  background-color: var(--mantine-color-blue-8);
+  border-color: var(--mantine-color-blue-8);
+}
+
+.main {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main > div {
+  margin-bottom: 2rem;
+}
+
+.main > div:last-child {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media (min-width: $mantine-breakpoint-md) {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.thumbnail_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.thumbnail {
+  width: 83.33%;
+  height: auto;
+  max-width: 600px;
+  max-height: 337px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  display: block;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 100%;
+    max-width: 400px;
+    max-height: 225px;
+    padding: 0;
+  }
+}
+
+.content {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: $mantine-breakpoint-md) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.375rem;
+  }
+}
+
+.content > div {
+  padding-bottom: 1rem;
+}
+
+.content > div:last-child {
+  padding-bottom: 0;
+}
