@@ -9,6 +9,7 @@ import {
   Badge,
   Container,
   Button,
+  BackgroundImage,
 } from "@mantine/core";
 import { EventCardProps } from "@/data/EventCardProp";
 import { SpeakerCard } from "./SpeakerCard";
@@ -34,7 +35,7 @@ export const EventCard = ({
   };
 
   return (
-    <Container size={800} py="30">
+    <Container w="100%" size={1000} py="30">
       <Paper
         radius="5"
         shadow="lg"
@@ -79,16 +80,24 @@ export const EventCard = ({
               {year}
             </Text>
           </Flex>
-          {/* Poster */}
-          <Image
-            visibleFrom="xs"
-            w="240"
-            fit="cover"
-            src={imageUrl.src}
-            alt={title}
-          />
+          <BackgroundImage visibleFrom="xs" src={imageUrl.src}>
+            <span></span>
+          </BackgroundImage>
+
           {/* Content */}
-          <Flex h={400} direction="column" gap="10" mt="10">
+          <Flex
+            h={400}
+            direction="column"
+            gap="10"
+            mt="10"
+            style={(theme) => ({
+              width: "100%", // Default to full width
+              maxWidth: 240, // Default max width
+              [`@media (min-width: ${theme.breakpoints.md}px)`]: {
+                maxWidth: 300, // Increase width to 300px on md and larger screens
+              },
+            })}
+          >
             <Title order={2}>{title}</Title>
             <Text mb="20">{description}</Text>
             {speakers.map((speaker) => (

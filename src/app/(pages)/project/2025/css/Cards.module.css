@@ -182,7 +182,6 @@
 
 .container .box .content {
   transition: all 0.5s ease-in-out;
-  transition-delay: 5s; /* Delays reset after hover ends */
 }
 .container .box:hover::before,
 .container .box:hover::after,
