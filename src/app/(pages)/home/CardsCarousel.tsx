@@ -1,24 +1,16 @@
 "use client";
 
-import {
-  Button,
-  Paper,
-  Text,
-  Title,
-  useMantineTheme,
-  Container,
-} from "@mantine/core";
+import { Text, Container } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
-import { useMediaQuery } from "@mantine/hooks";
 import classes from "./CardsCarousel.module.css";
-import { upcomingData } from "@/data/UpcomingEvents";
+import { eventsData } from "@/data/EventsData";
 import { EventCard } from "@/components/EventCard/EventCard";
 import GradientBack from "@/components/Gradient/GradientBack";
+import { useMemo } from "react";
+import { parseEventDate } from "@/utils/dateUtils";
 
 export function CardsCarousel() {
-  const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = upcomingData.map((event) => (
+  const slides = eventsData.map((event) => (
     <Carousel.Slide key={event.id}>
       <EventCard {...event} />
     </Carousel.Slide>
@@ -49,7 +41,6 @@ export function CardsCarousel() {
           slideGap={{ base: 2, sm: "xl" }}
           align="start"
           slidesToScroll={1}
-          // slidesToScroll={mobile ? 1 : 1}
           loop={true}
         >
           {slides}

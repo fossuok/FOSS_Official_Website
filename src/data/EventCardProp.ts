@@ -10,6 +10,12 @@ export interface EventCardProps {
   year: string;
   description: string;
   imageUrl: StaticImageData;
-  speakers: { name: string; alt: string; src: string }[];
+  speakers: { name: string; role:string; alt: string; src: string }[];
   tags: string[];
+  contents:{
+    weekday:string;
+    timerange:string;
+    location:string;
+    agenda:string[];
+    }
 }

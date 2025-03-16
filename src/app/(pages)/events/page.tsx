@@ -6,14 +6,10 @@ import classes from "./page.module.css";
 import { Section2 } from "./section2";
 import { eventsData } from "@/data/EventsData";
 import { useMemo } from "react";
+import { parseEventDate } from "@/utils/dateUtils";
 
 export default function Events() {
   const currentDate = new Date();
-
-  // Helper function to parse event dates
-  const parseEventDate = (dateString: string, year: string): Date => {
-    return new Date(`${dateString} ${year}`);
-  };
 
   // Filter events into upcoming and previous
   const upcomingEvents = useMemo(() => {
