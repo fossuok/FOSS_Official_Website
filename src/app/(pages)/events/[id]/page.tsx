@@ -111,8 +111,8 @@ export default function EventDetail() {
           <Card radius="md" bg="transparent">
             <h3>Speakers</h3>
             <Box h={2} bg="teal" mb={30} />
-            {event.speakers.map((speaker) => (
-              <Box py={10}>
+            {event.speakers.map((speaker, index) => (
+              <Box key={speaker.name || index} py={10}>
                 <Flex direction="row" align="center" gap="10">
                   <Avatar size={50} src={speaker.src} alt={speaker.name} />
                   <div>
@@ -129,8 +129,8 @@ export default function EventDetail() {
           <Card radius="md" bg="transparent">
             <h2>Agenda</h2>
             <Box h={2} bg="teal" mb={30} />
-            {event.contents.agenda.map((agenda) => (
-              <Box py={10}>
+            {event.contents.agenda.map((agenda, index) => (
+              <Box key={agenda || index} py={10}>
                 <Flex direction="row" align="center" gap="10">
                   <Text fw={600}>{agenda}</Text>
                 </Flex>
