@@ -4,6 +4,235 @@ import { EventCardProps } from "./EventCardProp";
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
+      // pre-summit'24 workshop 06
+      {
+        id: 7,
+        title: "Enhancing Software Security",
+        register: "https://fossuok.org/",
+        open: false,
+        record: false,
+        date: "April 06",
+        year: "2024",
+        description: "Integrating DevSecOps into the SDLC for Robust Protection",
+        imageUrl: {
+          src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop6.jpg",
+          height: 0,
+          width: 0,
+        },
+        speakers: [
+          {
+            name: "Tharaka Mahabage",
+            role: "CyberSecurity Architect @ Virtusaa",
+            alt: "speaker",
+            src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/tharaka.jpg",
+          },
+        ],
+        tags: ["oss24", "cybersecurity"],
+        contents: {
+          weekday: "Saturday",
+          timerange: "9:00AM - 11:00 AM",
+          location: "Faculty of Computing and Technology, University of Kelaniya",
+          agenda: [
+            "Introduction to DevSecOps",
+            "Setting up your development environment",
+            "Integrating security into the SDLC",
+            "Q&A session with the speakers",
+          ],
+        },
+      },
+    // pre-summit'2Multilingual NLP4 workshop 05
+    {
+      id: 7,
+      title: "Breaking the Language Barrier",
+      register: "https://fossuok.org/",
+      open: false,
+      record: false,
+      date: "March 30",
+      year: "2024",
+      description: "Exploring Multilingual Natural Language Processing.",
+      imageUrl: {
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop5.jpg",
+        height: 0,
+        width: 0,
+      },
+      speakers: [
+        {
+          name: "Meesha Mervyn",
+          role: "Demonstrator @ University of Kelaniya",
+          alt: "speaker",
+          src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/meesha.jpg",
+        },
+      ],
+      tags: ["oss24", "nlp"],
+      contents: {
+        weekday: "Saturday",
+        timerange: "9:00AM - 11:00 AM",
+        location: "Online",
+        agenda: [
+          "Introduction to Natural Language Processing",
+          "Multilingual NLP",
+          "Q&A session with the speakers",
+        ],
+      },
+    },
+  // pre-summit'24 workshop 04
+  {
+    id: 6,
+    title: "Building Automated Workflows with GitHub Actions",
+    register: "https://fossuok.org/",
+    open: false,
+    record: false,
+    date: "March 23",
+    year: "2024",
+    description: "How to build automated workflows with GitHub Actions. ",
+    imageUrl: {
+      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop4.jpg",
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Suvin Kodithuwakku",
+        role: "Software Engineer @ WSO2",
+        alt: "speaker",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/suvin.jpg",
+      },
+    ],
+    tags: ["oss24", "github actions"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "9:00AM - 11:00 AM",
+      location: "Faculty of Computing and Technology, University of Kelaniya",
+      agenda: [
+        "Introduction to GitHub Actions",
+        "Setting up your development environment",
+        "Building your first automated workflow",
+        "Q&A session with the speakers",
+      ],
+    },
+  },
+  // pre-summit'24 workshop 03
+  {
+    id: 5,
+    title: "DevOps 101: Bridging Development and Operations",
+    register: "https://fossuok.org/",
+    open: false,
+    record: false,
+    date: "March 16",
+    year: "2024",
+    description: "DevOps basics and building your first CI/CD pipeline.",
+    imageUrl: {
+      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop1.jpg",
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Nikila Fernando",
+        role: "Site Reliability Engineer @ Fortude",
+        alt: "speaker",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/nikila.jpg",
+      },
+      {
+        name: "Krishan Shamod",
+        role: "DevOps Engineer @ Insighture",
+        alt: "speaker",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/krishan.jpg",
+      },
+    ],
+    tags: ["oss24", "devops"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "9:00AM - 10:30 AM",
+      location: "Faculty of Computing and Technology, University of Kelaniya",
+      agenda: [
+        "Introduction to DevOps",
+        "Setting up your development environment",
+        "Building your first CI/CD pipeline",
+        "Q&A session with the speakers",
+        "Networking opportunity",
+      ],
+    },
+  },
+  // pre-summit'24 workshop 02
+  {
+    id: 4,
+    title: "Docker for Beginners: Hands-On Workshop",
+    register: "https://fossuok.org/",
+    open: false,
+    record: false,
+    date: "March 16",
+    year: "2024",
+    description:
+      "Workshop on Docker basics and get started with containerization.",
+    imageUrl: {
+      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop2.jpg",
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Pasan Devin",
+        role: "Former Assiciate Software Engineer @ TechVenturas",
+        alt: "speaker",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/pasan.jpg",
+      },
+      {
+        name: "Sachithra Manamperi",
+        role: "Associate Cloud Security Engineer @ GTN",
+        alt: "speaker",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/sachithra.jpg",
+      },
+    ],
+    tags: ["oss24", "docker"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "10:30 AM - 12:00 PM",
+      location: "Faculty of Computing and Technology, University of Kelaniya",
+      agenda: [
+        "Introduction to Docker",
+        "Setting up your development environment",
+        "Building your first container",
+        "Q&A session with the speakers",
+      ],
+    },
+  },
+  // pre-summit'24 workshop 01
+  {
+    id: 4,
+    title: "Unlocking Human Behavior",
+    register: "https://fossuok.org/",
+    open: false,
+    record: false,
+    date: "March 16",
+    year: "2024",
+    description: "Insights from Telco Data & Crowd Analytics.",
+    imageUrl: {
+      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop3.jpg",
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Aloka Abeysirigunawardana",
+        role: "Senior Data Scientist @ Dialog Axiata PLC",
+        alt: "speaker",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/aloka.jpg",
+      },
+    ],
+    tags: ["oss24", "Data Science"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "1:00 PM - 3:00 PM",
+      location: "Faculty of Computing and Technology, University of Kelaniya",
+      agenda: [
+        "Introduction to Data Science",
+        "Modern tools & Techniques of data science",
+        "Telco Data & Crowd Analytics",
+        "Q&A session with the speakers",
+      ],
+    },
+  },
   // Event 3
   {
     id: 3,
@@ -12,12 +241,12 @@ export const eventsData: EventCardProps[] = [
     open: false,
     record: false,
     date: "FEB 27",
-    year: "2023",
+    year: "2024",
     description: " Mastering Git is essential for any developer. ",
     imageUrl: {
       src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/ev3.jpg",
       height: 0,
-      width: 0
+      width: 0,
     },
     speakers: [
       {
@@ -26,9 +255,8 @@ export const eventsData: EventCardProps[] = [
         alt: "speaker",
         src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/madusha.jpeg",
       },
-
     ],
-    tags: ["git","GitHub", "Workshop"],
+    tags: ["git", "GitHub", "Workshop"],
     contents: {
       weekday: "Tuesday",
       timerange: "8:00 PM - 10:00 PM",
@@ -105,7 +333,7 @@ export const eventsData: EventCardProps[] = [
         src: "https://fossuok.org/images/events/speakers/chethana.jpg",
       },
     ],
-    tags: ["FOSS", "Webinar",],
+    tags: ["FOSS", "Webinar"],
     contents: {
       weekday: "Thursday",
       timerange: "7:00 PM - 9:00 PM",
