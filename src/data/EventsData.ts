@@ -1,19 +1,20 @@
-import ev1 from "@/images/events/ev1.jpg";
-import ev2 from "@/images/events/ev2.jpg";
+// import ev1 from "@/images/events/ev1.jpg";
+// import ev2 from "@/images/events/ev2.jpg";
 import { EventCardProps } from "./EventCardProp";
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
   // post-summit'24
   {
-    id: 7,
+    id: 9,
     title: "Post Summit Meetup 2024",
     register: "https://fossuok.org/",
     open: false,
     record: false,
     date: "October 09",
     year: "2024",
-    description: "Post-Summit Meetup for Open-Source Summit ‘24, happening at the WSO2 Office, Colombo 4.",
+    description:
+      "Post-Summit Meetup for Open-Source Summit ‘24, happening at the WSO2 Office, Colombo 4.",
     imageUrl: {
       src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/header.webp",
       height: 0,
@@ -48,7 +49,7 @@ export const eventsData: EventCardProps[] = [
   },
   // pre-summit'24 workshop 06
   {
-    id: 7,
+    id: 8,
     title: "Enhancing Software Security",
     register: "https://fossuok.org/",
     open: false,
@@ -321,19 +322,23 @@ export const eventsData: EventCardProps[] = [
     date: " DEC 21",
     year: "2023",
     description: "We look forward to seeing you there!",
-    imageUrl: ev2,
+    imageUrl: {
+      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/ev2.jpg",
+      height: 0,
+      width: 0,
+    },
     speakers: [
       {
         name: "Tharindu Damruwan",
         role: "Organizer @ FOSS Community",
         alt: "speaker",
-        src: "https://fossuok.org/images/events/speakers/tharindu-damruwan.jpg",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/tharindu.jpg",
       },
       {
         name: "Pethum Jeewantha",
         role: "Organizer @ FOSS Community",
         alt: "speaker",
-        src: "https://fossuok.sirv.com/members/pethum-jeewantha.jpeg",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/pethum-jeewantha.avif",
       },
     ],
     tags: ["Web Development", "Workshop"],
@@ -360,19 +365,23 @@ export const eventsData: EventCardProps[] = [
     date: "NOV 30",
     year: "2023",
     description: "We look forward to seeing you there!",
-    imageUrl: ev1,
+    imageUrl: {
+      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/ev1.jpg",
+      height: 0,
+      width: 0,
+    },
     speakers: [
       {
         name: "Sudaraka Senavirathna",
         role: "Community Lead @ FOSS.LK",
         alt: "speaker",
-        src: "https://fossuok.org/images/events/speakers/sudaraka.jpg",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/sudaraka.jpg",
       },
       {
         name: "Chethana Wickrama Arachchi",
         role: "Lead @ Women in FOSS.LK",
         alt: "speaker",
-        src: "https://fossuok.org/images/events/speakers/chethana.jpg",
+        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/chethana.jpg",
       },
     ],
     tags: ["FOSS", "Webinar"],
