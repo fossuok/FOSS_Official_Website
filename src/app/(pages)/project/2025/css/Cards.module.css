@@ -28,7 +28,7 @@
   width: 0%;
   height: 100%;
   text-decoration: none;
-  background: var(--mantine---mantine-color-grape-light);
+  background: var(--mantine-color-grape-light);
   border-radius: 50px;
   transform: skewX(0deg);
   transition: 0.5s;

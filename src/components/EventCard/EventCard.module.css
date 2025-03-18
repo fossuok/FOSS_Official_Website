@@ -1,0 +1,8 @@
+.customFlex {
+  width: 100%;
+  max-width: 240px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    max-width: 300px;
+  }
+}

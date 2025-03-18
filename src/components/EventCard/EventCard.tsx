@@ -13,6 +13,7 @@ import {
 } from "@mantine/core";
 import { EventCardProps } from "@/data/EventCardProp";
 import { SpeakerCard } from "./SpeakerCard";
+import classes from "./EventCard.module.css";
 
 export const EventCard = ({
   id,
@@ -90,16 +91,15 @@ export const EventCard = ({
             direction="column"
             gap="10"
             mt="10"
-            style={(theme) => ({
-              width: "100%", // Default to full width
-              maxWidth: 240, // Default max width
-              [`@media (min-width: ${theme.breakpoints.md}px)`]: {
-                maxWidth: 300, // Increase width to 300px on md and larger screens
-              },
-            })}
+            justify={"space-around"}
+            className={classes.customFlex}
           >
-            <Title order={2}>{title}</Title>
-            <Text mb="20">{description}</Text>
+            <Title lineClamp={3} order={2}>
+              {title}
+            </Title>
+
+            <Text lineClamp={2}>{description}</Text>
+
             {speakers.map((speaker) => (
               <SpeakerCard
                 key={speaker.name}
@@ -108,7 +108,7 @@ export const EventCard = ({
                 src={speaker.src}
               />
             ))}
-            <Box py="20">
+            <Box py="10">
               <Flex direction="row" gap="10">
                 {tags.map((tag) => (
                   <Badge key={tag} color="teal" variant="light">

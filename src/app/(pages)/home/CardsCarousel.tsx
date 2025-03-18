@@ -36,8 +36,9 @@ export function CardsCarousel() {
           like-minded individuals, we've got you covered.
         </Text>
         <Carousel
-          controlsOffset="-50px"
-          slideSize={{ base: "100%", sm: "50%" }}
+          controlsOffset="-100px"
+          controlSize={40}
+          slideSize={{ base: "100%", sm: "80%" }}
           slideGap={{ base: 2, sm: "xl" }}
           align="start"
           slidesToScroll={1}

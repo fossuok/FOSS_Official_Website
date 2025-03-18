@@ -1,12 +1,10 @@
-// import ev1 from "@/images/events/ev1.jpg";
-// import ev2 from "@/images/events/ev2.jpg";
 import { EventCardProps } from "./EventCardProp";
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
   // post-summit'24
   {
-    id: 9,
+    id: 10,
     title: "Post Summit Meetup 2024",
     register: "https://fossuok.org/",
     open: false,
@@ -49,7 +47,7 @@ export const eventsData: EventCardProps[] = [
   },
   // pre-summit'24 workshop 06
   {
-    id: 8,
+    id: 9,
     title: "Enhancing Software Security",
     register: "https://fossuok.org/",
     open: false,
@@ -59,7 +57,7 @@ export const eventsData: EventCardProps[] = [
     description: "Integrating DevSecOps into the SDLC for Robust Protection",
     imageUrl: {
       src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop6.jpg",
-      height: 0,
+      height: 10,
       width: 0,
     },
     speakers: [
@@ -85,7 +83,7 @@ export const eventsData: EventCardProps[] = [
   },
   // pre-summit'2Multilingual NLP4 workshop 05
   {
-    id: 7,
+    id: 8,
     title: "Breaking the Language Barrier",
     register: "https://fossuok.org/",
     open: false,
@@ -120,7 +118,7 @@ export const eventsData: EventCardProps[] = [
   },
   // pre-summit'24 workshop 04
   {
-    id: 6,
+    id: 7,
     title: "Building Automated Workflows with GitHub Actions",
     register: "https://fossuok.org/",
     open: false,
@@ -156,7 +154,7 @@ export const eventsData: EventCardProps[] = [
   },
   // pre-summit'24 workshop 03
   {
-    id: 5,
+    id: 6,
     title: "DevOps 101: Bridging Development and Operations",
     register: "https://fossuok.org/",
     open: false,
@@ -199,7 +197,7 @@ export const eventsData: EventCardProps[] = [
   },
   // pre-summit'24 workshop 02
   {
-    id: 4,
+    id: 5,
     title: "Docker for Beginners: Hands-On Workshop",
     register: "https://fossuok.org/",
     open: false,
