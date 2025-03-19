@@ -1,10 +1,11 @@
 import { Avatar, Button, Paper, Text } from "@mantine/core";
 
+const imgUrl = process.env.NEXT_PUBLIC_CDN;
 export function CardSpo() {
   return (
     <Paper radius="xl" p="lg" bg="transparent">
       <Avatar
-        src="/summit24/FOSS.webp"
+        src={`${imgUrl}/images/images/FOSS.webp`}
         size={240}
         radius={60}
         mx="auto"

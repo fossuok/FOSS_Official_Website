@@ -13,7 +13,7 @@ export function SummitEvent() {
   const currentDate = new Date();
 
   // IDs of events to display
-  const allowedEventIds = new Set([4, 5, 7, 10, 12]);
+  const allowedEventIds = new Set([6, 7, 8, 9, 10]);
 
   // Separate future and past events
   const filteredEvents = useMemo(() => {
@@ -59,8 +59,9 @@ export function SummitEvent() {
           Don't miss these highlighted events selected for you!
         </Text>
         <Carousel
-          controlsOffset="-50px"
-          slideSize={{ base: "100%", sm: "50%" }}
+          controlsOffset="-100px"
+          controlSize={40}
+          slideSize={{ base: "100%", sm: "80%" }}
           slideGap={{ base: 2, sm: "xl" }}
           align="start"
           slidesToScroll={1}
