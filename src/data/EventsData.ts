@@ -1,10 +1,125 @@
 import { EventCardProps } from "./EventCardProp";
 
+const imgUrl = process.env.NEXT_PUBLIC_CDN;
+
 // !! Add new entries to top
-export const eventsData: EventCardProps[] = [
+ export const eventsData: EventCardProps[] = [
+  //term2-ev14
+  {
+        id: 14,
+        title: "HOW TO THINK IN AWS",
+        register: "https://youtu.be/yRfED6lBLUE?si=GbNgBUt2zvYMGPNQ",
+        open: true,
+        record: true,
+        date: "Mar 01",
+        year: "2025",
+        description:
+          "Learn about ARCHITECTING SCALABLE & COST EFFECTIVE SOLUTIONS.",
+        imageUrl: {
+          src: `${imgUrl}/images/images/events/ev14.webp`,
+          height: 0,
+          width: 0,
+        },
+        speakers: [
+          {
+            name: "DILIRU MUNASINGHA",
+            role: "SENIOR SOFTWARE ENGINEER ASCENTIC",
+            alt: "speaker",
+            src: `${imgUrl}/images/speakers/diliru.webp`,
+          },
+        ],
+        tags: ["AWS", "Cloud"],
+        contents: {
+          weekday: "Saturday",
+          timerange: "7:00 PM - 8:00 PM",
+          location: "via Zoom",
+          agenda: [
+            "",
+           
+          ],
+        },
+  },
+  //term2-ev13
+  {
+      id: 13,
+      title: "GITHUB ADVANCED SECURITY",
+      register: "https://youtu.be/ysGROuLivv0",
+      open: true,
+      record: true,
+      date: "Feb 08",
+      year: "2025",
+      description:
+        "Learn about PROTECTING REPOSITORIES AND WORKFLOWS.",
+      imageUrl: {
+        src: `${imgUrl}/images/images/events/ev13.webp`,
+        height: 0,
+        width: 0,
+      },
+      speakers: [
+        {
+          name: "Madusha Sandaruwan",
+          role: "IT INTERN, PERITUZA LANKA (PVT) LTD.",
+          alt: "speaker",
+          src: `${imgUrl}/images/speakers/madusha.webp`,
+        },
+      ],
+      tags: ["GitHub", "Security"],
+      contents: {
+        weekday: "Saturday",
+        timerange: "7:00 PM - 8:30 PM",
+        location: "via Zoom",
+        agenda: [
+          "",
+         
+        ],
+      },
+  },
+  //term2-ev12
+  {
+    id: 12,
+    title: "GIT STARTED: MASTER GIT & GITHUB",
+    register: "https://fossuok.org/",
+    open: false,
+    record: false,
+    date: "DEC 03",
+    year: "2024",
+    description:
+      "Introduction to Git , Github and setting up github student developer pack.",
+    imageUrl: {
+      src: `${imgUrl}/images/images/events/ev12.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Pawan Perera",
+        role: "FOSS COMMUNITY UNIVERSITY OF KELANIYA",
+        alt: "speaker",
+        src: `${imgUrl}/images/speakers/joy.webp`,
+      },
+      {
+        name: "Saroath Farvees",
+        role: "FOSS COMMUNITY UNIVERSITY OF KELANIYA",
+        alt: "speaker",
+        src: `${imgUrl}/images/speakers/christopher.webp`,
+      },
+    ],
+    tags: ["GitHub", "Developer Pack"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "3:00 PM - 5:00 PM",
+      location: "Faculty of Computing and Technology, University of Kelaniya",
+      agenda: [
+        "Introduction to Git ",
+        "Introduction to Github",
+        "Setting up github student developer pack.",
+        "Q&A session with the speakers",
+      ],
+    },
+  },
   // post-summit'24
   {
-    id: 10,
+    id: 11,
     title: "Post Summit Meetup 2024",
     register: "https://fossuok.org/",
     open: false,
@@ -14,7 +129,7 @@ export const eventsData: EventCardProps[] = [
     description:
       "Post-Summit Meetup for Open-Source Summit ‘24, happening at the WSO2 Office, Colombo 4.",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/header.webp",
+      src: `${imgUrl}/images/images/events/ev11.webp`,
       height: 0,
       width: 0,
     },
@@ -23,13 +138,13 @@ export const eventsData: EventCardProps[] = [
         name: "Joy Rathnayake",
         role: "Solutions Architect @ WSO2",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/joy.jpg",
+        src: `${imgUrl}/images/speakers/joy.webp`,
       },
       {
         name: "Vivekvinushanth Christopher",
         role: "Senior Software Engineer @ WSO2",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/christopher.jpg",
+        src: `${imgUrl}/images/speakers/christopher.webp`,
       },
     ],
     tags: ["api management", "iam"],
@@ -45,6 +160,50 @@ export const eventsData: EventCardProps[] = [
       ],
     },
   },
+  //summit24
+  {
+    id: 10,
+    title: "Open-Source Summit 2024",
+    register: "https://fossuok.org/",
+    open: false,
+    record: false,
+    date: "April 27",
+    year: "2024",
+    description:
+      "Across six intensive days, Open-Source Summit '24 offered a unique learning experience for undergraduate students. From March 16th to April 6th, participants honed their skills through hands-on workshops and in-depth learning sessions.\n The culmination arrives on April 27th with a dedicated developer summit. This comprehensive program aimed to empower undergraduates with the technical knowledge, practical abilities, and connections needed to thrive in the open-source technology community.",
+    imageUrl: {
+      src: `${imgUrl}/images/images/events/ev10.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "8 Speakers",
+        role: "Industry Guest Speakers",
+        alt: "speaker",
+        src:  `${imgUrl}/images/images/FOSSsm.webp`,
+      },
+      
+    ],
+    tags: ["OSS24", "Summit","8 Hr+"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "9:00 AM - 5:00 PM",
+      location: "Faculty of Computing and Technology, University of Kelaniya",
+      agenda: [
+        "Welcome and Introduction",
+        "Open Source to Stand Out in the Job Market",
+        "Exploring the Impact of Open Source Methods on AI Advancement",
+        "Learn Linux and Make it Secure",
+        "Contributing to Open Source Software",
+        "Women Leadership & Entrepreneurship",
+        "Navigating the Landscape of LLMs",
+        "CI/CD: Streamlining Delivery of Code to Production",
+        "AI Decoded: Navigating the Start-line",
+      ]
+      
+    },
+  },
   // pre-summit'24 workshop 06
   {
     id: 9,
@@ -56,7 +215,7 @@ export const eventsData: EventCardProps[] = [
     year: "2024",
     description: "Integrating DevSecOps into the SDLC for Robust Protection",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop6.jpg",
+      src: `${imgUrl}/images/images/events/ev9.webp`,
       height: 10,
       width: 0,
     },
@@ -65,7 +224,7 @@ export const eventsData: EventCardProps[] = [
         name: "Tharaka Mahabage",
         role: "CyberSecurity Architect @ Virtusaa",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/tharaka.jpg",
+        src: `${imgUrl}/images/speakers/tharaka.webp`,
       },
     ],
     tags: ["oss24", "cybersecurity"],
@@ -92,7 +251,7 @@ export const eventsData: EventCardProps[] = [
     year: "2024",
     description: "Exploring Multilingual Natural Language Processing.",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop5.jpg",
+      src: `${imgUrl}/images/images/events/ev8.webp`,
       height: 0,
       width: 0,
     },
@@ -101,7 +260,7 @@ export const eventsData: EventCardProps[] = [
         name: "Meesha Mervyn",
         role: "Demonstrator @ University of Kelaniya",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/meesha.jpg",
+        src: `${imgUrl}/images/speakers/meesha.webp`,
       },
     ],
     tags: ["oss24", "nlp"],
@@ -127,7 +286,7 @@ export const eventsData: EventCardProps[] = [
     year: "2024",
     description: "How to build automated workflows with GitHub Actions. ",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop4.jpg",
+      src: `${imgUrl}/images/images/events/ev7.webp`,
       height: 0,
       width: 0,
     },
@@ -136,7 +295,7 @@ export const eventsData: EventCardProps[] = [
         name: "Suvin Kodithuwakku",
         role: "Software Engineer @ WSO2",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/suvin.jpg",
+        src: `${imgUrl}/images/speakers/suvin.webp`,
       },
     ],
     tags: ["oss24", "github actions"],
@@ -163,7 +322,7 @@ export const eventsData: EventCardProps[] = [
     year: "2024",
     description: "DevOps basics and building your first CI/CD pipeline.",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop1.jpg",
+      src: `${imgUrl}/images/images/events/ev6.webp`,
       height: 0,
       width: 0,
     },
@@ -172,13 +331,13 @@ export const eventsData: EventCardProps[] = [
         name: "Nikila Fernando",
         role: "Site Reliability Engineer @ Fortude",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/nikila.jpg",
+        src: `${imgUrl}/images/speakers/nikila.webp`,
       },
       {
         name: "Krishan Shamod",
         role: "DevOps Engineer @ Insighture",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/krishan.jpg",
+        src: `${imgUrl}/images/speakers/krishan.webp`,
       },
     ],
     tags: ["oss24", "devops"],
@@ -207,7 +366,7 @@ export const eventsData: EventCardProps[] = [
     description:
       "Workshop on Docker basics and get started with containerization.",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop2.jpg",
+      src: `${imgUrl}/images/images/events/ev5.webp`,
       height: 0,
       width: 0,
     },
@@ -216,13 +375,13 @@ export const eventsData: EventCardProps[] = [
         name: "Pasan Devin",
         role: "Former Assiciate Software Engineer @ TechVenturas",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/pasan.jpg",
+        src: `${imgUrl}/images/speakers/pasan.webp`,
       },
       {
         name: "Sachithra Manamperi",
         role: "Associate Cloud Security Engineer @ GTN",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/sachithra.jpg",
+        src: `${imgUrl}/images/speakers/sachithra.webp`,
       },
     ],
     tags: ["oss24", "docker"],
@@ -249,7 +408,7 @@ export const eventsData: EventCardProps[] = [
     year: "2024",
     description: "Insights from Telco Data & Crowd Analytics.",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/workshop3.jpg",
+      src: `${imgUrl}/images/images/events/ev4.webp`,
       height: 0,
       width: 0,
     },
@@ -258,7 +417,7 @@ export const eventsData: EventCardProps[] = [
         name: "Aloka Abeysirigunawardana",
         role: "Senior Data Scientist @ Dialog Axiata PLC",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/aloka.jpg",
+        src: `${imgUrl}/images/speakers/aloka.webp`,
       },
     ],
     tags: ["oss24", "Data Science"],
@@ -285,7 +444,7 @@ export const eventsData: EventCardProps[] = [
     year: "2024",
     description: " Mastering Git is essential for any developer. ",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/ev3.jpg",
+      src: `${imgUrl}/images/images/events/ev3.webp`,
       height: 0,
       width: 0,
     },
@@ -294,7 +453,7 @@ export const eventsData: EventCardProps[] = [
         name: "Madusha Sandaruwan",
         role: "Community Lead @ FOSS Community",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/madusha.jpeg",
+        src: `${imgUrl}/images/speakers/madusha.webp`,
       },
     ],
     tags: ["git", "GitHub", "Workshop"],
@@ -321,7 +480,7 @@ export const eventsData: EventCardProps[] = [
     year: "2023",
     description: "We look forward to seeing you there!",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/ev2.jpg",
+      src: `${imgUrl}/images/images/events/ev2.webp`,
       height: 0,
       width: 0,
     },
@@ -330,13 +489,13 @@ export const eventsData: EventCardProps[] = [
         name: "Tharindu Damruwan",
         role: "Organizer @ FOSS Community",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/tharindu.jpg",
+        src: `${imgUrl}/images/speakers/tharindu.webp`,
       },
       {
         name: "Pethum Jeewantha",
         role: "Organizer @ FOSS Community",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/pethum-jeewantha.avif",
+        src: `${imgUrl}/images/speakers/pethum-jeewantha.avif`,
       },
     ],
     tags: ["Web Development", "Workshop"],
@@ -364,7 +523,7 @@ export const eventsData: EventCardProps[] = [
     year: "2023",
     description: "We look forward to seeing you there!",
     imageUrl: {
-      src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/events/ev1.jpg",
+      src: `${imgUrl}/images/images/events/ev1.webp`,
       height: 0,
       width: 0,
     },
@@ -373,13 +532,13 @@ export const eventsData: EventCardProps[] = [
         name: "Sudaraka Senavirathna",
         role: "Community Lead @ FOSS.LK",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/sudaraka.jpg",
+        src: `${imgUrl}/images/speakers/sudaraka.webp`,
       },
       {
         name: "Chethana Wickrama Arachchi",
         role: "Lead @ Women in FOSS.LK",
         alt: "speaker",
-        src: "https://raw.githubusercontent.com/fossuok/resources/refs/heads/main/images/images/speakers/chethana.jpg",
+        src: `${imgUrl}/images/speakers/chethana.webp`,
       },
     ],
     tags: ["FOSS", "Webinar"],
@@ -397,3 +556,4 @@ export const eventsData: EventCardProps[] = [
     },
   },
 ];
+

@@ -13,7 +13,7 @@ export function SummitEvent() {
   const currentDate = new Date();
 
   // IDs of events to display
-  const allowedEventIds = new Set([4, 5, 7, 10, 12]);
+  const allowedEventIds = new Set([6, 7, 8, 9, 10]);
 
   // Separate future and past events
   const filteredEvents = useMemo(() => {
