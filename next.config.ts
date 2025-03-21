@@ -4,6 +4,15 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'resources.fossuok.org',
+        pathname: '/images/**',
+      },
+    ],
+  }
 };
 
 export default nextConfig;
