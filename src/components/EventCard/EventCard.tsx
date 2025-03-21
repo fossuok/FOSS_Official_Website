@@ -4,13 +4,13 @@ import {
   Flex,
   Text,
   Box,
-  Image,
   Title,
   Badge,
   Container,
   Button,
   BackgroundImage,
 } from "@mantine/core";
+import Image from "next/image";
 import { EventCardProps } from "@/data/EventCardProp";
 import { SpeakerCard } from "./SpeakerCard";
 import classes from "./EventCard.module.css";
@@ -81,9 +81,22 @@ export const EventCard = ({
               {year}
             </Text>
           </Flex>
-          <BackgroundImage visibleFrom="xs" src={imageUrl.src}>
-            <span></span>
-          </BackgroundImage>
+          <Box
+            style={{
+              position: "relative",
+              width: "100%",
+              height: "auto",
+              borderRadius: "8px",
+              overflow: "hidden",
+            }}
+          >
+            <Image
+              src={imageUrl.src}
+              alt={title}
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </Box>
 
           {/* Content */}
           <Flex

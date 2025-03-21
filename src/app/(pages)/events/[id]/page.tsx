@@ -1,6 +1,5 @@
 "use client";
 import {
-  Image,
   Container,
   Box,
   Flex,
@@ -19,6 +18,7 @@ import classes from "./page.module.css";
 import { useEffect, useState } from "react";
 import { EventCardProps } from "@/data/EventCardProp";
 import { eventsData } from "@/data/EventsData";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function EventDetail() {
@@ -43,15 +43,31 @@ export default function EventDetail() {
       <Link href="/events" className={classes.link}>
         👈 View Event List
       </Link>
-
-      <Image
+      <Box
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "380px",
+          borderRadius: "1rem",
+          overflow: "hidden",
+          margin: "30px 0 30px 0",
+        }}
+      >
+        <Image
+          src={event.imageUrl.src}
+          alt={event.title}
+          fill
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
+      {/* <Image
         mah={380}
         style={{ borderRadius: "1rem" }}
         my={30}
         fit="cover"
         src={event.imageUrl.src}
         alt={event.title}
-      />
+      /> */}
       <h1 className={classes.title}>{event.title}</h1>
 
       <Box py="20">
@@ -89,7 +105,7 @@ export default function EventDetail() {
       <Grid pt={40}>
         <Grid.Col span={{ base: 12, sm: 8 }}>
           <Card radius="md" bg="transparent">
-            <h3>Event Details</h3> <Box h={2} bg="teal" mb={30} />
+            <h2>Event Details</h2> <Box h={2} bg="teal" mb={30} />
             <Stack>
               <Group>
                 <Text>
@@ -109,7 +125,7 @@ export default function EventDetail() {
 
         <Grid.Col span={{ base: 12, sm: 4 }}>
           <Card radius="md" bg="transparent">
-            <h3>Speakers</h3>
+            <h2>Speakers</h2>
             <Box h={2} bg="teal" mb={30} />
             {event.speakers.map((speaker, index) => (
               <Box key={speaker.name || index} py={10}>

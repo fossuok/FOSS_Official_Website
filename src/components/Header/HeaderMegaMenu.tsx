@@ -6,7 +6,6 @@ import {
   Button,
   Divider,
   Drawer,
-  Flex,
   Group,
   Indicator,
 } from "@mantine/core";
