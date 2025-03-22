@@ -1,4 +1,4 @@
-import { Container, Pagination } from "@mantine/core";
+import { Container, Pagination, Box, Paper } from "@mantine/core";
 import { EventCard } from "@/components/EventCard/EventCard";
 import { EventCardProps } from "@/data/EventCardProp";
 import { useState } from "react";
@@ -25,16 +25,22 @@ export function Section1({ events }: { events: EventCardProps[] }) {
         alignItems: "center",
       }}
     >
-      {currentItems.map((event) => (
-        <EventCard key={event.id} {...event} />
-      ))}
+      {currentItems.length > 0 ? (
+        currentItems.map((event) => <EventCard key={event.id} {...event} />)
+      ) : (
+        <Paper h={400} p="md">
+          <h1 style={{ textAlign: "center" }}>Coming Soon</h1>
+        </Paper>
+      )}
 
-      <Pagination
-        total={paginatedData.length}
-        value={activePage}
-        onChange={setPage}
-        mt="sm"
-      />
+      {paginatedData.length > 1 && (
+        <Pagination
+          total={paginatedData.length}
+          value={activePage}
+          onChange={setPage}
+          mt="sm"
+        />
+      )}
     </Container>
   );
 }
