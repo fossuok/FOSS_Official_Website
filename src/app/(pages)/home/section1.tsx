@@ -18,7 +18,7 @@ export default function Section1() {
           <Advert data={advertData} />
         </div>
 
-        <Container size={800} className={classes.inner}>
+        <Container className={classes.inner}>
           <h1 className={classes.title}>
             Embrace the Power
             <br /> of{" "}

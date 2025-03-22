@@ -23,7 +23,7 @@ export function ThemedLogo() {
             fw={800}
             c="light-dark(var(--mantine-color-black), var(--mantine-color-white))"
           >
-            FOSS UOK
+            FOSSUOK
           </Text>
         </Group>
       </Link>

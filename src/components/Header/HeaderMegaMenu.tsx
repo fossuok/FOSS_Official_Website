@@ -118,7 +118,7 @@ export function HeaderMegaMenu() {
               }}
             >
               <Link href="/project/2025" onClick={toggleDrawer}>
-                <Button miw={180} radius="xl">
+                <Button miw={180} radius="xl" size="lg">
                   Summit '25
                 </Button>
               </Link>

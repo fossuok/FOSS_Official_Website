@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default function Summit24() {
   return (
     <div className={classes.wrapper}>
       <GradientBack />

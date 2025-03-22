@@ -8,7 +8,6 @@ import {
   Badge,
   Container,
   Button,
-  BackgroundImage,
 } from "@mantine/core";
 import Image from "next/image";
 import { EventCardProps } from "@/data/EventCardProp";
@@ -82,6 +81,7 @@ export const EventCard = ({
             </Text>
           </Flex>
           <Box
+            visibleFrom="xs"
             style={{
               position: "relative",
               width: "100%",
