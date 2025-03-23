@@ -144,7 +144,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   left: 0;
   padding: 30px 40px;
   border-radius: 8px;
@@ -187,4 +187,21 @@
 .container .box:hover::after,
 .container .box:hover .content {
   transition-delay: 0s; /* Instant effect on hover */
+}
+
+.sponsorLink {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 18px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px !important;
+  cursor: pointer;
+  transition: background 2s;
+  text-align: center;
 }

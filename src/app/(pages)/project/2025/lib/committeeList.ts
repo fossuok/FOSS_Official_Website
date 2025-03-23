@@ -1,3 +1,4 @@
+const imgUrl = process.env.NEXT_PUBLIC_CDN;
 const committeeList = [
 	// Use 'https://...' when filling linkedin links
 
@@ -8,7 +9,7 @@ const committeeList = [
 		position: "Team Member",
 		linkedin: "https://www.linkedin.com",
 		picture:
-			"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png",
+		`${imgUrl}/images/images/FOSS.webp`,
 	},
 	{
 		fname: "John",
@@ -17,7 +18,7 @@ const committeeList = [
 		position: "Team Member",
 		linkedin: "https://www.linkedin.com",
 		picture:
-			"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png",
+		`${imgUrl}/images/images/FOSS.webp`,
 	},
 	{
 		fname: "John",
@@ -26,7 +27,7 @@ const committeeList = [
 		position: "Team Member",
 		linkedin: "https://www.linkedin.com",
 		picture:
-			"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png",
+		`${imgUrl}/images/images/FOSS.webp`,
 	},
 	{
 		fname: "John",
@@ -35,7 +36,7 @@ const committeeList = [
 		position: "Team Member",
 		linkedin: "https://www.linkedin.com",
 		picture:
-			"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png",
+		`${imgUrl}/images/images/FOSS.webp`,
 	},
 ];
 
