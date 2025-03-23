@@ -1,42 +1,71 @@
+const imgUrl = process.env.NEXT_PUBLIC_CDN;
 const speakerList = [
 	// Use 'https://...' when filling linkedin links
 
 	{
-		fname: "Jane",
-		lname: "Ginger",
-		email: "example@email.com",
-		position: "Team Member",
+		fname: "Nuwan",
+		lname: "Kaushalya ",
+		email: "Lead Engineer ",
+		position: "Technical Support at Persistent Systems ",
 		linkedin: "https://www.linkedin.com",
 		picture:
-			"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png",
+			`${imgUrl}/images/summit25/speaker/nuwan.webp`,
 	},
 	{
-		fname: "Jane",
-		lname: "Ginger",
-		email: "example@email.com",
-		position: "Team Member",
+		fname: "Anjana ",
+		lname: "Dodampe",
+		email: "Senior Software Engineer",
+		position: "London Stock Exchange Group",
 		linkedin: "https://www.linkedin.com",
 		picture:
-			"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png",
+			`${imgUrl}/images/summit25/speaker/anjana.webp`,
 	},
 	{
-		fname: "Jane",
-		lname: "Ginger",
-		email: "example@email.com",
-		position: "Team Member",
+		fname: "Sachithra",
+		lname: "Manamperi",
+		email: "DevOps Enginee",
+		position: "at Insighture",
 		linkedin: "https://www.linkedin.com",
 		picture:
-			"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png",
+			`${imgUrl}/images/summit25/speaker/sachithra.webp`,
 	},
 	{
-		fname: "Jane",
-		lname: "Ginger",
-		email: "example@email.com",
-		position: "Team Member",
+		fname: "Pasan",
+		lname: "Devin Jayawardene",
+		email: "Software Engineer - AI/R&D",
+		position: "at Insighture",
 		linkedin: "https://www.linkedin.com",
 		picture:
-			"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png",
+			`${imgUrl}/images/summit25/speaker/pasan.webp`,
 	},
+	{
+		fname: "Comming",
+		lname: "Soon",
+		email: " ",
+		position: " ",
+		linkedin: "https://www.linkedin.com",
+		picture:
+			`${imgUrl}/images/images/FOSS.webp`,
+	},
+	{
+		fname: "Comming",
+		lname: "Soon",
+		email: " ",
+		position: " ",
+		linkedin: "https://www.linkedin.com",
+		picture:
+			`${imgUrl}/images/images/FOSS.webp`,
+	},
+	{
+		fname: "Comming",
+		lname: "Soon",
+		email: " ",
+		position: " ",
+		linkedin: "https://www.linkedin.com",
+		picture:
+			`${imgUrl}/images/images/FOSS.webp`,
+	},
+	
 ];
 
 export default speakerList;

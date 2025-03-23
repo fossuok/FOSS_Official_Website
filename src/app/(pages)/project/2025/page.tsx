@@ -4,11 +4,13 @@ import ImgGrid from "./ImgGrid";
 import GradientBack from "@/components/Gradient/GradientBack";
 
 import { NavbarTimeline } from "../timeline";
-import SponserCards from "./SponserCards";
+import SponserCards from "./components/SponserCards";
 import SpeakerGrid from "./components/SpeakerGrid";
 import { SummitEvent } from "./SummitEvent";
 import CommitteeGrid from "./components/CommitteeGrid";
 import classes from "./page.module.css";
+
+const recUrl = process.env.NEXT_PUBLIC_CDN;
 
 export default function Summit25() {
   return (
@@ -36,7 +38,13 @@ export default function Summit25() {
               justifyContent: "center",
             }}
           >
-            <Button size="md" radius={50}>
+            <Button
+              size="md"
+              radius={50}
+              component="a"
+              href={`${recUrl}/documents/sponsorship proposal 25.pdf`}
+              target="_blank"
+            >
               Sponsorship Oppotunity
             </Button>
             <Button
