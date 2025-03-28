@@ -36,8 +36,9 @@ export function Advert({ data }: Readonly<AdvertProps>) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.control}
+                radius={"xl"}
               >
-                Learn More
+                See More
               </Button>
             </div>
           </div>
