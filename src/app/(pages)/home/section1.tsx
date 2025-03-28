@@ -5,7 +5,7 @@ import { IconBrandGithubFilled } from "@tabler/icons-react";
 import classes from "./section1.module.css";
 import GradientBack from "@/components/Gradient/GradientBack";
 import { Advert } from "@/components/Advert/Advert";
-import { advertData } from "@/data/AdvertData"; //advert data file in data folder
+import { advertData1, advertData2 } from "@/data/AdvertData"; //advert data file in data folder
 
 export default function Section1() {
   return (
@@ -13,9 +13,15 @@ export default function Section1() {
       <div className={classes.wrapper}>
         <GradientBack />
 
-        <VisuallyHidden> </VisuallyHidden>
+        <VisuallyHidden>
+          {" "}
+          <div className={classes.advert}>
+            <Advert data={advertData1} />
+          </div>
+        </VisuallyHidden>
+
         <div className={classes.advert}>
-          <Advert data={advertData} />
+          <Advert data={advertData2} />
         </div>
 
         <Container className={classes.inner}>

@@ -9,7 +9,7 @@ import {
 import { ActionIcon, Container, Group, Text } from "@mantine/core";
 import { ThemedLogo } from "../ThemePicker/Theming";
 import classes from "./FooterLinks.module.css";
-import { data } from "@/data/FooterData";
+import { data, social_media } from "@/data/FooterData";
 
 export function FooterLinks() {
   const groups = data.map((group) => {
@@ -19,7 +19,8 @@ export function FooterLinks() {
         className={classes.link}
         component="a"
         href={link.link}
-        onClick={(event) => event.preventDefault()}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {link.label}
       </Text>
@@ -49,7 +50,7 @@ export function FooterLinks() {
 
       <Container className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2024. Free and Open-Source Software Community - University of
+          © 2025. Free and Open-Source Software Community - University of
           Kelaniya. All rights reserved.
         </Text>
 
@@ -59,16 +60,44 @@ export function FooterLinks() {
           justify="flex-end"
           wrap="nowrap"
         >
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon
+            component="a"
+            href={social_media.facebook}
+            size="lg"
+            color="gray"
+            variant="subtle"
+            target="_blank"
+          >
             <IconBrandFacebook size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon
+            component="a"
+            href={social_media.x}
+            size="lg"
+            color="gray"
+            variant="subtle"
+            target="_blank"
+          >
             <IconBrandX size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon
+            component="a"
+            href={social_media.Github}
+            size="lg"
+            color="gray"
+            variant="subtle"
+            target="_blank"
+          >
             <IconBrandGithub size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon
+            component="a"
+            href={social_media.LinkedIn}
+            size="lg"
+            color="gray"
+            variant="subtle"
+            target="_blank"
+          >
             <IconBrandLinkedin size={18} stroke={1.5} />
           </ActionIcon>
         </Group>

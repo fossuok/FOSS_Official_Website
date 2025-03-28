@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     title: "FOSS Community - University of Kelaniya",
     description: "Welcome to the Offical Web Page of FOSS Comunity at UOK.",
     type: "website",
-    url: "https://dev.fossuok.org/blog", //update
-    images: [{ url: "https://dev.fossuok.org/FOSS.webp" }],
+    url: "https://fossuok.org/blog", //update
+    images: [{ url: "https://fossuok.org/FOSS.webp" }],
   },
 };
 

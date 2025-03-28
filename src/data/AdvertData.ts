@@ -10,9 +10,16 @@ export interface AdvertProps {
   };
 }
 
-export  const advertData = {
-    topic: "FOSS T-Shirts Now Available!",
-    image: addImage,
-    description: "Imagine a world where code is shared freely, not locked away. That’s the essence of Open Source Software (FOSS) – a community where developers build, learn, and innovate together by sharing knowledge and creations.",
-    weblink: "https://example.com/offer",
-  };
+export const advertData1 = {
+  topic: "FOSS T-Shirts Coming Soon!",
+  image: addImage,
+  description: "Stay tuned for our upcoming FOSS T-Shirts!",
+  weblink: "https://fossuok.org/",
+};
+export const advertData2 = {
+  topic: "Website FeedBack!",
+  image: addImage,
+  description:
+    "Kindly provide your feedback/ ideas to improve/ issues or bugs on our website.",
+  weblink: "https://fossuok.org/",
+};
