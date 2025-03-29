@@ -21,6 +21,7 @@ const SponsorCard = ({ name, image, href, bgGradient }: SponsorProps) => (
     <Image radius="md" h={150} w={250} fit="contain" src={image} />
     <a
       href={href}
+      target="_blank"
       className={styles.sponsorLink}
       onMouseEnter={(e) => (e.currentTarget.style.background = bgGradient)}
       onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
@@ -34,46 +35,32 @@ const sponsors = [
   {
     name: "Title Partner",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: "https://github.com/fossuok/",
+    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,0,255,0.5))",
   },
   {
     name: "Diamond Sponsor",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: "https://github.com/fossuok/",
+    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(30,144,255,0.5))",
   },
   {
-    name: "Sponsor",
+    name: "Gold Sponsor",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: "https://github.com/fossuok/",
+    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,215,0,0.5))",
   },
   {
     name: "Sponsor",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: "https://github.com/fossuok/",
-    bgGradient:
-      "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,255,255,0.1))",
-  },
-  {
-    name: "Sponsor",
-    image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: "https://github.com/fossuok/",
-    bgGradient:
-      "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,255,255,0.1))",
-  },
-  {
-    name: "Sponsor",
-    image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: "https://github.com/fossuok/",
+    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
     bgGradient:
       "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,255,255,0.1))",
   },
   {
     name: "Community Partner",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: "https://github.com/fossuok/",
+    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,255,128,0.5))",
   },
 ];

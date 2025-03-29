@@ -24,6 +24,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
 
       <a
         href={linkedin}
+        target="_blank"
         style={{
           display: "inline-flex",
           alignItems: "center",

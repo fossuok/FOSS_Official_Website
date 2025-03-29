@@ -42,7 +42,7 @@ export default function Summit25() {
               size="md"
               radius={50}
               component="a"
-              href={`${recUrl}/documents/sponsorship proposal 25.pdf`}
+              href={`${recUrl}/assets/sponsorship proposal 25.pdf`}
               target="_blank"
             >
               Sponsorship Oppotunity
