@@ -31,7 +31,7 @@
 	line-height: 1.1;
 	margin: 0;
 	padding: 0;
-	color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
 
 	@media (max-width: $mantine-breakpoint-sm) {
 		font-size: 42px;
@@ -44,7 +44,7 @@
 	font-size: 1.2rem;
 	font-family: monospace;
 	margin-bottom: 2rem;
-	color: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+	color: light-dark(var(--txt-secondary-light), var(--txt-secondary-dark));
 
 	@media (max-width: $mantine-breakpoint-sm) {
 		font-size: 18px;
@@ -78,8 +78,8 @@
 	width: 18rem;
 	height: 8rem;
 	background-image: light-dark(
-		url("https://fossuok.org/images/summit_logo_dark.png"),
-		url("https://fossuok.org/images/summit_logo.png")
+		url("/2024/images/summit_logo_dark.png"),
+		url("/2024/images/summit_logo.png")
 	);
 	background-size: contain;
 	background-position: center;
@@ -187,4 +187,38 @@
 
 .highlight {
 	color: var(--clr-primary);
+}
+
+.partners {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 1rem;
+	border-radius: 15px;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.partnerTitle {
+	text-align: center;
+	color: rgb(46, 46, 46);
+	font-weight: 500;
+}
+
+.partnerLogoRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.partnerLogo {
+	width: 10rem;
+}
+
+@media (min-width: 768) {
+	.partnerLogo {
+		width: 6rem;
+	}
 }

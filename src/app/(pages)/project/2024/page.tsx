@@ -5,6 +5,8 @@ import "./page.global.css";
 import GradientBack from "@/components/Gradient/GradientBack";
 import { NavbarTimeline } from "../timeline";
 
+const resourceUrl = "/2024";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -50,7 +52,7 @@ export default function Summit24() {
 					{/* CTA Buttons */}
 					<div className={classes.ctaButtons}>
 						<a
-							href="/assets/oss24-transparency-report.pdf"
+							href={`${resourceUrl}/assets/oss24-transparency-report.pdf`}
 							className={`${classes.btn} ${classes.primary}`}
 						>
 							<span>Download Transparency Report</span>
@@ -96,6 +98,69 @@ export default function Summit24() {
 					<div className={classes.rect}></div>
 				</div>
 			</Container>
+
+			<Container size={900}>
+				<div className={classes.partners}>
+					<div>
+						<h3 className={classes.partnerTitle}>
+							Diamond Sponsors
+						</h3>
+						<div className={classes.partnerLogoRow}>
+							<div>
+								<img
+									src={`${resourceUrl}/images/summit/sponsors/zone24x7_light.png`}
+									alt="https://zone24x7.com"
+									className={classes.partnerLogo}
+								></img>
+							</div>
+							<img
+								src={`${resourceUrl}/images/summit/sponsors/wso2_light.png`}
+								alt="https://wso2.com/"
+								className={classes.partnerLogo}
+							></img>
+						</div>
+						<h3 className={classes.partnerTitle}>
+							Beverage Partner
+						</h3>
+						<div className={classes.partnerLogoRow}>
+							<div>
+								<img
+									src={`${resourceUrl}/images/summit/sponsors/barista.png`}
+									alt="https://www.barista.lk/"
+									className={classes.partnerLogo}
+								></img>
+							</div>
+						</div>
+						<h3 className={classes.partnerTitle}>
+							Community Partners
+						</h3>
+						<div className={classes.partnerLogoRow}>
+							<div>
+								<img
+									src={`${resourceUrl}/images/summit/fosslk.png`}
+									alt="https://foss.lk/"
+									className={classes.partnerLogo}
+								></img>
+							</div>
+							<div>
+								<img
+									src={`${resourceUrl}/images/summit/cnsl.png`}
+									alt="https://meetup.com/Cloud-Native-Sri-Lanka/"
+									className={classes.partnerLogo}
+								></img>
+							</div>
+							<div>
+								<img
+									src={`${resourceUrl}/images/summit/ghcsl.png`}
+									alt="https://gcsrilanka.github.io/"
+									className={classes.partnerLogo}
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</Container>
+
 			<Container size={1200}>
 				<section className={classes.inner}>
 					<div className={classes.grid}></div>
