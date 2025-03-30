@@ -20,6 +20,7 @@ export const advertData2 = {
   topic: "Website FeedBack!",
   image: addImage,
   description:
-    "Kindly provide your feedback/ ideas to improve/ issues or bugs on our website.",
-  weblink: "https://fossuok.org/",
+    "Kindly provide your feedback/ ideas to improve/ issues or bugs you found on our website.",
+  weblink:
+    "https://docs.google.com/forms/d/e/1FAIpQLSd5ycoFVu_521c-qxWvg-ZxR21TRYC7tYEKcpDvv3_MLO--Bw/viewform?usp=preview",
 };

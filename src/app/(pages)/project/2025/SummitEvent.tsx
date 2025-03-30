@@ -13,7 +13,7 @@ export function SummitEvent() {
   const currentDate = new Date();
 
   // IDs of events to display
-  const allowedEventIds = new Set([6, 7, 8, 9, 10]);
+  const allowedEventIds = new Set([14]);
 
   // Separate future and past events
   const filteredEvents = useMemo(() => {
@@ -45,7 +45,7 @@ export function SummitEvent() {
       <GradientBack />
       <Container size={1200} pt={100} pb={100}>
         <h1 className={classes.title}>
-          Special{" "}
+          Summit{" "}
           <Text
             component="span"
             variant="gradient"
@@ -56,7 +56,9 @@ export function SummitEvent() {
           </Text>
         </h1>
         <Text className={classes.discription}>
-          Don't miss these highlighted events selected for you!
+          Don't forget to reserve your seat for our special events!
+          <br /> We have a variety of exciting activities planned, including
+          workshops, sessions and more.
         </Text>
         <Carousel
           controlsOffset="-100px"

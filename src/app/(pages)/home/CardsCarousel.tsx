@@ -32,6 +32,7 @@ export function CardsCarousel() {
           </Text>{" "}
         </h1>
         <Text className={classes.discription}>
+          {" "}
           Whether you are looking to learn something new or network with
           like-minded individuals, we've got you covered.
         </Text>

@@ -16,7 +16,7 @@
 }
 
 .description {
-  text-align: justify;
+  text-align: left;
   margin-top: var(--mantine-spacing-xl);
   margin-bottom: var(--mantine-spacing-xl);
   padding: var(--mantine-spacing-lg);
