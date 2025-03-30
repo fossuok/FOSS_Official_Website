@@ -316,3 +316,22 @@
 	fill: #f5f5f5;
 	transition: fill 0.3s ease-in-out;
 }
+
+.eventSectionTitle {
+	text-align: center;
+	font-family: "Outfit", sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+
+.eventSectionDes {
+	display: block;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: light-dark(var(--txt-secondary-light), var(--txt-seconadary-dark));
+	margin-bottom: 3rem;
+}

@@ -6,7 +6,10 @@ import GradientBack from "@/components/Gradient/GradientBack";
 import { NavbarTimeline } from "../timeline";
 
 const resourceUrl = "/2024";
+
+import EventCard from "./EventCard";
 import speakerList from "./speakerList";
+import workshops from "./workshopList";
 
 import { Metadata } from "next";
 
@@ -23,6 +26,21 @@ export const metadata: Metadata = {
 };
 
 export default function Summit24() {
+	const getSpeakers = (speakerSlugs: string[]) => {
+		return speakerSlugs
+			.map((slug) => {
+				const speaker = speakerList.find((s) => s.slug === slug);
+				return speaker
+					? {
+							name: speaker.name,
+							title: speaker.title,
+							linkedin: speaker.linkedin,
+							image: speaker.image,
+					  }
+					: null;
+			})
+			.filter((speaker) => speaker !== null);
+	};
 	return (
 		<div className={classes.wrapper}>
 			<GradientBack />
@@ -203,6 +221,27 @@ export default function Summit24() {
 						);
 					})}
 				</div>
+			</Container>
+
+			<Container size={1200}>
+				<h2 className={classes.eventSectionTitle}>
+					Pre-Summit Workshop Series{" "}
+				</h2>
+				<span className={classes.eventSectionDes}>
+					Join us for a series of workshops to learn from the best in
+					the industry.
+				</span>
+
+				{workshops.map((workshop, index) => (
+					<EventCard
+						key={index}
+						imageUrl={`${resourceUrl}${workshop.image}`}
+						title={workshop.title}
+						description={workshop.description}
+						speakers={getSpeakers(workshop.speakers)}
+						tag={workshop.tag}
+					/>
+				))}
 			</Container>
 
 			<Container size={1200}>
