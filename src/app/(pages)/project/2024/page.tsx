@@ -11,6 +11,8 @@ import EventCard from "./EventCard";
 import speakerList from "./speakerList";
 import workshops from "./workshopList";
 
+import { SummitCommittee, WorkshopCommittee } from "./Comittee";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -242,6 +244,21 @@ export default function Summit24() {
 						tag={workshop.tag}
 					/>
 				))}
+			</Container>
+
+			<Container size={1200}>
+				<h2 className={classes.commiteeSectionTitle}>
+					Summit Committee
+				</h2>
+
+				<SummitCommittee />
+			</Container>
+
+			<Container size={1200}>
+				<h2 className={classes.commiteeSectionTitle}>
+					Workshop Committee
+				</h2>
+				<WorkshopCommittee />
 			</Container>
 
 			<Container size={1200}>

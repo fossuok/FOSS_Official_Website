@@ -335,3 +335,19 @@
 	color: light-dark(var(--txt-secondary-light), var(--txt-seconadary-dark));
 	margin-bottom: 3rem;
 }
+
+.commiteeSectionTitle {
+	text-align: center;
+	font-family: "Outfit", sans-serif;
+	font-size: 2.6rem;
+	font-weight: bold;
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 680px) {
+	.commiteeSectionTitle {
+		font-size: 2rem;
+	}
+}

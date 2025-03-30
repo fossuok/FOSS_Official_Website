@@ -1,0 +1,79 @@
+.committeeSection {
+	margin-bottom: 40px;
+}
+
+.committeeGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	justify-content: center;
+}
+
+.committeeCard {
+	background-color: light-dark(
+		rgba(177, 177, 177, 0.459),
+		rgba(255, 255, 255, 0.1)
+	);
+	border-radius: 12px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	padding: 15px;
+	transition: transform 0.3s ease;
+}
+
+.committeeImage {
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.committeeName {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+}
+
+.committeeRole {
+	font-size: 1rem;
+	color: light-dark(var(--txt-secondary-light), var(--txt-secaondary-dark));
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+}
+
+.committeeLinks {
+	margin-top: 10px;
+}
+
+.committeeLink {
+	font-size: 0.9rem;
+	color: #0077b5;
+	text-decoration: none;
+	margin: 0 5px;
+}
+
+@media (max-width: 960px) {
+	.committeeGrid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 680px) {
+	.committeeGrid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.committeeCard {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.committeeGrid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.committeeCard {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
