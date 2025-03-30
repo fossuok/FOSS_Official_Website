@@ -9,6 +9,7 @@ import SpeakerGrid from "./components/SpeakerGrid";
 import { SummitEvent } from "./SummitEvent";
 import CommitteeGrid from "./components/CommitteeGrid";
 import classes from "./page.module.css";
+import CountdownTimer from "@/components/Timer/Timer";
 
 const recUrl = process.env.NEXT_PUBLIC_CDN;
 
@@ -18,6 +19,7 @@ export default function Summit25() {
       <div className={classes.wrapper}>
         <GradientBack />
         <NavbarTimeline label={"OPEN DEV SUMMIT '25"} />
+        <CountdownTimer />
         <Container size={900}>
           <div className={classes.inner}>
             <h1 className={classes.title}>
@@ -26,7 +28,7 @@ export default function Summit25() {
             </h1>
 
             <Group justify="center" className={classes.controls}>
-              <p className={classes.description}>
+              <p className={classes.time}>
                 May -<sup></sup> 2025 <br />
                 University of Kelaniya, Sri Lanka
               </p>
@@ -42,7 +44,7 @@ export default function Summit25() {
               size="md"
               radius={50}
               component="a"
-              href={`${recUrl}/documents/sponsorship proposal 25.pdf`}
+              href={`${recUrl}/assets/Sponsorship Proposal ODS25.pdf`}
               target="_blank"
             >
               Sponsorship Oppotunity

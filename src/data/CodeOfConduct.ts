@@ -3,7 +3,7 @@ export const data = [
     title: "Introduction",
     pre_list: [],
     description:
-      "The Open Source Summit ‘24 (“OSS24”) is dedicated to fostering a welcoming and inclusive environment for all attendees, speakers, volunteers, sponsors, and staff. This code of conduct outlines our expectations for respectful and professional behavior throughout the event.",
+      "FOSS UOK Events are dedicated to fostering a welcoming and inclusive environment for all attendees, speakers, volunteers, sponsors, and staff. This code of conduct outlines our expectations for respectful and professional behavior throughout all events.",
     post_list: [],
   },
   {
@@ -62,7 +62,10 @@ export const data = [
     pre_list: [],
     description:
       "For any questions or concerns regarding this code of conduct, please contact:",
-    post_list: ["Imesha Dilshani", "Role: Community Lead"],
+    post_list: [
+      "Imesha Dilshani (via hello@fossuok.org)",
+      "Role: Community Lead",
+    ],
   },
   {
     title: "Additional Considerations",

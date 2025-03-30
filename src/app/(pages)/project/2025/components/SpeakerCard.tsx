@@ -1,6 +1,7 @@
 import { Avatar, Paper, Text } from "@mantine/core";
 import { IconBrandLinkedin } from "@tabler/icons-react";
-
+import classes from "../css/Cards.module.css";
+import Link from "next/link";
 interface SpeakerCardProps {
   fname: string;
   lname: string;
@@ -22,33 +23,14 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
     <Paper radius="xl" p="lg" bg="transparent">
       <Avatar src={picture} size={240} radius={30} mx="auto" />
 
-      <a
-        href={linkedin}
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: "8px",
-          padding: "4px",
-          background: "transparent",
+      <Link href={linkedin} target="_blank" className={classes.linkedInIcon}>
+        <IconBrandLinkedin size={24} />
+      </Link>
 
-          color: "#fff",
-          textDecoration: "none",
-          borderRadius: "8px",
-          cursor: "pointer",
-          transition: "background 0.2s",
-        }}
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
-        }
-        onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
-      >
-        <IconBrandLinkedin size={36} />
-      </a>
-
-      <Text ta="center" fz="lg" fw={500}>
+      <Text pt={5} ta="left" fz="xl" fw={700}>
         {fname + " " + lname}
       </Text>
-      <Text ta="center" fz="sm" maw={240}>
+      <Text ta="left" fz="sm" maw={240}>
         {email + " • " + position}
       </Text>
     </Paper>

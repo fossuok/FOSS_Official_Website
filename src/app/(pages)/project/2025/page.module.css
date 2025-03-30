@@ -73,6 +73,15 @@
     font-size: 18px;
   }
 }
+.time {
+  font-family: "Monospace", var(--mantine-font-family-monospace);
+  text-align: center;
+  font-size: 24px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 18px;
+  }
+}
 
 .section {
   margin-left: auto;

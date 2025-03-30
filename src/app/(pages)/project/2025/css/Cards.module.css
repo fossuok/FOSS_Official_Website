@@ -189,6 +189,18 @@
   transition-delay: 0s; /* Instant effect on hover */
 }
 
+.linkedInIcon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px !important;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
 .sponsorLink {
   width: 100%;
   display: inline-flex;
@@ -197,11 +209,20 @@
   gap: 8px;
   padding: 9px 18px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
+  border: 1px solid
+    light-dark(var(--mantine-color-black), var(--mantine-color-gray-6));
   text-decoration: none;
   border-radius: 8px !important;
   cursor: pointer;
   transition: background 2s;
   text-align: center;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
+  }
+}
+
+.container .box:hover .sponsorLink {
+  color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
 }

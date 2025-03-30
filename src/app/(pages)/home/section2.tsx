@@ -7,6 +7,7 @@ import {
   SimpleGrid,
   Text,
   BackgroundImage,
+  Blockquote,
 } from "@mantine/core";
 import classes from "./section2.module.css";
 import img1 from "@/images/home/uok.webp";
@@ -15,8 +16,10 @@ import codeImg from "@/images/home/github.webp";
 import learn from "@/images/home/learn.webp";
 import share from "@/images/home/share.webp";
 import lead from "@/images/home/lead.webp";
+import { IconQuoteFilled } from "@tabler/icons-react";
 
 export default function Section2() {
+  const icon = <IconQuoteFilled />;
   return (
     <Container my="md" pt={100} pb={100}>
       <h1 className={classes.title}>
@@ -42,19 +45,26 @@ export default function Section2() {
       </h1>
 
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
-        <Card radius="md">
+        <Card radius="md" style={{ justifyContent: "center" }}>
           <Text className={classes.description}>
             Imagine a world where code is shared freely, not locked away. That’s
-            the essence of Open Source Software (FOSS) – a community where
+            the essence of Open Source Software (FOSS), a community where
             developers build, learn, and innovate together by sharing knowledge
-            and creations. <br />
-            <br />
-            And here at the University of Kelaniya, we&apos;re building our own
-            FOSS haven – a vibrant community of tech enthusiasts, coding
-            wizards, and curious minds. We&apos;re passionate about empowering
-            everyone. Whether you&apos;re a coding whiz or a curious beginner,
-            there&apos;s a place for you.
+            and creations. And here at the University of Kelaniya, we&apos;re
+            building our own FOSS haven – a vibrant community of tech
+            enthusiasts. Whether you&apos;re a coding whiz or a curious
+            beginner, there&apos;s a place for you.
           </Text>
+
+          <Blockquote
+            radius="xl"
+            color="violet"
+            icon={icon}
+            cite="- Linus Torvalds (creator of Linux and Git)"
+          >
+            “In open source, we feel strongly that to really do something well,
+            you have to get a lot of people involved.”
+          </Blockquote>
         </Card>
 
         <Grid gutter="md">

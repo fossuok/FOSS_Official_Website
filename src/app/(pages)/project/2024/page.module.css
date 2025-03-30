@@ -31,7 +31,7 @@
 	line-height: 1.1;
 	margin: 0;
 	padding: 0;
-	color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
 
 	@media (max-width: $mantine-breakpoint-sm) {
 		font-size: 42px;
@@ -44,7 +44,7 @@
 	font-size: 1.2rem;
 	font-family: monospace;
 	margin-bottom: 2rem;
-	color: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+	color: light-dark(var(--txt-secondary-light), var(--txt-secondary-dark));
 
 	@media (max-width: $mantine-breakpoint-sm) {
 		font-size: 18px;
@@ -78,8 +78,8 @@
 	width: 18rem;
 	height: 8rem;
 	background-image: light-dark(
-		url("https://fossuok.org/images/summit_logo_dark.png"),
-		url("https://fossuok.org/images/summit_logo.png")
+		url("https://resources.fossuok.org/2024/images/summit_logo_dark.webp"),
+		url("https://resources.fossuok.org/2024/images/summit_logo.webp")
 	);
 	background-size: contain;
 	background-position: center;
@@ -187,4 +187,167 @@
 
 .highlight {
 	color: var(--clr-primary);
+}
+
+.partners {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 1rem;
+	border-radius: 15px;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.partnerTitle {
+	text-align: center;
+	color: rgb(46, 46, 46);
+	font-weight: 500;
+}
+
+.partnerLogoRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.partnerLogo {
+	width: 10rem;
+}
+
+@media (min-width: 768) {
+	.partnerLogo {
+		width: 6rem;
+	}
+}
+
+.speakerSectionTitle {
+	text-align: left;
+	font-family: "Outfit", sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
+	margin-top: 3rem;
+}
+
+.speakers {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	justify-items: center;
+	align-items: flex-start;
+	gap: 3rem;
+}
+
+@media (max-width: 960px) {
+	.speakers {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 680px) {
+	.speakers {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.speakerCard {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.speakerSectionTitle {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.speakers {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.speakerCard {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+
+.speakerCard {
+	display: flex;
+	flex-direction: column;
+}
+
+.speakerImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.speakerName {
+	font-weight: 700;
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
+	font-size: 1.2rem;
+	padding-top: 1.6rem;
+}
+
+.speakerTitle {
+	font-weight: 400;
+	color: light-dark(var(--txt-secondary-light), var(--txt-secondary-dark));
+	font-size: 1rem;
+	padding-top: 0.5rem;
+}
+
+.speakerImgContainer {
+	position: relative;
+}
+
+.speakerLink {
+	position: absolute;
+	bottom: 0.6rem;
+	left: 0.6rem;
+}
+
+.speakerLinkedin {
+	width: 2rem;
+	height: 2rem;
+	background-color: #1a1a1a;
+	padding: 6px;
+	border-radius: 50%;
+	fill: #f5f5f5;
+	transition: fill 0.3s ease-in-out;
+}
+
+.eventSectionTitle {
+	text-align: center;
+	font-family: "Outfit", sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+
+.eventSectionDes {
+	display: block;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: light-dark(var(--txt-secondary-light), var(--txt-seconadary-dark));
+	margin-bottom: 3rem;
+}
+
+.commiteeSectionTitle {
+	text-align: center;
+	font-family: "Outfit", sans-serif;
+	font-size: 2.6rem;
+	font-weight: bold;
+	color: light-dark(var(--txt-primary-light), var(--txt-primary-dark));
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 680px) {
+	.commiteeSectionTitle {
+		font-size: 2rem;
+	}
 }

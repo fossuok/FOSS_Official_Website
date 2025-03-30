@@ -24,9 +24,7 @@ export default function ArticlesHome() {
           </Text>{" "}
         </h1>
         <Stack>
-          <Text className={classes.discription}>
-            Here are some of the latest articles from our blog.
-          </Text>
+          <Text className={classes.discription}></Text>
           <section>
             <div className={classes.grid}>
               {data.slice(0, 4).map((article, index) => (

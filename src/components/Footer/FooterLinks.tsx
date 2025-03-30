@@ -19,7 +19,7 @@ export function FooterLinks() {
         className={classes.link}
         component="a"
         href={link.link}
-        target="_blank"
+        target={group.title === "Pages" ? "_self" : "_blank"}
         rel="noopener noreferrer"
       >
         {link.label}

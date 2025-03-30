@@ -45,7 +45,8 @@ export default function Section1() {
             <Button
               radius="xl"
               component="a"
-              href="#"
+              href="https://forms.gle/2tG9x52LAGrjqofa9"
+              target="_blank"
               className={classes.control}
               variant="gradient"
               gradient={{ from: "violet", to: "grape" }}
