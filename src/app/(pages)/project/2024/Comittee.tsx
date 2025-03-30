@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./Committee.module.css";
 import { workshopCommitee, summitCommitee } from "./committeeList";
 
-const resourceUrl = "/2024";
+const resourceUrl = process.env.NEXT_PUBLIC_CDN + "/2024";
 
 interface CommitteeMember {
 	name: string;

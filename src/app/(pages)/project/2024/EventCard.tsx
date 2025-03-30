@@ -5,7 +5,7 @@ import styles from "./EventCard.module.css"; // Import the CSS Module
 import { FC } from "react";
 import Link from "next/link";
 
-const resourceUrl = "/2024";
+const resourceUrl = process.env.NEXT_PUBLIC_CDN + "/2024";
 
 interface Speaker {
 	name: string;

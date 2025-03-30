@@ -5,7 +5,7 @@ import "./page.global.css";
 import GradientBack from "@/components/Gradient/GradientBack";
 import { NavbarTimeline } from "../timeline";
 
-const resourceUrl = "/2024";
+const resourceUrl = process.env.NEXT_PUBLIC_CDN + "/2024";
 
 import EventCard from "./EventCard";
 import speakerList from "./speakerList";
@@ -129,13 +129,13 @@ export default function Summit24() {
 						<div className={classes.partnerLogoRow}>
 							<div>
 								<img
-									src={`${resourceUrl}/images/summit/sponsors/zone24x7_light.png`}
+									src={`${resourceUrl}/images/summit/sponsors/zone24x7_light.webp`}
 									alt="https://zone24x7.com"
 									className={classes.partnerLogo}
 								></img>
 							</div>
 							<img
-								src={`${resourceUrl}/images/summit/sponsors/wso2_light.png`}
+								src={`${resourceUrl}/images/summit/sponsors/wso2_light.webp`}
 								alt="https://wso2.com/"
 								className={classes.partnerLogo}
 							></img>
@@ -146,7 +146,7 @@ export default function Summit24() {
 						<div className={classes.partnerLogoRow}>
 							<div>
 								<img
-									src={`${resourceUrl}/images/summit/sponsors/barista.png`}
+									src={`${resourceUrl}/images/summit/sponsors/barista.webp`}
 									alt="https://www.barista.lk/"
 									className={classes.partnerLogo}
 								></img>
@@ -158,21 +158,21 @@ export default function Summit24() {
 						<div className={classes.partnerLogoRow}>
 							<div>
 								<img
-									src={`${resourceUrl}/images/summit/fosslk.png`}
+									src={`${resourceUrl}/images/summit/fosslk.webp`}
 									alt="https://foss.lk/"
 									className={classes.partnerLogo}
 								></img>
 							</div>
 							<div>
 								<img
-									src={`${resourceUrl}/images/summit/cnsl.png`}
+									src={`${resourceUrl}/images/summit/cnsl.webp`}
 									alt="https://meetup.com/Cloud-Native-Sri-Lanka/"
 									className={classes.partnerLogo}
 								></img>
 							</div>
 							<div>
 								<img
-									src={`${resourceUrl}/images/summit/ghcsl.png`}
+									src={`${resourceUrl}/images/summit/ghcsl.webp`}
 									alt="https://gcsrilanka.github.io/"
 									className={classes.partnerLogo}
 								/>
