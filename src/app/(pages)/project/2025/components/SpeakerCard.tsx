@@ -1,4 +1,4 @@
-import { Avatar, Paper, Text } from "@mantine/core";
+import { Avatar, Badge, Paper, Text } from "@mantine/core";
 import { IconBrandLinkedin } from "@tabler/icons-react";
 
 interface SpeakerCardProps {
@@ -29,7 +29,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
           display: "inline-flex",
           alignItems: "center",
           gap: "8px",
-          padding: "4px",
+          padding: "0px",
           background: "transparent",
 
           color: "#fff",
@@ -46,10 +46,10 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
         <IconBrandLinkedin size={36} />
       </a>
 
-      <Text ta="center" fz="lg" fw={500}>
+      <Text pt={5} ta="left" fz="xl" fw={700}>
         {fname + " " + lname}
       </Text>
-      <Text ta="center" fz="sm" maw={240}>
+      <Text ta="left" fz="sm" maw={240}>
         {email + " • " + position}
       </Text>
     </Paper>
