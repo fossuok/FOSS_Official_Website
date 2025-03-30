@@ -78,8 +78,8 @@
 	width: 18rem;
 	height: 8rem;
 	background-image: light-dark(
-		url("/2024/images/summit_logo_dark.png"),
-		url("/2024/images/summit_logo.png")
+		url("https://resources.fossuok.org/2024/images/summit_logo_dark.webp"),
+		url("https://resources.fossuok.org/2024/images/summit_logo.webp")
 	);
 	background-size: contain;
 	background-position: center;
