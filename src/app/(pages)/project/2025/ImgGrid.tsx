@@ -38,6 +38,7 @@ export default function ImgGrid() {
                 src={`${imgUrl}/images/summit25/${img}.webp`}
                 alt={img}
                 fill
+                sizes="100vw"
                 style={{ objectFit: "cover" }}
               />
             </Box>

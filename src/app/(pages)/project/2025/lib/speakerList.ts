@@ -56,7 +56,7 @@ const speakerList = [
     email: "Coming Soon",
     position: "Coming Soon",
     linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/images/FOSS.webp`,
+    picture: `${imgUrl}/images/summit25/ods25.webp`,
   },
   {
     fname: "Coming",
@@ -64,7 +64,7 @@ const speakerList = [
     email: "Coming Soon",
     position: "Coming Soon",
     linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/images/FOSS.webp`,
+    picture: `${imgUrl}/images/summit25/ods25.webp`,
   },
   {
     fname: "Coming",
@@ -72,7 +72,7 @@ const speakerList = [
     email: "Coming Soon",
     position: "Coming Soon",
     linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/images/FOSS.webp`,
+    picture: `${imgUrl}/images/summit25/ods25.webp`,
   },
   {
     fname: "Coming",
@@ -80,7 +80,7 @@ const speakerList = [
     email: "Coming Soon",
     position: "Coming Soon",
     linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/images/FOSS.webp`,
+    picture: `${imgUrl}/images/summit25/ods25.webp`,
   },
 ];
 

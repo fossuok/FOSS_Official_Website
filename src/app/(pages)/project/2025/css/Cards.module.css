@@ -189,6 +189,18 @@
   transition-delay: 0s; /* Instant effect on hover */
 }
 
+.linkedInIcon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px !important;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
 .sponsorLink {
   width: 100%;
   display: inline-flex;

@@ -35,32 +35,32 @@ const sponsors = [
   {
     name: "Title Partner",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
+    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,0,255,0.5))",
   },
   {
     name: "Diamond Sponsor",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
+    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(30,144,255,0.5))",
   },
   {
     name: "Gold Sponsor",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
+    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,215,0,0.5))",
   },
   {
     name: "Sponsor",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
+    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
     bgGradient:
       "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,255,255,0.1))",
   },
   {
     name: "Community Partner",
     image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: `${imgUrl}/assets/sponsorship proposal 25.pdf`,
+    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,255,128,0.5))",
   },
 ];

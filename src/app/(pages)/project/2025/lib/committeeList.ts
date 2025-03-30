@@ -8,7 +8,7 @@ const committeeList = [
     email: "member@fossuok.org",
     position: "Team Member",
     linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/images/FOSS.webp`,
+    picture: `${imgUrl}/images/summit25/ods25.webp`,
   },
   {
     fname: "Team",
@@ -16,7 +16,7 @@ const committeeList = [
     email: "member@fossuok.org",
     position: "Team Member",
     linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/images/FOSS.webp`,
+    picture: `${imgUrl}/images/summit25/ods25.webp`,
   },
   {
     fname: "Team",
@@ -24,7 +24,7 @@ const committeeList = [
     email: "",
     position: "Team Member",
     linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/images/FOSS.webp`,
+    picture: `${imgUrl}/images/summit25/ods25.webp`,
   },
   {
     fname: "Team",
@@ -32,7 +32,7 @@ const committeeList = [
     email: "",
     position: "Team Member",
     linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/images/FOSS.webp`,
+    picture: `${imgUrl}/images/summit25/ods25.webp`,
   },
 ];
 
