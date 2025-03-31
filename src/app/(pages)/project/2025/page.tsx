@@ -29,7 +29,7 @@ export default function Summit25() {
 
             <Group justify="center" className={classes.controls}>
               <p className={classes.time}>
-                May -<sup></sup> 2025 <br />
+                May 24<sup>th</sup> 2025 <br />
                 University of Kelaniya, Sri Lanka
               </p>
             </Group>

@@ -37,8 +37,8 @@ export default function CountdownTimer() {
 
   if (timeLeft === "EXPIRED") {
     return (
-      <Text size="xl" style={{ textAlign: "center" }}>
-        EXPIRED
+      <Text size="xl" fz={32} fw={700} style={{ textAlign: "center" }}>
+        Successfully Concluded
       </Text>
     );
   }

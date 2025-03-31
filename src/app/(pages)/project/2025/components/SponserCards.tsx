@@ -59,7 +59,7 @@ const sponsors = [
   },
   {
     name: "Community Partner",
-    image: `${imgUrl}/images/summit25/summit25.webp`,
+    image: `${imgUrl}/images/summit25/sponsor/cloud_native.webp`,
     href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,255,128,0.5))",
   },
