@@ -13,7 +13,7 @@ const speakerList = [
 		title: "Technical Lead at OpenMRS | Org Admin",
 		company: "Google Summer of Code",
 		image: "/images/summit/speakers/jayasanka.webp",
-		linkedin: "https://www.linkedin.com/in/jayasanka-sack/",
+		linkedin: "https://www.linkedin.com/in/jaye-cc/",
 	},
 	{
 		slug: "anuradha",
@@ -21,7 +21,7 @@ const speakerList = [
 		title: "Co-Founder & CTO",
 		company: "Verdentra",
 		image: "/images/summit/speakers/anuradha.webp",
-		linkedin: "https://www.linkedin.com/in/anuradhaweeraman/",
+		linkedin: "https://www.linkedin.com/in/anuradha-weeraman/",
 	},
 	{
 		slug: "sashika",
@@ -29,7 +29,7 @@ const speakerList = [
 		title: "Head of Systems Security, SRE Architect",
 		company: "Axiata Digital Labs",
 		image: "/images/summit/speakers/sashika.webp",
-		linkedin: "https://www.linkedin.com/in/jayasanka-sack/",
+		linkedin: "https://www.linkedin.com/in/sashikasuren/",
 	},
 	{
 		slug: "sahan",
@@ -68,7 +68,7 @@ const speakerList = [
 		title: "Site Reliability Engineer",
 		company: "Fortude",
 		image: "/images/summit/speakers/nikila.webp",
-		linkedin: "https://www.linkedin.com/in/nikila-fernando99/",
+		linkedin: "https://www.linkedin.com/in/nikilafernando99/",
 		twitter: "https://twitter.com/NikilaFernando",
 	},
 	{
