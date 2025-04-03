@@ -1,11 +1,18 @@
 "use client";
-import { Button, Container, Group, Text, VisuallyHidden } from "@mantine/core";
+import {
+  Button,
+  Container,
+  Group,
+  Text,
+  VisuallyHidden,
+  Flex,
+} from "@mantine/core";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
 
 import classes from "./section1.module.css";
 import GradientBack from "@/components/Gradient/GradientBack";
 import { Advert } from "@/components/Advert/Advert";
-import { advertData1, advertData2 } from "@/data/AdvertData"; //advert data file in data folder
+import { advertData3, advertData2 } from "@/data/AdvertData"; //advert data file in data folder
 
 export default function Section1() {
   return (
@@ -16,13 +23,14 @@ export default function Section1() {
         <VisuallyHidden>
           {" "}
           <div className={classes.advert}>
-            <Advert data={advertData1} />
-          </div>
+            <Advert data={advertData2} />
+          </div>{" "}
         </VisuallyHidden>
-
-        <div className={classes.advert}>
-          <Advert data={advertData2} />
-        </div>
+        <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
+          <div className={classes.advert}>
+            <Advert data={advertData3} />
+          </div>
+        </Flex>
 
         <Container className={classes.inner}>
           <h1 className={classes.title}>
