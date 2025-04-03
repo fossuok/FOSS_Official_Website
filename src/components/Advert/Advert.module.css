@@ -2,7 +2,7 @@
   max-width: var(--ai-size-lg);
   display: flex;
   align-items: center;
-  padding: calc(var(--mantine-spacing-xl) * 2);
+  padding: calc(var(--mantine-spacing-xl) * 1);
 
   background-color: light-dark(
     var(--mantine-color-white),

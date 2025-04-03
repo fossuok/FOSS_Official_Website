@@ -45,23 +45,42 @@ export function Advert({ data }: Readonly<AdvertProps>) {
           <Image
             src={data.image.src}
             alt={data.topic}
-            maw="300px"
+            maw="400px"
             className={classes.image}
+            radius={25}
           />
         </div>
       </Modal>
       {/* processing */}
-      <Indicator inline color="teal" label="New" size={16}>
+      {data.tag ? (
+        <Indicator
+          inline
+          color={data.color}
+          label={data.tag}
+          size={16}
+          processing={data.glow}
+        >
+          <Button
+            variant="light"
+            color={data.color}
+            radius="xl"
+            size={data.size}
+            onClick={open}
+          >
+            {data.topic}
+          </Button>
+        </Indicator>
+      ) : (
         <Button
           variant="light"
-          color="teal"
+          color={data.color}
           radius="xl"
-          size="md"
+          size={data.size}
           onClick={open}
         >
           {data.topic}
         </Button>
-      </Indicator>
+      )}
     </>
   );
 }
