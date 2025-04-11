@@ -3,76 +3,118 @@ import { EventCardProps } from "./EventCardProp";
 const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
- export const eventsData: EventCardProps[] = [
+export const eventsData: EventCardProps[] = [
   //term2-ev14
   {
-        id: 14,
-        title: "HOW TO THINK IN AWS",
-        register: "https://youtu.be/yRfED6lBLUE?si=GbNgBUt2zvYMGPNQ",
-        open: true,
-        record: true,
-        date: "Mar 01",
-        year: "2025",
-        description:
-          "Learn about ARCHITECTING SCALABLE & COST EFFECTIVE SOLUTIONS.",
-        imageUrl: {
-          src: `${imgUrl}/images/images/events/ev14.webp`,
-          height: 0,
-          width: 0,
-        },
-        speakers: [
-          {
-            name: "DILIRU MUNASINGHA",
-            role: "SENIOR SOFTWARE ENGINEER ASCENTIC",
-            alt: "speaker",
-            src: `${imgUrl}/images/speakers/diliru.webp`,
-          },
-        ],
-        tags: ["AWS", "Cloud"],
-        contents: {
-          weekday: "Saturday",
-          timerange: "7:00 PM - 8:00 PM",
-          location: "via Zoom",
-          agenda: [
-            "",
-           
-          ],
-        },
+    id: 15,
+    title: "Open Developer Summit 2025",
+    register: "https://forms.gle/a9cPMG7HZUDFwibUA",
+    open: true,
+    record: false,
+    date: "May 24",
+    year: "2025",
+    description:
+      "Registration is NOW Open for Open Developer Summit 2025. Join us for an exciting day of learning and networking with industry experts and fellow developers. Don't miss out on this opportunity to enhance your skills and knowledge in the world of open-source development.",
+    imageUrl: {
+      src: `${imgUrl}/images/images/events/ods25.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Sessions +",
+        role: "Insdustry Guest Speakers",
+        alt: "speaker",
+        src: `${imgUrl}/images/images/FOSSsm.webp`,
+      },
+      {
+        name: "Workshops & Events +",
+        role: "Insdustry Guest Speakers",
+        alt: "speaker",
+        src: `${imgUrl}/images/images/FOSSsm.webp`,
+      },
+    ],
+    tags: ["ODS25"],
+    contents: {
+      weekday: "April 26, May 03, 06, 10, 17",
+      timerange: "5 Pre-Summit Events + Summit Day",
+      location: "FCT, University of Kelaniya",
+      agenda: [
+        "Workshop 1 (April 26)",
+
+        "Workshop 2 (May 03)",
+
+        "Workshop 3 (May 06)",
+
+        "Workshop 4 (May 10)",
+
+        "Workshop 5 (May 17)",
+
+        "Summit Day (May 24)",
+      ],
+    },
+  },
+  {
+    id: 14,
+    title: "HOW TO THINK IN AWS",
+    register: "https://youtu.be/yRfED6lBLUE?si=GbNgBUt2zvYMGPNQ",
+    open: true,
+    record: true,
+    date: "Mar 01",
+    year: "2025",
+    description:
+      "Learn about ARCHITECTING SCALABLE & COST EFFECTIVE SOLUTIONS.",
+    imageUrl: {
+      src: `${imgUrl}/images/images/events/ev14.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "DILIRU MUNASINGHA",
+        role: "SENIOR SOFTWARE ENGINEER ASCENTIC",
+        alt: "speaker",
+        src: `${imgUrl}/images/speakers/diliru.webp`,
+      },
+    ],
+    tags: ["AWS", "Cloud"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "7:00 PM - 8:00 PM",
+      location: "via Zoom",
+      agenda: [""],
+    },
   },
   //term2-ev13
   {
-      id: 13,
-      title: "GITHUB ADVANCED SECURITY",
-      register: "https://youtu.be/ysGROuLivv0",
-      open: true,
-      record: true,
-      date: "Feb 08",
-      year: "2025",
-      description:
-        "Learn about PROTECTING REPOSITORIES AND WORKFLOWS.",
-      imageUrl: {
-        src: `${imgUrl}/images/images/events/ev13.webp`,
-        height: 0,
-        width: 0,
+    id: 13,
+    title: "GITHUB ADVANCED SECURITY",
+    register: "https://youtu.be/ysGROuLivv0",
+    open: true,
+    record: true,
+    date: "Feb 08",
+    year: "2025",
+    description: "Learn about PROTECTING REPOSITORIES AND WORKFLOWS.",
+    imageUrl: {
+      src: `${imgUrl}/images/images/events/ev13.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Madusha Sandaruwan",
+        role: "IT INTERN, PERITUZA LANKA (PVT) LTD.",
+        alt: "speaker",
+        src: `${imgUrl}/images/speakers/madusha.webp`,
       },
-      speakers: [
-        {
-          name: "Madusha Sandaruwan",
-          role: "IT INTERN, PERITUZA LANKA (PVT) LTD.",
-          alt: "speaker",
-          src: `${imgUrl}/images/speakers/madusha.webp`,
-        },
-      ],
-      tags: ["GitHub", "Security"],
-      contents: {
-        weekday: "Saturday",
-        timerange: "7:00 PM - 8:30 PM",
-        location: "via Zoom",
-        agenda: [
-          "",
-         
-        ],
-      },
+    ],
+    tags: ["GitHub", "Security"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "7:00 PM - 8:30 PM",
+      location: "via Zoom",
+      agenda: [""],
+    },
   },
   //term2-ev12
   {
@@ -181,11 +223,10 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
         name: "8 Speakers",
         role: "Industry Guest Speakers",
         alt: "speaker",
-        src:  `${imgUrl}/images/images/FOSSsm.webp`,
+        src: `${imgUrl}/images/images/FOSSsm.webp`,
       },
-      
     ],
-    tags: ["OSS24", "Summit","8 Hr+"],
+    tags: ["OSS24", "Summit", "8 Hr+"],
     contents: {
       weekday: "Saturday",
       timerange: "9:00 AM - 5:00 PM",
@@ -200,8 +241,7 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
         "Navigating the Landscape of LLMs",
         "CI/CD: Streamlining Delivery of Code to Production",
         "AI Decoded: Navigating the Start-line",
-      ]
-      
+      ],
     },
   },
   // pre-summit'24 workshop 06
@@ -556,4 +596,3 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
     },
   },
 ];
-

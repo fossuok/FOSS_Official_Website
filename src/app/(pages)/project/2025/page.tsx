@@ -47,7 +47,7 @@ export default function Summit25() {
               href={`${recUrl}/assets/Sponsorship Proposal ODS25.pdf`}
               target="_blank"
             >
-              Sponsorship Oppotunity
+              Sponsorship Opportunity
             </Button>
             <Button
               size="md"
