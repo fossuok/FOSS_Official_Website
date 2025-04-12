@@ -75,7 +75,7 @@
 }
 .time {
   font-family: "Monospace", var(--mantine-font-family-monospace);
-  text-align: center;
+  text-align: left;
   font-size: 24px;
 
   @media (max-width: $mantine-breakpoint-sm) {
