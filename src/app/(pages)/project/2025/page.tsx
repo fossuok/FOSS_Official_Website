@@ -169,7 +169,6 @@ export default function Summit25() {
                   <Text c="dimmed" size="md">
                     at University of Kelaniya, Sri Lanka{" "}
                   </Text>
-
                   <Text>Week 5 - May 24th, 2025</Text>
                   <Button
                     mt={20}

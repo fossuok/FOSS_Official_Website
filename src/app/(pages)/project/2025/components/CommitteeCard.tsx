@@ -20,7 +20,7 @@ const CommitteeCard: React.FC<CommitteeCardProps> = ({
 }) => {
   return (
     <Paper radius="xl" p="lg" bg="transparent">
-      <Avatar src={picture} size={120} radius={30} mx="auto" />
+      <Avatar src={picture} size={180} radius={30} mx="auto" />
       <a
         href={linkedin}
         target="_blank"
@@ -47,8 +47,11 @@ const CommitteeCard: React.FC<CommitteeCardProps> = ({
       <Text ta="center" fz="lg" fw={500}>
         {fname + " " + lname}
       </Text>
+      <Text mb={0} ta="center" fz="sm" miw={240} maw={240}>
+        {position}
+      </Text>
       <Text ta="center" fz="sm" miw={240} maw={240}>
-        {email + " • " + position}
+        {email}
       </Text>
     </Paper>
   );
