@@ -18,6 +18,45 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/project/ods25",
+        destination: "/project/2025",
+        permanent: true,
+      },
+      {
+        source: "/events/ods25-summit-day",
+        destination: "/events/20",
+        permanent: true,
+      },
+      {
+        source: "/events/ods25-workshop-01",
+        destination: "/events/15",
+        permanent: true,
+      },
+      {
+        source: "/events/ods25-workshop-02",
+        destination: "/events/16",
+        permanent: true,
+      },
+      {
+        source: "/events/ods25-workshop-03",
+        destination: "/events/20",
+        permanent: true,
+      },
+      {
+        source: "/events/ods25-workshop-04",
+        destination: "/events/20",
+        permanent: true,
+      },
+      {
+        source: "/events/ods25-workshop-05",
+        destination: "/events/20",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
