@@ -69,7 +69,7 @@ export default function Summit25() {
           </Group>
 
           <Group justify="center" className={classes.controls}>
-            <Container py={100} size={400}>
+            <Container py={100} size={500}>
               <Timeline
                 color="teal"
                 active={0}
@@ -77,14 +77,18 @@ export default function Summit25() {
                 bulletSize={24}
                 align="left"
               >
-                <Timeline.Item title="Workshop 1" className={classes.time}>
-                  <Text c="dimmed" size="md">
-                    Linux Fundamentals{" "}
-                  </Text>
-                  <Text>Week 1 - April 26th, 2025</Text>
+                <Timeline.Item
+                  title="Linux Fundamentals"
+                  className={classes.time}
+                >
+                  {/* <Text c="dimmed" size="md">
+                    Command Line, File System & Process Management
+                  </Text> */}
+                  <Text>26 April 2025, 9:00 AM</Text>
                   <Button
                     disabled
-                    mt={20}
+                    mt={10}
+                    mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
@@ -95,14 +99,18 @@ export default function Summit25() {
                   </Button>
                 </Timeline.Item>
 
-                <Timeline.Item title="Workshop 2" className={classes.time}>
-                  <Text c="dimmed" size="md">
-                    FOSS Tools for Big Data & AI{" "}
-                  </Text>
-                  <Text>Week 2 - May 3rd, 2025</Text>
+                <Timeline.Item
+                  title="FOSS Tools for Big Data & Al"
+                  className={classes.time}
+                >
+                  {/* <Text c="dimmed" size="md">
+                    Spark, Hadoop, and Airflow{" "}
+                  </Text> */}
+                  <Text>3 May 2025, 1:00 PM</Text>
                   <Button
                     disabled
-                    mt={20}
+                    mt={10}
+                    mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
@@ -113,14 +121,18 @@ export default function Summit25() {
                   </Button>
                 </Timeline.Item>
 
-                <Timeline.Item title="Workshop 3" className={classes.time}>
-                  <Text c="dimmed" size="md">
-                    Building Modern Web Apps with .NET{" "}
-                  </Text>
-                  <Text>Week 3 - May 6th, 2025</Text>
+                <Timeline.Item
+                  title="Building Modern Web Apps"
+                  className={classes.time}
+                >
+                  {/* <Text c="dimmed" size="md">
+                    with.NET & Open Source Tools{" "}
+                  </Text> */}
+                  <Text>6 May 2025, 9:00 AM</Text>
                   <Button
                     disabled
-                    mt={20}
+                    mt={10}
+                    mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
@@ -131,14 +143,18 @@ export default function Summit25() {
                   </Button>
                 </Timeline.Item>
 
-                <Timeline.Item title="Workshop 4" className={classes.time}>
-                  <Text c="dimmed" size="md">
-                    Mobile Application Development{" "}
-                  </Text>
-                  <Text>Week 3 - May 10th, 2025</Text>
+                <Timeline.Item
+                  title="Mobile Application Development"
+                  className={classes.time}
+                >
+                  {/* <Text c="dimmed" size="md">
+                    Micro-Frontend Architecture to Mobile Applications{" "}
+                  </Text> */}
+                  <Text>10 May 2025, 9:00 AM</Text>
                   <Button
                     disabled
-                    mt={20}
+                    mt={10}
+                    mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
@@ -148,14 +164,19 @@ export default function Summit25() {
                     Registrations - Coming Soon
                   </Button>
                 </Timeline.Item>
-                <Timeline.Item title="Workshop 5" className={classes.time}>
-                  <Text c="dimmed" size="md">
-                    Cloud Native Development{" "}
-                  </Text>
-                  <Text>Week 4 - May 17th, 2025</Text>
+
+                <Timeline.Item
+                  title="Cloud Native Development"
+                  className={classes.time}
+                >
+                  {/* <Text c="dimmed" size="md">
+                    Infrastructure Automation with Terraform{" "}
+                  </Text> */}
+                  <Text>17 May 2025, 9:00 AM</Text>
                   <Button
                     disabled
-                    mt={20}
+                    mt={10}
+                    mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
@@ -165,13 +186,37 @@ export default function Summit25() {
                     Registrations - Coming Soon
                   </Button>
                 </Timeline.Item>
+
+                <Timeline.Item
+                  title="Building Transparent LLM Applications"
+                  className={classes.time}
+                >
+                  {/* <Text c="dimmed" size="md">
+                    A Guide to Monitoring and Observability{" "}
+                  </Text> */}
+                  <Text>17 May 2025, 1:00 PM</Text>
+                  <Button
+                    disabled
+                    mt={10}
+                    mb={20}
+                    size="md"
+                    radius="0 50 50 0"
+                    component="a"
+                    href={`/project/2025`}
+                    target="_blank"
+                  >
+                    Registrations - Coming Soon
+                  </Button>
+                </Timeline.Item>
+
                 <Timeline.Item title="SUMMIT DAY" className={classes.time}>
                   <Text c="dimmed" size="md">
-                    at University of Kelaniya, Sri Lanka{" "}
+                    Full-Day Conclave with Talks, Panels, and Networking{" "}
                   </Text>
-                  <Text>Week 5 - May 24th, 2025</Text>
+                  <Text>24 May 2025, 9:00 AM</Text>
                   <Button
-                    mt={20}
+                    mt={10}
+                    mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
