@@ -175,7 +175,7 @@ export default function Summit25() {
                     size="md"
                     radius="0 50 50 0"
                     component="a"
-                    href="https://www.fossuok.org/events/15"
+                    href="https://www.fossuok.org/events/20"
                     target="_blank"
                   >
                     Registrations - Open

@@ -37,8 +37,8 @@ export default function Section1() {
             <Table.Tbody>
               <Table.Tr className={classes.number}>
                 <Table.Td>2023</Table.Td>
-                <Table.Td>150+</Table.Td>
-                <Table.Td>6+</Table.Td>
+                <Table.Td>170+</Table.Td>
+                <Table.Td>15+</Table.Td>
               </Table.Tr>
             </Table.Tbody>
           </Table>
