@@ -5,8 +5,8 @@ import Link from "next/link";
 interface SpeakerCardProps {
   fname: string;
   lname: string;
-  email: string;
   position: string;
+  company: string;
   linkedin: string;
   picture: string;
 }
@@ -14,8 +14,8 @@ interface SpeakerCardProps {
 const SpeakerCard: React.FC<SpeakerCardProps> = ({
   fname,
   lname,
-  email,
   position,
+  company,
   linkedin,
   picture,
 }) => {
@@ -31,11 +31,11 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
         {fname + " " + lname}
       </Text>
       <Text ta="left" fz="sm" maw={240}>
-        {email} <br />
+        {position} <br />
         {/* TODO: Remove ternary (fname checking for TBA) after all speakers are added. 
         Purpose of ternary is to remove 'at' between position and organization if speaker is empty. */}
-        {(fname === "Coming Soon" ? "" : "at ") + position}
-        {/* {"at " + position} */}
+        {(fname === "Coming Soon" ? "" : "at ") + company}
+        {/* {"at " + company} */}
       </Text>
     </Paper>
   );
