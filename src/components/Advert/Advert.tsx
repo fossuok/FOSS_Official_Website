@@ -1,21 +1,45 @@
 "use client";
-import { Modal, Button, Indicator, Image, Text, Title } from "@mantine/core";
+
+import { useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
+import {
+  Modal,
+  Button,
+  Indicator,
+  Image,
+  Text,
+  Title,
+  Skeleton,
+} from "@mantine/core";
+
 import classes from "./Advert.module.css";
 import { AdvertProps } from "@/data/AdvertData";
 
 export function Advert({ data }: Readonly<AdvertProps>) {
-  const [opened, { open, close }] = useDisclosure(false);
+  const [isOpen, { open, close }] = useDisclosure(false);
+  const [loading, setLoading] = useState(true);
+
+  const advertButton = (
+    <Button
+      variant="light"
+      color={data.color}
+      radius="xl"
+      size={data.size}
+      onClick={open}
+    >
+      {data.topic}
+    </Button>
+  );
 
   return (
     <>
       <Modal
-        opened={opened}
+        opened={isOpen}
         onClose={close}
         withCloseButton={false}
         centered
         size="auto"
-        radius={"50px 50px"}
+        radius="lg"
         overlayProps={{
           backgroundOpacity: 0.55,
           blur: 5,
@@ -24,8 +48,7 @@ export function Advert({ data }: Readonly<AdvertProps>) {
         <div className={classes.wrapper}>
           <div className={classes.body}>
             <Title className={classes.title}>{data.topic}</Title>
-
-            <Text maw="600px" fz="sm" c="dimmed">
+            <Text maw={600} fz="sm" c="dimmed">
               {data.description}
             </Text>
 
@@ -36,22 +59,26 @@ export function Advert({ data }: Readonly<AdvertProps>) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.control}
-                radius={"xl"}
+                radius="xl"
               >
                 See More
               </Button>
             </div>
           </div>
-          <Image
-            src={data.image.src}
-            alt={data.topic}
-            maw="400px"
-            className={classes.image}
-            radius={25}
-          />
+
+          <Skeleton maw={400} h="auto" visible={loading}>
+            <Image
+              src={data.image.src}
+              alt={data.topic}
+              maw={400}
+              className={classes.image}
+              radius={25}
+              onLoad={() => setLoading(false)}
+            />
+          </Skeleton>
         </div>
       </Modal>
-      {/* processing */}
+
       {data.tag ? (
         <Indicator
           inline
@@ -60,26 +87,10 @@ export function Advert({ data }: Readonly<AdvertProps>) {
           size={16}
           processing={data.glow}
         >
-          <Button
-            variant="light"
-            color={data.color}
-            radius="xl"
-            size={data.size}
-            onClick={open}
-          >
-            {data.topic}
-          </Button>
+          {advertButton}
         </Indicator>
       ) : (
-        <Button
-          variant="light"
-          color={data.color}
-          radius="xl"
-          size={data.size}
-          onClick={open}
-        >
-          {data.topic}
-        </Button>
+        advertButton
       )}
     </>
   );

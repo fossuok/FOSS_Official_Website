@@ -36,7 +36,18 @@ export default function EventDetail() {
     }
   }, [id]);
 
-  if (!event) return <div>Loading...</div>;
+  if (!event)
+    return (
+      <Container size={1200} py={50} px={20}>
+        <Link href="/events" className={classes.link}>
+          👈 View Event List
+        </Link>
+        <Text py={100} c="dimmed" size="lg" ta="center">
+          Unfortunately, you may have mistyped the address, or the page has been
+          moved to another URL.
+        </Text>
+      </Container>
+    );
 
   return (
     <Container size={1200} py={50} px={20}>
