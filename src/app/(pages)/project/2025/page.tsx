@@ -100,7 +100,7 @@ export default function Summit25() {
                 </Timeline.Item>
 
                 <Timeline.Item
-                  title="FOSS Tools for Big Data & Al"
+                  title="FOSS Tools for Big Data & AI"
                   className={classes.time}
                 >
                   {/* <Text c="dimmed" size="md">
