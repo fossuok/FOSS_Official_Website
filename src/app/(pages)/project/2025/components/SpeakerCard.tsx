@@ -23,8 +23,8 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
     <Paper radius="xl" p="lg" bg="transparent">
       <Avatar src={picture} size={240} radius={30} mx="auto" />
 
-      <Link href={linkedin} target="_blank" className={classes.linkedInIcon}>
-        <IconBrandLinkedin size={24} />
+      <Link href={linkedin} target="_blank" className={classes.Icon}>
+        <IconBrandLinkedin size={30} />
       </Link>
 
       <Text pt={5} ta="left" fz="xl" fw={700}>

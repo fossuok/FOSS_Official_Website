@@ -74,7 +74,7 @@ const committeeList = [
   {
     fname: "Induwara",
     lname: "Gamage",
-    email: "",
+    email: "empty",
     position: "Design Team Lead",
     linkedin: "https://www.linkedin.com/in/induwara-gamage-0777b5286",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Induwara_Gamage.webp`,
@@ -82,7 +82,7 @@ const committeeList = [
   {
     fname: "Supuni",
     lname: "Punsarani",
-    email: "",
+    email: "empty",
     position: "Documentation Team Lead",
     linkedin: "https://www.linkedin.com/in/supuni-wannigama-b4896b25b",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Supuni_Punsarani.webp`,
@@ -90,7 +90,7 @@ const committeeList = [
   // {
   //   fname: "Hiumie",
   //   lname: "Hungampola",
-  //   email: "",
+  //   email: "empty",
   //   position: "Sponsorship Team",
   //   linkedin: "http://www.linkedin.com/in/hiumie-hungampola-4340682b2",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Hiumie_Hungampola.webp`,
@@ -98,7 +98,7 @@ const committeeList = [
   // {
   //   fname: "Hasindu",
   //   lname: "Shehan",
-  //   email: "",
+  //   email: "empty",
   //   position: "Sponsorship Team",
   //   linkedin: "https://www.linkedin.com/in/hasindu-liyanage-409153220",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Hasindu_Shehan.webp`,
@@ -106,7 +106,7 @@ const committeeList = [
   // {
   //   fname: "Thurunu",
   //   lname: "Marasinghe",
-  //   email: "",
+  //   email: "empty",
   //   position: "Sponsorship Team",
   //   linkedin: "https://www.linkedin.com/in/thurunuym",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Thurunu_Marasinghe.webp`,
@@ -116,7 +116,7 @@ const committeeList = [
   // {
   //   fname: "Siluni",
   //   lname: "Gallaba",
-  //   email: "",
+  //   email: "empty",
   //   position: "Logistics Team",
   //   linkedin: "https://www.linkedin.com/in/siluni-gallaba-b17661356",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Siluni_Gallaba.webp`,
@@ -124,7 +124,7 @@ const committeeList = [
   // {
   //   fname: "Mavithya",
   //   lname: "Mihirud",
-  //   email: "",
+  //   email: "empty",
   //   position: "Logistics Team",
   //   linkedin: "https://www.linkedin.com/in/mavithya-mihirud-29b522270",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Mavithya_Mihirud.webp`,
@@ -135,7 +135,7 @@ const committeeList = [
   // {
   //   fname: "Kalavarthanan",
   //   lname: "Jogeswaran",
-  //   email: "",
+  //   email: "empty",
   //   position: "Design Team",
   //   linkedin: "https://www.linkedin.com/in/kalavarthanan-jogeswaran-3a2bb81aa",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Kalavarthanan_Jogeswaran.webp`,
@@ -143,7 +143,7 @@ const committeeList = [
   // {
   //   fname: "Thanoban",
   //   lname: "Kamalendran",
-  //   email: "",
+  //   email: "empty",
   //   position: "Design Team",
   //   linkedin: "https://www.linkedin.com/in/kamalendran-thanoban",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Thanoban_Kamalendran.webp`,
@@ -153,7 +153,7 @@ const committeeList = [
   // {
   //   fname: "Dulanjika",
   //   lname: "Bandara",
-  //   email: "",
+  //   email: "empty",
   //   position: "Documentation Team",
   //   linkedin: "https://www.linkedin.com/in/dulanjika bandara-9a72082a6",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Dulanjika_Bandara.webp`,
@@ -164,7 +164,7 @@ const committeeList = [
   // {
   //   fname: "Oshani",
   //   lname: "Wickramathilaka",
-  //   email: "",
+  //   email: "empty",
   //   position: "Accessibility Team",
   //   linkedin: "https://www.linkedin.com/in/oshani-wickramathilake",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Oshani_Wickramathilaka.webp`,
@@ -174,7 +174,7 @@ const committeeList = [
   // {
   //   fname: "Saroath",
   //   lname: "Farvees",
-  //   email: "",
+  //   email: "empty",
   //   position: "FOSS Board Member",
   //   linkedin: "https://www.linkedin.com/in/saroath-farvees-713366291",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Saroath_Farvees.webp`,
@@ -184,7 +184,7 @@ const committeeList = [
   {
     fname: "Coming",
     lname: "Soon",
-    email: "",
+    email: "empty",
     position: "Committee Member",
     linkedin: "https://www.linkedin.com",
     picture: `${imgUrl}/images/summit25/ods25.webp`,
@@ -192,7 +192,7 @@ const committeeList = [
   {
     fname: "Coming",
     lname: "Soon",
-    email: "",
+    email: "empty",
     position: "FOSS Board Member",
     linkedin: "https://www.linkedin.com",
     picture: `${imgUrl}/images/summit25/ods25.webp`,

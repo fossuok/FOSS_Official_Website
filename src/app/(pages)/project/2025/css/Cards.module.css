@@ -186,7 +186,7 @@
   transition-delay: 0s; /* Instant effect on hover */
 }
 
-.linkedInIcon {
+.Icon {
   display: inline-flex;
   align-items: center;
   padding: 0px !important;
