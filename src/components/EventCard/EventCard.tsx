@@ -13,6 +13,7 @@ import Image from "next/image";
 import { EventCardProps } from "@/data/EventCardProp";
 import { SpeakerCard } from "./SpeakerCard";
 import classes from "./EventCard.module.css";
+import Link from "next/link";
 
 export const EventCard = ({
   id,
@@ -133,8 +134,8 @@ export const EventCard = ({
             <Button
               radius={50}
               component="a"
-              href={register}
-              target="_blank"
+              href={`/events/${id}`}
+              target="_self"
               data-disabled={!open ? true : undefined}
               onClick={(e) => {
                 if (!open) {

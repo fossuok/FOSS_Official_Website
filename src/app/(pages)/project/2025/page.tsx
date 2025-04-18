@@ -106,7 +106,7 @@ export default function Summit25() {
                   {/* <Text c="dimmed" size="md">
                     Spark, Hadoop, and Airflow{" "}
                   </Text> */}
-                  <Text>3 May 2025, 1:00 PM</Text>
+                  <Text>3 May 2025, 9:00 AM</Text>
                   <Button
                     disabled
                     mt={10}
@@ -128,7 +128,7 @@ export default function Summit25() {
                   {/* <Text c="dimmed" size="md">
                     with.NET & Open Source Tools{" "}
                   </Text> */}
-                  <Text>6 May 2025, 9:00 AM</Text>
+                  <Text>6 May 2025, 6:00 PM</Text>
                   <Button
                     disabled
                     mt={10}
@@ -150,7 +150,7 @@ export default function Summit25() {
                   {/* <Text c="dimmed" size="md">
                     Micro-Frontend Architecture to Mobile Applications{" "}
                   </Text> */}
-                  <Text>10 May 2025, 9:00 AM</Text>
+                  <Text>10 May 2025, 8:00 AM</Text>
                   <Button
                     disabled
                     mt={10}
@@ -194,7 +194,7 @@ export default function Summit25() {
                   {/* <Text c="dimmed" size="md">
                     A Guide to Monitoring and Observability{" "}
                   </Text> */}
-                  <Text>17 May 2025, 1:00 PM</Text>
+                  <Text>17 May 2025, 10:30 AM</Text>
                   <Button
                     disabled
                     mt={10}

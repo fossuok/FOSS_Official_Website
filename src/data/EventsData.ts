@@ -14,7 +14,7 @@ export const eventsData: EventCardProps[] = [
     date: "May 24",
     year: "2025",
     description:
-      "Registration is NOW Open for Open Developer Summit 2025. Join us for an exciting day of learning and networking with industry experts and fellow developers. Don't miss out on this opportunity to enhance your skills and knowledge in the world of open-source development.",
+      "Registration is NOW Open for Open Developer Summit Day 2025. Join us for an exciting day of learning and networking with industry experts and fellow developers. Don't miss out on this opportunity to enhance your skills and knowledge in the world of open-source development.",
     imageUrl: {
       src: `${imgUrl}/images/images/events/ods25.webp`,
       height: 0,
@@ -25,13 +25,13 @@ export const eventsData: EventCardProps[] = [
         name: "Sessions +",
         role: "Insdustry Guest Speakers",
         alt: "speaker",
-        src: `${imgUrl}/images/images/FOSSsm.webp`,
+        src: `${imgUrl}/images/summit25/ods25.webp`,
       },
       {
         name: "Workshops & Events +",
         role: "Insdustry Guest Speakers",
         alt: "speaker",
-        src: `${imgUrl}/images/images/FOSSsm.webp`,
+        src: `${imgUrl}/images/summit25/ods25.webp`,
       },
     ],
     tags: ["ODS25"],
@@ -40,17 +40,12 @@ export const eventsData: EventCardProps[] = [
       timerange: "5 Pre-Summit Events + Summit Day",
       location: "FCT, University of Kelaniya",
       agenda: [
-        "Workshop 1 (April 26)",
-
-        "Workshop 2 (May 03)",
-
-        "Workshop 3 (May 06)",
-
-        "Workshop 4 (May 10)",
-
-        "Workshop 5 (May 17)",
-
-        "Summit Day (May 24)",
+        "Summit Day (May 24) - Registration Opened",
+        "Workshop 1 (April 26) - Registration Opening Soon",
+        "Workshop 2 (May 03) - Registration Opening Soon",
+        "Workshop 3 (May 06) - Registration Opening Soon",
+        "Workshop 4 (May 10) - Registration Opening Soon",
+        "Workshop 5 & 6 (May 17) - Registration Opening Soon",
       ],
     },
   },
