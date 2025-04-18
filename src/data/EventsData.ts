@@ -23,13 +23,13 @@ export const eventsData: EventCardProps[] = [
     speakers: [
       {
         name: "Sessions +",
-        role: "Insdustry Guest Speakers",
+        role: "Industry Guest Speakers",
         alt: "speaker",
         src: `${imgUrl}/images/summit25/ods25.webp`,
       },
       {
         name: "Workshops & Events +",
-        role: "Insdustry Guest Speakers",
+        role: "Industry Guest Speakers",
         alt: "speaker",
         src: `${imgUrl}/images/summit25/ods25.webp`,
       },
@@ -45,7 +45,8 @@ export const eventsData: EventCardProps[] = [
         "Workshop 2 (May 03) - Registration Opening Soon",
         "Workshop 3 (May 06) - Registration Opening Soon",
         "Workshop 4 (May 10) - Registration Opening Soon",
-        "Workshop 5 & 6 (May 17) - Registration Opening Soon",
+        "Workshop 5 (May 17) - Registration Opening Soon",
+        "Workshop 6 (May 17) - Registration Opening Soon",
       ],
     },
   },
