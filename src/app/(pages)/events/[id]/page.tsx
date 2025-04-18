@@ -106,9 +106,24 @@ export default function EventDetail() {
             </Button>
           </Indicator>
           {event.tags.map((tag) => (
-            <Badge key={tag} size="lg" color="teal" variant="light">
-              {tag}
-            </Badge>
+            <span key={tag}>
+              <Badge size="lg" color="teal">
+                {tag}
+              </Badge>
+              {tag === "ODS25" && (
+                <Link href="https://fossuok.org/project/ods25" target="_blank">
+                  <Badge
+                    color="violet"
+                    size="lg"
+                    variant="light"
+                    mx={10}
+                    style={{ cursor: "pointer" }}
+                  >
+                    more 👉
+                  </Badge>
+                </Link>
+              )}
+            </span>
           ))}
         </Flex>
       </Box>
