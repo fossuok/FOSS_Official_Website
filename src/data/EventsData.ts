@@ -4,6 +4,38 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
+  //ods workshop 1
+  {
+    id: 15,
+    title: "ODS25 - Linux Fundamentals",
+    register: "https://forms.gle/jfL871BeGAqZ4hMc9",
+    open: true,
+    record: false,
+    date: "April 26",
+    year: "2025",
+    description:
+      "Master the Basics of Linux! 💻 Join our hands-on Linux Fundamentals workshop with Nuwan Kaushalya, Lead Engineer at Persistent Systems. Perfect for beginners or anyone looking to sharpen their Linux skills, learn core concepts and best practices in one session!",
+    imageUrl: {
+      src: `${imgUrl}/images/summit25/event1.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Nuwan Kaushalya",
+        role: "Lead Engineer • Technical Support at Persistent Systems",
+        alt: "Nuwan Kaushalya",
+        src: `${imgUrl}/images/summit25/speaker/nuwan.webp`,
+      },
+    ],
+    tags: ["ODS25", "Workshop-1", "Linux"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "9:00 AM - 12:00 PM",
+      location: "FCT, University of Kelaniya",
+      agenda: ["Workshop 1 (April 26)"],
+    },
+  },
   //term2-ev20
   {
     id: 20,
@@ -50,37 +82,7 @@ export const eventsData: EventCardProps[] = [
       ],
     },
   },
-  //ods workshop 1
-  {
-    id: 15,
-    title: "ODS25 - Workshop 01",
-    register: "Coming Soon",
-    open: false,
-    record: false,
-    date: "April 26",
-    year: "2025",
-    description: "Stay tuned till the registation opens up",
-    imageUrl: {
-      src: `${imgUrl}/images/summit25/ods25.webp`,
-      height: 0,
-      width: 0,
-    },
-    speakers: [
-      {
-        name: "Nuwan Kaushalya",
-        role: "Lead Engineer • Technical Support at Persistent Systems",
-        alt: "Nuwan Kaushalya",
-        src: `${imgUrl}/images/summit25/speaker/nuwan.webp`,
-      },
-    ],
-    tags: ["ODS25", "Workshops"],
-    contents: {
-      weekday: "April 26",
-      timerange: "Coming Soon",
-      location: "FCT, University of Kelaniya",
-      agenda: ["Workshop 1 (April 26)"],
-    },
-  },
+
   //ods workshops 2
   {
     id: 16,
