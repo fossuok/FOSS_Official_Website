@@ -17,13 +17,19 @@ export interface AdvertProps {
 }
 
 export const advertData1 = {
-  topic: "FOSS T-Shirts Coming Soon!",
-  image: addImage,
-  description: "Stay tuned for our upcoming FOSS T-Shirts!",
-  weblink: "https://fossuok.org/",
-  color: "blue",
+  topic: "FOSS T-Shirts are Now Available!",
+  image: {
+    src: `${imgUrl}/images/images/advert/TshirtLong.webp`,
+    height: 0,
+    width: 0,
+  },
+  description:
+    "Show off your passion for open source with our exclusive FOSS UOK T-Shirts designed with style, comfort, and pride in mind. Available in XS to XXL for just Rs. 1700/= 👕 Durable print and high quality materials + Premium feel and perfect fit. Only a limited stock available! 🎯 Don’t miss out, grab yours today!",
+  weblink: "https://forms.gle/kNa3nd5gDf8mdA4d9",
+  color: "green.6",
   size: "lg",
   glow: true,
+  tag: "Limited",
 };
 export const advertData2 = {
   topic: "Website FeedBack!",

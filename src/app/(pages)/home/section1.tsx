@@ -12,7 +12,7 @@ import { IconBrandGithubFilled } from "@tabler/icons-react";
 import classes from "./section1.module.css";
 import GradientBack from "@/components/Gradient/GradientBack";
 import { Advert } from "@/components/Advert/Advert";
-import { advertData3, advertData2 } from "@/data/AdvertData"; //advert data file in data folder
+import { advertData1, advertData3, advertData2 } from "@/data/AdvertData"; //advert data file in data folder
 
 export default function Section1() {
   return (
@@ -28,7 +28,7 @@ export default function Section1() {
         </VisuallyHidden>
         <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
           <div className={classes.advert}>
-            <Advert data={advertData3} />
+            <Advert data={advertData1} />
           </div>
         </Flex>
 
