@@ -87,6 +87,15 @@ const committeeList = [
     linkedin: "https://www.linkedin.com/in/supuni-wannigama-b4896b25b",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Supuni_Punsarani.webp`,
   },
+  //sponsorship team
+  // {
+  //   fname: "Thurunu",
+  //   lname: "Marasinghe",
+  //   email: "empty",
+  //   position: "Sponsorship Team",
+  //   linkedin: "https://www.linkedin.com/in/thurunuym",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Thurunu_Marasinghe.webp`,
+  // },
   // {
   //   fname: "Hiumie",
   //   lname: "Hungampola",
@@ -104,15 +113,23 @@ const committeeList = [
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Hasindu_Shehan.webp`,
   // },
   // {
-  //   fname: "Thurunu",
-  //   lname: "Marasinghe",
+  //   fname: "Nirusha",
+  //   lname: "Wimalasiri ",
   //   email: "empty",
   //   position: "Sponsorship Team",
-  //   linkedin: "https://www.linkedin.com/in/thurunuym",
-  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Thurunu_Marasinghe.webp`,
+  //   linkedin: "https://www.linkedin.com/in/nirusha-wimalasiri-312343316",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Nirusha_Wimalasiri.webp`,
+  // },
+  // {
+  //   fname: "Havindu",
+  //   lname: "Hesara ",
+  //   email: "empty",
+  //   position: "Sponsorship Team",
+  //   linkedin: "https://www.linkedin.com/in/havindu-fonseka-46b8b3283",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Havindu_Hesara.webp`,
   // },
 
-  //logistic team
+  // //logistic team
   // {
   //   fname: "Siluni",
   //   lname: "Gallaba",
@@ -129,9 +146,24 @@ const committeeList = [
   //   linkedin: "https://www.linkedin.com/in/mavithya-mihirud-29b522270",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Mavithya_Mihirud.webp`,
   // },
+  // {
+  //   fname: "Vimukthi",
+  //   lname: "Paranagama",
+  //   email: "empty",
+  //   position: "Logistics Team",
+  //   linkedin: "https://www.linkedin.com/in/vimukthi-paranagama-3a54b0293",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Vimukthi_Paranagama.webp`,
+  // },
 
-  //designteam
-
+  // //designteam
+  // {
+  //   fname: "Pasindu ",
+  //   lname: "Wickramasinghe",
+  //   email: "empty",
+  //   position: "Design Team",
+  //   linkedin: "https://www.linkedin.com/in/pasinduwickrama",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Pasindu_Wickramasinghe.webp`,
+  // },
   // {
   //   fname: "Kalavarthanan",
   //   lname: "Jogeswaran",
@@ -139,6 +171,14 @@ const committeeList = [
   //   position: "Design Team",
   //   linkedin: "https://www.linkedin.com/in/kalavarthanan-jogeswaran-3a2bb81aa",
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Kalavarthanan_Jogeswaran.webp`,
+  // },
+  // {
+  //   fname: "Thamara",
+  //   lname: "Bhagya",
+  //   email: "empty",
+  //   position: "Design Team",
+  //   linkedin: "http://linkedin.com/in/thamarabhagya107",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Thamara_Bhagya.webp`,
   // },
   // {
   //   fname: "Thanoban",
@@ -149,17 +189,25 @@ const committeeList = [
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Thanoban_Kamalendran.webp`,
   // },
 
-  //documentation
+  // //documentation
   // {
-  //   fname: "Dulanjika",
-  //   lname: "Bandara",
+  //   fname: "Akila",
+  //   lname: "Fernando ",
   //   email: "empty",
   //   position: "Documentation Team",
-  //   linkedin: "https://www.linkedin.com/in/dulanjika bandara-9a72082a6",
-  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Dulanjika_Bandara.webp`,
+  //   linkedin: "https://www.linkedin.com/in/akila-fernando-b809b0297",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Akila_Fernando .webp`,
+  // },
+  // {
+  //   fname: "Sahani",
+  //   lname: "Amami ",
+  //   email: "empty",
+  //   position: "Documentation Team",
+  //   linkedin: "https://www.linkedin.com/in/sahani-amami-94304632a",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Sahani_Amami .webp`,
   // },
 
-  //accessability
+  // // accessability
 
   // {
   //   fname: "Oshani",
@@ -170,7 +218,39 @@ const committeeList = [
   //   picture: `${imgUrl}/images/summit25/oc/FOSS_Oshani_Wickramathilaka.webp`,
   // },
 
-  //board member
+  // //board member
+  // {
+  //   fname: "Pawan",
+  //   lname: "Perera",
+  //   email: "empty",
+  //   position: "FOSS Board Member",
+  //   linkedin: "www.linkedin.com/in/pawan-perera",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Pawan_Perera.webp`,
+  // },
+  // {
+  //   fname: "Chames",
+  //   lname: "Dinuka",
+  //   email: "empty",
+  //   position: "FOSS Board Member",
+  //   linkedin: "www.linkedin.com/in/chamesdinuka",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Chames_Dinuka.webp`,
+  // },
+  // {
+  //   fname: "Nishanthan",
+  //   lname: "Ramkumar",
+  //   email: "empty",
+  //   position: "FOSS Board Member",
+  //   linkedin: "www.linkedin.com/in/nishanthan03",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Nishanthan_Ramkumar .webp`,
+  // },
+  // {
+  //   fname: "Dulanjika",
+  //   lname: "Bandara",
+  //   email: "empty",
+  //   position: "FOSS Board Member",
+  //   linkedin: "https://www.linkedin.com/in/dulanjika bandara-9a72082a6",
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Dulanjika_Bandara.webp`,
+  // },
   // {
   //   fname: "Saroath",
   //   lname: "Farvees",
