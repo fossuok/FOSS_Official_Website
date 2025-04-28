@@ -4,39 +4,40 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
-  //ods workshop 1
+  //ods workshop 2
   {
-    id: 15,
-    title: "ODS25 - Linux Fundamentals",
-    register: "https://forms.gle/jfL871BeGAqZ4hMc9",
+    id: 16,
+    title: "ODS25 - Explore Big Data & AI with FOSS Tools!",
+    register: "https://forms.gle/BbrChCEzZqeQdN999",
     open: true,
     record: false,
-    date: "April 26",
+    date: "May 03",
     year: "2025",
     description:
-      "Master the Basics of Linux! 💻 Join our hands-on Linux Fundamentals workshop with Nuwan Kaushalya, Lead Engineer at Persistent Systems. Perfect for beginners or anyone looking to sharpen their Linux skills, learn core concepts and best practices in one session!",
+      "Join our insightful session with Anjana Dodampe, Senior Software Engineer at London Stock Exchange Group, and discover how FOSS tools are revolutionizing the world of Big Data & AI.",
     imageUrl: {
-      src: `${imgUrl}/images/summit25/event1.webp`,
+      src: `${imgUrl}/images/summit25/event2.webp`,
       height: 0,
       width: 0,
     },
     speakers: [
       {
-        name: "Nuwan Kaushalya",
-        role: "Lead Engineer • Technical Support at Persistent Systems",
-        alt: "Nuwan Kaushalya",
-        src: `${imgUrl}/images/summit25/speaker/nuwan.webp`,
+        name: "Anjana Dodampe",
+        role: "Senior Software Engineer at London Stock Exchange Group",
+        alt: "",
+        src: `${imgUrl}/images/summit25/speaker/anjana.webp`,
       },
     ],
-    tags: ["ODS25", "Workshop-1", "Linux"],
+    tags: ["ODS25", "Workshop-2"],
     contents: {
       weekday: "Saturday",
-      timerange: "9:00 AM - 12:00 PM",
+      timerange: "9:00 AM - 11:00 AM",
       location: "FCT, University of Kelaniya",
-      agenda: ["Workshop 1 (April 26)"],
+      agenda: ["Workshop 2 (May 03)"],
     },
   },
-  //term2-ev20
+
+  //term2-summit
   {
     id: 20,
     title: "Open Developer Summit 2025",
@@ -82,36 +83,36 @@ export const eventsData: EventCardProps[] = [
       ],
     },
   },
-
-  //ods workshops 2
+  //ods workshop 1
   {
-    id: 16,
-    title: "ODS25 - Workshop 02",
-    register: "Coming Soon",
+    id: 15,
+    title: "ODS25 - Linux Fundamentals",
+    register: "https://forms.gle/jfL871BeGAqZ4hMc9",
     open: false,
     record: false,
-    date: "May 03",
+    date: "April 26",
     year: "2025",
-    description: "Stay tuned till the registation opens up",
+    description:
+      "Master the Basics of Linux! 💻 Join our hands-on Linux Fundamentals workshop with Nuwan Kaushalya, Lead Engineer at Persistent Systems. Perfect for beginners or anyone looking to sharpen their Linux skills, learn core concepts and best practices in one session!",
     imageUrl: {
-      src: `${imgUrl}/images/summit25/ods25.webp`,
+      src: `${imgUrl}/images/summit25/event1.webp`,
       height: 0,
       width: 0,
     },
     speakers: [
       {
-        name: "Comming Soon",
-        role: " ",
-        alt: "ODS25",
-        src: `${imgUrl}/images/summit25/ods25.webp`,
+        name: "Nuwan Kaushalya",
+        role: "Lead Engineer • Technical Support at Persistent Systems",
+        alt: "Nuwan Kaushalya",
+        src: `${imgUrl}/images/summit25/speaker/nuwan.webp`,
       },
     ],
-    tags: ["ODS25", "Workshops"],
+    tags: ["ODS25", "Workshop-1", "Linux"],
     contents: {
-      weekday: "Coming Soon",
-      timerange: "Coming Soon",
+      weekday: "Saturday",
+      timerange: "9:00 AM - 12:00 PM",
       location: "FCT, University of Kelaniya",
-      agenda: ["Coming Soon"],
+      agenda: ["Workshop 1 (April 26)"],
     },
   },
 

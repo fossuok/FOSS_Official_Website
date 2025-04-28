@@ -42,17 +42,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/events/ods25-workshop-03",
-        destination: "/events/20",
+        destination: "/events/17",
         permanent: true,
       },
       {
         source: "/events/ods25-workshop-04",
-        destination: "/events/20",
+        destination: "/events/18",
         permanent: true,
       },
       {
         source: "/events/ods25-workshop-05",
-        destination: "/events/20",
+        destination: "/events/19",
         permanent: true,
       },
     ];
