@@ -87,7 +87,7 @@ const committeeList = [
     linkedin: "https://www.linkedin.com/in/supuni-wannigama-b4896b25b",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Supuni_Punsarani.webp`,
   },
-  //sponsorship team
+  // //sponsorship team
   // {
   //   fname: "Thurunu",
   //   lname: "Marasinghe",
@@ -196,7 +196,7 @@ const committeeList = [
   //   email: "empty",
   //   position: "Documentation Team",
   //   linkedin: "https://www.linkedin.com/in/akila-fernando-b809b0297",
-  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Akila_Fernando .webp`,
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Akila_Fernando.webp`,
   // },
   // {
   //   fname: "Sahani",
@@ -204,7 +204,7 @@ const committeeList = [
   //   email: "empty",
   //   position: "Documentation Team",
   //   linkedin: "https://www.linkedin.com/in/sahani-amami-94304632a",
-  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Sahani_Amami .webp`,
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Sahani_Amami.webp`,
   // },
 
   // // accessability
@@ -241,7 +241,7 @@ const committeeList = [
   //   email: "empty",
   //   position: "FOSS Board Member",
   //   linkedin: "www.linkedin.com/in/nishanthan03",
-  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Nishanthan_Ramkumar .webp`,
+  //   picture: `${imgUrl}/images/summit25/oc/FOSS_Nishanthan_Ramkumar.webp`,
   // },
   // {
   //   fname: "Dulanjika",

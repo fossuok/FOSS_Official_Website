@@ -4,36 +4,36 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
-  //ods workshop 2
+  //ods workshop 3
   {
-    id: 16,
-    title: "ODS25 - Explore Big Data & AI with FOSS Tools!",
-    register: "https://forms.gle/BbrChCEzZqeQdN999",
+    id: 17,
+    title: "ODS25 - Building Modern Web Apps with .NET & Open Source Tools",
+    register: "https://forms.gle/xZLvP1D8kwBmTbAZ7",
     open: true,
     record: false,
-    date: "May 03",
+    date: "May 06",
     year: "2025",
     description:
-      "Join our insightful session with Anjana Dodampe, Senior Software Engineer at London Stock Exchange Group, and discover how FOSS tools are revolutionizing the world of Big Data & AI.",
+      "Think Like a Web App Engineer! 💻 Join us for an exclusive session on Building Scalable & Efficient Web Apps with .NET & Open Source Tools, led by Hansamali Gamage, Senior Developer at NEXT. ",
     imageUrl: {
-      src: `${imgUrl}/images/summit25/event2.webp`,
+      src: `${imgUrl}/images/summit25/event3.webp`,
       height: 0,
       width: 0,
     },
     speakers: [
       {
-        name: "Anjana Dodampe",
-        role: "Senior Software Engineer at London Stock Exchange Group",
-        alt: "",
-        src: `${imgUrl}/images/summit25/speaker/anjana.webp`,
+        name: "Hansamali Gamage",
+        role: "Senior Developer at NEXT",
+        alt: "Hansamali",
+        src: `${imgUrl}/images/summit25/speaker/hansamali.webp`,
       },
     ],
-    tags: ["ODS25", "Workshop-2"],
+    tags: ["ODS25", "Workshop-3"],
     contents: {
-      weekday: "Saturday",
-      timerange: "9:00 AM - 11:00 AM",
-      location: "FCT, University of Kelaniya",
-      agenda: ["Workshop 2 (May 03)"],
+      weekday: "Tuesday",
+      timerange: "6:00 PM onwards ",
+      location: "via Zoom",
+      agenda: ["Workshop 3 (May 06)"],
     },
   },
 
@@ -72,15 +72,48 @@ export const eventsData: EventCardProps[] = [
       weekday: "April 26, May 03, 06, 10, 17",
       timerange: "5 Pre-Summit Events + Summit Day",
       location: "FCT, University of Kelaniya",
+      // update
       agenda: [
         "Summit Day (May 24) - Registration Opened",
-        "Workshop 1 (April 26) - Registration Opening Soon",
-        "Workshop 2 (May 03) - Registration Opening Soon",
-        "Workshop 3 (May 06) - Registration Opening Soon",
+        "Workshop 1 (April 26) - Concluded",
+        "Workshop 2 (May 03) - Concluded",
+        "Workshop 3 (May 06) - Registration Opened",
         "Workshop 4 (May 10) - Registration Opening Soon",
         "Workshop 5 (May 17) - Registration Opening Soon",
         "Workshop 6 (May 17) - Registration Opening Soon",
       ],
+    },
+  },
+  //ods workshop 2
+  {
+    id: 16,
+    title: "ODS25 - Explore Big Data & AI with FOSS Tools!",
+    register: "https://forms.gle/BbrChCEzZqeQdN999",
+    open: false,
+    record: false,
+    date: "May 03",
+    year: "2025",
+    description:
+      "Join our insightful session with Anjana Dodampe, Senior Software Engineer at London Stock Exchange Group, and discover how FOSS tools are revolutionizing the world of Big Data & AI.",
+    imageUrl: {
+      src: `${imgUrl}/images/summit25/event2.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Anjana Dodampe",
+        role: "Senior Software Engineer at London Stock Exchange Group",
+        alt: "",
+        src: `${imgUrl}/images/summit25/speaker/anjana.webp`,
+      },
+    ],
+    tags: ["ODS25", "Workshop-2"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "9:00 AM - 11:00 AM",
+      location: "FCT, University of Kelaniya",
+      agenda: ["Workshop 2 (May 03)"],
     },
   },
   //ods workshop 1
