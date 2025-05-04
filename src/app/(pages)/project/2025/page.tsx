@@ -70,7 +70,8 @@ export default function Summit25() {
 
           <Group justify="center" className={classes.controls}>
             <Container py={100} size={500}>
-              <Timeline color="teal" active={1} bulletSize={24} align="left">
+              {/* update */}
+              <Timeline color="teal" active={2} bulletSize={24} align="left">
                 <Timeline.Item
                   title="Linux Fundamentals"
                   className={classes.time}
@@ -102,6 +103,7 @@ export default function Summit25() {
                   </Text>
                   <Text>3 May 2025, 9:00 AM</Text>
                   <Button
+                    disabled
                     mt={10}
                     mb={20}
                     size="md"
@@ -110,7 +112,7 @@ export default function Summit25() {
                     href={`https://forms.gle/BbrChCEzZqeQdN999`}
                     target="_blank"
                   >
-                    Registrations - Open
+                    Concluded
                   </Button>
                 </Timeline.Item>
 
@@ -118,21 +120,20 @@ export default function Summit25() {
                   title="Building Modern Web Apps"
                   className={classes.time}
                 >
-                  {/* <Text c="dimmed" size="md">
+                  <Text c="dimmed" size="md">
                     with.NET & Open Source Tools{" "}
-                  </Text> */}
-                  <Text>6 May 2025, 6:00 PM</Text>
+                  </Text>
+                  <Text>6 May 2025, 6:00 PM via Zoom</Text>
                   <Button
-                    disabled
                     mt={10}
                     mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
-                    href={`/project/2025`}
+                    href={`https://fossuok.org/events/ods25-workshop-03`}
                     target="_blank"
                   >
-                    Registrations - Coming Soon
+                    Registrations - Open
                   </Button>
                 </Timeline.Item>
 
