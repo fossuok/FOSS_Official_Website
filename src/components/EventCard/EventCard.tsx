@@ -30,7 +30,7 @@ export const EventCard = ({
 }: Readonly<EventCardProps>) => {
   const router = useRouter(); // Initialize the router
 
-  // Handle click event to navigate to the event details page
+  // Handle click event
   const handleCardClick = () => {
     router.push(`/events/${id}`);
   };
@@ -86,7 +86,7 @@ export const EventCard = ({
             style={{
               position: "relative",
               width: "100%",
-              height: "auto",
+              height: "410px", // fixed or dynamic height
               borderRadius: "8px",
               overflow: "hidden",
             }}
@@ -95,6 +95,7 @@ export const EventCard = ({
               src={imageUrl.src}
               alt={title}
               fill
+              sizes="720px"
               style={{ objectFit: "cover" }}
             />
           </Box>

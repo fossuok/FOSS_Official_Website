@@ -12,6 +12,9 @@ import {
   Stack,
   Button,
   Indicator,
+  ActionIcon,
+  CopyButton,
+  Tooltip,
 } from "@mantine/core";
 import { useParams } from "next/navigation";
 import classes from "./page.module.css";
@@ -20,6 +23,7 @@ import { EventCardProps } from "@/data/EventCardProp";
 import { eventsData } from "@/data/EventsData";
 import Image from "next/image";
 import Link from "next/link";
+import { IconShare, IconCheck, IconLink } from "@tabler/icons-react";
 
 export default function EventDetail() {
   const { id } = useParams();
@@ -61,24 +65,44 @@ export default function EventDetail() {
           height: "380px",
           borderRadius: "1rem",
           overflow: "hidden",
-          margin: "30px 0 30px 0",
+          margin: "30px 0",
         }}
       >
+        {/* Blurred background image */}
         <Image
           src={event.imageUrl.src}
           alt={event.title}
           fill
-          style={{ objectFit: "cover" }}
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            filter: "blur(20px)",
+            transform: "scale(1.1)",
+          }}
+          priority
         />
+
+        {/* Foreground image centered */}
+        <Box
+          style={{
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "min(100%, 370px)",
+            aspectRatio: "1 / 1",
+            position: "relative",
+          }}
+        >
+          <Image
+            src={event.imageUrl.src}
+            alt={event.title}
+            fill
+            sizes="(max-width: 768px) 100vw, 370px"
+            style={{ objectFit: "contain", borderRadius: "1rem" }}
+          />
+        </Box>
       </Box>
-      {/* <Image
-        mah={380}
-        style={{ borderRadius: "1rem" }}
-        my={30}
-        fit="cover"
-        src={event.imageUrl.src}
-        alt={event.title}
-      /> */}
+
       <h1 className={classes.title}>{event.title}</h1>
 
       <Box py="20">
@@ -107,9 +131,6 @@ export default function EventDetail() {
           </Indicator>
           {event.tags.map((tag) => (
             <span key={tag}>
-              <Badge size="lg" color="teal">
-                {tag}
-              </Badge>
               {tag === "ODS25" && (
                 <Link href="https://fossuok.org/project/ods25" target="_blank">
                   <Badge
@@ -119,12 +140,35 @@ export default function EventDetail() {
                     mx={10}
                     style={{ cursor: "pointer" }}
                   >
-                    more 👉
+                    more 💖
                   </Badge>
                 </Link>
               )}
+              <Badge size="lg" color="teal">
+                {tag}
+              </Badge>
             </span>
           ))}
+
+          <CopyButton value={`https://fossuok.org/events/${id}`} timeout={2000}>
+            {({ copied, copy }) => (
+              <Tooltip
+                bg="teal"
+                color="white"
+                label={copied ? "Link Copied" : "Share"}
+                withArrow
+                position="right"
+              >
+                <ActionIcon
+                  color={copied ? "teal" : "gray"}
+                  variant="subtle"
+                  onClick={copy}
+                >
+                  {copied ? <IconCheck size={16} /> : <IconShare size={16} />}
+                </ActionIcon>
+              </Tooltip>
+            )}
+          </CopyButton>
         </Flex>
       </Box>
 
