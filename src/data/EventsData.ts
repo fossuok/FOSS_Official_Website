@@ -88,9 +88,9 @@ export const eventsData: EventCardProps[] = [
   {
     id: 16,
     title: "ODS25 - Explore Big Data & AI with FOSS Tools!",
-    register: "https://forms.gle/BbrChCEzZqeQdN999",
-    open: false,
-    record: false,
+    register: "https://www.youtube.com/watch?v=IXItNYTiGBA&feature=youtu.be",
+    open: true,
+    record: true,
     date: "May 03",
     year: "2025",
     description:

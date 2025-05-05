@@ -6,13 +6,12 @@ import classes from "./CardsCarousel.module.css";
 import { eventsData } from "@/data/EventsData";
 import { EventCard } from "@/components/EventCard/EventCard";
 import GradientBack from "@/components/Gradient/GradientBack";
-import { useMemo } from "react";
-import { parseEventDate } from "@/utils/dateUtils";
 
 export function CardsCarousel() {
-  const slides = eventsData.map((event) => (
-    <Carousel.Slide key={event.id}>
-      <EventCard {...event} />
+  // only for the first 10 events
+  const slides = eventsData.slice(0, 10).map((evt) => (
+    <Carousel.Slide key={evt.id}>
+      <EventCard {...evt} />
     </Carousel.Slide>
   ));
 

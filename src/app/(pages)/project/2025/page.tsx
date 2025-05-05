@@ -109,7 +109,7 @@ export default function Summit25() {
                     size="md"
                     radius="0 50 50 0"
                     component="a"
-                    href={`https://forms.gle/BbrChCEzZqeQdN999`}
+                    href={`https://fossuok.org/events/ods25-workshop-02`}
                     target="_blank"
                   >
                     Concluded
