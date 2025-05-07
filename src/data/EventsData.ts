@@ -56,7 +56,7 @@ export const eventsData: EventCardProps[] = [
     speakers: [
       {
         name: "Kavimal Wijewardana",
-        role: "Associate Architect - Mobile (Virtusa Corp.)",
+        role: "Associate Architect-Mobile at Virtusa Corp.",
         alt: "Kavimal",
         src: `${imgUrl}/images/summit25/speaker/kavimal.webp`,
       },
@@ -66,7 +66,7 @@ export const eventsData: EventCardProps[] = [
       weekday: "Saturday",
       timerange: "8.00 AM onwards",
       location: "via Zoom",
-      agenda: ["Workshop 4 (May 10)", "Register for Zoom Link"],
+      agenda: ["Workshop 4 (May 10)", "Zoom Link available after registration process"],
     },
   },
   //term2-summit
