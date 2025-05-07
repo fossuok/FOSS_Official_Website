@@ -23,7 +23,7 @@ import { EventCardProps } from "@/data/EventCardProp";
 import { eventsData } from "@/data/EventsData";
 import Image from "next/image";
 import Link from "next/link";
-import { IconShare, IconCheck, IconLink } from "@tabler/icons-react";
+import { IconShare, IconCheck } from "@tabler/icons-react";
 
 export default function EventDetail() {
   const { id } = useParams();
@@ -137,7 +137,7 @@ export default function EventDetail() {
                     color="violet"
                     size="lg"
                     variant="light"
-                    mx={10}
+                    mr={20}
                     style={{ cursor: "pointer" }}
                   >
                     more 💖

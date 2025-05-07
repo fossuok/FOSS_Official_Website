@@ -71,14 +71,14 @@ export default function Summit25() {
           <Group justify="center" className={classes.controls}>
             <Container py={100} size={500}>
               {/* update */}
-              <Timeline color="teal" active={2} bulletSize={24} align="left">
+              <Timeline color="teal" active={3} bulletSize={24} align="left">
                 <Timeline.Item
                   title="Linux Fundamentals"
                   className={classes.time}
                 >
-                  <Text c="dimmed" size="md">
+                  {/* <Text c="dimmed" size="md">
                     Command Line, File System & Process Management
-                  </Text>
+                  </Text> */}
                   <Text>26 April 2025, 9:00 AM</Text>
                   <Button
                     disabled
@@ -98,9 +98,9 @@ export default function Summit25() {
                   title="FOSS Tools for Big Data & AI"
                   className={classes.time}
                 >
-                  <Text c="dimmed" size="md">
+                  {/* <Text c="dimmed" size="md">
                     Spark, Hadoop, and Airflow{" "}
-                  </Text>
+                  </Text> */}
                   <Text>3 May 2025, 9:00 AM</Text>
                   <Button
                     disabled
@@ -120,11 +120,12 @@ export default function Summit25() {
                   title="Building Modern Web Apps"
                   className={classes.time}
                 >
-                  <Text c="dimmed" size="md">
+                  {/* <Text c="dimmed" size="md">
                     with.NET & Open Source Tools{" "}
-                  </Text>
+                  </Text> */}
                   <Text>6 May 2025, 6:00 PM via Zoom</Text>
                   <Button
+                    disabled
                     mt={10}
                     mb={20}
                     size="md"
@@ -133,7 +134,7 @@ export default function Summit25() {
                     href={`https://fossuok.org/events/ods25-workshop-03`}
                     target="_blank"
                   >
-                    Registrations - Open
+                    Concluded
                   </Button>
                 </Timeline.Item>
 
@@ -141,21 +142,20 @@ export default function Summit25() {
                   title="Mobile Application Development"
                   className={classes.time}
                 >
-                  {/* <Text c="dimmed" size="md">
+                  <Text c="dimmed" size="md">
                     Micro-Frontend Architecture to Mobile Applications{" "}
-                  </Text> */}
+                  </Text>
                   <Text>10 May 2025, 8:00 AM</Text>
                   <Button
-                    disabled
                     mt={10}
                     mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
-                    href={`/project/2025`}
+                    href={`https://fossuok.org/events/ods25-workshop-04`}
                     target="_blank"
                   >
-                    Registrations - Coming Soon
+                    Registrations - Open
                   </Button>
                 </Timeline.Item>
 
