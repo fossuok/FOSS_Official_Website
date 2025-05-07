@@ -4,39 +4,71 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
-  //ods workshop 3
+  // {
+  //   id: 19,
+  //   title:
+  //     "",
+  //   register: "",
+  //   open: true,
+  //   record: false,
+  //   date: "May 17",
+  //   year: "2025",
+  //   description:
+  //     "",
+  //   imageUrl: {
+  //     src: `${imgUrl}/images/summit25/event5.webp`,
+  //     height: 0,
+  //     width: 0,
+  //   },
+  //   speakers: [
+  //     {
+  //       name: "",
+  //       role: "",
+  //       alt: "",
+  //       src: `${imgUrl}/images/summit25/speaker/.webp`,
+  //     },
+  //   ],
+  //   tags: ["ODS25", "Workshop-5"],
+  //   contents: {
+  //     weekday: "Saturday",
+  //     timerange: "",
+  //     location: "",
+  //     agenda: ["Workshop 5 (May 17)", ],
+  //   },
+  // },
+  //ods workshop 4
   {
-    id: 17,
-    title: "ODS25 - Building Modern Web Apps with .NET & Open Source Tools",
-    register: "https://forms.gle/xZLvP1D8kwBmTbAZ7",
+    id: 18,
+    title:
+      "Micro-frontend Architecture to Mobile Applications (Android and IOS)",
+    register: "https://forms.gle/EJ6TB7yi4aeS5gUP9",
     open: true,
     record: false,
-    date: "May 06",
+    date: "May 10",
     year: "2025",
     description:
-      "Think Like a Web App Engineer! 💻 Join us for an exclusive session on Building Scalable & Efficient Web Apps with .NET & Open Source Tools, led by Hansamali Gamage, Senior Developer at NEXT. ",
+      "Join us for an exciting session with Kavimal Wijewardana, Associate Architect - Mobile at Virtusa Corp., as he delves into Micro-Frontend Architecture for Mobile Applications (Android & iOS). Gain insights into building scalable, maintainable, and modular mobile applications!",
     imageUrl: {
-      src: `${imgUrl}/images/summit25/event3.webp`,
+      src: `${imgUrl}/images/summit25/event4.webp`,
       height: 0,
       width: 0,
     },
     speakers: [
       {
-        name: "Hansamali Gamage",
-        role: "Senior Developer at NEXT",
-        alt: "Hansamali",
-        src: `${imgUrl}/images/summit25/speaker/hansamali.webp`,
+        name: "Kavimal Wijewardana",
+        role: "Associate Architect - Mobile (Virtusa Corp.)",
+        alt: "Kavimal",
+        src: `${imgUrl}/images/summit25/speaker/kavimal.webp`,
       },
     ],
-    tags: ["ODS25", "Workshop-3"],
+    tags: ["ODS25", "Workshop-4"],
     contents: {
-      weekday: "Tuesday",
-      timerange: "6:00 PM onwards ",
+      weekday: "Saturday",
+      timerange: "8.00 AM onwards",
       location: "via Zoom",
-      agenda: ["Workshop 3 (May 06)"],
+      agenda: ["Workshop 4 (May 10)", "Register for Zoom Link"],
     },
   },
-
   //term2-summit
   {
     id: 20,
@@ -77,11 +109,43 @@ export const eventsData: EventCardProps[] = [
         "Summit Day (May 24) - Registration Opened",
         "Workshop 1 (April 26) - Concluded",
         "Workshop 2 (May 03) - Concluded",
-        "Workshop 3 (May 06) - Registration Opened",
-        "Workshop 4 (May 10) - Registration Opening Soon",
+        "Workshop 3 (May 06) - Concluded",
+        "Workshop 4 (May 10) - Registration Opened",
         "Workshop 5 (May 17) - Registration Opening Soon",
         "Workshop 6 (May 17) - Registration Opening Soon",
       ],
+    },
+  },
+  //ods workshop 3
+  {
+    id: 17,
+    title: "ODS25 - Building Modern Web Apps with .NET & Open Source Tools",
+    register: "https://forms.gle/xZLvP1D8kwBmTbAZ7",
+    open: false,
+    record: false,
+    date: "May 06",
+    year: "2025",
+    description:
+      "Think Like a Web App Engineer! 💻 Join us for an exclusive session on Building Scalable & Efficient Web Apps with .NET & Open Source Tools, led by Hansamali Gamage, Senior Developer at NEXT. ",
+    imageUrl: {
+      src: `${imgUrl}/images/summit25/event3.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Hansamali Gamage",
+        role: "Senior Developer at NEXT",
+        alt: "Hansamali",
+        src: `${imgUrl}/images/summit25/speaker/hansamali.webp`,
+      },
+    ],
+    tags: ["ODS25", "Workshop-3"],
+    contents: {
+      weekday: "Tuesday",
+      timerange: "6:00 PM onwards ",
+      location: "via Zoom",
+      agenda: ["Workshop 3 (May 06)"],
     },
   },
   //ods workshop 2
