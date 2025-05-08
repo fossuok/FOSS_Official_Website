@@ -10,6 +10,8 @@ import { store, persistor } from "@/store/store";
 import { theme } from "../../../theme";
 import { HeaderMegaMenu } from "@/components/Header/HeaderMegaMenu";
 import { FooterLinks } from "@/components/Footer/FooterLinks";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 interface ProvidersProps {
   children: React.ReactNode;
@@ -19,12 +21,14 @@ export default function Providers({ children }: ProvidersProps) {
   return (
     <Provider store={store}>
       <MantineProvider defaultColorScheme="dark" theme={theme}>
+        <HeaderMegaMenu />
         <PersistGate loading={null} persistor={persistor}>
-          <HeaderMegaMenu />
           {children}
           <FooterLinks />
         </PersistGate>
       </MantineProvider>
+      <SpeedInsights />
+      <Analytics />
     </Provider>
   );
 }
