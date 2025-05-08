@@ -55,6 +55,11 @@ const nextConfig: NextConfig = {
         destination: "/events/19",
         permanent: true,
       },
+      {
+        source: "/events/ods25-workshop-06",
+        destination: "/events/20",
+        permanent: true,
+      },
     ];
   },
 };
