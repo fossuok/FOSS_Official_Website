@@ -4,74 +4,75 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
-  // {
-  //   id: 19,
-  //   title:
-  //     "",
-  //   register: "",
-  //   open: true,
-  //   record: false,
-  //   date: "May 17",
-  //   year: "2025",
-  //   description:
-  //     "",
-  //   imageUrl: {
-  //     src: `${imgUrl}/images/summit25/event5.webp`,
-  //     height: 0,
-  //     width: 0,
-  //   },
-  //   speakers: [
-  //     {
-  //       name: "",
-  //       role: "",
-  //       alt: "",
-  //       src: `${imgUrl}/images/summit25/speaker/.webp`,
-  //     },
-  //   ],
-  //   tags: ["ODS25", "Workshop-5"],
-  //   contents: {
-  //     weekday: "Saturday",
-  //     timerange: "",
-  //     location: "",
-  //     agenda: ["Workshop 5 (May 17)", ],
-  //   },
-  // },
-  //ods workshop 4
+  //ods workshop 5
   {
-    id: 18,
-    title:
-      "Micro-frontend Architecture to Mobile Applications (Android and IOS)",
-    register: "https://forms.gle/EJ6TB7yi4aeS5gUP9",
+    id: 19,
+    title: "Session 1: Infrastructure Automation with Terraform",
+    register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
     open: true,
     record: false,
-    date: "May 10",
+    date: "May 17",
     year: "2025",
     description:
-      "Join us for an exciting session with Kavimal Wijewardana, Associate Architect - Mobile at Virtusa Corp., as he delves into Micro-Frontend Architecture for Mobile Applications (Android & iOS). Gain insights into building scalable, maintainable, and modular mobile applications!",
+      "Learn the fundamentals of Terraform, including writing configuration files and deploying infrastructure on leading cloud platforms — all in a hands-on environment!",
     imageUrl: {
-      src: `${imgUrl}/images/summit25/event4.webp`,
+      src: `${imgUrl}/images/summit25/event5.webp`,
       height: 0,
       width: 0,
     },
     speakers: [
       {
-        name: "Kavimal Wijewardana",
-        role: "Associate Architect-Mobile at Virtusa Corp.",
-        alt: "Kavimal",
-        src: `${imgUrl}/images/summit25/speaker/kavimal.webp`,
+        name: "Sachithra Manamperi",
+        role: "DevOps Engineer at Insighture",
+        alt: "Sachithra",
+        src: `${imgUrl}/images/summit25/speaker/sachithra.webp`,
       },
     ],
-    tags: ["ODS25", "Workshop-4"],
+    tags: ["ODS25", "Workshop-5"],
     contents: {
       weekday: "Saturday",
-      timerange: "8.00 AM onwards",
-      location: "via Zoom",
-      agenda: ["Workshop 4 (May 10)", "Zoom Link available after registration process"],
+      timerange: "9.00 AM",
+      location: "Academic Building-Scaled-08-1, FCT, University of Kelaniya",
+      agenda: ["Workshop 5 (May 17)"],
     },
   },
-  //term2-summit
+  //ods workshop 6
   {
     id: 20,
+    title:
+      "Session 2: Building Transparent LLM Applications: A Guide to Monitoring and Observability",
+    register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
+    open: true,
+    record: false,
+    date: "May 17",
+    year: "2025",
+    description:
+      "Explore how to build reliable and explainable AI systems, focusing on transparency and monitoring for LLM-based applications.",
+    imageUrl: {
+      src: `${imgUrl}/images/summit25/event6.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Pasan Devin Jayawardene",
+        role: "Software Engineer - AI/R&D at Insighture",
+        alt: "Pasan",
+        src: `${imgUrl}/images/summit25/speaker/pasan.webp`,
+      },
+    ],
+    tags: ["ODS25", "Workshop-6"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "10.30 AM",
+      location: "Academic Building-Scaled-08-1, FCT, University of Kelaniya",
+      agenda: ["Workshop 6 (May 17)"],
+    },
+  },
+
+  //term2-summit
+  {
+    id: 21,
     title: "Open Developer Summit 2025",
     register: "https://forms.gle/a9cPMG7HZUDFwibUA",
     open: true,
@@ -110,9 +111,45 @@ export const eventsData: EventCardProps[] = [
         "Workshop 1 (April 26) - Concluded",
         "Workshop 2 (May 03) - Concluded",
         "Workshop 3 (May 06) - Concluded",
-        "Workshop 4 (May 10) - Registration Opened",
-        "Workshop 5 (May 17) - Registration Opening Soon",
-        "Workshop 6 (May 17) - Registration Opening Soon",
+        "Workshop 4 (May 10) - Concluded",
+        "Workshop 5 (May 17) - Registration Opened",
+        "Workshop 6 (May 17) - Registration Opened",
+      ],
+    },
+  },
+  //ods workshop 4
+  {
+    id: 18,
+    title:
+      "Micro-frontend Architecture to Mobile Applications (Android and IOS)",
+    register: "https://forms.gle/EJ6TB7yi4aeS5gUP9",
+    open: false,
+    record: false,
+    date: "May 10",
+    year: "2025",
+    description:
+      "Join us for an exciting session with Kavimal Wijewardana, Associate Architect - Mobile at Virtusa Corp., as he delves into Micro-Frontend Architecture for Mobile Applications (Android & iOS). Gain insights into building scalable, maintainable, and modular mobile applications!",
+    imageUrl: {
+      src: `${imgUrl}/images/summit25/event4.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Kavimal Wijewardana",
+        role: "Associate Architect-Mobile at Virtusa Corp.",
+        alt: "Kavimal",
+        src: `${imgUrl}/images/summit25/speaker/kavimal.webp`,
+      },
+    ],
+    tags: ["ODS25", "Workshop-4"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "8.00 AM onwards",
+      location: "via Zoom",
+      agenda: [
+        "Workshop 4 (May 10)",
+        "Zoom Link available after registration process",
       ],
     },
   },
@@ -148,6 +185,7 @@ export const eventsData: EventCardProps[] = [
       agenda: ["Workshop 3 (May 06)"],
     },
   },
+
   //ods workshop 2
   {
     id: 16,

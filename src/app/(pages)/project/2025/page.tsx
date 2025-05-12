@@ -71,7 +71,7 @@ export default function Summit25() {
           <Group justify="center" className={classes.controls}>
             <Container py={100} size={500}>
               {/* update */}
-              <Timeline color="teal" active={3} bulletSize={24} align="left">
+              <Timeline color="teal" active={5} bulletSize={24} align="left">
                 <Timeline.Item
                   title="Linux Fundamentals"
                   className={classes.time}
@@ -142,11 +142,12 @@ export default function Summit25() {
                   title="Mobile Application Development"
                   className={classes.time}
                 >
-                  <Text c="dimmed" size="md">
+                  {/* <Text c="dimmed" size="md">
                     Micro-Frontend Architecture to Mobile Applications{" "}
-                  </Text>
+                  </Text> */}
                   <Text>10 May 2025, 8:00 AM</Text>
                   <Button
+                    disabled
                     mt={10}
                     mb={20}
                     size="md"
@@ -155,29 +156,28 @@ export default function Summit25() {
                     href={`https://fossuok.org/events/ods25-workshop-04`}
                     target="_blank"
                   >
-                    Registrations - Open
+                    Concluded
                   </Button>
                 </Timeline.Item>
 
                 <Timeline.Item
-                  title="Cloud Native Development"
+                  title="Infrastructure Automation with Terraform"
                   className={classes.time}
                 >
-                  {/* <Text c="dimmed" size="md">
-                    Infrastructure Automation with Terraform{" "}
-                  </Text> */}
+                  <Text c="dimmed" size="md">
+                    conducted at FCT premises{" "}
+                  </Text>
                   <Text>17 May 2025, 9:00 AM</Text>
                   <Button
-                    disabled
                     mt={10}
                     mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
-                    href={`/project/2025`}
+                    href={`https://fossuok.org/events/ods25-workshop-05`}
                     target="_blank"
                   >
-                    Registrations - Coming Soon
+                    Registrations - Open
                   </Button>
                 </Timeline.Item>
 
@@ -185,27 +185,26 @@ export default function Summit25() {
                   title="Building Transparent LLM Applications"
                   className={classes.time}
                 >
-                  {/* <Text c="dimmed" size="md">
+                  <Text c="dimmed" size="md">
                     A Guide to Monitoring and Observability{" "}
-                  </Text> */}
+                  </Text>
                   <Text>17 May 2025, 10:30 AM</Text>
                   <Button
-                    disabled
                     mt={10}
                     mb={20}
                     size="md"
                     radius="0 50 50 0"
                     component="a"
-                    href={`/project/2025`}
+                    href={`https://fossuok.org/events/ods25-workshop-06`}
                     target="_blank"
                   >
-                    Registrations - Coming Soon
+                    Registrations - Open
                   </Button>
                 </Timeline.Item>
 
                 <Timeline.Item title="SUMMIT DAY" className={classes.time}>
                   <Text c="dimmed" size="md">
-                    Full-Day Conclave with Talks, Panels, and Networking{" "}
+                    A Conclave with Talks, Panels, and Networking{" "}
                   </Text>
                   <Text>24 May 2025, 9:00 AM</Text>
                   <Button
@@ -214,7 +213,7 @@ export default function Summit25() {
                     size="md"
                     radius="0 50 50 0"
                     component="a"
-                    href="https://www.fossuok.org/events/20"
+                    href="https://www.fossuok.org/events/21"
                     target="_blank"
                   >
                     Registrations - Open
@@ -228,7 +227,7 @@ export default function Summit25() {
 
       <div id="sponsors">
         <SponserCards
-          cards={[{ title: "Our Sponsors", content: "", type: 1 }]}
+          cards={[{ title: "Presented By", content: "", type: 1 }]}
         />
       </div>
 
@@ -286,7 +285,7 @@ export default function Summit25() {
       </div>
       <div id="speakers">
         <SpeakerGrid
-          cards={[{ title: "Meet the Speakers", content: "", type: 2 }]}
+          cards={[{ title: "Meet the Speakers", content: "", type: 3 }]}
         />
       </div>
       <div id="events">
