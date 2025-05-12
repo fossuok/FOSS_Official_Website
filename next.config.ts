@@ -27,7 +27,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/events/ods25-summit-day",
-        destination: "/events/20",
+        destination: "/events/21",
         permanent: true,
       },
       {
