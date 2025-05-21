@@ -25,12 +25,12 @@ export default function Section1() {
           <div className={classes.advert}>
             <Advert data={advertData2} />
           </div>{" "}
+          <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
+            <div className={classes.advert}>
+              <Advert data={advertData1} />
+            </div>
+          </Flex>
         </VisuallyHidden>
-        <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
-          <div className={classes.advert}>
-            <Advert data={advertData1} />
-          </div>
-        </Flex>
 
         <Container className={classes.inner}>
           <h1 className={classes.title}>

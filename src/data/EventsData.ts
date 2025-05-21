@@ -4,76 +4,10 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
-  //ods workshop 5
-  {
-    id: 19,
-    title: "Session 1: Infrastructure Automation with Terraform",
-    register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
-    open: true,
-    record: false,
-    date: "May 17",
-    year: "2025",
-    description:
-      "Learn the fundamentals of Terraform, including writing configuration files and deploying infrastructure on leading cloud platforms — all in a hands-on environment!",
-    imageUrl: {
-      src: `${imgUrl}/images/summit25/event5.webp`,
-      height: 0,
-      width: 0,
-    },
-    speakers: [
-      {
-        name: "Sachithra Manamperi",
-        role: "DevOps Engineer at Insighture",
-        alt: "Sachithra",
-        src: `${imgUrl}/images/summit25/speaker/sachithra.webp`,
-      },
-    ],
-    tags: ["ODS25", "Workshop-5"],
-    contents: {
-      weekday: "Saturday",
-      timerange: "9.00 AM",
-      location: "Academic Building-Scaled-08-1, FCT, University of Kelaniya",
-      agenda: ["Workshop 5 (May 17)"],
-    },
-  },
-  //ods workshop 6
-  {
-    id: 20,
-    title:
-      "Session 2: Building Transparent LLM Applications: A Guide to Monitoring and Observability",
-    register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
-    open: true,
-    record: false,
-    date: "May 17",
-    year: "2025",
-    description:
-      "Explore how to build reliable and explainable AI systems, focusing on transparency and monitoring for LLM-based applications.",
-    imageUrl: {
-      src: `${imgUrl}/images/summit25/event6.webp`,
-      height: 0,
-      width: 0,
-    },
-    speakers: [
-      {
-        name: "Pasan Devin Jayawardene",
-        role: "Software Engineer - AI/R&D at Insighture",
-        alt: "Pasan",
-        src: `${imgUrl}/images/summit25/speaker/pasan.webp`,
-      },
-    ],
-    tags: ["ODS25", "Workshop-6"],
-    contents: {
-      weekday: "Saturday",
-      timerange: "10.30 AM",
-      location: "Academic Building-Scaled-08-1, FCT, University of Kelaniya",
-      agenda: ["Workshop 6 (May 17)"],
-    },
-  },
-
   //term2-summit
   {
     id: 21,
-    title: "Open Developer Summit 2025",
+    title: "Open Developer Summit 2025 Event Series",
     register: "https://forms.gle/a9cPMG7HZUDFwibUA",
     open: true,
     record: false,
@@ -112,11 +46,78 @@ export const eventsData: EventCardProps[] = [
         "Workshop 2 (May 03) - Concluded",
         "Workshop 3 (May 06) - Concluded",
         "Workshop 4 (May 10) - Concluded",
-        "Workshop 5 (May 17) - Registration Opened",
-        "Workshop 6 (May 17) - Registration Opened",
+        "Workshop 5 (May 17) - Concluded",
+        "Workshop 6 (May 17) - Concluded",
       ],
     },
   },
+
+  //ods workshop 6
+  {
+    id: 20,
+    title:
+      "Session 2: Building Transparent LLM Applications: A Guide to Monitoring and Observability",
+    register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
+    open: false,
+    record: false,
+    date: "May 17",
+    year: "2025",
+    description:
+      "Explore how to build reliable and explainable AI systems, focusing on transparency and monitoring for LLM-based applications.",
+    imageUrl: {
+      src: `${imgUrl}/images/summit25/event6.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Pasan Devin Jayawardene",
+        role: "Software Engineer - AI/R&D at Insighture",
+        alt: "Pasan",
+        src: `${imgUrl}/images/summit25/speaker/pasan.webp`,
+      },
+    ],
+    tags: ["ODS25", "Workshop-6"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "10.30 AM",
+      location: "Academic Building-Scaled-08-1, FCT, University of Kelaniya",
+      agenda: ["Workshop 6 (May 17)"],
+    },
+  },
+  //ods workshop 5
+  {
+    id: 19,
+    title: "Session 1: Infrastructure Automation with Terraform",
+    register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
+    open: false,
+    record: false,
+    date: "May 17",
+    year: "2025",
+    description:
+      "Learn the fundamentals of Terraform, including writing configuration files and deploying infrastructure on leading cloud platforms — all in a hands-on environment!",
+    imageUrl: {
+      src: `${imgUrl}/images/summit25/event5.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "Sachithra Manamperi",
+        role: "DevOps Engineer at Insighture",
+        alt: "Sachithra",
+        src: `${imgUrl}/images/summit25/speaker/sachithra.webp`,
+      },
+    ],
+    tags: ["ODS25", "Workshop-5"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "9.00 AM",
+      location: "Academic Building-Scaled-08-1, FCT, University of Kelaniya",
+      agenda: ["Workshop 5 (May 17)"],
+    },
+  },
+
   //ods workshop 4
   {
     id: 18,
