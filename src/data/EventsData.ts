@@ -7,14 +7,14 @@ export const eventsData: EventCardProps[] = [
   //term2-summit
   {
     id: 21,
-    title: "Open Developer Summit 2025 Event Series",
+    title: "Open Dev Summit '25 Event Finale",
     register: "https://forms.gle/a9cPMG7HZUDFwibUA",
     open: true,
     record: false,
     date: "May 24",
     year: "2025",
     description:
-      "Registration is NOW Open for Open Developer Summit Day 2025. Join us for an exciting day of learning and networking with industry experts and fellow developers. Don't miss out on this opportunity to enhance your skills and knowledge in the world of open-source development.",
+      "Join us for an exciting day of learning and networking with industry experts and fellow developers. Don't miss out on this opportunity to enhance your skills and knowledge in the world of open-source development. Be sure to register for a smooth experience!",
     imageUrl: {
       src: `${imgUrl}/images/images/events/ods25.webp`,
       height: 0,
@@ -22,32 +22,48 @@ export const eventsData: EventCardProps[] = [
     },
     speakers: [
       {
-        name: "Sessions +",
-        role: "Industry Guest Speakers",
-        alt: "speaker",
-        src: `${imgUrl}/images/summit25/ods25.webp`,
+        name: "Nikila Fernando",
+        role: "DevOps Engineer at Fortude",
+        alt: "Nikila",
+        src: `${imgUrl}/images/summit25/speaker/nikila.webp`,
       },
       {
-        name: "Workshops & Events +",
-        role: "Industry Guest Speakers",
-        alt: "speaker",
-        src: `${imgUrl}/images/summit25/ods25.webp`,
+        name: "Joy Rathnayake",
+        role: "Associate Director/Solutions Architect at WSO2",
+        alt: "joy",
+        src: `${imgUrl}/images/summit25/speaker/joy.webp`,
+      },
+      {
+        name: "Buddima Udaranga",
+        role: "Lead platform engineer at Codification",
+        alt: "buddima",
+        src: `${imgUrl}/images/summit25/speaker/buddima.webp`,
+      },
+      {
+        name: "Asma Muzammil",
+        role: "QA Lead at Code94 Labs",
+        alt: "Asma",
+        src: `${imgUrl}/images/summit25/speaker/asma.webp`,
       },
     ],
     tags: ["ODS25"],
     contents: {
-      weekday: "April 26, May 03, 06, 10, 17",
-      timerange: "5 Pre-Summit Events + Summit Day",
-      location: "FCT, University of Kelaniya",
+      weekday: "Saturday",
+      timerange: "4 Insightful Sessions   (8.30 AM - 1.30 PM)",
+      location: "FCT Academic Building, University of Kelaniya",
       // update
       agenda: [
-        "Summit Day (May 24) - Registration Opened",
-        "Workshop 1 (April 26) - Concluded",
-        "Workshop 2 (May 03) - Concluded",
-        "Workshop 3 (May 06) - Concluded",
-        "Workshop 4 (May 10) - Concluded",
-        "Workshop 5 (May 17) - Concluded",
-        "Workshop 6 (May 17) - Concluded",
+        "Registration Starts - 8.30 am",
+        "Opening Ceremony - 9.00 am",
+        "Speaker 1 - What Really Happens When You Launch an app? - 9.15 am : 10.00 am ",
+
+        "Speaker 2  - Modernizing Application Authentication and Authorization using IAM - 10.00 am : 10.45 am",
+
+        "Interval - 15 min",
+        "Speaker 3  - Introduction to Crossplane - 11.00 am : 11.45 am",
+
+        "Speaker 4  - Quality is Everyone's Business: Embracing a QA-First Mindset.- 11.45 am : 1.15 pm",
+        "End of Summit - 1.30 pm",
       ],
     },
   },

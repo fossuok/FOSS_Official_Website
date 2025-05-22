@@ -2,12 +2,14 @@ import { useRouter } from "next/navigation";
 import {
   Paper,
   Flex,
+  Avatar,
   Text,
   Box,
   Title,
   Badge,
   Container,
   Button,
+  Tooltip,
 } from "@mantine/core";
 import Image from "next/image";
 import { EventCardProps } from "@/data/EventCardProp";
@@ -115,14 +117,29 @@ export const EventCard = ({
 
             <Text lineClamp={2}>{description}</Text>
 
-            {speakers.map((speaker) => (
-              <SpeakerCard
-                key={speaker.name}
-                name={speaker.name}
-                alt={speaker.alt}
-                src={speaker.src}
-              />
-            ))}
+            {speakers.length > 2 ? (
+              <div>
+                <Text fw={800} pb={10}>
+                  Meet the Speakers
+                </Text>
+                <Avatar.Group>
+                  {speakers.map((speaker) => (
+                    <Tooltip key={speaker.name} label={speaker.name} withArrow>
+                      <Avatar src={speaker.src} alt={speaker.alt} size={52} />
+                    </Tooltip>
+                  ))}
+                </Avatar.Group>
+              </div>
+            ) : (
+              speakers.map((speaker) => (
+                <SpeakerCard
+                  key={speaker.name}
+                  name={speaker.name}
+                  alt={speaker.alt}
+                  src={speaker.src}
+                />
+              ))
+            )}
             <Box py="10">
               <Flex direction="row" gap="10">
                 {tags.map((tag) => (

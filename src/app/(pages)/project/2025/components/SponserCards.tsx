@@ -72,10 +72,11 @@ const SponserCards = ({ cards }: { cards: CardProps[] }) => {
       {cards.map((card, index) => (
         <Box key={index} className={styles.box} data-type={card.type}>
           <span></span>
-          <Box className={styles.content}>
+          <Box w={"100%"} className={styles.content}>
             <Title fz={32}>{card.title}</Title>
             <Text pb={50}>{card.content}</Text>
           </Box>
+
           <Box className={styles.content}>
             {sponsors.map((sponsor, i) => (
               <SponsorCard key={i} {...sponsor} />

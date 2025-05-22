@@ -260,23 +260,23 @@ const committeeList = [
     picture: `${imgUrl}/images/summit25/oc/FOSS_Saroath_Farvees.webp`,
   },
 
-  //placeholders
-  {
-    fname: "Coming",
-    lname: "Soon",
-    email: "empty",
-    position: "Committee Member",
-    linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/summit25/ods25.webp`,
-  },
-  {
-    fname: "Coming",
-    lname: "Soon",
-    email: "empty",
-    position: "FOSS Board Member",
-    linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/summit25/ods25.webp`,
-  },
+  // //placeholders
+  // {
+  //   fname: "Coming",
+  //   lname: "Soon",
+  //   email: "empty",
+  //   position: "Committee Member",
+  //   linkedin: "https://www.linkedin.com",
+  //   picture: `${imgUrl}/images/summit25/ods25.webp`,
+  // },
+  // {
+  //   fname: "Coming",
+  //   lname: "Soon",
+  //   email: "empty",
+  //   position: "FOSS Board Member",
+  //   linkedin: "https://www.linkedin.com",
+  //   picture: `${imgUrl}/images/summit25/ods25.webp`,
+  // },
 ];
 
 export default committeeList;
