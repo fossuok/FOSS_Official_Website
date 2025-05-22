@@ -101,7 +101,7 @@ const committeeList = [
     lname: "Hungampola",
     email: "empty",
     position: "Sponsorship Team",
-    linkedin: "http://www.linkedin.com/in/hiumie-hungampola-4340682b2",
+    linkedin: "https://www.linkedin.com/in/hiumie-hungampola-4340682b2",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Hiumie_Hungampola.webp`,
   },
   {
@@ -177,7 +177,7 @@ const committeeList = [
     lname: "Bhagya",
     email: "empty",
     position: "Design Team",
-    linkedin: "http://linkedin.com/in/thamarabhagya107",
+    linkedin: "https://linkedin.com/in/thamarabhagya107",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Thamara_Bhagya.webp`,
   },
   {
@@ -224,7 +224,7 @@ const committeeList = [
     lname: "Perera",
     email: "empty",
     position: "FOSS Board Member",
-    linkedin: "www.linkedin.com/in/pawan-perera",
+    linkedin: "https://www.linkedin.com/in/pawan-perera",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Pawan_Perera.webp`,
   },
   {
@@ -232,7 +232,7 @@ const committeeList = [
     lname: "Dinuka",
     email: "empty",
     position: "FOSS Board Member",
-    linkedin: "www.linkedin.com/in/chamesdinuka",
+    linkedin: "https://www.linkedin.com/in/chamesdinuka",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Chames_Dinuka.webp`,
   },
   {
@@ -240,7 +240,7 @@ const committeeList = [
     lname: "Ramkumar",
     email: "empty",
     position: "FOSS Board Member",
-    linkedin: "www.linkedin.com/in/nishanthan03",
+    linkedin: "https://www.linkedin.com/in/nishanthan03",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Nishanthan_Ramkumar.webp`,
   },
   {
