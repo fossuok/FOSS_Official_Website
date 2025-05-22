@@ -1,7 +1,5 @@
 const imgUrl = process.env.NEXT_PUBLIC_CDN;
 const speakerList = [
-  // Use 'https://...' when filling linkedin links
-
   {
     fname: "Nuwan",
     lname: "Kaushalya ",
@@ -75,12 +73,12 @@ const speakerList = [
     picture: `${imgUrl}/images/summit25/speaker/asma.webp`,
   },
   {
-    fname: "Coming Soon",
-    lname: " ",
-    position: "",
-    company: "",
-    linkedin: "https://www.linkedin.com",
-    picture: `${imgUrl}/images/summit25/ods25.webp`,
+    fname: "Buddima",
+    lname: "Udaranga",
+    position: "Lead platform engineer",
+    company: "Codification",
+    linkedin: "https://www.linkedin.com/in/buddhima-udaranga/",
+    picture: `${imgUrl}/images/summit25/speaker/buddima.webp`,
   },
 ];
 

@@ -71,7 +71,7 @@ export default function Summit25() {
           <Group justify="center" className={classes.controls}>
             <Container py={100} size={500}>
               {/* update */}
-              <Timeline color="teal" active={5} bulletSize={24} align="left">
+              <Timeline color="teal" active={6} bulletSize={24} align="left">
                 <Timeline.Item
                   title="Linux Fundamentals"
                   className={classes.time}
@@ -164,11 +164,12 @@ export default function Summit25() {
                   title="Infrastructure Automation with Terraform"
                   className={classes.time}
                 >
-                  <Text c="dimmed" size="md">
+                  {/* <Text c="dimmed" size="md">
                     conducted at FCT premises{" "}
-                  </Text>
+                  </Text> */}
                   <Text>17 May 2025, 9:00 AM</Text>
                   <Button
+                    disabled
                     mt={10}
                     mb={20}
                     size="md"
@@ -177,7 +178,7 @@ export default function Summit25() {
                     href={`https://fossuok.org/events/ods25-workshop-05`}
                     target="_blank"
                   >
-                    Registrations - Open
+                    Concluded
                   </Button>
                 </Timeline.Item>
 
@@ -185,11 +186,12 @@ export default function Summit25() {
                   title="Building Transparent LLM Applications"
                   className={classes.time}
                 >
-                  <Text c="dimmed" size="md">
+                  {/* <Text c="dimmed" size="md">
                     A Guide to Monitoring and Observability{" "}
-                  </Text>
+                  </Text> */}
                   <Text>17 May 2025, 10:30 AM</Text>
                   <Button
+                    disabled
                     mt={10}
                     mb={20}
                     size="md"
@@ -198,7 +200,7 @@ export default function Summit25() {
                     href={`https://fossuok.org/events/ods25-workshop-06`}
                     target="_blank"
                   >
-                    Registrations - Open
+                    Concluded
                   </Button>
                 </Timeline.Item>
 

@@ -4,45 +4,77 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
-  //ods workshop 5
+  //term2-summit
   {
-    id: 19,
-    title: "Session 1: Infrastructure Automation with Terraform",
-    register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
+    id: 21,
+    title: "Open Dev Summit '25 Event Finale",
+    register: "https://forms.gle/a9cPMG7HZUDFwibUA",
     open: true,
     record: false,
-    date: "May 17",
+    date: "May 24",
     year: "2025",
     description:
-      "Learn the fundamentals of Terraform, including writing configuration files and deploying infrastructure on leading cloud platforms — all in a hands-on environment!",
+      "Join us for an exciting day of learning and networking with industry experts and fellow developers. Don't miss out on this opportunity to enhance your skills and knowledge in the world of open-source development. Be sure to register for a smooth experience!",
     imageUrl: {
-      src: `${imgUrl}/images/summit25/event5.webp`,
+      src: `${imgUrl}/images/images/events/ods25.webp`,
       height: 0,
       width: 0,
     },
     speakers: [
       {
-        name: "Sachithra Manamperi",
-        role: "DevOps Engineer at Insighture",
-        alt: "Sachithra",
-        src: `${imgUrl}/images/summit25/speaker/sachithra.webp`,
+        name: "Nikila Fernando",
+        role: "DevOps Engineer at Fortude",
+        alt: "Nikila",
+        src: `${imgUrl}/images/summit25/speaker/nikila.webp`,
+      },
+      {
+        name: "Joy Rathnayake",
+        role: "Associate Director/Solutions Architect at WSO2",
+        alt: "joy",
+        src: `${imgUrl}/images/summit25/speaker/joy.webp`,
+      },
+      {
+        name: "Buddima Udaranga",
+        role: "Lead platform engineer at Codification",
+        alt: "buddima",
+        src: `${imgUrl}/images/summit25/speaker/buddima.webp`,
+      },
+      {
+        name: "Asma Muzammil",
+        role: "QA Lead at Code94 Labs",
+        alt: "Asma",
+        src: `${imgUrl}/images/summit25/speaker/asma.webp`,
       },
     ],
-    tags: ["ODS25", "Workshop-5"],
+    tags: ["ODS25"],
     contents: {
       weekday: "Saturday",
-      timerange: "9.00 AM",
-      location: "Academic Building-Scaled-08-1, FCT, University of Kelaniya",
-      agenda: ["Workshop 5 (May 17)"],
+      timerange: "4 Insightful Sessions   (8.30 AM - 1.30 PM)",
+      location: "FCT Academic Building, University of Kelaniya",
+      // update
+      agenda: [
+        "Registration Starts - 8.30 am",
+        "Opening Ceremony - 9.00 am",
+        "Speaker 1 - What Really Happens When You Launch an app? - 9.15 am : 10.00 am ",
+
+        "Speaker 2  - Modernizing Application Authentication and Authorization using IAM - 10.00 am : 10.45 am",
+
+        "Interval - 15 min",
+        "Speaker 3  - Introduction to Crossplane - 11.00 am : 11.45 am",
+
+        "Speaker 4  - Quality is Everyone's Business: Embracing a QA-First Mindset.- 11.45 am : 1.15 pm",
+        "End of Summit - 1.30 pm",
+      ],
     },
   },
+
   //ods workshop 6
   {
     id: 20,
     title:
       "Session 2: Building Transparent LLM Applications: A Guide to Monitoring and Observability",
     register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
-    open: true,
+    open: false,
     record: false,
     date: "May 17",
     year: "2025",
@@ -69,54 +101,39 @@ export const eventsData: EventCardProps[] = [
       agenda: ["Workshop 6 (May 17)"],
     },
   },
-
-  //term2-summit
+  //ods workshop 5
   {
-    id: 21,
-    title: "Open Developer Summit 2025",
-    register: "https://forms.gle/a9cPMG7HZUDFwibUA",
-    open: true,
+    id: 19,
+    title: "Session 1: Infrastructure Automation with Terraform",
+    register: "https://forms.gle/1NvAhWzRQ1Xwjvts5",
+    open: false,
     record: false,
-    date: "May 24",
+    date: "May 17",
     year: "2025",
     description:
-      "Registration is NOW Open for Open Developer Summit Day 2025. Join us for an exciting day of learning and networking with industry experts and fellow developers. Don't miss out on this opportunity to enhance your skills and knowledge in the world of open-source development.",
+      "Learn the fundamentals of Terraform, including writing configuration files and deploying infrastructure on leading cloud platforms — all in a hands-on environment!",
     imageUrl: {
-      src: `${imgUrl}/images/images/events/ods25.webp`,
+      src: `${imgUrl}/images/summit25/event5.webp`,
       height: 0,
       width: 0,
     },
     speakers: [
       {
-        name: "Sessions +",
-        role: "Industry Guest Speakers",
-        alt: "speaker",
-        src: `${imgUrl}/images/summit25/ods25.webp`,
-      },
-      {
-        name: "Workshops & Events +",
-        role: "Industry Guest Speakers",
-        alt: "speaker",
-        src: `${imgUrl}/images/summit25/ods25.webp`,
+        name: "Sachithra Manamperi",
+        role: "DevOps Engineer at Insighture",
+        alt: "Sachithra",
+        src: `${imgUrl}/images/summit25/speaker/sachithra.webp`,
       },
     ],
-    tags: ["ODS25"],
+    tags: ["ODS25", "Workshop-5"],
     contents: {
-      weekday: "April 26, May 03, 06, 10, 17",
-      timerange: "5 Pre-Summit Events + Summit Day",
-      location: "FCT, University of Kelaniya",
-      // update
-      agenda: [
-        "Summit Day (May 24) - Registration Opened",
-        "Workshop 1 (April 26) - Concluded",
-        "Workshop 2 (May 03) - Concluded",
-        "Workshop 3 (May 06) - Concluded",
-        "Workshop 4 (May 10) - Concluded",
-        "Workshop 5 (May 17) - Registration Opened",
-        "Workshop 6 (May 17) - Registration Opened",
-      ],
+      weekday: "Saturday",
+      timerange: "9.00 AM",
+      location: "Academic Building-Scaled-08-1, FCT, University of Kelaniya",
+      agenda: ["Workshop 5 (May 17)"],
     },
   },
+
   //ods workshop 4
   {
     id: 18,

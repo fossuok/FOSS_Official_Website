@@ -35,31 +35,32 @@ const sponsors = [
   {
     name: "FOSS Community UOK",
     image: `${imgUrl}/images/summit25/sponsor/foss.webp`,
-    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
+    href: `https://fossuok.org/`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,255,128,0.5))",
   },
   {
     name: "University of Kelaniya",
     image: `${imgUrl}/images/summit25/sponsor/uok.webp`,
-    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
+    href: `https://www.kln.ac.lk/`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,215,0,0.5))",
   },
   {
-    name: "FCT",
+    name: "At FCT Premises",
     image: `${imgUrl}/images/summit25/sponsor/fct.webp`,
-    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
+    href: `https://fct.kln.ac.lk/`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(30,144,255,0.5))",
   },
-  {
-    name: "Sponsor",
-    image: `${imgUrl}/images/summit25/summit25.webp`,
-    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
-    bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,0,255,0.5))",
-  },
+  //{
+  //   name: "Sponsor",
+  //   image: `${imgUrl}/images/summit25/summit25.webp`,
+  //   href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
+  //   bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,0,255,0.5))",
+  // },
+
   {
     name: "Community Partner",
     image: `${imgUrl}/images/summit25/sponsor/cloud_native.webp`,
-    href: `${imgUrl}/assets/Sponsorship Proposal ODS25.pdf`,
+    href: `https://www.linkedin.com/company/cloudnativesl/`,
     bgGradient:
       "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,255,255,0.1))",
   },
@@ -71,10 +72,11 @@ const SponserCards = ({ cards }: { cards: CardProps[] }) => {
       {cards.map((card, index) => (
         <Box key={index} className={styles.box} data-type={card.type}>
           <span></span>
-          <Box className={styles.content}>
+          <Box w={"100%"} className={styles.content}>
             <Title fz={32}>{card.title}</Title>
             <Text pb={50}>{card.content}</Text>
           </Box>
+
           <Box className={styles.content}>
             {sponsors.map((sponsor, i) => (
               <SponsorCard key={i} {...sponsor} />
