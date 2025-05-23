@@ -53,17 +53,14 @@ export const eventsData: EventCardProps[] = [
       location: "FCT Academic Building, University of Kelaniya",
       // update
       agenda: [
-        "Registration Starts - 8.30 am",
-        "Opening Ceremony - 9.00 am",
-        "Speaker 1 - What Really Happens When You Launch an app? - 9.15 am : 10.00 am ",
-
-        "Speaker 2  - Modernizing Application Authentication and Authorization using IAM - 10.00 am : 10.45 am",
-
-        "Interval - 15 min",
-        "Speaker 3  - Introduction to Crossplane - 11.00 am : 11.45 am",
-
-        "Speaker 4  - Quality is Everyone's Business: Embracing a QA-First Mindset.- 11.45 am : 1.15 pm",
-        "End of Summit - 1.30 pm",
+        "08.30 AM -  Registration Starts",
+        "09.00 AM -  Opening Ceremony",
+        "09.15 AM -  Speaker 1: Kubernetes 101 - Navigating the World of Containers",
+        "10.00 AM -  Speaker 2: Modernizing Application Authentication and Authorization using IAM",
+        "10.45 AM -  Interval (15 min)",
+        "11.00 AM -  Speaker 3: Introduction to Crossplane",
+        "11.45 AM -  Speaker 4: Quality is Everyone's Business - Embracing a QA-First Mindset",
+        "01.30 PM -  End of Summit",
       ],
     },
   },
