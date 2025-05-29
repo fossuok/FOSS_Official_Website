@@ -14,6 +14,8 @@ export function AboutAuthor({
       <div>
         <Image
           src={profile}
+          width={100}
+          height={100}
           alt={`${author}'s profile`}
           className={classes.author_image}
         />

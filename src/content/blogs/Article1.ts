@@ -10,9 +10,9 @@
  *  To add new article thumbnail follow this format:
  *      import thumbnail_n from '@/images/blog/thumbnail/article-n-thumbnail.extension';
  */
+const imgUrl = process.env.NEXT_PUBLIC_CDN;
 import { ArticleProps, TYPE } from "@/data/ArticleProps";
-import thumbnail_1 from "@/images/blog/thumbnail/article-1-thumbnail.webp";
-import imesha_profile from "@/images/blog/profile/imesha-dilshani.avif";
+const author_name = "Imesha Dilshani";
 
 export const Article1: ArticleProps = {
   id: "words-as-vectors-sparse-vectors-vs-dense-vectors",
@@ -34,7 +34,7 @@ export const Article1: ArticleProps = {
     ],
   },
   thumbnail: {
-    image: thumbnail_1,
+    image: `${imgUrl}/images/images/blog/thumbnail/article-1-thumbnail.webp`,
     alt: "Thumbnail of word vectors.",
   },
   content: [
@@ -166,8 +166,8 @@ export const Article1: ArticleProps = {
     },
   ],
   about: {
-    author: "Imesha Disahani",
-    profile: imesha_profile,
+    author: author_name,
+    profile: `${imgUrl}/images/images/blog/profile/imesha-dilshani.avif`,
     description:
       "Imesha Dilshani is a Computer Science undergraduate at the University of Kelaniya. She is a passionate tech enthusiast who loves to explore new technologies. She is one of the founding member of the FOSS Community UOK.",
     links: [
