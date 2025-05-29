@@ -9,7 +9,7 @@ export const eventsData: EventCardProps[] = [
     id: 21,
     title: "Open Dev Summit '25 Event Finale",
     register: "https://forms.gle/a9cPMG7HZUDFwibUA",
-    open: true,
+    open: false,
     record: false,
     date: "May 24",
     year: "2025",

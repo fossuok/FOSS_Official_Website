@@ -37,10 +37,10 @@ export default function Summit25() {
               size="md"
               radius={50}
               component="a"
-              href={`${recUrl}/assets/Sponsorship Proposal ODS25.pdf`}
+              href={`${recUrl}/assets/Transparency Report ODS25.pdf`}
               target="_blank"
             >
-              Sponsorship Opportunity
+              Transparency Report
             </Button>
             <Button
               size="md"
@@ -210,6 +210,7 @@ export default function Summit25() {
                   </Text>
                   <Text>24 May 2025, 9:00 AM</Text>
                   <Button
+                    disabled
                     mt={10}
                     mb={20}
                     size="md"
@@ -218,7 +219,7 @@ export default function Summit25() {
                     href="https://www.fossuok.org/events/21"
                     target="_blank"
                   >
-                    Registrations - Open
+                    Concluded - Thanks for Joining!
                   </Button>
                 </Timeline.Item>
               </Timeline>

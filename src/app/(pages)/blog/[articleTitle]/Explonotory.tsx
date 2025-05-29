@@ -7,7 +7,7 @@ export function Explonotory({ data, type }: Content) {
       {Array.isArray(data) && Array.isArray(data[0]) ? (
         data.map((d, index) => (
           <div key={index}>
-            <p className={classes.para}>
+            <p className={classes.para} style={{ marginLeft: "50px" }}>
               <strong className={classes.strong}>{d[0]}</strong>&nbsp;{d[1]}
             </p>
           </div>

@@ -50,6 +50,7 @@ const sponsors = [
     href: `https://fct.kln.ac.lk/`,
     bgGradient: "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(30,144,255,0.5))",
   },
+
   //{
   //   name: "Sponsor",
   //   image: `${imgUrl}/images/summit25/summit25.webp`,
@@ -61,6 +62,13 @@ const sponsors = [
     name: "Community Partner",
     image: `${imgUrl}/images/summit25/sponsor/cloud_native.webp`,
     href: `https://www.linkedin.com/company/cloudnativesl/`,
+    bgGradient:
+      "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,255,255,0.1))",
+  },
+  {
+    name: "Photography Partner",
+    image: `${imgUrl}/images/summit25/sponsor/dicineverse.webp`,
+    href: `https://www.facebook.com/dicineverse`,
     bgGradient:
       "linear-gradient(90deg, rgba(0,0,0,0.3), rgba(255,255,255,0.1))",
   },

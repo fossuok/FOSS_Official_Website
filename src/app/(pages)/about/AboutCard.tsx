@@ -8,22 +8,32 @@ import {
   Container,
   Table,
 } from "@mantine/core";
+import { Carousel } from "@mantine/carousel";
 import classes from "./AboutCard.module.css";
 import { mockdata } from "@/data/AboutUsData";
 
 export default function AboutCard() {
   const { image, title, organization, mission, activities, goals } = mockdata;
-
+  const slides = image.map((img) => (
+    <Carousel.Slide key={img.src}>
+      <Image radius="lg" fit="fill" src={img.src} alt={title} mih={300} />
+    </Carousel.Slide>
+  ));
   return (
     <div className={classes.wrapper}>
       <Container size={800} className={classes.inner}>
         <h1 className={classes.title}>About FOSSUOK</h1>
-
-        <Card withBorder radius="lg" p="md" className={classes.card}>
-          <Card.Section>
-            <Image fit="fill" src={image.src} alt={title} mah={300} />
-          </Card.Section>
-        </Card>
+        <Carousel
+          controlsOffset="-100px"
+          controlSize={40}
+          slideSize={{ base: "100%", sm: "100%" }}
+          slideGap={{ base: 2, sm: "xl" }}
+          align="start"
+          slidesToScroll={1}
+          loop={true}
+        >
+          {slides}
+        </Carousel>
 
         <Card withBorder radius="lg" p="xl" className={classes.card}>
           <Card.Section className={classes.section}>

@@ -28,8 +28,10 @@ export function Section1({ events }: { events: EventCardProps[] }) {
       {currentItems.length > 0 ? (
         currentItems.map((event) => <EventCard key={event.id} {...event} />)
       ) : (
-        <Paper h={400} p="md">
-          <h1 style={{ textAlign: "center" }}>Coming Soon</h1>
+        <Paper h={400} p="lg" maw={600}>
+          <h1 style={{ textAlign: "center" }}>
+            Stay Connected with Our Social Media For Future Updates.
+          </h1>
         </Paper>
       )}
 

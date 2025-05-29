@@ -177,8 +177,6 @@
 .thumbnail {
   width: 83.33%;
   height: auto;
-  max-width: 600px;
-  max-height: 337px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -189,8 +187,6 @@
 
   @media (max-width: $mantine-breakpoint-sm) {
     width: 100%;
-    max-width: 400px;
-    max-height: 225px;
     padding: 0;
   }
 }

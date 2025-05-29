@@ -5,7 +5,7 @@ import { TYPE } from "@/data/ArticleProps";
 import classes from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
-
+//add default images, no need to offload
 import default_profile from "@/images/blog/profile/imesha-dilshani.avif";
 import default_thumbnail from "@/images/blog/thumbnail/article-1-thumbnail.webp";
 import { Heading2 } from "./Heading2";
@@ -99,6 +99,8 @@ export default async function Home({
             <div className={classes.thumbnail_wrapper}>
               <Image
                 src={article.thumbnail.image || default_thumbnail}
+                width={1200} // hard codded sizes need fixing
+                height={400}
                 alt={String(article.thumbnail.alt) || ""}
                 className={classes.thumbnail}
               />
@@ -153,7 +155,7 @@ function UnorderedList({ data }: { data: string[] }) {
 }
 
 function ImageComponent({ data }: { data: string }) {
-  return <Image src={data} alt="Article Image" width={600} height={400} />;
+  return <Image src={data} alt="Article Image" width={1200} height={400} />; // hard codded sizes need fixing
 }
 
 // Social Media Icons
