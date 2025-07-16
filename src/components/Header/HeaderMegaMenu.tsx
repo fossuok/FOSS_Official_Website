@@ -45,14 +45,14 @@ export function HeaderMegaMenu() {
 
           <Group visibleFrom="md">
             <Link href="/project/2025" passHref>
-              <Indicator
+              {/* <Indicator
                 color="red"
                 position="bottom-start"
                 processing
                 size={10}
-              >
-                <Button radius="xl">Open Dev Summit '25</Button>
-              </Indicator>
+              > */}
+              <Button radius="xl">Open Dev Summit '25</Button>
+              {/* </Indicator> */}
             </Link>
 
             <Theming />
