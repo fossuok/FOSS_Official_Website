@@ -13,8 +13,10 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "July 30",
     year: "2025",
-    description:
-      "This hands-on course is designed for anyone who wants to master Linux from the ground up. It covers everything from the fundamentals to advanced system administration, shell scripting, and real-world server management. 📍 Eligibility: Open to both University of Kelaniya and non-UOK students.📌 Seats are limited and Participants will be selected through a short entrance exam to assess your basic technical knowledge and interest.",
+    description: [
+      "This hands-on course is designed for anyone who wants to master Linux from the ground up. It covers everything from the fundamentals to advanced system administration, shell scripting, and real-world server management.",
+      "🚨 Eligibility: Open to both University of Kelaniya and non-UOK students. Seats are limited and Participants will be selected through a short entrance exam to assess your basic technical knowledge and interest.",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev22.webp`,
       height: 0,
@@ -36,7 +38,6 @@ export const eventsData: EventCardProps[] = [
       // update
       agenda: [
         "Registration Opening - July 16",
-        "Registration Closing - After 100 registrations",
         "Entrance Exam - Will announce Soon",
         "More Details at - https://docs.google.com/document/d/1FSJ7J1mXTlPrYIEYE1VvhRoE4hd13_WT0o3aBjnSU34/edit?usp=sharing",
       ],
@@ -52,8 +53,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "May 24",
     year: "2025",
-    description:
+    description: [
       "Join us for an exciting day of learning and networking with industry experts and fellow developers. Don't miss out on this opportunity to enhance your skills and knowledge in the world of open-source development. Be sure to register for a smooth experience!",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ods25.webp`,
       height: 0,
@@ -114,8 +116,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "May 17",
     year: "2025",
-    description:
+    description: [
       "Explore how to build reliable and explainable AI systems, focusing on transparency and monitoring for LLM-based applications.",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/summit25/event6.webp`,
       height: 0,
@@ -146,8 +149,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "May 17",
     year: "2025",
-    description:
+    description: [
       "Learn the fundamentals of Terraform, including writing configuration files and deploying infrastructure on leading cloud platforms — all in a hands-on environment!",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/summit25/event5.webp`,
       height: 0,
@@ -180,8 +184,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "May 10",
     year: "2025",
-    description:
+    description: [
       "Join us for an exciting session with Kavimal Wijewardana, Associate Architect - Mobile at Virtusa Corp., as he delves into Micro-Frontend Architecture for Mobile Applications (Android & iOS). Gain insights into building scalable, maintainable, and modular mobile applications!",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/summit25/event4.webp`,
       height: 0,
@@ -215,8 +220,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "May 06",
     year: "2025",
-    description:
+    description: [
       "Think Like a Web App Engineer! 💻 Join us for an exclusive session on Building Scalable & Efficient Web Apps with .NET & Open Source Tools, led by Hansamali Gamage, Senior Developer at NEXT. ",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/summit25/event3.webp`,
       height: 0,
@@ -248,8 +254,9 @@ export const eventsData: EventCardProps[] = [
     record: true,
     date: "May 03",
     year: "2025",
-    description:
+    description: [
       "Join our insightful session with Anjana Dodampe, Senior Software Engineer at London Stock Exchange Group, and discover how FOSS tools are revolutionizing the world of Big Data & AI.",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/summit25/event2.webp`,
       height: 0,
@@ -280,8 +287,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "April 26",
     year: "2025",
-    description:
+    description: [
       "Master the Basics of Linux! 💻 Join our hands-on Linux Fundamentals workshop with Nuwan Kaushalya, Lead Engineer at Persistent Systems. Perfect for beginners or anyone looking to sharpen their Linux skills, learn core concepts and best practices in one session!",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/summit25/event1.webp`,
       height: 0,
@@ -313,8 +321,9 @@ export const eventsData: EventCardProps[] = [
     record: true,
     date: "Mar 01",
     year: "2025",
-    description:
+    description: [
       "Learn about ARCHITECTING SCALABLE & COST EFFECTIVE SOLUTIONS.",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev14.webp`,
       height: 0,
@@ -345,7 +354,7 @@ export const eventsData: EventCardProps[] = [
     record: true,
     date: "Feb 08",
     year: "2025",
-    description: "Learn about PROTECTING REPOSITORIES AND WORKFLOWS.",
+    description: ["Learn about PROTECTING REPOSITORIES AND WORKFLOWS."],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev13.webp`,
       height: 0,
@@ -376,8 +385,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "DEC 03",
     year: "2024",
-    description:
+    description: [
       "Introduction to Git , Github and setting up github student developer pack.",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev12.webp`,
       height: 0,
@@ -419,8 +429,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "October 09",
     year: "2024",
-    description:
+    description: [
       "Post-Summit Meetup for Open-Source Summit ‘24, happening at the WSO2 Office, Colombo 4.",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev11.webp`,
       height: 0,
@@ -462,8 +473,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "April 27",
     year: "2024",
-    description:
+    description: [
       "Across six intensive days, Open-Source Summit '24 offered a unique learning experience for undergraduate students. From March 16th to April 6th, participants honed their skills through hands-on workshops and in-depth learning sessions.\n The culmination arrives on April 27th with a dedicated developer summit. This comprehensive program aimed to empower undergraduates with the technical knowledge, practical abilities, and connections needed to thrive in the open-source technology community.",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev10.webp`,
       height: 0,
@@ -504,7 +516,7 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "April 06",
     year: "2024",
-    description: "Integrating DevSecOps into the SDLC for Robust Protection",
+    description: ["Integrating DevSecOps into the SDLC for Robust Protection"],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev9.webp`,
       height: 10,
@@ -540,7 +552,7 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "March 30",
     year: "2024",
-    description: "Exploring Multilingual Natural Language Processing.",
+    description: ["Exploring Multilingual Natural Language Processing."],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev8.webp`,
       height: 0,
@@ -569,13 +581,13 @@ export const eventsData: EventCardProps[] = [
   // pre-summit'24 workshop 04
   {
     id: 7,
-    title: "Building Automated Workflows with GitHub Actions",
+    title: "Building Awith GitHWb Actions",
     register: "https://fossuok.org/",
     open: false,
     record: false,
     date: "March 23",
     year: "2024",
-    description: "How to build automated workflows with GitHub Actions. ",
+    description: ["How to build automated workflows with GitHub Actions. "],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev7.webp`,
       height: 0,
@@ -611,7 +623,7 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "March 16",
     year: "2024",
-    description: "DevOps basics and building your first CI/CD pipeline.",
+    description: ["DevOps basics and building your first CI/CD pipeline."],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev6.webp`,
       height: 0,
@@ -645,7 +657,7 @@ export const eventsData: EventCardProps[] = [
       ],
     },
   },
-  // pre-summit'24 workshop 02
+  // pre-summit'24 wkshop 0202
   {
     id: 5,
     title: "Docker for Beginners: Hands-On Workshop",
@@ -654,8 +666,9 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "March 16",
     year: "2024",
-    description:
+    description: [
       "Workshop on Docker basics and get started with containerization.",
+    ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev5.webp`,
       height: 0,
@@ -697,7 +710,7 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "March 16",
     year: "2024",
-    description: "Insights from Telco Data & Crowd Analytics.",
+    description: ["Insights from Telco Data & Crowd Analytics."],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev4.webp`,
       height: 0,
@@ -720,7 +733,7 @@ export const eventsData: EventCardProps[] = [
         "Introduction to Data Science",
         "Modern tools & Techniques of data science",
         "Telco Data & Crowd Analytics",
-        "Q&A session with the speakers",
+        "Q&A session with the speakers    ",
       ],
     },
   },
@@ -733,7 +746,7 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "FEB 27",
     year: "2024",
-    description: " Mastering Git is essential for any developer. ",
+    description: [" Mastering Git is essential for any developer. "],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev3.webp`,
       height: 0,
@@ -754,7 +767,7 @@ export const eventsData: EventCardProps[] = [
       location: "Online",
       agenda: [
         "Introduction to GitHub",
-        "Setting up your development environment with GitHub Codespaces",
+        "Q&A Session with the speakers",
         "Streamlining your Git workflow",
         "Q&A session with the speakers",
       ],
@@ -769,7 +782,7 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: " DEC 21",
     year: "2023",
-    description: "We look forward to seeing you there!",
+    description: ["We look forward to seeing you there!"],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev2.webp`,
       height: 0,
@@ -812,7 +825,7 @@ export const eventsData: EventCardProps[] = [
     record: false,
     date: "NOV 30",
     year: "2023",
-    description: "We look forward to seeing you there!",
+    description: ["We look forward to seeing you there!"],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev1.webp`,
       height: 0,

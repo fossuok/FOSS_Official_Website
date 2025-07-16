@@ -188,7 +188,11 @@ export default function EventDetail() {
               <Group>
                 <Text>📌 {event.contents.location}</Text>
               </Group>
-              <Text className={classes.description}>{event.description}</Text>
+              {event.description.map((desc, idx) => (
+                <Text key={idx} className={classes.description}>
+                  {desc}
+                </Text>
+              ))}
             </Stack>
           </Card>
         </Grid.Col>
