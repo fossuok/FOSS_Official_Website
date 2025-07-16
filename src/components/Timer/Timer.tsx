@@ -5,6 +5,7 @@ import { Card, Text, Group } from "@mantine/core";
 import classes from "./Timer.module.css";
 
 const targetDate = new Date("May 24, 2025 08:30:00").getTime();
+var isExpired = false;
 
 export default function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -13,16 +14,19 @@ export default function CountdownTimer() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
+    var days = 0;
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
+
     if (distance < 0) {
-      return "EXPIRED";
+      return { days, hours, minutes, seconds };
     }
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     return { days, hours, minutes, seconds };
   }
@@ -35,32 +39,45 @@ export default function CountdownTimer() {
     return () => clearInterval(interval);
   }, []);
 
-  if (timeLeft === "EXPIRED") {
-    return (
-      <Text size="xl" fz={32} fw={700} style={{ textAlign: "center" }}>
-        Successfully Concluded
-      </Text>
-    );
+  if (
+    timeLeft.days === 0 &&
+    timeLeft.hours === 0 &&
+    timeLeft.minutes === 0 &&
+    timeLeft.seconds === 0
+  ) {
+    isExpired = true;
   }
 
   return (
-    <Group justify="center" gap="sm">
-      {Object.entries(timeLeft).map(([label, value]) => (
-        <Card
-          key={label}
-          shadow="sm"
-          padding="lg"
-          radius="md"
-          className={classes.timerCard}
+    <div>
+      <Group justify="center" gap="sm">
+        {Object.entries(timeLeft).map(([label, value]) => (
+          <Card
+            key={label}
+            shadow="sm"
+            padding="lg"
+            radius="md"
+            className={classes.timerCard}
+          >
+            <Text size="xl" fw={700} className={classes.timerText}>
+              {value}
+            </Text>
+            <Text size="sm" c="teal" fw={700}>
+              {label.toUpperCase()}
+            </Text>
+          </Card>
+        ))}
+      </Group>
+      {isExpired && (
+        <Text
+          size="xl"
+          fz={32}
+          fw={700}
+          style={{ marginTop: "1rem", textAlign: "center" }}
         >
-          <Text size="xl" fw={700} className={classes.timerText}>
-            {value}
-          </Text>
-          <Text size="sm" c="teal" fw={700}>
-            {label.toUpperCase()}
-          </Text>
-        </Card>
-      ))}
-    </Group>
+          Successfully Concluded
+        </Text>
+      )}
+    </div>
   );
 }

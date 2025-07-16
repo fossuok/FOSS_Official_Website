@@ -29,7 +29,7 @@ export default function Section1() {
           >
             <Table.Thead>
               <Table.Tr fz="lg" fw={600}>
-                <Table.Td>Founded</Table.Td>
+                <Table.Td>Founded In</Table.Td>
                 <Table.Td maw={190}>Members</Table.Td>
                 <Table.Td>Events</Table.Td>
               </Table.Tr>
@@ -38,7 +38,7 @@ export default function Section1() {
               <Table.Tr className={classes.number}>
                 <Table.Td>2023</Table.Td>
                 <Table.Td>170+</Table.Td>
-                <Table.Td>15+</Table.Td>
+                <Table.Td>20+</Table.Td>
               </Table.Tr>
             </Table.Tbody>
           </Table>
