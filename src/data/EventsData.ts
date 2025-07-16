@@ -657,7 +657,7 @@ export const eventsData: EventCardProps[] = [
       ],
     },
   },
-  // pre-summit'24 wkshop 0202
+  // pre-summit'24 workshop 02
   {
     id: 5,
     title: "Docker for Beginners: Hands-On Workshop",
