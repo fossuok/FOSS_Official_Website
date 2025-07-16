@@ -23,7 +23,7 @@ const committeeList = [
     fname: "Chamudika",
     lname: "Hasanthi",
     email: "chamudika@fossuok.org",
-    position: "Committee Chair",
+    position: "Committee Co-Chair",
     linkedin: "https://www.linkedin.com/in/chamudikahasanthi",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Chamudika_Hasanthi.webp`,
   },
@@ -31,7 +31,7 @@ const committeeList = [
     fname: "Wageesha",
     lname: "Narandeniya",
     email: "wageesha@fossuok.org",
-    position: "Committee Chair",
+    position: "Committee Co-Chair",
     linkedin: "https://www.linkedin.com/in/wageesha-narandeniya",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Wageesha_Narandeniya.webp`,
   },
@@ -53,8 +53,6 @@ const committeeList = [
     linkedin: "https://www.linkedin.com/in/udasri-hasindu",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Udasri_Hasindu.webp`,
   },
-
-  //sponsoring team
   {
     fname: "Hansani",
     lname: "Nimasha",
@@ -165,14 +163,6 @@ const committeeList = [
     picture: `${imgUrl}/images/summit25/oc/FOSS_Pasindu_Wickramasinghe.webp`,
   },
   {
-    fname: "Kalavarthanan",
-    lname: "Jogeswaran",
-    email: "empty",
-    position: "Design Team",
-    linkedin: "https://www.linkedin.com/in/kalavarthanan-jogeswaran-3a2bb81aa",
-    picture: `${imgUrl}/images/summit25/oc/FOSS_Kalavarthanan_Jogeswaran.webp`,
-  },
-  {
     fname: "Thamara",
     lname: "Bhagya",
     email: "empty",
@@ -181,12 +171,28 @@ const committeeList = [
     picture: `${imgUrl}/images/summit25/oc/FOSS_Thamara_Bhagya.webp`,
   },
   {
+    fname: "Kalavarthanan",
+    lname: "Jogeswaran",
+    email: "empty",
+    position: "Design Team",
+    linkedin: "https://www.linkedin.com/in/kalavarthanan-jogeswaran-3a2bb81aa",
+    picture: `${imgUrl}/images/summit25/oc/FOSS_Kalavarthanan_Jogeswaran.webp`,
+  },
+  {
     fname: "Thanoban",
     lname: "Kamalendran",
     email: "empty",
     position: "Design Team",
     linkedin: "https://www.linkedin.com/in/kamalendran-thanoban",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Thanoban_Kamalendran.webp`,
+  },
+  {
+    fname: "Sanjana",
+    lname: "",
+    email: "empty",
+    position: "Design Team",
+    linkedin: "https://linkedin.com/",
+    picture: `${imgUrl}/images/summit25/oc/FOSS_Sanjana.webp`,
   },
 
   //documentation
@@ -259,12 +265,28 @@ const committeeList = [
     picture: `${imgUrl}/images/summit25/oc/FOSS_Dulanjika_Bandara.webp`,
   },
   {
+    fname: "Kesara",
+    lname: "Kulathung",
+    email: "empty",
+    position: "FOSS Board Member",
+    linkedin: "https://www.linkedin.com/in/saroath-farvees-713366291",
+    picture: `${imgUrl}/2024/images/summit/committee/kesara.webp`,
+  },
+  {
     fname: "Saroath",
     lname: "Farvees",
     email: "empty",
     position: "FOSS Board Member",
     linkedin: "https://www.linkedin.com/in/saroath-farvees-713366291",
     picture: `${imgUrl}/images/summit25/oc/FOSS_Saroath_Farvees.webp`,
+  },
+  {
+    fname: "Ushan",
+    lname: "",
+    email: "empty",
+    position: "FOSS Board Member",
+    linkedin: "https://www.linkedin.com/in/saroath-farvees-713366291",
+    picture: `${imgUrl}/2024/images/summit/committee/ushan.webp`,
   },
 
   //placeholders
