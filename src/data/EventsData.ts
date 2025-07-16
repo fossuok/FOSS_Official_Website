@@ -769,7 +769,6 @@ export const eventsData: EventCardProps[] = [
         "Introduction to GitHub",
         "Q&A Session with the speakers",
         "Streamlining your Git workflow",
-        "Q&A session with the speakers",
       ],
     },
   },
