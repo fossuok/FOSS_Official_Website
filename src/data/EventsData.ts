@@ -581,7 +581,7 @@ export const eventsData: EventCardProps[] = [
   // pre-summit'24 workshop 04
   {
     id: 7,
-    title: "Building Awith GitHWb Actions",
+    title: "Building Automated Workflows with GitHub Actions",
     register: "https://fossuok.org/",
     open: false,
     record: false,
