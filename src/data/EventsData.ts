@@ -9,13 +9,14 @@ export const eventsData: EventCardProps[] = [
     id: 22,
     title: "ADVANCED LINUX PROGRAM: FROM FUNDAMENTALS TO LINUX MASTERY",
     register: "https://forms.gle/vMXExYepnnHiJD6Y8",
-    open: true,
+    open: false,
     record: false,
-    date: "July 30",
+    date: "July 17",
     year: "2025",
     description: [
       "This hands-on course is designed for anyone who wants to master Linux from the ground up. It covers everything from the fundamentals to advanced system administration, shell scripting, and real-world server management.",
       "🚨 Eligibility: Open to both University of Kelaniya and non-UOK students. Seats are limited and Participants will be selected through a short entrance exam to assess your basic technical knowledge and interest.",
+      "📢 Thank you for the overwhelming responses! Registration for the FOSSUOK Advanced Linux Program is officially closed.  Stay tuned for selection test updates and what’s coming next!",
     ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev22.webp`,
@@ -32,12 +33,13 @@ export const eventsData: EventCardProps[] = [
     ],
     tags: ["Linux", "2 months"],
     contents: {
-      weekday: "Saturdays (after registarion period)",
+      weekday: "Saturdays (dates will be announced soon)",
       timerange: "8 Sessions | 3Hr Per Day (2 months)",
       location: "FCT Academic Building, University of Kelaniya",
       // update
       agenda: [
-        "Registration Opening - July 16",
+        "Registration Opened - July 16",
+        "Registration Closed - July 17",
         "Entrance Exam - Will announce Soon",
         "More Details at - https://docs.google.com/document/d/1FSJ7J1mXTlPrYIEYE1VvhRoE4hd13_WT0o3aBjnSU34/edit?usp=sharing",
       ],
