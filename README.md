@@ -26,9 +26,10 @@ FOSSUOK connects Sri Lankan students with real-world open source. This site:
    ```bash
    git clone https://github.com/fossuok/FOSS_Official_Website.git
    cd FOSS_Official_Website
-
+   
+   git checkout dev        # Important: switch to dev branch
+   
    npm install
-
    npm run dev
 
 2. **How to Contribute**
