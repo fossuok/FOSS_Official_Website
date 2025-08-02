@@ -15,8 +15,11 @@ export const eventsData: EventCardProps[] = [
     year: "2025",
     description: [
       "This hands-on course is designed for anyone who wants to master Linux from the ground up. It covers everything from the fundamentals to advanced system administration, shell scripting, and real-world server management.",
-      "🚨 Eligibility: Open to both University of Kelaniya and non-UOK students. Seats are limited and Participants will be selected through a short entrance exam to assess your basic technical knowledge and interest.",
-      "📢 Thank you for the overwhelming responses! Registration for the FOSSUOK Advanced Linux Program is officially closed.  Stay tuned for selection test updates and what’s coming next!",
+      "🚨 Eligibility: ",
+      "Open to both University of Kelaniya and non-UOK students. Seats are limited and Participants will be selected through a short entrance exam to assess your basic technical knowledge and interest.",
+      "100 selectees who perform well in the selection process will have the opportunity to attend physical sessions and receive a certificate, provided they maintain good attendance.",
+      "Access to online sessions will be given to the 100 selectees and to other participants who correctly followed through all the requirments",
+      "📢 Thank you for the overwhelming responses! Registration for the FOSSUOK Advanced Linux Program is officially closed.",
     ],
     imageUrl: {
       src: `${imgUrl}/images/images/events/ev22.webp`,
@@ -31,7 +34,7 @@ export const eventsData: EventCardProps[] = [
         src: `${imgUrl}/images/summit25/speaker/nuwan.webp`,
       },
     ],
-    tags: ["Linux", "2 months"],
+    tags: ["Linux", "8 Sessions", "Hybrid"],
     contents: {
       weekday: "Saturdays (dates will be announced soon)",
       timerange: "8 Sessions | 3Hr Per Day (2 months)",
@@ -40,7 +43,8 @@ export const eventsData: EventCardProps[] = [
       agenda: [
         "Registration Opened - July 16",
         "Registration Closed - July 17",
-        "Entrance Exam - Will announce Soon",
+        "Entrance Exam - Concluded",
+        "1st Session - Will Announce Soon",
         "More Details at - https://docs.google.com/document/d/1FSJ7J1mXTlPrYIEYE1VvhRoE4hd13_WT0o3aBjnSU34/edit?usp=sharing",
       ],
     },
