@@ -12,26 +12,23 @@ import { IconBrandGithubFilled } from "@tabler/icons-react";
 import classes from "./section1.module.css";
 import GradientBack from "@/components/Gradient/GradientBack";
 import { Advert } from "@/components/Advert/Advert";
-import { advertData1, advertData3, advertData2 } from "@/data/AdvertData"; //advert data file in data folder
+import { advertData1, advertData4 } from "@/data/AdvertData"; //advert data file in data folder
 
 export default function Section1() {
   return (
     <>
       <div className={classes.wrapper}>
         <GradientBack />
-
-        <VisuallyHidden>
-          {" "}
-          <div className={classes.advert}>
-            <Advert data={advertData2} />
-          </div>{" "}
-          <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
+        {/* <VisuallyHidden> */}{" "}
+        <div className={classes.advert}>
+          <Advert data={advertData4} />
+        </div>{" "}
+        {/* <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
             <div className={classes.advert}>
               <Advert data={advertData1} />
             </div>
-          </Flex>
-        </VisuallyHidden>
-
+          </Flex> */}
+        {/* </VisuallyHidden> */}
         <Container className={classes.inner}>
           <h1 className={classes.title}>
             Embrace the Power
