@@ -30,16 +30,16 @@ export default function ApplyBoard() {
       </Text>
 
       <Group justify="center" mt={20}>
-        <Link href="https://form.jotform.com/252241603907048">
+        <Link href="#">
           <Button
+            disabled
             variant="filled"
             size="md"
             color="lime.8"
-            c="black"
             className="btn"
             radius={50}
           >
-            Start Board Application
+            Offically Closed
           </Button>
         </Link>
       </Group>
