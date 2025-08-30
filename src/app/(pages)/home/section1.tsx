@@ -19,16 +19,16 @@ export default function Section1() {
     <>
       <div className={classes.wrapper}>
         <GradientBack />
-        {/* <VisuallyHidden> */}{" "}
-        <div className={classes.advert}>
-          <Advert data={advertData4} />
-        </div>{" "}
-        {/* <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
+        <VisuallyHidden>
+          <div className={classes.advert}>
+            <Advert data={advertData4} />
+          </div>{" "}
+          {/* <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
             <div className={classes.advert}>
               <Advert data={advertData1} />
             </div>
           </Flex> */}
-        {/* </VisuallyHidden> */}
+        </VisuallyHidden>
         <Container className={classes.inner}>
           <h1 className={classes.title}>
             Embrace the Power
