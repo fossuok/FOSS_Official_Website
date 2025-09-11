@@ -21,6 +21,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "dayjs": "^1.11.13",
+    "embla-carousel-autoplay": "^7.1.0",
     "framer-motion": "^12.0.6",
     "next": "^15.1.6",
     "react": "^18.3.1",
