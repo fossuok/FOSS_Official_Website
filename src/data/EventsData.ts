@@ -37,7 +37,19 @@ export const eventsData: EventCardProps[] = [
       timerange: "9.00 am - 10.00 am",
       location: "ACB 9-1, FCT, University of Kelaniya",
       // update
-      agenda: ["9.00 am -"],
+      agenda: [
+        "9.00 am - Addressing the Attendees",
+        "9.02 am - Welcome Speech",
+        "9.07 am - Presentation of Annual Minutes",
+        "9.15 am - Introduction to FOSS Community, Summary of Events & Achievements from Previous Term",
+        "9.25 am - Annual Budget Report for Previous Term",
+        "9.35 am - Senior Treasurer’s Speech",
+        "9.40 am - Community Constitution Amendments",
+        "9.45 am - Introducing the Upcoming President & their Speech",
+        "9.55 am - Introduction of Upcoming Board of Officers",
+        "10.05 am - Vote of Thanks",
+        "10.10 am - Conclusion of the AGM",
+      ],
     },
   },
   //linux event series
