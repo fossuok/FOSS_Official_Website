@@ -186,7 +186,7 @@ export default function EventDetail() {
                 <Text>⌛ {event.contents.timerange}</Text>
               </Group>
               <Group>
-                <Text>📌 {event.contents.location}</Text>
+                <Text>🚩 {event.contents.location}</Text>
               </Group>
               {event.description.map((desc, idx) => (
                 <Text key={idx} className={classes.description}>

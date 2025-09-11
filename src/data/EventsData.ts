@@ -4,6 +4,42 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 // !! Add new entries to top
 export const eventsData: EventCardProps[] = [
+  //AGM 25
+  {
+    id: 23,
+    title: "FOSS AGM 25/26",
+    register: "https://forms.gle/vtyp9dAS8hSuhJ896",
+    open: true,
+    record: false,
+    date: "September 20",
+    year: "2025",
+    description: [
+      "Join Us for FOSSUOK Annual General Meeting 2025!. A gathering of innovators, learners, and open-source enthusiasts 💚.",
+      "This AGM is open to all undergraduates from UOK  who are passionate about Free and Open Source Software (FOSS) and wish to actively contribute to the community.",
+      "📌 Please fill in your details accurately to confirm your participation.",
+    ],
+    imageUrl: {
+      src: `${imgUrl}/images/images/events/agm25.webp`,
+      height: 0,
+      width: 0,
+    },
+    speakers: [
+      {
+        name: "FOSS Community",
+        role: " ",
+        alt: "FOSS Community",
+        src: `${imgUrl}/images/images/FOSSsm.webp`,
+      },
+    ],
+    tags: ["AGM 25/26", "New Board Announcement"],
+    contents: {
+      weekday: "Saturday",
+      timerange: "9.00 am - 10.00 am",
+      location: "ACB 9-1, FCT, University of Kelaniya",
+      // update
+      agenda: ["9.00 am -"],
+    },
+  },
   //linux event series
   {
     id: 22,

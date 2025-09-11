@@ -43,6 +43,7 @@ export function CardsCarousel() {
           align="start"
           slidesToScroll={1}
           loop={true}
+          withIndicators
         >
           {slides}
         </Carousel>
