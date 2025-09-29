@@ -19,24 +19,16 @@ export default function Section1() {
 		<>
 			<div className={classes.wrapper}>
 				<GradientBack />
-
 				<VisuallyHidden>
-					{" "}
 					<div className={classes.advert}>
-						<Advert data={advertData2} />
+						<Advert data={advertData4} />
 					</div>{" "}
-					<Flex
-						gap="lg"
-						justify="center"
-						align="center"
-						wrap={"wrap"}
-					>
-						<div className={classes.advert}>
-							<Advert data={advertData1} />
-						</div>
-					</Flex>
+					{/* <Flex gap="lg" justify="center" align="center" wrap={"wrap"}>
+            <div className={classes.advert}>
+              <Advert data={advertData1} />
+            </div>
+          </Flex> */}
 				</VisuallyHidden>
-
 				<Container className={classes.inner}>
 					<h1 className={classes.title}>
 						Embrace the Power
@@ -58,7 +50,7 @@ export default function Section1() {
 						<Button
 							radius="xl"
 							component="a"
-							href="https://forms.gle/FTUgveyGE54d9EUK6"
+							href="https://forms.gle/EibRqsL4d4mzqPhG7"
 							target="_blank"
 							className={classes.control}
 							variant="gradient"
@@ -66,7 +58,7 @@ export default function Section1() {
 						>
 							Become a Member
 						</Button>
-            
+
 						<Button
 							radius="xl"
 							component="a"
