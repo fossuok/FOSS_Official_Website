@@ -21,6 +21,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/events/agm-2025",
+        destination: "/events/23",
+        permanent: true,
+      },
+      {
         source: "/project/ods25",
         destination: "/project/2025",
         permanent: true,

@@ -58,3 +58,18 @@ export const advertData3 = {
   glow: true,
   tag: "New",
 };
+export const advertData4 = {
+  topic: "Join the Next Leadership Team!",
+  image: {
+    src: `${imgUrl}/images/images/advert/BoardApplication26.webp`,
+    height: 0,
+    width: 0,
+  },
+  description:
+    "Ready to shape the future of FOSS at the University of Kelaniya? Apply now to be part of our next board of officers!",
+  weblink: "https://fossuok.org/BoardApplication",
+  color: "lime.6",
+  size: "md",
+  glow: true,
+  tag: "Join",
+};
