@@ -15,7 +15,6 @@ import { Advert } from "@/components/Advert/Advert";
 import { advertData1, advertData4 } from "@/data/AdvertData"; //advert data file in data folder
 
 export default function Section1() {
-
 	return (
 		<>
 			<div className={classes.wrapper}>
@@ -59,7 +58,7 @@ export default function Section1() {
 						<Button
 							radius="xl"
 							component="a"
-							href="https://forms.gle/CwdgD8XPg2n5DMBV9"
+							href="https://forms.gle/FTUgveyGE54d9EUK6"
 							target="_blank"
 							className={classes.control}
 							variant="gradient"
@@ -67,7 +66,7 @@ export default function Section1() {
 						>
 							Become a Member
 						</Button>
-
+            
 						<Button
 							radius="xl"
 							component="a"
