@@ -24,8 +24,8 @@ export default function ApplyBoard() {
         </Link>
       </Group>
       <Text c="dimmed" size="md" ta="center" className={classes.description}>
-        * Before you proceed, please take a look at (Article 4 & 8). It will
-        help you choose where your skills, interests, and passion can make the
+        * Before you proceed, please take a look at the document above (Articles 4 & 8). It will
+        help you choose where your skills, interests, and passions can make the
         biggest impact.
       </Text>
 
