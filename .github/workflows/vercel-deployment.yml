@@ -20,7 +20,9 @@ jobs:
         run: npm install --global vercel@latest
 
       - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --environment=production
 
       - name: Append Custom Environment Secrets
         run: |
@@ -29,10 +31,12 @@ jobs:
           echo "NEXT_PUBLIC_EXCLUDED_AUTHORS=${{ secrets.NEXT_PUBLIC_EXCLUDED_AUTHORS }}" >> .env
           echo "NEXT_PUBLIC_CDN=${{ secrets.NEXT_PUBLIC_CDN }}" >> .env
 
-      # Step 5: Build the project artifacts.
       - name: Build Project Artifacts
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --prod
 
-      # Step 6: Deploy the prebuilt project artifacts to Vercel.
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prebuilt --prod
