@@ -3,6 +3,7 @@
 import { Container, Group, Button, Image, Text } from "@mantine/core";
 import classes from "../page.module.css";
 const recUrl = process.env.NEXT_PUBLIC_CDN;
+import Link from "next/link";
 
 export default function HeroSection() {
 	return (
@@ -42,6 +43,20 @@ export default function HeroSection() {
 				>
 					Sponsorship Proposal
 				</Button>
+
+				<Link href="/summit-25" passHref>
+					{/* <Indicator
+                color="red"
+                position="bottom-start"
+                processing
+                size={10}
+              > */}
+					<Button className={classes.summitBtn} size="md" radius="xl">
+						Open Dev Summit '25
+					</Button>
+					{/* </Indicator> */}
+				</Link>
+
 				{/* <Button
 					size="md"
 					variant="default"

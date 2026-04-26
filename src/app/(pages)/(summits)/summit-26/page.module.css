@@ -132,6 +132,14 @@
 	background-color: #4896dc;
 }
 
+.summitBtn {
+	background-color: #9333ea;
+}
+
+.summitBtn:hover {
+	background-color: #7c25cc;
+}
+
 .title {
 	text-align: center;
 	font-family: var(--mantine-font-family);
