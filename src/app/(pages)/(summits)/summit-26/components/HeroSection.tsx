@@ -27,7 +27,7 @@ export default function HeroSection() {
 					"A journey of learning, contribution, and collaboration"
 				</Text>
 			</div>
-			<Container size={900} style={{ marginTop: 20, marginBottom: 20 }}>
+			<Container size={900} style={{ marginTop: 12, marginBottom: 32 }}>
 				<div className={classes.sponsorSection}>
 					<Text fw={700} fz="lg" className={classes.sponsorTitle}>
 						Bronze Sponsor
