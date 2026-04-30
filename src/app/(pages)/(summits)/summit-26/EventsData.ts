@@ -6,7 +6,8 @@ export const eventsData: EventCardProps[] = [
 	{
 		id: 23,
 		title: "AI Agents & Workflow Automation",
-		register: "https://forms.gle/vtyp9dAS8hSuhJ896",
+		register: "/summit-26/ai-agents-and-workflow-automation",
+		externalRegister: "https://forms.gle/vtyp9dAS8hSuhJ896",
 		open: true,
 		record: false,
 		date: "May 03",
