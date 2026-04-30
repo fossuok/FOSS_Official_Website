@@ -28,8 +28,8 @@ export default function SummitEventDetail() {
 	if (!event)
 		return (
 			<Container size={1200} py={50} px={20}>
-				<Link href="/events" className={classes.link}>
-					👈 View Event List
+				<Link href="/summit-26" className={classes.link}>
+					👈 Summit Page
 				</Link>
 				<Text py={100} c="dimmed" size="lg" ta="center">
 					Unfortunately, the event details are not available.
@@ -39,8 +39,8 @@ export default function SummitEventDetail() {
 
 	return (
 		<Container size={1200} py={50} px={20}>
-			<Link href="/events" className={classes.link}>
-				👈 View Event List
+			<Link href="/summit-26" className={classes.link}>
+				👈 Summit Page
 			</Link>
 			<Box
 				style={{
