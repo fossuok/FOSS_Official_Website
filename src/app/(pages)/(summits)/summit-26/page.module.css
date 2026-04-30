@@ -160,6 +160,52 @@
 	padding-bottom: 2rem;
 }
 
+.sponsorSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.75rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	background: rgba(255, 255, 255, 0.72);
+	border: 1px solid rgba(255, 255, 255, 0.55);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		padding: 0.85rem 1rem;
+		gap: 0.5rem;
+	}
+}
+
+.sponsorTitle {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin: 0;
+	color: #111827;
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		font-size: 1rem;
+	}
+}
+
+.sponsorLogo {
+	max-width: 180px;
+	width: 100%;
+	height: auto;
+
+	@media (max-width: $mantine-breakpoint-md) {
+		max-width: 150px;
+	}
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		max-width: 120px;
+	}
+}
+
 .heroLogo {
 	width: 28rem;
 	margin: 0 auto;
@@ -186,5 +232,21 @@
 
 	@media (max-width: $mantine-breakpoint-sm) {
 		font-size: 1rem;
+	}
+}
+
+.eventCardHeader {
+	text-align: center;
+	font-family: var(--mantine-font-family);
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 1.1;
+	margin: 0;
+	padding: 1rem;
+	color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		font-size: 26px;
+		line-height: 1.2;
 	}
 }
