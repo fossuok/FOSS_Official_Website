@@ -131,9 +131,9 @@ export function HeaderMegaMenu() {
 								justifyContent: "center",
 							}}
 						>
-							<Link href="/project/2025" onClick={toggleDrawer}>
-								<Button miw={180} radius="xl" size="lg">
-									Summit '25
+							<Link href="/summit-26" onClick={toggleDrawer}>
+								<Button className={classes.summitBtn} miw={180} radius="xl" size="lg">
+									Summit '26
 								</Button>
 							</Link>
 							<Theming />
