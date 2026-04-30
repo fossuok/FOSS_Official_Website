@@ -117,7 +117,7 @@ export default function SummitEventDetail() {
 						>
 							{event.open && event.record
 								? "Recording Available"
-								: "Register"}
+								: "Register | Google Form"}
 						</Button>
 					</Indicator>
 
