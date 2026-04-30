@@ -27,6 +27,18 @@ export default function HeroSection() {
 					"A journey of learning, contribution, and collaboration"
 				</Text>
 			</div>
+			<Container size={900} style={{ marginTop: 20, marginBottom: 20 }}>
+				<div className={classes.sponsorSection}>
+					<Text fw={700} fz="lg" className={classes.sponsorTitle}>
+						Bronze Sponsor
+					</Text>
+					<img
+						src={`${recUrl}/assets/summit-26/logos/WSO2-Logo-Black.webp`}
+						alt="https://wso2.com/"
+						className={classes.sponsorLogo}
+					/>
+				</div>
+			</Container>
 			<Group
 				style={{
 					display: "flex",
