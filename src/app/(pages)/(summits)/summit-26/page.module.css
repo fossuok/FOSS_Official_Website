@@ -188,3 +188,19 @@
 		font-size: 1rem;
 	}
 }
+
+.eventCardHeader {
+	text-align: center;
+	font-family: var(--mantine-font-family);
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 1.1;
+	margin: 0;
+	padding: 1rem;
+	color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		font-size: 26px;
+		line-height: 1.2;
+	}
+}
