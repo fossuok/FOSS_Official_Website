@@ -196,6 +196,17 @@ export default function SummitEventDetail() {
 									{desc}
 								</Text>
 							))}
+							<Text>
+								<Text span fw={700}>
+									Join WhatsApp Group :
+								</Text>{" "}
+								<Link
+									href="https://chat.whatsapp.com/Lacunq6i8Sy9ethlgGsO2J"
+									target="_blank"
+								>
+									https://chat.whatsapp.com/Lacunq6i8Sy9ethlgGsO2J
+								</Link>
+							</Text>
 						</Stack>
 					</Card>
 				</Grid.Col>
