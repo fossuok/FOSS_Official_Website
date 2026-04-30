@@ -23,18 +23,18 @@ export default function EventSection() {
 								{/* <Text c="dimmed" size="md">
 								Command Line, File System & Process Management
 							  </Text> */}
-								<Text>02 May 2026, 6:00 PM</Text>
+								<Text>03 May 2026, 6:00 PM</Text>
 								<Button
-									disabled
+									// disabled
 									mt={10}
 									mb={20}
 									size="md"
 									radius="0 50 50 0"
 									component="a"
-									// href={`https://www.fossuok.org/events/15`}
-									target="_blank"
+									href={`https://www.fossuok.org/summit-26/ai-agents-and-workflow-automation`}
+									target="_self"
 								>
-									Registration opening soon...
+									Registrations Open Now
 								</Button>
 							</Timeline.Item>
 							<Timeline.Item
