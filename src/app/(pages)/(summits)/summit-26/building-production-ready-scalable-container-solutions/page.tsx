@@ -23,7 +23,7 @@ import Link from "next/link";
 import { eventsData } from "../EventsData";
 
 export default function SummitEventDetail() {
-	const event = eventsData.find((e) => e.id === 20260503);
+	const event = eventsData.find((e) => e.id === 20260524);
 
 	if (!event)
 		return (
