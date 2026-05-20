@@ -25,7 +25,7 @@ export default function EventSection() {
 							  </Text> */}
 								<Text>03 May 2026, 6:00 PM</Text>
 								<Button
-									// disabled
+									disabled
 									mt={10}
 									mb={20}
 									size="md"
@@ -34,7 +34,7 @@ export default function EventSection() {
 									href={`https://www.fossuok.org/summit-26/ai-agents-and-workflow-automation`}
 									target="_self"
 								>
-									Registrations Open Now
+									Concluded Successfully
 								</Button>
 							</Timeline.Item>
 							<Timeline.Item
