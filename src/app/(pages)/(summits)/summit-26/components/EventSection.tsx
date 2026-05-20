@@ -23,7 +23,7 @@ export default function EventSection() {
 								{/* <Text c="dimmed" size="md">
 								Command Line, File System & Process Management
 							  </Text> */}
-								<Text>24 May 2026, 6:00 PM</Text>
+								<Text>24 May 2026, 7:30 PM</Text>
 								<Button
 									// disabled
 									mt={10}
