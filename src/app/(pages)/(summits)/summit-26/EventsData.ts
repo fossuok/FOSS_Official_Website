@@ -32,9 +32,9 @@ export const eventsData: EventCardProps[] = [
 		tags: ["DevOps", "AWS", "CI/CD"],
 		contents: {
 			weekday: "Sunday",
-			timerange: "6.00 pm - 08.00 pm",
+			timerange: "7.30 pm - 09.30 pm",
 			location: "Online via ZOOM",
-			agenda: ["06:00 PM - Event Starts"],
+			agenda: ["07:30 PM - Event Starts"],
 		},
 	},
 	{
