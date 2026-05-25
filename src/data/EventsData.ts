@@ -11,7 +11,7 @@ export const eventsData: EventCardProps[] = [
 		register:
 			"/summit-26/building-production-ready-scalable-container-solutions",
 		externalRegister: "https://forms.gle/ShPLzi3ivr7Dxuw68",
-		open: true,
+		open: false,
 		record: false,
 		date: "May 24",
 		year: "2026",
