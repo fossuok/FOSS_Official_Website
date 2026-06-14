@@ -31,14 +31,11 @@ export const EventCard = ({
 	tags,
 }: Readonly<EventCardProps>) => {
 	const router = useRouter(); // Initialize the router
+	const destination = register.startsWith("/") ? register : `/events/${id}`;
 
 	// Handle click event
 	const handleCardClick = () => {
-		if (register && register.startsWith("/")) {
-			router.push(register);
-		} else {
-			router.push(`/events/${id}`);
-		}
+		router.push(destination);
 	};
 
 	return (
@@ -168,21 +165,9 @@ export const EventCard = ({
 						<Button
 							radius={50}
 							component="a"
-							href={
-								register && register.startsWith("/")
-									? register
-									: `/events/${id}`
-							}
-							target={
-								register && register.startsWith("http")
-									? "_blank"
-									: "_self"
-							}
-							rel={
-								register && register.startsWith("http")
-									? "noopener noreferrer"
-									: undefined
-							}
+							href={destination}
+							target="_self"
+							rel={undefined}
 							data-disabled={!open ? true : undefined}
 							onClick={(e) => {
 								e.stopPropagation();

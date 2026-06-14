@@ -38,7 +38,7 @@ export default function CommunitySection() {
 					>
 						<Button
 							component="a"
-							href="https://chat.whatsapp.com/Lacunq6i8Sy9ethlgGsO2J"
+							href="https://chat.whatsapp.com/C4GD0UtGziWLwI1sZUPbkn"
 							target="_blank"
 							rel="noopener noreferrer"
 							color="green"
