@@ -17,6 +17,24 @@ export default function EventSection() {
 							align="left"
 						>
 							<Timeline.Item
+								title="Developer Summit '26"
+								className={classes.time}
+							>
+								<Text>20 June 2026, 8:30 AM</Text>
+								<Button
+									mt={10}
+									mb={20}
+									size="md"
+									radius="0 50 50 0"
+									component="a"
+									href="/summit-26/summit"
+									target="_self"
+								>
+									Registration Open
+								</Button>
+							</Timeline.Item>
+
+							<Timeline.Item
 								title="Building Production Ready Scalable Container Solutions"
 								className={classes.time}
 							>
@@ -66,8 +84,8 @@ export default function EventSection() {
 							>
 								{/* <Text c="dimmed" size="md">
 								Spark, Hadoop, and Airflow{" "}
-							  </Text> */}
-								{/* <Text>3 May 2025, 9:00 AM</Text> */}
+								</Text>
+								<Text>3 May 2025, 9:00 AM</Text>
 								<Button
 									disabled
 									mt={10}
@@ -79,7 +97,7 @@ export default function EventSection() {
 									target="_blank"
 								>
 									Updates Arriving Soon...
-								</Button>
+								</Button> */}
 							</Timeline.Item>
 						</Timeline>
 					</Container>
