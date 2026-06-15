@@ -4,6 +4,52 @@ const imgUrl = process.env.NEXT_PUBLIC_CDN;
 
 export const eventsData: EventCardProps[] = [
 	{
+		id: 202606202,
+		title: "Developer Summit '26 - Register Now",
+		register: "/summit-26/summit",
+		externalRegister: "https://forms.gle/RgKye5hzx1gsrHQn6",
+		open: true,
+		record: false,
+		date: "June 20",
+		year: "2026",
+		description: [
+			"Join industry professionals and technology enthusiasts for an insightful day of learning and knowledge sharing at Developer Summit '26.",
+			"Featured sessions:",
+			"- Agile in Practice: How Software Is Built in the Real World",
+			"- Building Meaningful Academic Work: From Problem to Publication",
+			"- Business and Technology: The Role of a Business Analyst",
+			"Complete this form to reserve your spot at the summit. Limited seats available.",
+		],
+		imageUrl: {
+			src: `${imgUrl}/flyers/summit-26/ds26-topic-nushan.webp`,
+			height: 0,
+			width: 0,
+		},
+		speakers: [
+			{
+				name: "Nushan Vitharana",
+				role: "Senior Business Analyst at LSEG",
+				alt: "Nushan Vitharana",
+				src: `${imgUrl}/images/speakers/summit-26/nushan-vitharana.webp`,
+			},
+		],
+		tags: ["SUMMIT26"],
+		contents: {
+			weekday: "Saturday",
+			timerange: "8:30 AM - 1:30 PM",
+			location: "University of Kelaniya",
+			agenda: [
+				"08:30 AM - Opening Ceremony & Welcome Speech",
+				"08:45 AM - Introduction to the FOSS Community and Developer Summit",
+				"09:00 AM - Session 1: Ms. Gimhani Uthpala Kankanamge - Agile in Practice: How Software Is Built in the Real World",
+				"10:30 AM - Session 2: Mr. Frank Cronemberg - Building Meaningful Academic Work: From Problem to Publication",
+				"11:45 AM - Refreshment Break",
+				"12:00 PM - Session 3: Mr. Nushan Vitharana - Business and Technology: The Role of a Business Analyst",
+				"01:30 PM - Vote of Thanks",
+			],
+		},
+	},
+	{
 		id: 20260620,
 		title: "Developer Summit '26 - Register Now",
 		register: "/summit-26/summit",
@@ -33,7 +79,7 @@ export const eventsData: EventCardProps[] = [
 				src: `${imgUrl}/images/speakers/summit-26/gimhani-uthpala.webp`,
 			},
 		],
-		tags: ["Agile", "Software Engineering", "Architecture"],
+		tags: ["SUMMIT26"],
 		contents: {
 			weekday: "Saturday",
 			timerange: "8:30 AM - 1:30 PM",

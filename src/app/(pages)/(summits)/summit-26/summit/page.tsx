@@ -20,6 +20,8 @@ import Link from "next/link";
 import { CopyButton } from "@mantine/core";
 import { eventsData } from "../EventsData";
 
+const imgUrl = process.env.NEXT_PUBLIC_CDN;
+
 const agendaItems = [
 	"08:30 AM - Opening Ceremony & Welcome Speech",
 	"08:45 AM - Introduction to the FOSS Community and Developer Summit",
@@ -202,6 +204,21 @@ export default function SummitPage() {
 								</Flex>
 							</Box>
 						))}
+						<Box py={10}>
+							<Flex direction="row" align="center" gap="10">
+								<Avatar
+									size={50}
+									src={`${imgUrl}/images/speakers/summit-26/nushan-vitharana.webp`}
+									alt="Nushan Vitharana"
+								/>
+								<div>
+									<Text fw={600}>Nushan Vitharana</Text>
+									<Text fz={14} fw={400}>
+										Senior Business Analyst at LSEG
+									</Text>
+								</div>
+							</Flex>
+						</Box>
 					</Card>
 
 					<Card radius="md" bg="transparent">
