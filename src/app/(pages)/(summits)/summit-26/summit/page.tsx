@@ -219,6 +219,22 @@ export default function SummitPage() {
 								</div>
 							</Flex>
 						</Box>
+						<Box py={10}>
+							<Flex direction="row" align="center" gap="10">
+								<Avatar
+									size={50}
+									src={`${imgUrl}/images/speakers/summit-26/frank-cronemberg.webp`}
+									alt="Frank Cronemberg"
+								/>
+								<div>
+									<Text fw={600}>Frank Cronemberg</Text>
+									<Text fz={14} fw={400}>
+										Senior Engineering Lead/Engineering
+										Manager at Dialog Axiata PLC
+									</Text>
+								</div>
+							</Flex>
+						</Box>
 					</Card>
 
 					<Card radius="md" bg="transparent">
